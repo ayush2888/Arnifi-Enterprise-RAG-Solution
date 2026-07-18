@@ -1,5 +1,3 @@
-"""Backward-compatible shims — prefer `app.services.retrieval`."""
-
 from app.services.retrieval.diversify import diversify_chunks
 from app.services.retrieval.engine import QueryEngine
 

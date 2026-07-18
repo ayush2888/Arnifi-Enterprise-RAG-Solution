@@ -1,110 +1,42 @@
-# Arnifi Blog RAG — Architecture
+# Arnifi Enterprise RAG — Architecture
 
-This project implements a standard **two-pipeline RAG** system: one for building the index (offline), one for answering questions (online).
+## Pipelines
 
-## Indexing pipeline (offline)
+```text
+Offline ingest (CLI):
+  scrape → extract → chunk → Bedrock Titan embed → Pinecone upsert
 
-Run with: `python src/app.py crawl`, `ingest`, `index-posts`, or `extract`
-
-```
-settings.yaml seeds
-       │
-       ▼
-┌──────────────────┐
-│ 1. Discover URLs │  crawler.py + listing_parser.py
-└────────┬─────────┘
-         │  post URLs saved to data/state.sqlite
-         ▼
-┌──────────────────┐
-│ 2. Fetch HTML    │  fetcher.py
-└────────┬─────────┘
-         ▼
-┌──────────────────┐
-│ 3. Parse         │  extractor.py  →  Document (title, sections, headings)
-└────────┬─────────┘
-         ▼
-┌──────────────────┐
-│ 4. Chunk         │  chunker.py    →  Chunk list
-└────────┬─────────┘
-         ▼
-┌──────────────────┐
-│ 5. Embed         │  embeddings.py →  vectors
-└────────┬─────────┘
-         ▼
-┌──────────────────┐
-│ 6. Upsert        │  pinecone_client.py → Pinecone index
-└──────────────────┘
+Online query (FastAPI / Lambda):
+  question → Titan embed → Pinecone query → diversify → Nova Lite → SSE
 ```
 
-Orchestrated by: `src/rag/indexing_pipeline.py` (`IndexingPipeline`)
+## Package map (`app/`)
 
-## Query pipeline (online)
+| Path | Responsibility |
+|------|----------------|
+| `app/api/` | FastAPI routes + Mangum Lambda handler |
+| `app/services/bedrock/` | Bedrock client, Titan embeddings, Nova Lite LLM |
+| `app/services/pinecone/` | Vector upsert / query |
+| `app/services/retrieval/` | QueryEngine + diversify |
+| `app/services/ingestion/` | Indexer, SQLite state, chunk/extract |
+| `app/services/scraper/` | Fetcher + listing crawler |
+| `app/services/prompting/` | System prompt loading |
+| `app/config/` | Env + YAML settings / DI |
+| `app/models/` | Pydantic schemas |
+| `app/cli.py` | Crawl / ingest / query CLI |
 
-Run with: `python src/app.py query "..."`
+`src/` keeps thin re-export shims for older import paths.
 
-```
-User question
-       │
-       ▼
-┌──────────────────┐
-│ 1. Embed query   │  embeddings.py
-└────────┬─────────┘
-         ▼
-┌──────────────────┐
-│ 2. Retrieve      │  pinecone_client.py + retriever.py (top-k, diversify)
-└────────┬─────────┘
-         ▼
-┌──────────────────┐
-│ 3. Generate      │  generator.py (Groq / OpenAI-compatible LLM)
-└────────┬─────────┘
-         ▼
-   Answer + source citations
-```
+## AWS services
 
-Orchestrated by: `src/rag/query_pipeline.py` (`QueryPipeline`)
+| Service | Why |
+|---------|-----|
+| **Amazon Bedrock** | Hosted Titan embeddings + Nova Lite chat (no self-hosted models) |
+| **AWS Lambda** | Optional initial hosting for the FastAPI app |
+| **IAM** | Least-privilege invoke for Bedrock |
+| **Pinecone** | External vector DB (unchanged product choice) |
 
-## File map (RAG step → code)
+## Config
 
-| RAG step | File |
-|----------|------|
-| Discover listing/post URLs | `src/ingest/crawler.py`, `src/ingest/listing_parser.py` |
-| Fetch pages | `src/ingest/fetcher.py` |
-| Parse HTML to documents | `src/ingest/extractor.py` |
-| Chunk documents | `src/ingest/chunker.py` |
-| Embed text | `src/vectorstore/embeddings.py` |
-| Vector DB read/write | `src/vectorstore/pinecone_client.py` |
-| Diversify retrieval | `src/rag/retriever.py` |
-| LLM answer | `src/rag/generator.py` |
-| Data models | `src/rag/schemas.py` |
-| Shared config + services | `src/rag/context.py` |
-| Shared config + services | `src/rag/context.py` |
-| Indexing orchestration | `src/rag/indexing_pipeline.py` |
-| Query orchestration | `src/rag/query_pipeline.py` |
-| CLI facade | `src/rag/pipeline.py` |
-| URL crawl registry | `src/store/state_db.py` |
-| Debug HTML/JSON | `src/store/artifacts.py` |
-
-## Entry point for reading code
-
-1. `src/app.py` — which command runs which pipeline
-2. `src/rag/pipeline.py` — thin facade (`indexing` + `query`)
-3. `src/rag/indexing_pipeline.py` or `src/rag/query_pipeline.py` — pick your flow
-
-## Data storage
-
-| What | Where |
-|------|-------|
-| Discovered URLs | `data/state.sqlite` |
-| Raw / parsed debug files | `data/artifacts/` |
-| Searchable vectors | Pinecone (`config/settings.yaml` → `pinecone.index_name`) |
-
-## Configuration
-
-All tunables live in `config/settings.yaml`:
-- `seeds` — where crawling starts (not the only pages crawled)
-- `crawl` — politeness, limits
-- `chunk` — chunk size and overlap
-- `embedding` — provider, model, dimension
-- `pinecone` — index name and region
-- `llm` — answer model
-- `retrieval` — how many chunks to fetch and return
+Secrets and model IDs come from environment variables (see `.env.example`).
+Tunables (chunk size, retrieval caps, crawl seeds) live in `config/settings.yaml`.

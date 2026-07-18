@@ -1,3 +1,27 @@
+embedding:
+  provider: bedrock
+  model: amazon.titan-embed-text-v2:0
+  dimension: 1024
+  batch_size: 16
+
+pinecone:
+  index_name: arnifi-rag-titan
+  namespace: ""
+  metric: cosine
+  cloud: aws
+  region: us-east-1
+
+llm:
+  # Model ID overridden by BEDROCK_CHAT_MODEL env when set
+  model: amazon.nova-lite-v1:0
+  temperature: 0.2
+  max_tokens: 1200
+
+retrieval:
+  top_k_initial: 20
+  max_chunks_returned: 5
+  max_chunks_per_source_url: 2
+
 seeds:
   listing_pages:
     - https://arnifi.com/blog/
@@ -17,29 +41,6 @@ crawl:
 chunk:
   max_tokens: 400
   overlap_tokens: 80
-
-embedding:
-  provider: sentence-transformers
-  model: all-MiniLM-L6-v2
-  dimension: 384
-  batch_size: 64
-
-pinecone:
-  index_name: arnifi-blog-rag-st
-  namespace: ""
-  metric: cosine
-  cloud: aws
-  region: us-east-1
-
-llm:
-  model: openai/gpt-oss-20b
-  temperature: 0.2
-  max_tokens: 1200
-
-retrieval:
-  top_k_initial: 20
-  max_chunks_returned: 5
-  max_chunks_per_source_url: 2
 
 paths:
   state_db: data/state.sqlite

@@ -1,31 +1,21 @@
-"""Backward-compatible shims — prefer `app.services.ingestion`."""
+"""Ingestion orchestration — Indexer and persistence live in pipeline.py."""
 
 from app.services.ingestion.pipeline import (
     ArtifactStore,
-    Fetcher,
     Indexer,
-    ListingCrawler,
     StateDB,
-    _pair_headings_to_sections,
     chunk_document,
-    count_tokens,
     extract_document,
-    extract_links_from_listing,
     sha1_text,
     should_skip_post,
 )
 
 __all__ = [
     "ArtifactStore",
-    "Fetcher",
     "Indexer",
-    "ListingCrawler",
     "StateDB",
-    "_pair_headings_to_sections",
     "chunk_document",
-    "count_tokens",
     "extract_document",
-    "extract_links_from_listing",
     "sha1_text",
     "should_skip_post",
 ]

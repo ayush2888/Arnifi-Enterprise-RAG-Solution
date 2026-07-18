@@ -1,0 +1,13 @@
+# AWS Lambda container image (Mangum + FastAPI).
+# For ECS/EC2 use the root Dockerfile (uvicorn) instead.
+FROM public.ecr.aws/lambda/python:3.12
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt --target "${LAMBDA_TASK_ROOT}"
+
+COPY app ${LAMBDA_TASK_ROOT}/app
+COPY config ${LAMBDA_TASK_ROOT}/config
+COPY frontend ${LAMBDA_TASK_ROOT}/frontend
+
+# Mangum ASGI adapter: module.app attribute
+CMD ["app.api.handler.handler"]
