@@ -23,17 +23,60 @@ $BedrockEmbedModel = "amazon.titan-embed-text-v2:0"
 $PineconeApiKey = $env:PINECONE_API_KEY
 $PineconeIndex = "arnifi-rag-titan"
 $PineconeEnvironment = "us-east-1"
+
+# Periskope WhatsApp invite (same values as local .env)
+$PeriskopeApiKey = $env:PERISKOPE_API_KEY
+$PeriskopePhone = $env:PERISKOPE_PHONE
 # ================================
 
-if (-not $PineconeApiKey) {
-    throw "Set PINECONE_API_KEY in your environment (or paste into this script) before deploying."
-}
 if ($AccountId -eq "YOUR_AWS_ACCOUNT_ID" -or $RoleArn -match "YOUR_LAMBDA") {
     throw "Edit AccountId, FunctionName, and RoleArn at the top of deploy-lambda.ps1 first."
 }
 
 $Root = Split-Path -Parent $PSScriptRoot
 Set-Location $Root
+
+# Load secrets from project .env into this process (does not overwrite existing env).
+$EnvFile = Join-Path $Root ".env"
+if (Test-Path $EnvFile) {
+    Get-Content $EnvFile | ForEach-Object {
+        if ($_ -match '^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$') {
+            $k = $Matches[1]
+            $v = $Matches[2].Trim().Trim('"').Trim("'")
+            if (-not [string]::IsNullOrWhiteSpace($v) -and -not [Environment]::GetEnvironmentVariable($k)) {
+                [Environment]::SetEnvironmentVariable($k, $v, "Process")
+            }
+        }
+    }
+}
+
+$PineconeApiKey = $env:PINECONE_API_KEY
+$PeriskopeApiKey = $env:PERISKOPE_API_KEY
+$PeriskopePhone = $env:PERISKOPE_PHONE
+
+if (-not $PineconeApiKey) {
+    throw "Set PINECONE_API_KEY in your environment (or .env) before deploying."
+}
+if (-not $PeriskopeApiKey -or -not $PeriskopePhone) {
+    throw "Set PERISKOPE_API_KEY and PERISKOPE_PHONE in your environment (or .env) before deploying."
+}
+
+$PeriskopePhoneNorm = $PeriskopePhone.Trim()
+
+$LambdaEnv =
+    "Variables={" +
+    "BEDROCK_REGION=$BedrockRegion," +
+    "BEDROCK_CHAT_MODEL=$BedrockChatModel," +
+    "BEDROCK_EMBED_MODEL=$BedrockEmbedModel," +
+    "PINECONE_API_KEY=$PineconeApiKey," +
+    "PINECONE_INDEX=$PineconeIndex," +
+    "PINECONE_ENVIRONMENT=$PineconeEnvironment," +
+    "PERISKOPE_API_KEY=$PeriskopeApiKey," +
+    "PERISKOPE_PHONE=$PeriskopePhoneNorm," +
+    "AWS_LWA_INVOKE_MODE=RESPONSE_STREAM," +
+    "AWS_LWA_PORT=8080," +
+    "AWS_LWA_READINESS_CHECK_PATH=/api/health," +
+    "PORT=8080}"
 
 $EcrUri = "$AccountId.dkr.ecr.$AwsRegion.amazonaws.com"
 $ImageUri = "$EcrUri/${RepoName}:$ImageTag"
@@ -90,10 +133,10 @@ if (-not $exists) {
         --package-type Image `
         --code ImageUri=$ImageUri `
         --role $RoleArn `
-        --timeout 60 `
+        --timeout 90 `
         --memory-size 1024 `
         --region $AwsRegion `
-        --environment "Variables={BEDROCK_REGION=$BedrockRegion,BEDROCK_CHAT_MODEL=$BedrockChatModel,BEDROCK_EMBED_MODEL=$BedrockEmbedModel,PINECONE_API_KEY=$PineconeApiKey,PINECONE_INDEX=$PineconeIndex,PINECONE_ENVIRONMENT=$PineconeEnvironment}" |
+        --environment $LambdaEnv |
         Out-Null
 } else {
     aws lambda update-function-code `
@@ -105,10 +148,10 @@ if (-not $exists) {
 
     aws lambda update-function-configuration `
         --function-name $FunctionName `
-        --timeout 60 `
+        --timeout 90 `
         --memory-size 1024 `
         --region $AwsRegion `
-        --environment "Variables={BEDROCK_REGION=$BedrockRegion,BEDROCK_CHAT_MODEL=$BedrockChatModel,BEDROCK_EMBED_MODEL=$BedrockEmbedModel,PINECONE_API_KEY=$PineconeApiKey,PINECONE_INDEX=$PineconeIndex,PINECONE_ENVIRONMENT=$PineconeEnvironment}" |
+        --environment $LambdaEnv |
         Out-Null
 }
 
@@ -122,17 +165,16 @@ $urlMissing = ($LASTEXITCODE -ne 0)
 $ErrorActionPreference = $prevEap
 if ($urlMissing) {
     # AuthType NONE is simplest for first test — protect or delete when done (bot risk / cost).
-    # BUFFERED: Mangum returns API Gateway-style responses that Function URLs unwrap correctly.
-    # RESPONSE_STREAM requires a streaming handler and breaks HTML/CSS for this Mangum setup.
+    # RESPONSE_STREAM + Lambda Web Adapter enables true SSE token streaming to the browser.
     aws lambda create-function-url-config `
         --function-name $FunctionName `
         --auth-type NONE `
-        --invoke-mode BUFFERED `
+        --invoke-mode RESPONSE_STREAM `
         --region $AwsRegion | Out-Null
 } else {
     aws lambda update-function-url-config `
         --function-name $FunctionName `
-        --invoke-mode BUFFERED `
+        --invoke-mode RESPONSE_STREAM `
         --region $AwsRegion | Out-Null
 }
 
