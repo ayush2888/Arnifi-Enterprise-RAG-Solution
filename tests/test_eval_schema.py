@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from app.services.eval.runner import load_cases
+from app.services.eval.cases import load_cases
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES_PATH = ROOT / "data" / "eval" / "cases.jsonl"

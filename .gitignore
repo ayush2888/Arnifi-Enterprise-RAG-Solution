@@ -3,7 +3,7 @@ venv/
 __pycache__/
 *.pyc
 .pytest_cache/
-data/
+data/*
 !data/eval/
 !data/eval/**
 data/eval/reports/
