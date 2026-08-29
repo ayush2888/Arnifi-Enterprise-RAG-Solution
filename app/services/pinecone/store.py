@@ -18,7 +18,7 @@ from app.utils.helpers import get_logger
 
 logger = get_logger(__name__)
 
-
+# This class is responsible for initializing the Pinecone store and returning it , it is used in the folder app/config/settings.py
 class PineconeStore:
     def __init__(
         self,
@@ -97,13 +97,17 @@ class PineconeStore:
         vector: list[float],
         top_k: int = 20,
         include_metadata: bool = True,
+        filter: dict[str, Any] | None = None,
     ) -> list[RetrievedChunk]:
-        response = self.index.query(
-            vector=vector,
-            top_k=top_k,
-            include_metadata=include_metadata,
-            namespace=self.namespace,
-        )
+        kwargs: dict[str, Any] = {
+            "vector": vector,
+            "top_k": top_k,
+            "include_metadata": include_metadata,
+            "namespace": self.namespace,
+        }
+        if filter:
+            kwargs["filter"] = filter
+        response = self.index.query(**kwargs)
         return [self._to_retrieved_chunk(match) for match in response.get("matches") or []]
 
 # _to_retrieved_chunk is a function that converts a Pinecone match to a RetrievedChunk object
@@ -121,3 +125,27 @@ class PineconeStore:
 
     def describe_stats(self) -> dict[str, Any]:
         return self.index.describe_index_stats()
+
+    def delete_by_filter(self, filter: dict[str, Any]) -> int:
+        """
+        Delete vectors matching a metadata filter.
+
+        Pinecone does not return a deleted count for filter deletes; we return 1
+        on success so callers can treat it as "delete requested".
+        """
+        if not filter:
+            raise ValueError("delete_by_filter requires a non-empty filter")
+        logger.info("Deleting Pinecone vectors with filter=%s", filter)
+        self.index.delete(filter=filter, namespace=self.namespace)
+        return 1
+
+    def delete_ids(self, ids: list[str], batch_size: int = 1000) -> int:
+        if not ids:
+            return 0
+        total = 0
+        for start in range(0, len(ids), batch_size):
+            batch = ids[start : start + batch_size]
+            self.index.delete(ids=batch, namespace=self.namespace)
+            total += len(batch)
+            logger.info("Deleted %d Pinecone ids", len(batch))
+        return total

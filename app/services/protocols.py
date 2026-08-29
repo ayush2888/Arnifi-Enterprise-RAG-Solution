@@ -23,16 +23,29 @@ class Embedder(Protocol):
 
 
 class LLM(Protocol):
-    def generate(self, question: str, chunks: list[RetrievedChunk]) -> RAGResponse:
+    def generate(
+        self,
+        question: str,
+        chunks: list[RetrievedChunk],
+        history: list[dict[str, str]] | None = None,
+    ) -> RAGResponse:
         """Produce a full grounded answer."""
         ...
 
-    def generate_stream(self, question: str, chunks: list[RetrievedChunk]) -> Iterator[str]:
+    def generate_stream(
+        self,
+        question: str,
+        chunks: list[RetrievedChunk],
+        history: list[dict[str, str]] | None = None,
+    ) -> Iterator[str]:
         """Yield answer tokens for SSE streaming."""
         ...
 
     def build_prompt(
-        self, question: str, chunks: list[RetrievedChunk]
+        self,
+        question: str,
+        chunks: list[RetrievedChunk],
+        history: list[dict[str, str]] | None = None,
     ) -> tuple[str, list[dict]]:
         """Return (user_prompt, sources) used by streaming and non-streaming paths."""
         ...
@@ -52,8 +65,12 @@ class VectorStore(Protocol):
         vector: list[float],
         top_k: int = 20,
         include_metadata: bool = True,
+        filter: dict[str, Any] | None = None,
     ) -> list[RetrievedChunk]:
         ...
 
     def describe_stats(self) -> dict[str, Any]:
+        ...
+
+    def delete_by_filter(self, filter: dict[str, Any]) -> int:
         ...

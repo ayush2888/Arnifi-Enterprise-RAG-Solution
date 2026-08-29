@@ -21,26 +21,164 @@ retrieval:
   top_k_initial: 20
   max_chunks_returned: 5
   max_chunks_per_source_url: 2
+  # Exact PM#### hits bypass the per-URL cap (see diversify_chunks).
+  exact_service_code_bypasses_url_cap: true
+  # Cosine floor — off-topic queries abstain with no sources (0 = disabled).
+  min_score: 0.45
+  # Bundled PM#### / Title rescue index (Lambda-safe; rebuild after pricing sync).
+  pricing_lexical_index: config/indexes/pricing_lexical.json
 
 seeds:
+  # Official URL inventory — /blog/page/N is broken (same posts every page); sitemap is complete.
+  blog_sitemap_index: https://arnifi.com/sitemap.xml
   listing_pages:
     - https://arnifi.com/blog/
+    - https://arnifi.com/blog/category/accounting-and-bookkeeping-arnifi/
+    - https://arnifi.com/blog/category/adgm-abu-dhabi-global-market/
+    - https://arnifi.com/blog/category/ajman-media-city-free-zone/
+    - https://arnifi.com/blog/category/anti-money-laundering/
+    - https://arnifi.com/blog/category/arnifi-organogram/
+    - https://arnifi.com/blog/category/arnifi-smart-tools/
+    - https://arnifi.com/blog/category/attestation-services/
+    - https://arnifi.com/blog/category/british-virgin-islands/
+    - https://arnifi.com/blog/category/business-in-dubai/
+    - https://arnifi.com/blog/category/business-in-hong-kong/
     - https://arnifi.com/blog/category/business-in-malaysia/
-    - https://arnifi.com/blog/category/visa-services/
+    - https://arnifi.com/blog/category/business-in-the-kingdom-of-saudi-arabia/
+    - https://arnifi.com/blog/category/business-in-uae/
+    - https://arnifi.com/blog/category/business-incorporation-in-mauritius/
+    - https://arnifi.com/blog/category/business-license/
     - https://arnifi.com/blog/category/business-setup-cayman-island/
+    - https://arnifi.com/blog/category/business-setup-in-bahrain/
+    - https://arnifi.com/blog/category/business-setup-in-saudi-arabia/
+    - https://arnifi.com/blog/category/business-setup-in-singapore/
+    - https://arnifi.com/blog/category/business-setup/
+    - https://arnifi.com/blog/category/fund-setup/
+    - https://arnifi.com/blog/category/hr-solutions-in-uae/
+    - https://arnifi.com/blog/category/insights-on-uae-business-setup/
+    - https://arnifi.com/blog/category/international-free-zone-authority-ifza/
+    - https://arnifi.com/blog/category/legal-services/
+    - https://arnifi.com/blog/category/life-in-united-arab-emirates/
+    - https://arnifi.com/blog/category/news/
+    - https://arnifi.com/blog/category/oman/
+    - https://arnifi.com/blog/category/operations-in-uae/
+    - https://arnifi.com/blog/category/post-setup-compliances/
+    - https://arnifi.com/blog/category/product-registeration-services/
+    - https://arnifi.com/blog/category/qatar/
+    - https://arnifi.com/blog/category/setup-in-uae-freezone/
+    - https://arnifi.com/blog/category/singapore/
+    - https://arnifi.com/blog/category/tax-in-united-arab-emirates/
+    - https://arnifi.com/blog/category/uae-ancfz-freezone/
+    - https://arnifi.com/blog/category/uae-dubai-commercity-freezone/
+    - https://arnifi.com/blog/category/uae-dubai-international-financial-center-freezone/
+    - https://arnifi.com/blog/category/uae-dubai-multi-commodities-freezone/
+    - https://arnifi.com/blog/category/uae-dubai-south-freezone/
+    - https://arnifi.com/blog/category/uae-dubai-world-trade-center/
+    - https://arnifi.com/blog/category/uae-fujairah-creative-city/
+    - https://arnifi.com/blog/category/uae-jebel-ali-free-zone/
+    - https://arnifi.com/blog/category/uae-kezad-free-zone/
+    - https://arnifi.com/blog/category/uae-masdar-city/
+    - https://arnifi.com/blog/category/uae-meydan-freezone/
+    - https://arnifi.com/blog/category/uae-ras-al-khaima-freezone/
+    - https://arnifi.com/blog/category/uae-ras-al-khaimah-digital-assets-oasis/
+    - https://arnifi.com/blog/category/uae-sharjah-media-city-freezone/
+    - https://arnifi.com/blog/category/uae-sharjah-research-technology-innovation-park/
+    - https://arnifi.com/blog/category/uae-spc-free-zone/
+    - https://arnifi.com/blog/category/usa/
+    - https://arnifi.com/blog/category/visa-services/
+    - https://arnifi.com/blog/category/will-drafting-service/
+  # Public catalog (not blogs). Used only by website-crawl / website-ingest.
+  website_pages:
+    - https://arnifi.com/llms.txt
+    - https://arnifi.com/pricing-master-list
+    - https://arnifi.com/contact-us
+    - https://arnifi.com/case-studies
+    - https://arnifi.com/announcement/press-releases
+    - https://arnifi.com/services/visa-service
+    - https://arnifi.com/services/overview/visa
+    - https://arnifi.com/services/post-setup-compliance
+    - https://arnifi.com/services/accounting
+    - https://arnifi.com/services/attestations
+    - https://arnifi.com/services/legal-services
+    - https://arnifi.com/services/product-registration
+    - https://arnifi.com/services/liquidation
+    - https://arnifi.com/services/banking-services
+    - https://arnifi.com/services/will-drafting
+    - https://arnifi.com/services/funds
+    - https://arnifi.com/product-listing?countries=1&productType=licence
+    - https://arnifi.com/product-listing?countries=2&productType=licence
+    - https://arnifi.com/product-listing?countries=6&productType=licence
+    - https://arnifi.com/product-listing?countries=11&productType=licence
+    - https://arnifi.com/product-listing?countries=12&productType=licence
+    - https://arnifi.com/product-listing?countries=13&productType=licence
+    - https://arnifi.com/product-listing?countries=16&productType=licence
+    - https://arnifi.com/product-listing?countries=5&productType=licence
+    - https://arnifi.com/services/funds?authority=12
+    - https://arnifi.com/services/funds?authority=13
+    - https://arnifi.com/services/funds?authority=16
+    - https://arnifi.com/services/funds?authority=17
+    - https://arnifi.com/services/funds?authority=21
+    - https://arnifi.com/country-overview/uae
+    - https://arnifi.com/country-overview/saudi-arabia
+    - https://arnifi.com/country-overview/singapore
+    - https://arnifi.com/country-overview/british-virgin-islands
+    - https://arnifi.com/country-overview/cayman-islands
+    - https://arnifi.com/country-overview/mauritius
+    - https://arnifi.com/country-overview/ireland
 
 crawl:
   allowed_domains:
     - arnifi.com
-  max_pages_per_listing: 50
+  # Category archives paginate correctly; main /blog/page/N does not.
+  max_pages_per_listing: 80
   politeness:
-    delay_seconds: 1.0
+    delay_seconds: 0.75
   request_timeout_seconds: 30
   max_retries: 3
+  # Flush embed/upsert every N newly processed posts (keeps memory bounded).
+  ingest_flush_every_posts: 20
+  website:
+    max_child_pages: 200
+    denylist_prefixes:
+      - /checkout
+      - /cart
+      - /account
+      - /api/
+      - /admin
+      - /private
+      - /cost-calculator
+      - /arnifi-organogram
+      - /aml-screener
+      - /products/arnifi-docs
+      - /products/free-aI-assistance
+      - /products/affiliate-program
+      - /career
+      - /privacy-policy
+      - /terms-conditions
 
 chunk:
   max_tokens: 400
   overlap_tokens: 80
+  # Guardrail for huge legal PDFs so Titan ingest cannot hang on one file
+  max_chunks_per_file: 500
+
+whatsapp:
+  chat_type: group
+  # Empty allowlist = all groups from Periskope are allowed
+  chat_allowlist: []
+  episode_gap_minutes: 30
+  max_messages_per_episode: 40
+  min_messages: 3
+  message_page_size: 100
+  chat_page_size: 100
+  request_delay_seconds: 0.35
+
+# RAG eval harness (Phase 2+). Judge fields reserved for Nova faithfulness later.
+eval:
+  max_cases: null
+  temperature: 0
+  generate: true
+  judge_model: amazon.nova-lite-v1:0
 
 paths:
   state_db: data/state.sqlite

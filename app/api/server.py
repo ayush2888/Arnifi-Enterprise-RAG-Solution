@@ -15,6 +15,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Any
 
+import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, Header, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -36,9 +37,10 @@ from app.config.env import load_env
 from app.services.periskope.client import PeriskopeClient
 from app.services.retrieval.engine import QueryEngine
 from app.services.usage.context import bind_collection, end_collection, start_collection
-from app.services.usage.identity import ChatUser, fetch_profile_role, resolve_user
+from app.services.usage.identity import ChatUser, resolve_user
 from app.services.usage.store import save_usage
 from app.utils.helpers import get_logger, setup_logging
+from app.utils.whatsapp_open import whatsapp_open_urls
 
 logger = get_logger(__name__)
 
@@ -50,6 +52,11 @@ _querier: QueryEngine | None = None
 _invite_cache: dict[str, tuple[float, dict[str, Any]]] = {}
 _INVITE_CACHE_TTL_SECONDS = 7 * 24 * 60 * 60
 _CHAT_ID_RE = re.compile(r"^[\w.-]+@(g|c)\.us$", re.IGNORECASE)
+
+# In-memory group list cache for Periskope (protects rate limits).
+_chats_cache: tuple[float, list[dict[str, Any]]] | None = None
+_CHATS_CACHE_TTL_SECONDS = 7 * 60
+_DEFAULT_ERP_SUMMARY_URL = "https://wcs.erp.arnifi.com/api/summary"
 
 # Lifespan manager for the FastAPI app we use to initialize and close the QueryEngine
 #QueryEngine is the main class that handles the RAG pipeline
@@ -103,15 +110,89 @@ def health():
     return {"status": "ok", "service": "arnifi-rag-portal"}
 
 
-def _require_admin(authorization: str | None) -> ChatUser:
-    """WhatsApp invite is admin-only: valid Supabase JWT + profiles.role = admin."""
+def _require_signed_in(authorization: str | None) -> ChatUser:
+    """WhatsApp invite: any signed-in dashboard user (valid Supabase JWT)."""
     user = resolve_user(authorization)
     if not user:
         raise HTTPException(status_code=401, detail="Sign in required")
-    role = fetch_profile_role(authorization, user.id)
-    if role != "admin":
-        raise HTTPException(status_code=403, detail="Admin access required")
     return user
+
+
+def _bearer_token(authorization: str | None) -> str:
+    """Extract raw JWT from `Authorization: Bearer <token>` for ERP forwarding."""
+    if not authorization or not authorization.strip():
+        raise HTTPException(status_code=401, detail="Sign in required")
+    parts = authorization.strip().split(None, 1)
+    if len(parts) != 2 or parts[0].lower() != "bearer" or not parts[1].strip():
+        raise HTTPException(status_code=401, detail="Sign in required")
+    return parts[1].strip()
+
+
+def _member_count_from_raw(raw: dict[str, Any]) -> int | None:
+    count = raw.get("member_count")
+    if isinstance(count, int) and count >= 0:
+        return count
+    for key in ("members", "participants"):
+        value = raw.get(key)
+        if isinstance(value, list):
+            return len(value)
+        if isinstance(value, int) and value >= 0:
+            return value
+    return None
+
+
+class ErpSummaryRequest(BaseModel):
+    chatId: str = Field(min_length=5, max_length=128)
+    from_: str = Field(alias="from", min_length=10, max_length=64)
+    to: str = Field(min_length=10, max_length=64)
+    timeZone: str | None = Field(default="Asia/Kolkata", max_length=64)
+
+    model_config = {"populate_by_name": True}
+
+
+def _invite_unavailable_payload(
+    *,
+    chat_id: str,
+    chat_name: str | None = None,
+    message: str | None = None,
+) -> dict[str, Any]:
+    return {
+        "chat_id": chat_id,
+        "chat_name": chat_name or chat_id,
+        "invite_link": None,
+        "open_url": None,
+        "fallback_url": None,
+        "refreshed": False,
+        "can_open": False,
+        "message": message
+        or (
+            "Group link unavailable. View the indexed episode summary instead. "
+            "The Periskope number may need to be a member of this group."
+        ),
+    }
+
+
+def _invite_success_payload(
+    *,
+    chat_id: str,
+    chat_name: str,
+    invite: str | None,
+    refreshed: bool = False,
+) -> dict[str, Any]:
+    open_urls = whatsapp_open_urls(chat_id=chat_id, invite_link=invite)
+    can_open = bool(open_urls.get("open_url") or open_urls.get("fallback_url"))
+    return {
+        "chat_id": chat_id,
+        "chat_name": chat_name,
+        "invite_link": invite,
+        "open_url": open_urls["open_url"],
+        "fallback_url": open_urls["fallback_url"],
+        "refreshed": refreshed,
+        "can_open": can_open,
+        "message": None if can_open else (
+            "Group link unavailable. View the indexed episode summary instead."
+        ),
+    }
 
 
 @app.get("/api/internal/whatsapp/invite")
@@ -119,8 +200,8 @@ def whatsapp_invite(
     chat_id: str = Query(..., min_length=5, max_length=128),
     authorization: str | None = Header(default=None),
 ):
-    """Admin-only: resolve Periskope invite_link; create/refresh if missing."""
-    _require_admin(authorization)
+    """Signed-in users: resolve group invite from registry / Periskope."""
+    _require_signed_in(authorization)
 
     cid = chat_id.strip()
     if not _CHAT_ID_RE.match(cid):
@@ -128,9 +209,39 @@ def whatsapp_invite(
 
     now = time.time()
     cached = _invite_cache.get(cid)
-    # Only reuse cache when we already have a real invite link.
-    if cached and cached[0] > now and cached[1].get("invite_link"):
-        return cached[1]
+    # Only reuse cache when we already have a real open/invite URL.
+    if cached and cached[0] > now and (
+        cached[1].get("invite_link") or cached[1].get("fallback_url")
+    ):
+        payload = dict(cached[1])
+        if not payload.get("open_url") or not payload.get("fallback_url"):
+            payload.update(
+                whatsapp_open_urls(
+                    chat_id=cid,
+                    invite_link=payload.get("invite_link"),
+                )
+            )
+        payload.setdefault("can_open", True)
+        payload.setdefault("message", None)
+        return payload
+
+    # Prefer invite link saved during whatsapp-sync (group registry).
+    if _settings is not None:
+        try:
+            stored = _settings.state_db.get_wa_invite_link(cid)
+        except Exception as exc:
+            logger.warning("wa_chats invite lookup failed: %s", exc)
+            stored = None
+        if stored:
+            payload = _invite_success_payload(
+                chat_id=cid,
+                chat_name=cid,
+                invite=stored,
+                refreshed=False,
+            )
+            if payload["can_open"]:
+                _invite_cache[cid] = (now + _INVITE_CACHE_TTL_SECONDS, payload)
+                return payload
 
     env = load_env()
     if not env.periskope_api_key or not env.periskope_phone:
@@ -140,38 +251,163 @@ def whatsapp_invite(
         client = PeriskopeClient(env.periskope_api_key, env.periskope_phone)
         chat = client.get_chat(cid)
     except Exception as exc:
-        raise HTTPException(
-            status_code=502,
-            detail=f"Periskope lookup failed: {exc}",
-        ) from exc
+        logger.warning("Periskope lookup failed for %s: %s", cid, exc)
+        return _invite_unavailable_payload(
+            chat_id=cid,
+            message=(
+                "Could not look up this WhatsApp group. "
+                "View the indexed episode summary instead."
+            ),
+        )
 
     chat_name = str(chat.get("chat_name") or cid)
     invite = PeriskopeClient.extract_invite_link(chat)
     refreshed = False
+    is_dm = cid.lower().endswith("@c.us")
 
-    if not invite:
+    if not invite and not is_dm:
         try:
             invite = client.refresh_invite(cid)
             refreshed = bool(invite)
         except Exception as exc:
-            raise HTTPException(
-                status_code=502,
-                detail=(
-                    "Could not create WhatsApp invite for this group. "
-                    "The connected Periskope number may need to be a group admin. "
-                    f"({exc})"
+            logger.warning("Periskope invite refresh failed for %s: %s", cid, exc)
+            return _invite_unavailable_payload(
+                chat_id=cid,
+                chat_name=chat_name,
+                message=(
+                    "Group link unavailable. View the indexed episode summary instead. "
+                    "The Periskope number may need to be a member of this group."
                 ),
-            ) from exc
+            )
 
-    payload = {
-        "chat_id": cid,
-        "chat_name": chat_name,
-        "invite_link": invite,
-        "refreshed": refreshed,
-    }
-    if invite:
-        _invite_cache[cid] = (now + _INVITE_CACHE_TTL_SECONDS, payload)
+    payload = _invite_success_payload(
+        chat_id=cid,
+        chat_name=chat_name,
+        invite=invite,
+        refreshed=refreshed,
+    )
+    if not payload["can_open"]:
+        return _invite_unavailable_payload(chat_id=cid, chat_name=chat_name)
+
+    if invite and _settings is not None:
+        try:
+            _settings.state_db.set_wa_invite_link(cid, invite)
+        except Exception as exc:
+            logger.warning("Could not persist invite_link for %s: %s", cid, exc)
+
+    _invite_cache[cid] = (now + _INVITE_CACHE_TTL_SECONDS, payload)
     return payload
+
+
+@app.get("/api/internal/whatsapp/chats")
+def whatsapp_chats(authorization: str | None = Header(default=None)):
+    """Signed-in users: list Periskope WhatsApp groups (short-cached)."""
+    _require_signed_in(authorization)
+
+    global _chats_cache
+    now = time.time()
+    if _chats_cache and _chats_cache[0] > now:
+        return {"chats": _chats_cache[1]}
+
+    env = load_env()
+    if not env.periskope_api_key or not env.periskope_phone:
+        raise HTTPException(status_code=503, detail="Periskope is not configured")
+
+    try:
+        client = PeriskopeClient(env.periskope_api_key, env.periskope_phone)
+        groups = client.list_chats(chat_type="group")
+    except Exception as exc:
+        logger.warning("Periskope list_chats failed: %s", exc)
+        raise HTTPException(
+            status_code=502,
+            detail="Could not load WhatsApp groups from Periskope",
+        ) from exc
+
+    chats = [
+        {
+            "chat_id": g.chat_id,
+            "chat_name": g.chat_name,
+            "member_count": _member_count_from_raw(g.raw),
+        }
+        for g in groups
+    ]
+    chats.sort(key=lambda c: (c["chat_name"] or "").lower())
+    _chats_cache = (now + _CHATS_CACHE_TTL_SECONDS, chats)
+    return {"chats": chats}
+
+
+@app.post("/api/internal/whatsapp/erp-summary")
+def whatsapp_erp_summary(
+    body: ErpSummaryRequest,
+    authorization: str | None = Header(default=None),
+):
+    """Proxy date-range summary to WCS ERP using the caller's Supabase JWT."""
+    _require_signed_in(authorization)
+    token = _bearer_token(authorization)
+
+    chat_id = body.chatId.strip()
+    if not _CHAT_ID_RE.match(chat_id):
+        raise HTTPException(status_code=400, detail="Invalid chatId")
+
+    erp_url = (
+        os.environ.get("WCS_ERP_SUMMARY_URL") or _DEFAULT_ERP_SUMMARY_URL
+    ).strip()
+    payload = {
+        "chatId": chat_id,
+        "from": body.from_.strip(),
+        "to": body.to.strip(),
+        "timeZone": (body.timeZone or "Asia/Kolkata").strip() or "Asia/Kolkata",
+    }
+
+    try:
+        response = requests.post(
+            erp_url,
+            json=payload,
+            headers={
+                "Content-Type": "application/json",
+                "ai-search-agent-token": token,
+            },
+            timeout=120,
+        )
+    except requests.RequestException as exc:
+        logger.warning("ERP summary request failed: %s", exc)
+        raise HTTPException(
+            status_code=502,
+            detail="Could not reach the WhatsApp summary service",
+        ) from exc
+
+    if response.status_code == 401:
+        raise HTTPException(
+            status_code=401,
+            detail="Sign in expired or rejected by summary service",
+        )
+    if response.status_code >= 400:
+        detail = (response.text or "").strip()[:400] or response.reason
+        try:
+            err_body = response.json()
+            if isinstance(err_body, dict) and err_body.get("message"):
+                detail = str(err_body["message"])
+            elif isinstance(err_body, dict) and err_body.get("error"):
+                detail = str(err_body["error"])
+        except Exception:
+            pass
+        status = 502 if response.status_code >= 500 else response.status_code
+        raise HTTPException(status_code=status, detail=detail)
+
+    try:
+        data = response.json()
+    except Exception as exc:
+        raise HTTPException(
+            status_code=502,
+            detail="Summary service returned invalid JSON",
+        ) from exc
+
+    if not isinstance(data, dict):
+        raise HTTPException(
+            status_code=502,
+            detail="Summary service returned an unexpected payload",
+        )
+    return data
 
 
 # This function is used to pad the SSE frames when running under Lambda response streaming.

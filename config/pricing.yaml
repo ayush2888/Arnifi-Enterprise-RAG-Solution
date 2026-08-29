@@ -1,0 +1,12 @@
+# USD per 1,000,000 tokens (update when AWS list prices change)
+models:
+  amazon.nova-lite-v1:0:
+    input: 0.06
+    output: 0.24
+  amazon.titan-embed-text-v2:0:
+    input: 0.02
+    output: 0.0
+default:
+  input: 0.06
+  output: 0.24
+org_monthly_budget_usd: 100

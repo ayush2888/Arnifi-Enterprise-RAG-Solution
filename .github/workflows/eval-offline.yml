@@ -1,0 +1,44 @@
+name: Eval offline
+
+# Cheap CI: schema + metrics + gate comparator. No Bedrock / Pinecone.
+# Live smoke gate (scripts/eval_smoke_gate.py) stays local/pre-deploy.
+
+on:
+  push:
+    paths:
+      - "app/services/eval/**"
+      - "data/eval/**"
+      - "tests/test_eval_*.py"
+      - "scripts/eval_*.py"
+      - ".github/workflows/eval-offline.yml"
+  pull_request:
+    paths:
+      - "app/services/eval/**"
+      - "data/eval/**"
+      - "tests/test_eval_*.py"
+      - "scripts/eval_*.py"
+      - ".github/workflows/eval-offline.yml"
+  workflow_dispatch:
+
+jobs:
+  offline-eval-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install test deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest pyyaml pydantic
+
+      - name: Run offline eval tests
+        run: |
+          python -m pytest tests/test_eval_metrics.py tests/test_eval_schema.py tests/test_eval_gate.py -q
