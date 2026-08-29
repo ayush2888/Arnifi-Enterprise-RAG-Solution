@@ -1,74 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arnifi Knowledge Assistant</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <div class="header-inner">
-        <div class="brand">
-          <div class="brand-mark">A</div>
-          <div>
-            <h1>Arnifi Knowledge Assistant</h1>
-            <p>Enterprise RAG · Grounded answers from Arnifi blog insights</p>
-          </div>
-        </div>
-        <div class="header-badge">Internal Demo</div>
-      </div>
-    </header>
 
-    <main class="main">
-      <section class="chat-panel">
-        <div id="messages" class="messages">
-          <div class="message assistant welcome">
-            <div class="avatar">AI</div>
-            <div class="bubble">
-              <p>Hello! Ask me anything about Arnifi services, UAE business setup, visas, Cayman funds, and more. Answers are sourced from indexed Arnifi blog content.</p>
-              <div class="suggestions">
-                <button type="button" class="suggestion" data-q="What is a UAE golden visa?">UAE golden visa</button>
-                <button type="button" class="suggestion" data-q="Explain Cayman tokenised fund structure">Cayman tokenised funds</button>
-                <button type="button" class="suggestion" data-q="How to set up a business in Malaysia?">Malaysia business setup</button>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Arnifi Knowledge Assistant</title>
+      <meta name="description" content="Ask Arnifi questions about company setup, visas, compliance, pricing, and internal knowledge." />
+      <meta name="robots" content="noindex, nofollow" />
+      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <script>
+        (function () {
+          try {
+            if (localStorage.getItem("arnifi_theme") === "dark") {
+              document.documentElement.classList.add("dark");
+            }
+          } catch (e) {}
+        })();
+      </script>
+      
+      <script type="module" crossorigin src="/assets/index-oKIlzckh.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-DxkQN_08.css">
+    </head>
 
-        <form id="chat-form" class="composer">
-          <textarea
-            id="question-input"
-            rows="1"
-            placeholder="Ask a question about Arnifi knowledge base..."
-            autocomplete="off"
-          ></textarea>
-          <button id="send-btn" type="submit" aria-label="Send">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-        </form>
-      </section>
-
-      <aside class="sources-panel">
-        <h2>Sources</h2>
-        <p class="sources-hint">Citations appear here after retrieval.</p>
-        <div id="sources-list" class="sources-list"></div>
-      </aside>
-    </main>
-
-    <footer class="footer">
-      <span>Powered by Arnifi Enterprise RAG</span>
-      <span id="status">Ready</span>
-    </footer>
-  </div>
-
-  <script src="/app.js"></script>
-</body>
-</html>
+    <body>
+      
+      <div id="root"></div>
+      
+    </body>
+  </html>
+  

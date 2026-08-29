@@ -212,6 +212,35 @@ aws lambda delete-function --function-name $FunctionName --region $AwsRegion
 
 ---
 
+## Pricing lexical index (PM#### / Title rescue)
+
+Lambda does **not** ship `data/artifacts/drive/extracted` (read-only image; artifacts remap to `/tmp`). After pricing CSV sync/ingest, rebuild and **commit** the bundled index so rescue works in prod:
+
+```powershell
+python -m app.cli build-pricing-index
+# writes config/indexes/pricing_lexical.json (~1MB) — already COPY'd via config/
+```
+
+Then redeploy the Lambda image.
+
+---
+
+## Pre-deploy RAG smoke gate (optional but recommended)
+
+Before shipping retrieval/prompt changes, from the repo root:
+
+```powershell
+# Offline (no AWS) — schema + metrics unit tests
+python -m pytest tests/test_eval_metrics.py tests/test_eval_schema.py tests/test_eval_gate.py -q
+
+# Live smoke vs frozen baseline (needs .env + Pinecone + Bedrock embed)
+python scripts/eval_smoke_gate.py --tags smoke --max-drop 0.05
+```
+
+Exit code `1` means hit@k / recall (or faithfulness when enabled) dropped more than 0.05 vs `data/eval/baselines/baseline_v1.json`. Full `eval-rag` stays manual.
+
+---
+
 ## ECS / EC2 later
 
 Root `Dockerfile` +:

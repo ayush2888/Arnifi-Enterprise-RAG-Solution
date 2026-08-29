@@ -11,6 +11,7 @@ import json
 from typing import Any, Sequence
 
 from app.services.bedrock.client import create_bedrock_runtime_client
+from app.services.usage.context import record_usage
 from app.utils.helpers import get_logger
 
 logger = get_logger(__name__)
@@ -53,7 +54,8 @@ class TitanEmbeddings:
         return vectors
 
     def embed_query(self, text: str) -> list[float]:
-        return self.embed_texts([text])[0]
+        vector = self._embed_one(text)
+        return vector
 
     def _embed_one(self, text: str) -> list[float]:
         body = {
@@ -71,4 +73,13 @@ class TitanEmbeddings:
         embedding = payload.get("embedding")
         if not embedding:
             raise RuntimeError(f"Titan embed response missing embedding: {payload}")
+        prompt_tokens = int(payload.get("inputTextTokenCount") or 0)
+        if not prompt_tokens:
+            prompt_tokens = max(1, (len(text) + 3) // 4)
+        record_usage(
+            model_id=self.model_id,
+            call_kind="embed",
+            prompt_tokens=prompt_tokens,
+            completion_tokens=0,
+        )
         return embedding

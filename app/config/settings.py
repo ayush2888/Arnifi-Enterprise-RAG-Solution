@@ -79,6 +79,8 @@ class Settings:
             )
         return self._embedder
 
+    # Pinecone store is the vector store for the RAG pipeline
+    # This function is responsible for initializing the Pinecone store and returning it , it is used in the folder app/services/pinecone/store.py
     @property
     def vectorstore(self) -> PineconeStore:
         if self._vectorstore is None:

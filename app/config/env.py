@@ -1,5 +1,5 @@
 """
-Load environment variables used by AWS and Pinecone.
+Load environment variables used by AWS, Pinecone, and Google Drive.
 
 Credentials are never hardcoded — local uses access keys; Lambda uses the
 execution role (boto3 picks up the role automatically when keys are absent).
@@ -20,6 +20,13 @@ class EnvConfig:
     pinecone_api_key: str | None
     pinecone_index: str | None
     pinecone_environment: str
+    google_service_account_file: str | None
+    drive_root_folder_id: str | None
+    periskope_api_key: str | None
+    periskope_phone: str | None
+    arnifi_internal_key: str | None
+    tesseract_cmd: str | None
+    tessdata_prefix: str | None
 
 
 def load_env() -> EnvConfig:
@@ -36,4 +43,11 @@ def load_env() -> EnvConfig:
         pinecone_api_key=os.getenv("PINECONE_API_KEY"),
         pinecone_index=os.getenv("PINECONE_INDEX"),
         pinecone_environment=os.getenv("PINECONE_ENVIRONMENT", "us-east-1"),
+        google_service_account_file=os.getenv("GOOGLE_SERVICE_ACCOUNT_FILE"),
+        drive_root_folder_id=os.getenv("DRIVE_ROOT_FOLDER_ID"),
+        periskope_api_key=os.getenv("PERISKOPE_API_KEY"),
+        periskope_phone=os.getenv("PERISKOPE_PHONE"),
+        arnifi_internal_key=(os.getenv("ARNIFI_INTERNAL_KEY") or "").strip() or None,
+        tesseract_cmd=os.getenv("TESSERACT_CMD"),
+        tessdata_prefix=os.getenv("TESSDATA_PREFIX"),
     )

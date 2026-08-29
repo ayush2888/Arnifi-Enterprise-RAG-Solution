@@ -34,6 +34,7 @@ from app.utils.helpers import (
     get_logger,
     is_blog_post_url,
     is_category_url,
+    is_pagination_url,
     listing_base_url,
 )
 
@@ -97,9 +98,51 @@ class StateDB:
                 post_count INTEGER DEFAULT 0,
                 notes TEXT
             );
+
+            CREATE TABLE IF NOT EXISTS wa_chats (
+                chat_id TEXT PRIMARY KEY,
+                chat_name TEXT,
+                chat_type TEXT,
+                last_synced_at TEXT,
+                message_count INTEGER DEFAULT 0,
+                artifact_path TEXT
+            );
+
+            CREATE TABLE IF NOT EXISTS wa_episodes (
+                episode_id TEXT PRIMARY KEY,
+                chat_id TEXT NOT NULL,
+                content_sha1 TEXT,
+                summary_sha1 TEXT,
+                message_count INTEGER DEFAULT 0,
+                started_at TEXT,
+                ended_at TEXT,
+                last_ingested_at TEXT,
+                FOREIGN KEY (chat_id) REFERENCES wa_chats(chat_id)
+            );
+
+            CREATE TABLE IF NOT EXISTS website_urls (
+                url TEXT PRIMARY KEY,
+                listing_url TEXT,
+                page_kind TEXT,
+                status TEXT NOT NULL DEFAULT 'discovered',
+                discovered_at TEXT NOT NULL,
+                last_crawled_at TEXT,
+                content_sha1 TEXT
+            );
             """
         )
         self._conn.commit()
+        self._ensure_column("wa_chats", "invite_link", "TEXT")
+        self._ensure_column("wa_chats", "invite_updated_at", "TEXT")
+
+    def _ensure_column(self, table: str, column: str, typedef: str) -> None:
+        rows = self._conn.execute(f"PRAGMA table_info({table})").fetchall()
+        existing = {str(row["name"]) for row in rows}
+        if column not in existing:
+            self._conn.execute(
+                f"ALTER TABLE {table} ADD COLUMN {column} {typedef}"
+            )
+            self._conn.commit()
      
      # Upsert listing URL is a function that inserts a new listing URL into the database if it doesn't exist, or updates it if it does
     def upsert_listing_url(self, url: str, status: str = "discovered") -> bool:
@@ -185,14 +228,207 @@ class StateDB:
         crawled_posts = self._conn.execute(
             "SELECT COUNT(*) AS c FROM post_urls WHERE status = 'crawled'"
         ).fetchone()["c"]
+        website_count = self._conn.execute("SELECT COUNT(*) AS c FROM website_urls").fetchone()["c"]
+        crawled_website = self._conn.execute(
+            "SELECT COUNT(*) AS c FROM website_urls WHERE status = 'crawled'"
+        ).fetchone()["c"]
         return {
             "listing_urls": listing_count,
             "post_urls": post_count,
             "crawled_posts": crawled_posts,
+            "website_urls": website_count,
+            "crawled_website": crawled_website,
         }
+
+    def upsert_website_url(
+        self,
+        url: str,
+        *,
+        listing_url: str | None = None,
+        page_kind: str | None = None,
+    ) -> bool:
+        now = datetime.now(timezone.utc).isoformat()
+        cur = self._conn.cursor()
+        cur.execute("SELECT url FROM website_urls WHERE url = ?", (url,))
+        exists = cur.fetchone() is not None
+        if exists:
+            cur.execute(
+                """
+                UPDATE website_urls
+                SET listing_url = COALESCE(listing_url, ?),
+                    page_kind = COALESCE(?, page_kind)
+                WHERE url = ?
+                """,
+                (listing_url, page_kind, url),
+            )
+        else:
+            cur.execute(
+                """
+                INSERT INTO website_urls (url, listing_url, page_kind, status, discovered_at)
+                VALUES (?, ?, ?, 'discovered', ?)
+                """,
+                (url, listing_url, page_kind, now),
+            )
+        self._conn.commit()
+        return not exists
+
+    def mark_website_crawled(self, url: str, content_sha1: str | None = None) -> None:
+        now = datetime.now(timezone.utc).isoformat()
+        self._conn.execute(
+            """
+            UPDATE website_urls
+            SET status = 'crawled', last_crawled_at = ?, content_sha1 = COALESCE(?, content_sha1)
+            WHERE url = ?
+            """,
+            (now, content_sha1, url),
+        )
+        self._conn.commit()
+
+    def get_all_website_urls(self, status: str | None = None) -> list[str]:
+        if status:
+            rows = self._conn.execute(
+                "SELECT url FROM website_urls WHERE status = ? ORDER BY discovered_at",
+                (status,),
+            ).fetchall()
+        else:
+            rows = self._conn.execute(
+                "SELECT url FROM website_urls ORDER BY discovered_at"
+            ).fetchall()
+        return [row["url"] for row in rows]
+
+    def get_website_content_sha1(self, url: str) -> str | None:
+        row = self._conn.execute(
+            "SELECT content_sha1 FROM website_urls WHERE url = ?", (url,)
+        ).fetchone()
+        return row["content_sha1"] if row else None
+
+    def get_website_page_kind(self, url: str) -> str | None:
+        row = self._conn.execute(
+            "SELECT page_kind FROM website_urls WHERE url = ?", (url,)
+        ).fetchone()
+        return row["page_kind"] if row else None
 
     def close(self) -> None:
         self._conn.close()
+
+    def upsert_wa_chat(
+        self,
+        chat_id: str,
+        chat_name: str,
+        chat_type: str,
+        *,
+        message_count: int = 0,
+        artifact_path: str | None = None,
+        invite_link: str | None = None,
+    ) -> None:
+        now = datetime.now(timezone.utc).isoformat()
+        invite = (invite_link or "").strip() or None
+        invite_updated = now if invite else None
+        self._conn.execute(
+            """
+            INSERT INTO wa_chats (
+                chat_id, chat_name, chat_type, last_synced_at,
+                message_count, artifact_path, invite_link, invite_updated_at
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(chat_id) DO UPDATE SET
+                chat_name = excluded.chat_name,
+                chat_type = excluded.chat_type,
+                last_synced_at = excluded.last_synced_at,
+                message_count = excluded.message_count,
+                artifact_path = COALESCE(excluded.artifact_path, wa_chats.artifact_path),
+                invite_link = COALESCE(excluded.invite_link, wa_chats.invite_link),
+                invite_updated_at = COALESCE(
+                    excluded.invite_updated_at, wa_chats.invite_updated_at
+                )
+            """,
+            (
+                chat_id,
+                chat_name,
+                chat_type,
+                now,
+                message_count,
+                artifact_path,
+                invite,
+                invite_updated,
+            ),
+        )
+        self._conn.commit()
+
+    def get_wa_invite_link(self, chat_id: str) -> str | None:
+        row = self._conn.execute(
+            "SELECT invite_link FROM wa_chats WHERE chat_id = ?",
+            (chat_id,),
+        ).fetchone()
+        if not row:
+            return None
+        link = row["invite_link"]
+        if not isinstance(link, str):
+            return None
+        link = link.strip()
+        return link or None
+
+    def set_wa_invite_link(self, chat_id: str, invite_link: str | None) -> None:
+        now = datetime.now(timezone.utc).isoformat()
+        invite = (invite_link or "").strip() or None
+        self._conn.execute(
+            """
+            UPDATE wa_chats
+            SET invite_link = ?, invite_updated_at = ?
+            WHERE chat_id = ?
+            """,
+            (invite, now if invite else None, chat_id),
+        )
+        self._conn.commit()
+
+    def get_wa_episode_sha1(self, episode_id: str) -> str | None:
+        cur = self._conn.execute(
+            "SELECT content_sha1 FROM wa_episodes WHERE episode_id = ?",
+            (episode_id,),
+        )
+        row = cur.fetchone()
+        return str(row["content_sha1"]) if row and row["content_sha1"] else None
+
+    def upsert_wa_episode(
+        self,
+        episode_id: str,
+        chat_id: str,
+        *,
+        content_sha1: str,
+        summary_sha1: str | None,
+        message_count: int,
+        started_at: str | None,
+        ended_at: str | None,
+    ) -> None:
+        now = datetime.now(timezone.utc).isoformat()
+        self._conn.execute(
+            """
+            INSERT INTO wa_episodes (
+                episode_id, chat_id, content_sha1, summary_sha1,
+                message_count, started_at, ended_at, last_ingested_at
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(episode_id) DO UPDATE SET
+                chat_id = excluded.chat_id,
+                content_sha1 = excluded.content_sha1,
+                summary_sha1 = COALESCE(excluded.summary_sha1, wa_episodes.summary_sha1),
+                message_count = excluded.message_count,
+                started_at = excluded.started_at,
+                ended_at = excluded.ended_at,
+                last_ingested_at = excluded.last_ingested_at
+            """,
+            (
+                episode_id,
+                chat_id,
+                content_sha1,
+                summary_sha1,
+                message_count,
+                started_at,
+                ended_at,
+                now,
+            ),
+        )
+        self._conn.commit()
 
 
 class ArtifactStore:
@@ -216,14 +452,22 @@ class ArtifactStore:
             target_dir = self.list_pages_dir
         elif kind == "post":
             target_dir = self.posts_dir
+        elif kind == "website":
+            target_dir = self.base_dir / "website" / "html"
+            target_dir.mkdir(parents=True, exist_ok=True)
         else:
             raise ValueError(f"Unknown kind: {kind}")
         path = target_dir / f"{self._slug_from_url(url)}.html"
         path.write_text(html, encoding="utf-8")
         return path
 
-    def save_extracted(self, url: str, document: dict[str, Any]) -> Path:
-        path = self.extracted_dir / f"{self._slug_from_url(url)}.json"
+    def save_extracted(self, url: str, document: dict[str, Any], *, kind: str = "post") -> Path:
+        if kind == "website":
+            target_dir = self.base_dir / "website" / "extracted"
+            target_dir.mkdir(parents=True, exist_ok=True)
+            path = target_dir / f"{self._slug_from_url(url)}.json"
+        else:
+            path = self.extracted_dir / f"{self._slug_from_url(url)}.json"
         path.write_text(json.dumps(document, indent=2, ensure_ascii=False), encoding="utf-8")
         return path
 
@@ -240,7 +484,9 @@ DEFAULT_HEADERS = {
     "User-Agent": (
         "ArnifiBlogRAGBot/1.0 (+https://arnifi.com; research indexing for internal RAG)"
     ),
-    "Accept": "text/html,application/xhtml+xml",
+    "Accept": (
+        "text/html,application/xhtml+xml,text/plain;q=0.9,*/*;q=0.8"
+    ),
 }
 
 
@@ -282,6 +528,63 @@ class Fetcher:
             "etag": response.headers.get("ETag"),
             "content_type": response.headers.get("Content-Type", ""),
         }
+
+
+# --- Step 1 (helper): sitemap discovery (complete blog inventory) ---
+
+
+def _sitemap_locs(xml_text: str) -> list[str]:
+    """Extract <loc> values from a sitemap or sitemap-index document."""
+    return re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", xml_text, flags=re.I)
+
+
+def discover_blog_urls_from_sitemap(
+    fetcher: Fetcher,
+    sitemap_index_url: str,
+    allowed_domains: list[str],
+) -> dict[str, set[str]]:
+    """Read Arnifi sitemap index → child sitemaps → blog post + category URLs.
+
+    Why: https://arnifi.com/blog/ uses Load More, and /blog/page/N returns the
+    same featured posts every time. The public sitemap is the complete inventory.
+    """
+    post_urls: set[str] = set()
+    category_urls: set[str] = set()
+
+    try:
+        index_html = fetcher.fetch(sitemap_index_url)["html"]
+    except Exception as exc:
+        logger.error("Failed to fetch sitemap index %s: %s", sitemap_index_url, exc)
+        return {"post_urls": post_urls, "category_urls": category_urls}
+
+    child_maps = _sitemap_locs(index_html)
+    # Some hosts serve a single urlset at the index URL.
+    targets = child_maps or [sitemap_index_url]
+
+    for map_url in targets:
+        canonical_map = canonicalize_url(map_url) if map_url.endswith(".xml") else map_url
+        try:
+            body = fetcher.fetch(canonical_map)["html"]
+        except Exception as exc:
+            logger.error("Failed to fetch sitemap %s: %s", canonical_map, exc)
+            continue
+        for raw in _sitemap_locs(body):
+            absolute = canonicalize_url(raw)
+            host = urlparse(absolute).netloc.lower()
+            if not any(host == d or host.endswith(f".{d}") for d in allowed_domains):
+                continue
+            if is_blog_post_url(absolute):
+                post_urls.add(absolute)
+            elif is_category_url(absolute) and not is_pagination_url(absolute):
+                category_urls.add(listing_base_url(absolute))
+
+    logger.info(
+        "Sitemap discovery %s -> posts=%d categories=%d",
+        sitemap_index_url,
+        len(post_urls),
+        len(category_urls),
+    )
+    return {"post_urls": post_urls, "category_urls": category_urls}
 
 
 # --- Step 1 (helper): parse listing page links ---
@@ -765,6 +1068,8 @@ def chunk_document(
     overlap_tokens: int = 80,
     embedding_model: str = "text-embedding-3-small",
     listing_url: str | None = None,
+    source_type: str = "blog",
+    page_kind: str | None = None,
 ) -> list[Chunk]:
     # tiktoken counts tokens so chunk size aligns with embedding model context limits.
     encoder = _get_encoder()
@@ -780,9 +1085,17 @@ def chunk_document(
         )
         for idx, chunk_text in enumerate(section_chunks):
             heading_path_str = " > ".join(section.heading_path)
-            # Prefix title + section so embeddings capture document context for better retrieval.
+            kind_line = f"PageKind: {page_kind}\n" if page_kind else ""
+            disclaimer = ""
+            if source_type == "website" and page_kind in {"pricing", "service", "product", "jurisdiction", "fund"}:
+                disclaimer = (
+                    "PriceDisclaimer: public starting-from price, not a quote. "
+                    "Drive SKU rows win on exact fees.\n"
+                )
             embed_text = (
                 f"Title: {document.title}\n"
+                f"{kind_line}"
+                f"{disclaimer}"
                 f"Section: {heading_path_str}\n"
                 f"{chunk_text}"
             )
@@ -811,6 +1124,8 @@ def chunk_document(
                     chunk_char_len=len(chunk_text),
                     crawl_ts=crawl_ts,
                     content_sha1=content_sha1,
+                    source_type=source_type,
+                    page_kind=page_kind,
                 )
             )
     return chunks
@@ -858,9 +1173,34 @@ class Indexer:
             max_pages_per_listing=max_pages_per_listing
             or self.settings.setting("crawl", "max_pages_per_listing", default=50),
         )
-        seeds = self.settings.setting("seeds", "listing_pages", default=[])
+        seeds = list(self.settings.setting("seeds", "listing_pages", default=[]) or [])
+        allowed = self.settings.setting("crawl", "allowed_domains", default=["arnifi.com"])
+
+        sitemap_new_posts = 0
+        sitemap_new_cats = 0
+        sitemap_index = self.settings.setting("seeds", "blog_sitemap_index", default=None)
+        if sitemap_index:
+            discovered = discover_blog_urls_from_sitemap(
+                self.settings.fetcher,
+                str(sitemap_index),
+                allowed_domains=list(allowed),
+            )
+            for post_url in discovered["post_urls"]:
+                if self.settings.state_db.upsert_post_url(post_url, listing_url=str(sitemap_index)):
+                    sitemap_new_posts += 1
+            for category_url in discovered["category_urls"]:
+                if category_url not in seeds:
+                    seeds.append(category_url)
+                if self.settings.state_db.upsert_listing_url(category_url):
+                    sitemap_new_cats += 1
+
         result = crawler.crawl(seeds)
         return {
+            "sitemap": {
+                "index": sitemap_index,
+                "new_post_urls": sitemap_new_posts,
+                "new_category_urls": sitemap_new_cats,
+            },
             "discovery": {key: len(urls) for key, urls in result.items()},
             "state": self.settings.state_db.stats(),
         }
@@ -872,36 +1212,58 @@ class Indexer:
         dry_run: bool = False,
     ) -> dict[str, Any]:
         post_urls = self.settings.state_db.get_all_post_urls()
+        # "Only new posts": never-ingested rows have no content_sha1 yet.
+        if skip_unchanged:
+            post_urls = [
+                url
+                for url in post_urls
+                if not self.settings.state_db.get_post_content_sha1(url)
+            ]
         if limit:
             post_urls = post_urls[:limit]
 
-        all_chunks: list[Chunk] = []
+        flush_every = int(
+            self.settings.setting("crawl", "ingest_flush_every_posts", default=20) or 20
+        )
+        pending_chunks: list[Chunk] = []
         processed = skipped = failed = 0
+        upserted = 0
+
+        def flush() -> None:
+            nonlocal upserted, pending_chunks
+            if not pending_chunks or dry_run:
+                pending_chunks = []
+                return
+            upserted += self._embed_and_upsert(pending_chunks)
+            pending_chunks = []
 
         for post_url in post_urls:
-            status, chunks = self._index_one_post(post_url, skip_unchanged=skip_unchanged)
+            status, chunks = self._index_one_post(post_url, skip_unchanged=False)
             if status == "processed" and chunks:
-                all_chunks.extend(chunks)
+                pending_chunks.extend(chunks)
                 processed += 1
+                if processed % flush_every == 0:
+                    flush()
             elif status == "skipped":
                 skipped += 1
             else:
                 failed += 1
 
-        upserted = 0
-        if all_chunks and not dry_run:
-            upserted = self._embed_and_upsert(all_chunks)
+        flush()
 
         result: dict[str, Any] = {
             "posts_processed": processed,
             "posts_skipped": skipped,
             "posts_failed": failed,
-            "chunks_prepared": len(all_chunks),
+            "posts_queued_new": len(post_urls),
             "chunks_upserted": upserted,
             "dry_run": dry_run,
         }
-        if not dry_run and all_chunks:
-            result["index_stats"] = self.settings.vectorstore.describe_stats()
+        if not dry_run and upserted:
+            try:
+                result["index_stats"] = self.settings.vectorstore.describe_stats()
+            except Exception as exc:
+                result["index_stats_error"] = str(exc)
         return result
 
     def run_full_index(

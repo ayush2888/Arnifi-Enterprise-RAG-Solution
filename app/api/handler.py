@@ -1,13 +1,14 @@
 """
-AWS Lambda entrypoint.
+AWS Lambda entrypoint (legacy Mangum path).
 
-Mangum adapts the FastAPI ASGI app so the same code runs under Lambda
-Function URLs (and later under uvicorn on ECS/EC2 without this handler).
+Production Lambda now uses AWS Lambda Web Adapter + uvicorn
+(see Dockerfile.lambda). Mangum remains available for BUFFERED
+invoke mode experiments only — it cannot stream SSE.
 """
 
 from mangum import Mangum
 
 from app.api.server import app
 
-# Lambda invokes this handler; local/ECS use uvicorn on app.api.server:app instead.
+# Not used by current Dockerfile.lambda (uvicorn via LWA).
 handler = Mangum(app, lifespan="auto")

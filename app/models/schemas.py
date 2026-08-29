@@ -55,6 +55,9 @@ class Chunk(BaseModel):
     chunk_char_len: int
     crawl_ts: str
     content_sha1: str
+    source_type: str = "blog"
+    page_kind: str | None = None
+    whatsapp_invite_link: str | None = None
 
     def metadata(self) -> dict:
         meta = {
@@ -69,6 +72,7 @@ class Chunk(BaseModel):
             "chunk_char_len": self.chunk_char_len,
             "crawl_ts": self.crawl_ts,
             "content_sha1": self.content_sha1,
+            "source_type": self.source_type,
         }
         optional = {
             "doc_author": self.doc_author,
@@ -76,6 +80,8 @@ class Chunk(BaseModel):
             "doc_category": self.doc_category,
             "doc_category_url": self.doc_category_url,
             "listing_url": self.listing_url,
+            "page_kind": self.page_kind,
+            "whatsapp_invite_link": self.whatsapp_invite_link,
         }
         meta.update({k: v for k, v in optional.items() if v})
         return meta

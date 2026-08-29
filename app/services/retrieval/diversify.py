@@ -10,18 +10,31 @@ def diversify_chunks(
     *,
     max_chunks_returned: int = 5,
     max_chunks_per_source_url: int = 2,
+    protected_chunk_ids: set[str] | None = None,
 ) -> list[RetrievedChunk]:
-    # Without this cap, all top hits might come from one long blog post.
+    """
+    Cap how many chunks come from one source URL.
+
+    Walks ``matches`` in the order provided (callers already rank via score /
+    fee_focus / service-code boost). Re-sorting by score here would undo boosts.
+
+    ``protected_chunk_ids`` (e.g. exact PM#### hits) bypass the per-URL cap so
+    a typed service code is not dropped behind neighbor SKUs from the same sheet.
+    Protected rows still count toward ``max_chunks_returned``.
+    """
     selected: list[RetrievedChunk] = []
     per_source: dict[str, int] = {}
+    protected = protected_chunk_ids or set()
 
-    for match in sorted(matches, key=lambda m: m.score, reverse=True):
-        used_from_url = per_source.get(match.source_url, 0)
-        if used_from_url >= max_chunks_per_source_url:
+    for match in matches:
+        url = match.source_url or ""
+        used_from_url = per_source.get(url, 0)
+        is_protected = bool(match.chunk_id and match.chunk_id in protected)
+        if not is_protected and used_from_url >= max_chunks_per_source_url:
             continue
 
         selected.append(match)
-        per_source[match.source_url] = used_from_url + 1
+        per_source[url] = used_from_url + 1
         if len(selected) >= max_chunks_returned:
             break
 

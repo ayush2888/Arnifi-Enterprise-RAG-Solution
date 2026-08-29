@@ -27,6 +27,12 @@ $PineconeEnvironment = "us-east-1"
 # Periskope WhatsApp invite (same values as local .env)
 $PeriskopeApiKey = $env:PERISKOPE_API_KEY
 $PeriskopePhone = $env:PERISKOPE_PHONE
+
+# Supabase — JWT + profiles.role checks for WhatsApp invite / usage
+$SupabaseUrl = $env:SUPABASE_URL
+if (-not $SupabaseUrl) { $SupabaseUrl = $env:VITE_SUPABASE_URL }
+$SupabaseAnonKey = $env:SUPABASE_ANON_KEY
+if (-not $SupabaseAnonKey) { $SupabaseAnonKey = $env:VITE_SUPABASE_ANON_KEY }
 # ================================
 
 if ($AccountId -eq "YOUR_AWS_ACCOUNT_ID" -or $RoleArn -match "YOUR_LAMBDA") {
@@ -53,12 +59,19 @@ if (Test-Path $EnvFile) {
 $PineconeApiKey = $env:PINECONE_API_KEY
 $PeriskopeApiKey = $env:PERISKOPE_API_KEY
 $PeriskopePhone = $env:PERISKOPE_PHONE
+$SupabaseUrl = $env:SUPABASE_URL
+if (-not $SupabaseUrl) { $SupabaseUrl = $env:VITE_SUPABASE_URL }
+$SupabaseAnonKey = $env:SUPABASE_ANON_KEY
+if (-not $SupabaseAnonKey) { $SupabaseAnonKey = $env:VITE_SUPABASE_ANON_KEY }
 
 if (-not $PineconeApiKey) {
     throw "Set PINECONE_API_KEY in your environment (or .env) before deploying."
 }
 if (-not $PeriskopeApiKey -or -not $PeriskopePhone) {
     throw "Set PERISKOPE_API_KEY and PERISKOPE_PHONE in your environment (or .env) before deploying."
+}
+if (-not $SupabaseUrl -or -not $SupabaseAnonKey) {
+    throw "Set SUPABASE_URL + SUPABASE_ANON_KEY (or VITE_SUPABASE_*) in .env before deploying."
 }
 
 $PeriskopePhoneNorm = $PeriskopePhone.Trim()
@@ -73,6 +86,8 @@ $LambdaEnv =
     "PINECONE_ENVIRONMENT=$PineconeEnvironment," +
     "PERISKOPE_API_KEY=$PeriskopeApiKey," +
     "PERISKOPE_PHONE=$PeriskopePhoneNorm," +
+    "SUPABASE_URL=$SupabaseUrl," +
+    "SUPABASE_ANON_KEY=$SupabaseAnonKey," +
     "AWS_LWA_INVOKE_MODE=RESPONSE_STREAM," +
     "AWS_LWA_PORT=8080," +
     "AWS_LWA_READINESS_CHECK_PATH=/api/health," +
@@ -133,7 +148,7 @@ if (-not $exists) {
         --package-type Image `
         --code ImageUri=$ImageUri `
         --role $RoleArn `
-        --timeout 90 `
+        --timeout 180 `
         --memory-size 1024 `
         --region $AwsRegion `
         --environment $LambdaEnv |
@@ -148,7 +163,7 @@ if (-not $exists) {
 
     aws lambda update-function-configuration `
         --function-name $FunctionName `
-        --timeout 90 `
+        --timeout 180 `
         --memory-size 1024 `
         --region $AwsRegion `
         --environment $LambdaEnv |

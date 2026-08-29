@@ -1,13 +1,25 @@
-# AWS Lambda container image (Mangum + FastAPI).
-# For ECS/EC2 use the root Dockerfile (uvicorn) instead.
-FROM public.ecr.aws/lambda/python:3.12
+# AWS Lambda container image with Lambda Web Adapter (response streaming).
+# Runs the same uvicorn FastAPI app as local/ECS — true SSE token streaming.
+FROM public.ecr.aws/docker/library/python:3.12-slim-bookworm
+
+COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:1.0.1 /lambda-adapter /opt/extensions/lambda-adapter
+
+WORKDIR /app
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=8080 \
+    AWS_LWA_PORT=8080 \
+    AWS_LWA_READINESS_CHECK_PATH=/api/health \
+    AWS_LWA_INVOKE_MODE=RESPONSE_STREAM
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt --target "${LAMBDA_TASK_ROOT}"
+RUN pip install --no-cache-dir -r requirements.txt
 
-COPY app ${LAMBDA_TASK_ROOT}/app
-COPY config ${LAMBDA_TASK_ROOT}/config
-COPY frontend ${LAMBDA_TASK_ROOT}/frontend
+COPY app ./app
+COPY config ./config
+# Legacy Vite bundle (optional). UI is now Next.js (arni-search-ai); FastAPI
+# only mounts frontend/ when SERVE_STATIC_FRONTEND=1.
+COPY frontend ./frontend
 
-# Mangum ASGI adapter: module.app attribute
-CMD ["app.api.handler.handler"]
+CMD ["uvicorn", "app.api.server:app", "--host", "0.0.0.0", "--port", "8080"]
