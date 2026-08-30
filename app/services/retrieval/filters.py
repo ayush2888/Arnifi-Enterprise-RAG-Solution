@@ -24,8 +24,9 @@ def build_source_filter(source: str | None) -> dict[str, Any] | None:
     - all: no filter (website + drive + whatsapp)
     - drive: source_type == drive
     - whatsapp: source_type == whatsapp
-    - website (and deprecated blog): public arnifi.com pages including blogs
-      and catalog vectors (source_type blog or website, or source_domain).
+    - website (and deprecated blog): public arnifi.com content as one family ΓÇö
+      blogs, country overviews, service landings, and package/product details
+      (source_type blog or website, or source_domain arnifi.com).
     """
     value = normalize_source(source)
     if value == "all":

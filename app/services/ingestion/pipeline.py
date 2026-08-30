@@ -36,6 +36,7 @@ from app.utils.helpers import (
     is_category_url,
     is_pagination_url,
     listing_base_url,
+    WEBSITE_PRICE_PAGE_KINDS,
 )
 
 if TYPE_CHECKING:
@@ -284,16 +285,19 @@ class StateDB:
         )
         self._conn.commit()
 
-    def get_all_website_urls(self, status: str | None = None) -> list[str]:
+    def get_all_website_urls(
+        self, status: str | None = None, page_kind: str | None = None
+    ) -> list[str]:
+        sql = "SELECT url FROM website_urls WHERE 1=1"
+        params: list[Any] = []
         if status:
-            rows = self._conn.execute(
-                "SELECT url FROM website_urls WHERE status = ? ORDER BY discovered_at",
-                (status,),
-            ).fetchall()
-        else:
-            rows = self._conn.execute(
-                "SELECT url FROM website_urls ORDER BY discovered_at"
-            ).fetchall()
+            sql += " AND status = ?"
+            params.append(status)
+        if page_kind:
+            sql += " AND page_kind = ?"
+            params.append(page_kind)
+        sql += " ORDER BY discovered_at"
+        rows = self._conn.execute(sql, params).fetchall()
         return [row["url"] for row in rows]
 
     def get_website_content_sha1(self, url: str) -> str | None:
@@ -307,6 +311,27 @@ class StateDB:
             "SELECT page_kind FROM website_urls WHERE url = ?", (url,)
         ).fetchone()
         return row["page_kind"] if row else None
+
+    def get_website_listing_url(self, url: str) -> str | None:
+        row = self._conn.execute(
+            "SELECT listing_url FROM website_urls WHERE url = ?", (url,)
+        ).fetchone()
+        if not row:
+            return None
+        value = row["listing_url"]
+        return str(value) if value else None
+
+    def mark_website_gone(self, url: str) -> None:
+        now = datetime.now(timezone.utc).isoformat()
+        self._conn.execute(
+            """
+            UPDATE website_urls
+            SET status = 'gone', last_crawled_at = ?
+            WHERE url = ?
+            """,
+            (now, url),
+        )
+        self._conn.commit()
 
     def close(self) -> None:
         self._conn.close()
@@ -443,9 +468,14 @@ class ArtifactStore:
             d.mkdir(parents=True, exist_ok=True)
 
     def _slug_from_url(self, url: str) -> str:
+        # Keep paths short: Windows MAX_PATH (~260) breaks long announcement URLs
+        # under OneDrive nested folders.
         slug = re.sub(r"^https?://", "", url.rstrip("/"))
         slug = re.sub(r"[^\w\-]+", "_", slug)
-        return slug[:180]
+        if len(slug) <= 120:
+            return slug
+        digest = hashlib.sha1(url.encode("utf-8")).hexdigest()[:12]
+        return f"{slug[:100]}_{digest}"
 
     def save_html(self, kind: str, url: str, html: str) -> Path:
         if kind == "listing":
@@ -518,12 +548,16 @@ class Fetcher:
     def fetch(self, url: str) -> dict[str, Any]:
         self._polite_wait()
         logger.info("Fetching %s", url)
-        response = self.session.get(url, timeout=self.timeout_seconds)
+        response = self.session.get(url, timeout=self.timeout_seconds, allow_redirects=True)
         self._last_fetch_at = time.time()
-        response.raise_for_status()
+        status = int(response.status_code)
+        if status >= 500:
+            response.raise_for_status()
+        final_url = str(response.url or url)
         return {
             "url": url,
-            "status_code": response.status_code,
+            "final_url": final_url,
+            "status_code": status,
             "html": response.text,
             "etag": response.headers.get("ETag"),
             "content_type": response.headers.get("Content-Type", ""),
@@ -1070,6 +1104,18 @@ def chunk_document(
     listing_url: str | None = None,
     source_type: str = "blog",
     page_kind: str | None = None,
+    product_type: str | None = None,
+    discovered_via: str | None = None,
+    content_type: str | None = None,
+    publish_date: str | None = None,
+    source_publication: str | None = None,
+    event_date: str | None = None,
+    event_time: str | None = None,
+    location: str | None = None,
+    partners: str | None = None,
+    jurisdiction: str | None = None,
+    industry: str | None = None,
+    read_time: str | None = None,
 ) -> list[Chunk]:
     # tiktoken counts tokens so chunk size aligns with embedding model context limits.
     encoder = _get_encoder()
@@ -1086,8 +1132,9 @@ def chunk_document(
         for idx, chunk_text in enumerate(section_chunks):
             heading_path_str = " > ".join(section.heading_path)
             kind_line = f"PageKind: {page_kind}\n" if page_kind else ""
+            type_line = f"ContentType: {content_type}\n" if content_type else ""
             disclaimer = ""
-            if source_type == "website" and page_kind in {"pricing", "service", "product", "jurisdiction", "fund"}:
+            if source_type == "website" and page_kind in WEBSITE_PRICE_PAGE_KINDS:
                 disclaimer = (
                     "PriceDisclaimer: public starting-from price, not a quote. "
                     "Drive SKU rows win on exact fees.\n"
@@ -1095,10 +1142,24 @@ def chunk_document(
             embed_text = (
                 f"Title: {document.title}\n"
                 f"{kind_line}"
+                f"{type_line}"
                 f"{disclaimer}"
                 f"Section: {heading_path_str}\n"
                 f"{chunk_text}"
             )
+            # Prefer explicit hierarchy when Document is a service package.
+            catalog_service = document.category_name
+            catalog_package = document.title
+            catalog_section = section.heading_path[0] if section.heading_path else None
+            if page_kind == "product_detail" and catalog_service:
+                embed_text = (
+                    f"Service: {catalog_service}\n"
+                    f"Package: {catalog_package}\n"
+                    f"{kind_line}"
+                    f"{disclaimer}"
+                    f"Section: {heading_path_str}\n"
+                    f"{chunk_text}"
+                )
             chunk_id = hashlib.sha1(
                 f"{document.source_url}|{section.section_id}|{idx}|{embedding_model}".encode()
             ).hexdigest()
@@ -1114,7 +1175,7 @@ def chunk_document(
                     doc_published_at=document.published_at,
                     doc_category=document.category_name,
                     doc_category_url=document.category_url,
-                    listing_url=listing_url,
+                    listing_url=listing_url or document.category_url,
                     section_id=section.section_id,
                     heading_path=heading_path_str,
                     heading_text=section.heading_text,
@@ -1126,6 +1187,21 @@ def chunk_document(
                     content_sha1=content_sha1,
                     source_type=source_type,
                     page_kind=page_kind,
+                    catalog_service=catalog_service if page_kind == "product_detail" else None,
+                    catalog_package=catalog_package if page_kind == "product_detail" else None,
+                    catalog_section=catalog_section if page_kind == "product_detail" else None,
+                    product_type=product_type,
+                    discovered_via=discovered_via,
+                    content_type=content_type,
+                    publish_date=publish_date,
+                    source_publication=source_publication,
+                    event_date=event_date,
+                    event_time=event_time,
+                    location=location,
+                    partners=partners,
+                    jurisdiction=jurisdiction,
+                    industry=industry,
+                    read_time=read_time,
                 )
             )
     return chunks

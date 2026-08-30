@@ -1,0 +1,108 @@
+{
+  "press_releases": {
+    "content_type": "press_release",
+    "listing_url": "https://arnifi.com/announcement/press-releases",
+    "discovery": "html",
+    "prodapi_status": 404,
+    "confirmed_total": 10,
+    "complete": true,
+    "detail_urls": [
+      "https://arnifi.com/announcement/press-releases/dhanbad-boy-launches-arnios-first-operating-system-designed-for-global-corporates/",
+      "https://arnifi.com/announcement/press-releases/arnifi-launches-arnios-the-world's-first-operating-system-designed-to-eliminate-operational-complexities-for-global-corporates/",
+      "https://arnifi.com/announcement/press-releases/published-by-money.rediff-or-arnifi-launches-platform-for-global-business-banking-access",
+      "https://arnifi.com/announcement/press-releases/arnifi-rolls-out-platform-for-businesses-to-access-banks-payment-processors-globally/",
+      "https://arnifi.com/announcement/press-releases/arnifi-launches-ai-powered-banking-payments-platform-for-corporates/",
+      "https://arnifi.com/announcement/press-releases/featured-in-newsbytes-or-launching-ai-platform-simplifying-business-banking-and-payments/",
+      "https://arnifi.com/announcement/press-releases/new-ai-financial-management-software-to-make-life-easier-for-businesses/",
+      "https://arnifi.com/announcement/press-releases/arnifi-or-the-system-of-record-for-global-entity-formation-and-management/",
+      "https://arnifi.com/announcement/press-releases/arnifi-expands-india-footprint-with-new-bengaluru-office-plans-to-hire-100/",
+      "https://arnifi.com/announcement/press-releases/150+-business-setups-and-counting:-arnifi-powers-expansion-for-leading-brands/"
+    ],
+    "pagination": {
+      "seed": "https://arnifi.com/announcement/press-releases",
+      "pagination": "single_page",
+      "pages_fetched": 1,
+      "has_load_more_text": false,
+      "confirmed_total": 10
+    },
+    "ambiguity": null
+  },
+  "events": {
+    "content_type": "event",
+    "listing_url": "https://arnifi.com/announcement/events",
+    "discovery": "html",
+    "prodapi_status": 403,
+    "listing_total": 3,
+    "confirmed_total": 3,
+    "notify_me_skipped": 0,
+    "skipped_urls": [],
+    "complete": true,
+    "detail_urls": [
+      "https://arnifi.com/announcement/events/dubai-investment-roadshow-chandigarh/",
+      "https://arnifi.com/announcement/events/dubai-investment-roadshow-mumbai/",
+      "https://arnifi.com/announcement/events/business-setup-summit-arnifi-x-dmcc/"
+    ],
+    "pagination": {
+      "seed": "https://arnifi.com/announcement/events",
+      "pagination": "single_page",
+      "pages_fetched": 1,
+      "has_load_more_text": false,
+      "confirmed_total": 3
+    },
+    "ambiguity": null
+  },
+  "case_studies": {
+    "content_type": "case_study",
+    "listing_url": "https://arnifi.com/case-studies",
+    "discovery": "prodapi",
+    "confirmed_total": 3,
+    "main_listing_total": 3,
+    "api_total": 3,
+    "industry_union_total": 3,
+    "industry_only_urls": [],
+    "dedupe_dropped": 3,
+    "complete": true,
+    "detail_urls": [
+      "https://arnifi.com/case-studies/how-can-investment-firms-expand-across-adgm-and-the-mainland-uae/",
+      "https://arnifi.com/case-studies/can-logistics-companies-scale-operations-in-dmcc/",
+      "https://arnifi.com/case-studies/can-cross-border-subsidiary-setups-in-ifza-be-truly-seamless/"
+    ],
+    "items": [
+      {
+        "slug": "how-can-investment-firms-expand-across-adgm-and-the-mainland-uae",
+        "title": "How Can Investment Firms Expand Across ADGM and the Mainland UAE? ",
+        "detail_url": "https://arnifi.com/case-studies/how-can-investment-firms-expand-across-adgm-and-the-mainland-uae/",
+        "industry": "Financial Services",
+        "jurisdiction": "UAE"
+      },
+      {
+        "slug": "can-logistics-companies-scale-operations-in-dmcc",
+        "title": "Can Logistics Companies Scale Operations in DMCC? ",
+        "detail_url": "https://arnifi.com/case-studies/can-logistics-companies-scale-operations-in-dmcc/",
+        "industry": "Logistics",
+        "jurisdiction": "DMCC"
+      },
+      {
+        "slug": "can-cross-border-subsidiary-setups-in-ifza-be-truly-seamless",
+        "title": "Can Cross-Border Subsidiary Setups in IFZA Be Truly Seamless? ",
+        "detail_url": "https://arnifi.com/case-studies/can-cross-border-subsidiary-setups-in-ifza-be-truly-seamless/",
+        "industry": "Post Compliance",
+        "jurisdiction": "UAE"
+      }
+    ],
+    "pagination": {
+      "seed": "https://arnifi.com/case-studies",
+      "pagination": "single_page",
+      "pages_fetched": 1,
+      "has_load_more_text": false,
+      "confirmed_total": 3
+    },
+    "industry_hubs": [
+      "https://arnifi.com/case-studies/industries/financial-services/",
+      "https://arnifi.com/case-studies/industries/logistics/",
+      "https://arnifi.com/case-studies/industries/post-compliance/"
+    ],
+    "ambiguity": null
+  },
+  "ambiguities": []
+}

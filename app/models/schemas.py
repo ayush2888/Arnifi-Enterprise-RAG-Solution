@@ -58,6 +58,28 @@ class Chunk(BaseModel):
     source_type: str = "blog"
     page_kind: str | None = None
     whatsapp_invite_link: str | None = None
+    # Service-package hierarchy (filterable in Pinecone)
+    catalog_service: str | None = None
+    catalog_package: str | None = None
+    catalog_section: str | None = None
+    # Company / Fund catalog lineage
+    product_type: str | None = None
+    discovered_via: str | None = None
+    # Press / Events / Case Studies
+    content_type: str | None = None
+    publish_date: str | None = None
+    source_publication: str | None = None
+    event_date: str | None = None
+    event_time: str | None = None
+    location: str | None = None
+    partners: str | None = None  # JSON array string for Pinecone metadata
+    jurisdiction: str | None = None
+    industry: str | None = None
+    read_time: str | None = None
+    # Team / leadership
+    person_name: str | None = None
+    related_person: str | None = None
+    source_note: str | None = None
 
     def metadata(self) -> dict:
         meta = {
@@ -82,6 +104,24 @@ class Chunk(BaseModel):
             "listing_url": self.listing_url,
             "page_kind": self.page_kind,
             "whatsapp_invite_link": self.whatsapp_invite_link,
+            "catalog_service": self.catalog_service,
+            "catalog_package": self.catalog_package,
+            "catalog_section": self.catalog_section,
+            "product_type": self.product_type,
+            "discovered_via": self.discovered_via,
+            "content_type": self.content_type,
+            "publish_date": self.publish_date,
+            "source_publication": self.source_publication,
+            "event_date": self.event_date,
+            "event_time": self.event_time,
+            "location": self.location,
+            "partners": self.partners,
+            "jurisdiction": self.jurisdiction,
+            "industry": self.industry,
+            "read_time": self.read_time,
+            "person_name": self.person_name,
+            "related_person": self.related_person,
+            "source_note": self.source_note,
         }
         meta.update({k: v for k, v in optional.items() if v})
         return meta

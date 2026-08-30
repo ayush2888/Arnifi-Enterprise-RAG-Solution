@@ -1,0 +1,1651 @@
+{
+  "source": "data/eval/service_packages_ground_truth.json",
+  "service_count": 12,
+  "package_count": 262,
+  "services": {
+    "Post Setup Compliance": {
+      "count": 42,
+      "packages": [
+        {
+          "name": "UAE Mainland - Manager Change",
+          "slug": "uae-mainland-manager-change",
+          "id": 428,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/uae-mainland-manager-change/428"
+        },
+        {
+          "name": "UAE Mainland - Activity Addition",
+          "slug": "uae-mainland-activity-addition",
+          "id": 429,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/uae-mainland-activity-addition/429"
+        },
+        {
+          "name": "RAKEZ - Amendment Financial Year - Free Zone",
+          "slug": "rakez-amendment-financial-year-free-zone",
+          "id": 378,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/rakez-amendment-financial-year-free-zone/378"
+        },
+        {
+          "name": "RAKEZ - Amendment Financial Year - Non-Free Zone",
+          "slug": "rakez-amendment-financial-year-non-free-zone",
+          "id": 379,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/rakez-amendment-financial-year-non-free-zone/379"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Change in Management",
+          "slug": "ifza-amendment-change-in-management",
+          "id": 353,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-change-in-management/353"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Activity Change / Removal / Addition",
+          "slug": "ifza-amendment-activity-change-removal-addition",
+          "id": 354,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-activity-change-removal-addition/354"
+        },
+        {
+          "name": "WHT Filing in Saudi Arabia",
+          "slug": "wht-filing-in-saudi-arabia-saudi-arabia",
+          "id": 228,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/wht-filing-in-saudi-arabia-saudi-arabia/228"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Company Name Change",
+          "slug": "ifza-amendment-company-name-change",
+          "id": 355,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-company-name-change/355"
+        },
+        {
+          "name": "KSA HR and Related Compliance",
+          "slug": "ksa-hr-and-related-compliance",
+          "id": 23,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ksa-hr-and-related-compliance/23"
+        },
+        {
+          "name": "UAE Mainland - Company Name Change",
+          "slug": "uae-mainland-company-name-change",
+          "id": 380,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/uae-mainland-company-name-change/380"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Company Name & Establishment Card Change",
+          "slug": "ifza-amendment-company-name-and-establishment-card-change",
+          "id": 356,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-company-name-and-establishment-card-change/356"
+        },
+        {
+          "name": "KSA Tax and Accounting Compliance",
+          "slug": "ksa-tax-and-accounting-compliance",
+          "id": 22,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ksa-tax-and-accounting-compliance/22"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Financial Year Amendment",
+          "slug": "ifza-amendment-financial-year-amendment",
+          "id": 357,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-financial-year-amendment/357"
+        },
+        {
+          "name": "DMCC - Licence Address Amendment",
+          "slug": "dmcc-licence-address-amendment",
+          "id": 372,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/dmcc-licence-address-amendment/372"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Share Capital Amendment",
+          "slug": "ifza-amendment-share-capital-amendment",
+          "id": 358,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-share-capital-amendment/358"
+        },
+        {
+          "name": "ADGM Management Amendment",
+          "slug": "adgm-management-amendment",
+          "id": 377,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/adgm-management-amendment/377"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Share Transfer",
+          "slug": "ifza-amendment-share-transfer",
+          "id": 359,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-share-transfer/359"
+        },
+        {
+          "name": "IFZA Amendment ΓÇô Change in Shareholder",
+          "slug": "ifza-amendment-change-in-shareholder",
+          "id": 360,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-amendment-change-in-shareholder/360"
+        },
+        {
+          "name": "IFZA ΓÇô Establishment Card Amendment",
+          "slug": "ifza-establishment-card-amendment",
+          "id": 361,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-establishment-card-amendment/361"
+        },
+        {
+          "name": "RAKEZ - License Amendment - Free Zone",
+          "slug": "rakez-license-amendment-free-zone",
+          "id": 381,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/rakez-license-amendment-free-zone/381"
+        },
+        {
+          "name": "IFZA ΓÇô Multiple Amendments for License",
+          "slug": "ifza-multiple-amendments-for-license",
+          "id": 362,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-multiple-amendments-for-license/362"
+        },
+        {
+          "name": "UAE Mainland - Share Transfer",
+          "slug": "uae-mainland-share-transfer",
+          "id": 382,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/uae-mainland-share-transfer/382"
+        },
+        {
+          "name": "IFZA ΓÇô Salary Amendment Letter",
+          "slug": "ifza-salary-amendment-letter",
+          "id": 363,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ifza-salary-amendment-letter/363"
+        },
+        {
+          "name": "MEYDAN FZ ΓÇô License Amendment",
+          "slug": "meydan-fz-license-amendment",
+          "id": 364,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/meydan-fz-license-amendment/364"
+        },
+        {
+          "name": "MEYDAN FZ ΓÇô Facility Amendment",
+          "slug": "meydan-fz-facility-amendment",
+          "id": 365,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/meydan-fz-facility-amendment/365"
+        },
+        {
+          "name": "MISA Amendment Saudi Arabia",
+          "slug": "misa-amendment-saudi-arabia-saudi-arabia",
+          "id": 231,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/misa-amendment-saudi-arabia-saudi-arabia/231"
+        },
+        {
+          "name": "MEYDAN FZ ΓÇô Shareholders Amendment (More Than 6 Shareholders)",
+          "slug": "meydan-fz-shareholders-amendment-(more-than-6-shareholders)",
+          "id": 366,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/meydan-fz-shareholders-amendment-(more-than-6-shareholders)/366"
+        },
+        {
+          "name": "Ajman - Amendment - Additional Activity (beyond 10)",
+          "slug": "ajman-amendment-additional-activity-(beyond-10)",
+          "id": 367,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ajman-amendment-additional-activity-(beyond-10)/367"
+        },
+        {
+          "name": "Cyprus Company Renewals and Administration",
+          "slug": "cyprus-company-renewals-and-administration",
+          "id": 414,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/cyprus-company-renewals-and-administration/414"
+        },
+        {
+          "name": "Malaysia Corporate Compliance and Tax Services",
+          "slug": "malaysia-corporate-compliance-and-tax-services",
+          "id": 415,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/malaysia-corporate-compliance-and-tax-services/415"
+        },
+        {
+          "name": "Ajman - Amendment - Additional Shareholder (beyond 5)",
+          "slug": "ajman-amendment-additional-shareholder-(beyond-5)",
+          "id": 368,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ajman-amendment-additional-shareholder-(beyond-5)/368"
+        },
+        {
+          "name": "SHAMS - Amendment - Immigration Card",
+          "slug": "shams-amendment-immigration-card",
+          "id": 369,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/shams-amendment-immigration-card/369"
+        },
+        {
+          "name": "SHAMS - Amendment - License",
+          "slug": "shams-amendment-license",
+          "id": 370,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/shams-amendment-license/370"
+        },
+        {
+          "name": "Annual Auditing | Business in Saudi Arabia",
+          "slug": "annual-auditing-or-business-in-saudi-arabia-saudi-arabia",
+          "id": 230,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/annual-auditing-or-business-in-saudi-arabia-saudi-arabia/230"
+        },
+        {
+          "name": "ANCFZ - License Amendment",
+          "slug": "ancfz-license-amendment",
+          "id": 371,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/ancfz-license-amendment/371"
+        },
+        {
+          "name": "DMCC - Licence Activity Amendment / Addition",
+          "slug": "dmcc-licence-activity-amendment-addition",
+          "id": 373,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/dmcc-licence-activity-amendment-addition/373"
+        },
+        {
+          "name": "Malaysia Statutory Annual Compliance Services",
+          "slug": "malaysia-statutory-annual-compliance-services",
+          "id": 419,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/malaysia-statutory-annual-compliance-services/419"
+        },
+        {
+          "name": "DMCC - Licence Amendment Cancellation",
+          "slug": "dmcc-licence-amendment-cancellation",
+          "id": 374,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/dmcc-licence-amendment-cancellation/374"
+        },
+        {
+          "name": "ADGM Name Change Amendment",
+          "slug": "adgm-name-change-amendment",
+          "id": 375,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/adgm-name-change-amendment/375"
+        },
+        {
+          "name": "VAT Filing in Saudi Arabia",
+          "slug": "vat-filing-in-saudi-arabia-saudi-arabia",
+          "id": 227,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/vat-filing-in-saudi-arabia-saudi-arabia/227"
+        },
+        {
+          "name": "ADGM Shareholder Amendment",
+          "slug": "adgm-shareholder-amendment",
+          "id": 376,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/adgm-shareholder-amendment/376"
+        },
+        {
+          "name": "Trademark Registration in Saudi Arabia",
+          "slug": "trademark-registration-in-saudi-arabia-saudi-arabia",
+          "id": 233,
+          "detail_url": "https://arnifi.com/product-details/services/post-setup-compliance/trademark-registration-in-saudi-arabia-saudi-arabia/233"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/post-setup-compliance"
+    },
+    "Visa Services": {
+      "count": 21,
+      "packages": [
+        {
+          "name": "Dubai Mainland Employment Visa In Country",
+          "slug": "dubai-mainland-employment-visa-in-country",
+          "id": 17,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/dubai-mainland-employment-visa-in-country/17"
+        },
+        {
+          "name": "RAKEZ Employment Visa Inside Country",
+          "slug": "rakez-employment-visa-inside-country",
+          "id": 15,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/rakez-employment-visa-inside-country/15"
+        },
+        {
+          "name": "SHAMS Employment Visa Inside Country",
+          "slug": "shams-employment-visa-inside-country",
+          "id": 13,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/shams-employment-visa-inside-country/13"
+        },
+        {
+          "name": "SHAMS Employment Visa Outside Country",
+          "slug": "shams-employment-visa-outside-country",
+          "id": 14,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/shams-employment-visa-outside-country/14"
+        },
+        {
+          "name": "Dubai Mainland Dependent Visa Outside Country",
+          "slug": "dubai-mainland-dependent-visa-outside-country",
+          "id": 20,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/dubai-mainland-dependent-visa-outside-country/20"
+        },
+        {
+          "name": "IFZA Employment Visa Inside Country",
+          "slug": "ifza-employment-visa-inside-country",
+          "id": 11,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/ifza-employment-visa-inside-country/11"
+        },
+        {
+          "name": "Dubai Mainland Employment Visa Outside Country",
+          "slug": "dubai-mainland-employment-visa-outside-country",
+          "id": 18,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/dubai-mainland-employment-visa-outside-country/18"
+        },
+        {
+          "name": "RAKEZ Employment Visa Outside Country",
+          "slug": "rakez-employment-visa-outside-country",
+          "id": 16,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/rakez-employment-visa-outside-country/16"
+        },
+        {
+          "name": "Dubai Golden Visa - Professional Cateogry",
+          "slug": "dubai-golden-visa-professional-cateogry",
+          "id": 21,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/dubai-golden-visa-professional-cateogry/21"
+        },
+        {
+          "name": "Dubai Mainland Dependent Visa Inside Country",
+          "slug": "dubai-mainland-dependent-visa-inside-country",
+          "id": 19,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/dubai-mainland-dependent-visa-inside-country/19"
+        },
+        {
+          "name": "Spc freezone Employment outside",
+          "slug": "spc-freezone-employment-outside-uae-employee",
+          "id": 104,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/spc-freezone-employment-outside-uae-employee/104"
+        },
+        {
+          "name": "Golden Visa Mainland",
+          "slug": "golden-visa-mainland-uae",
+          "id": 52,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/golden-visa-mainland-uae/52"
+        },
+        {
+          "name": "DIFC Employment visa inside",
+          "slug": "difc-employment-visa-inside-uae-employee",
+          "id": 107,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/difc-employment-visa-inside-uae-employee/107"
+        },
+        {
+          "name": "DMCC employment visa outside",
+          "slug": "dmcc-employment-visa-outside-uae-employee",
+          "id": 106,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/dmcc-employment-visa-outside-uae-employee/106"
+        },
+        {
+          "name": "Meydan Investor Visa - Outside Country",
+          "slug": "meydan-investor-visa-outside-country",
+          "id": 454,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/meydan-investor-visa-outside-country/454"
+        },
+        {
+          "name": "Meydan Employment Visa - Outside Country",
+          "slug": "meydan-employment-visa-outside-country",
+          "id": 455,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/meydan-employment-visa-outside-country/455"
+        },
+        {
+          "name": "IFZA Employment Visa Outside Country",
+          "slug": "ifza-employment-visa-outside-country",
+          "id": 12,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/ifza-employment-visa-outside-country/12"
+        },
+        {
+          "name": "Meydan Employment Visa - Inside Country",
+          "slug": "meydan-employment-visa-inside-country",
+          "id": 453,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/meydan-employment-visa-inside-country/453"
+        },
+        {
+          "name": "Meydan Investor Visa - Inside Country",
+          "slug": "meydan-investor-visa-inside-country",
+          "id": 456,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/meydan-investor-visa-inside-country/456"
+        },
+        {
+          "name": "Golden Dependent Visa",
+          "slug": "golden-dependent-visa",
+          "id": 457,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/golden-dependent-visa/457"
+        },
+        {
+          "name": "DMCC employment visa inside",
+          "slug": "dmcc-employment-visa-inside-uae-employee",
+          "id": 108,
+          "detail_url": "https://arnifi.com/product-details/services/visa-services/dmcc-employment-visa-inside-uae-employee/108"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/visa-service"
+    },
+    "Attestation": {
+      "count": 37,
+      "packages": [
+        {
+          "name": "UBO Document",
+          "slug": "ubo-document-india-commercial",
+          "id": 58,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/ubo-document-india-commercial/58"
+        },
+        {
+          "name": "Marriage Certificate",
+          "slug": "marriage-certificate-uk-personal",
+          "id": 63,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/marriage-certificate-uk-personal/63"
+        },
+        {
+          "name": "Board Resolution",
+          "slug": "board-resolution-uk-commercial",
+          "id": 68,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/board-resolution-uk-commercial/68"
+        },
+        {
+          "name": "Memorandum of Association",
+          "slug": "memorandum-of-association-uk-commercial",
+          "id": 65,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/memorandum-of-association-uk-commercial/65"
+        },
+        {
+          "name": "MOFA Attestation",
+          "slug": "mofa-attestation-uk-educational",
+          "id": 86,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/mofa-attestation-uk-educational/86"
+        },
+        {
+          "name": "Ultimate Beneficial Owner",
+          "slug": "ultimate-beneficial-owner-usa-commercial",
+          "id": 80,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/ultimate-beneficial-owner-usa-commercial/80"
+        },
+        {
+          "name": "Birth Certificate",
+          "slug": "birth-certificate-uk-personal",
+          "id": 62,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/birth-certificate-uk-personal/62"
+        },
+        {
+          "name": "Marriage Certificate",
+          "slug": "marriage-certificate-usa-personal",
+          "id": 75,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/marriage-certificate-usa-personal/75"
+        },
+        {
+          "name": "Marriage Certificate",
+          "slug": "marriage-certificate-india-personal",
+          "id": 55,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/marriage-certificate-india-personal/55"
+        },
+        {
+          "name": "Certificate of Incorporation",
+          "slug": "certificate-of-incorporation-india-commercial",
+          "id": 56,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/certificate-of-incorporation-india-commercial/56"
+        },
+        {
+          "name": "Memorandum of Association",
+          "slug": "memorandum-of-association-india-commercial",
+          "id": 57,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/memorandum-of-association-india-commercial/57"
+        },
+        {
+          "name": "UBO Document",
+          "slug": "ubo-document-uk-commercial",
+          "id": 66,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/ubo-document-uk-commercial/66"
+        },
+        {
+          "name": "Certificate of Incorporation",
+          "slug": "certificate-of-incorporation-usa-commercial",
+          "id": 79,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/certificate-of-incorporation-usa-commercial/79"
+        },
+        {
+          "name": "Board Resolution",
+          "slug": "board-resolution-india-commercial",
+          "id": 60,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/board-resolution-india-commercial/60"
+        },
+        {
+          "name": "Birth Certificate",
+          "slug": "birth-certificate-usa-personal",
+          "id": 73,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/birth-certificate-usa-personal/73"
+        },
+        {
+          "name": "Memorandum of Association",
+          "slug": "memorandum-of-association-usa-commercial",
+          "id": 77,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/memorandum-of-association-usa-commercial/77"
+        },
+        {
+          "name": "MOFA Attestation",
+          "slug": "mofa-attestation-uk-commercial",
+          "id": 85,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/mofa-attestation-uk-commercial/85"
+        },
+        {
+          "name": "Organogram",
+          "slug": "organogram-usa-commercial",
+          "id": 81,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/organogram-usa-commercial/81"
+        },
+        {
+          "name": "Shareholder Agreement",
+          "slug": "shareholder-agreement-usa-commercial",
+          "id": 82,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/shareholder-agreement-usa-commercial/82"
+        },
+        {
+          "name": "Power of Attorney",
+          "slug": "power-of-attorney-usa-commercial",
+          "id": 76,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/power-of-attorney-usa-commercial/76"
+        },
+        {
+          "name": "Board Resolution Singapore - UAE",
+          "slug": "board-resolution-singapore-uae",
+          "id": 425,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/board-resolution-singapore-uae/425"
+        },
+        {
+          "name": "Articles of Association",
+          "slug": "articles-of-association-usa-commercial",
+          "id": 78,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/articles-of-association-usa-commercial/78"
+        },
+        {
+          "name": "Certificate of Incorporation",
+          "slug": "certificate-of-incorporation-uk-commercial",
+          "id": 64,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/certificate-of-incorporation-uk-commercial/64"
+        },
+        {
+          "name": "Bachelors Degree Certificate",
+          "slug": "bachelors-degree-certificate-usa-educational",
+          "id": 74,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/bachelors-degree-certificate-usa-educational/74"
+        },
+        {
+          "name": "Legal Representative",
+          "slug": "legal-representative-india-commercial",
+          "id": 59,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/legal-representative-india-commercial/59"
+        },
+        {
+          "name": "Birth Certificate",
+          "slug": "birth-certificate-india-personal",
+          "id": 54,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/birth-certificate-india-personal/54"
+        },
+        {
+          "name": "Bachelor Degree Certificate",
+          "slug": "bachelor-degree-certificate-india-educational",
+          "id": 53,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/bachelor-degree-certificate-india-educational/53"
+        },
+        {
+          "name": "Legal Representative",
+          "slug": "legal-representative-uk-commercial",
+          "id": 67,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/legal-representative-uk-commercial/67"
+        },
+        {
+          "name": "Mauritius to UAE Attestation",
+          "slug": "mauritius-to-uae-attestation",
+          "id": 432,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/mauritius-to-uae-attestation/432"
+        },
+        {
+          "name": "BVI to UAE Attestation",
+          "slug": "bvi-to-uae-attestation",
+          "id": 431,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/bvi-to-uae-attestation/431"
+        },
+        {
+          "name": "Switzerland to UAE Attestation",
+          "slug": "switzerland-to-uae-attestation",
+          "id": 436,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/switzerland-to-uae-attestation/436"
+        },
+        {
+          "name": "Cayman Islands to UAE Attestation",
+          "slug": "cayman-islands-to-uae-attestation",
+          "id": 430,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/cayman-islands-to-uae-attestation/430"
+        },
+        {
+          "name": "Apostille",
+          "slug": "apostille-india-commercial",
+          "id": 72,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/apostille-india-commercial/72"
+        },
+        {
+          "name": "Bachelor Degree Certificate",
+          "slug": "bachelor-degree-certificate-uk-educational",
+          "id": 61,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/bachelor-degree-certificate-uk-educational/61"
+        },
+        {
+          "name": "Hong Kong to UAE Attestation",
+          "slug": "hong-kong-to-uae-attestation",
+          "id": 433,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/hong-kong-to-uae-attestation/433"
+        },
+        {
+          "name": "Luxembourg to UAE Attestation",
+          "slug": "luxembourg-to-uae-attestation",
+          "id": 434,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/luxembourg-to-uae-attestation/434"
+        },
+        {
+          "name": "Jersey to UAE Attestation",
+          "slug": "jersey-to-uae-attestation",
+          "id": 435,
+          "detail_url": "https://arnifi.com/product-details/services/attestation/jersey-to-uae-attestation/435"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/attestations"
+    },
+    "Accounting & Bookkeeping": {
+      "count": 29,
+      "packages": [
+        {
+          "name": "UAE - Corporate Tax De-registration",
+          "slug": "uae-corporate-tax-de-registration",
+          "id": 31,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/uae-corporate-tax-de-registration/31"
+        },
+        {
+          "name": "VAT De-registration",
+          "slug": "vat-de-registration",
+          "id": 30,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/vat-de-registration/30"
+        },
+        {
+          "name": "VAT Filing for 1 Quarter - UAE",
+          "slug": "vat-filing-for-1-quarter-uae",
+          "id": 27,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/vat-filing-for-1-quarter-uae/27"
+        },
+        {
+          "name": "BVI Bookkeeping & Annual Financial Return",
+          "slug": "bvi-bookkeeping-and-annual-financial-return",
+          "id": 408,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/bvi-bookkeeping-and-annual-financial-return/408"
+        },
+        {
+          "name": "Corporate Tax Filing - Annually",
+          "slug": "corporate-tax-filing-annually",
+          "id": 25,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/corporate-tax-filing-annually/25"
+        },
+        {
+          "name": "Singapore Corporate Tax & GST",
+          "slug": "singapore-corporate-tax-and-gst",
+          "id": 402,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/singapore-corporate-tax-and-gst/402"
+        },
+        {
+          "name": "Mauritius Bookkeeping and Accounting Services",
+          "slug": "mauritius-bookkeeping-and-accounting-services",
+          "id": 399,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/mauritius-bookkeeping-and-accounting-services/399"
+        },
+        {
+          "name": "BVI Economic Substance & Tax-Neutral Compliance",
+          "slug": "bvi-economic-substance-and-tax-neutral-compliance",
+          "id": 409,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/bvi-economic-substance-and-tax-neutral-compliance/409"
+        },
+        {
+          "name": "TRC ΓÇô Individual",
+          "slug": "trc-individual-uae",
+          "id": 95,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/trc-individual-uae/95"
+        },
+        {
+          "name": "TRC ΓÇô Company",
+          "slug": "trc-company-uae",
+          "id": 98,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/trc-company-uae/98"
+        },
+        {
+          "name": "Singapore Statutory Audit",
+          "slug": "singapore-statutory-audit",
+          "id": 404,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/singapore-statutory-audit/404"
+        },
+        {
+          "name": "Auditing - UAE",
+          "slug": "auditing-uae",
+          "id": 28,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/auditing-uae/28"
+        },
+        {
+          "name": "Puerto Rico Accounting and Tax Service",
+          "slug": "puerto-rico-accounting-and-tax-service",
+          "id": 413,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/puerto-rico-accounting-and-tax-service/413"
+        },
+        {
+          "name": "Hong Kong Bookkeeping and Accounting Services",
+          "slug": "hong-kong-bookkeeping-and-accounting-services",
+          "id": 405,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/hong-kong-bookkeeping-and-accounting-services/405"
+        },
+        {
+          "name": "Hong Kong Profits Tax Compliance Services",
+          "slug": "hong-kong-profits-tax-compliance-services",
+          "id": 406,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/hong-kong-profits-tax-compliance-services/406"
+        },
+        {
+          "name": "KSA Tax and Accounting Compliance",
+          "slug": "ksa-tax-and-accounting-compliance",
+          "id": 337,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/ksa-tax-and-accounting-compliance/337"
+        },
+        {
+          "name": "Hong Kong Statutory Audit Services",
+          "slug": "hong-kong-statutory-audit-services",
+          "id": 407,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/hong-kong-statutory-audit-services/407"
+        },
+        {
+          "name": "Bookkeeping - Quarterly (Upto 100 transactions per year)",
+          "slug": "bookkeeping-quarterly-(upto-100-transactions-per-year)",
+          "id": 32,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/bookkeeping-quarterly-(upto-100-transactions-per-year)/32"
+        },
+        {
+          "name": "Cayman Islands Bookkeeping",
+          "slug": "cayman-islands-bookkeeping",
+          "id": 416,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/cayman-islands-bookkeeping/416"
+        },
+        {
+          "name": "Cayman Island Fund & Regulated Entity Audit",
+          "slug": "cayman-island-fund-and-regulated-entity-audit",
+          "id": 417,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/cayman-island-fund-and-regulated-entity-audit/417"
+        },
+        {
+          "name": "Corporate Tax Registration - UAE",
+          "slug": "corporate-tax-registration-uae",
+          "id": 24,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/corporate-tax-registration-uae/24"
+        },
+        {
+          "name": "Malaysia Statutory Audit Services",
+          "slug": "malaysia-statutory-audit-services",
+          "id": 423,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/malaysia-statutory-audit-services/423"
+        },
+        {
+          "name": "Malaysia Corporate Tax and SST Compliance Services",
+          "slug": "malaysia-corporate-tax-and-sst-compliance-services",
+          "id": 421,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/malaysia-corporate-tax-and-sst-compliance-services/421"
+        },
+        {
+          "name": "Mauritius Corporate Tax and VAT Compliance Services",
+          "slug": "mauritius-corporate-tax-and-vat-compliance-services",
+          "id": 400,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/mauritius-corporate-tax-and-vat-compliance-services/400"
+        },
+        {
+          "name": "Singapore Bookkeeping",
+          "slug": "singapore-bookkeeping",
+          "id": 403,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/singapore-bookkeeping/403"
+        },
+        {
+          "name": "BVI Audit Readiness For Regulated Entities",
+          "slug": "bvi-audit-readiness-for-regulated-entities",
+          "id": 410,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/bvi-audit-readiness-for-regulated-entities/410"
+        },
+        {
+          "name": "Malaysia Bookkeeping and Accounting Services",
+          "slug": "malaysia-bookkeeping-and-accounting-services",
+          "id": 422,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/malaysia-bookkeeping-and-accounting-services/422"
+        },
+        {
+          "name": "Mauritius Statutory Audit Services",
+          "slug": "mauritius-statutory-audit-services",
+          "id": 401,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/mauritius-statutory-audit-services/401"
+        },
+        {
+          "name": "VAT Registration",
+          "slug": "vat-registration-uae",
+          "id": 91,
+          "detail_url": "https://arnifi.com/product-details/services/accounting-bookkeeping/vat-registration-uae/91"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/accounting"
+    },
+    "Legal Services": {
+      "count": 23,
+      "packages": [
+        {
+          "name": "AML Policy",
+          "slug": "aml-policy-uae",
+          "id": 172,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/aml-policy-uae/172"
+        },
+        {
+          "name": "Consent Letter Drafting",
+          "slug": "consent-letter-drafting-uae",
+          "id": 175,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/consent-letter-drafting-uae/175"
+        },
+        {
+          "name": "Franchise/Distribution Agreement",
+          "slug": "franchisedistribution-agreement-uae",
+          "id": 188,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/franchisedistribution-agreement-uae/188"
+        },
+        {
+          "name": "UBO Document Drafting",
+          "slug": "ubo-document-drafting-uae",
+          "id": 180,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/ubo-document-drafting-uae/180"
+        },
+        {
+          "name": "Memorandum of Understanding (MoU)",
+          "slug": "memorandum-of-understanding-(mou)-uae",
+          "id": 193,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/memorandum-of-understanding-(mou)-uae/193"
+        },
+        {
+          "name": "Corporate Trademark Registration",
+          "slug": "corporate-trademark-registration-uae",
+          "id": 171,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/corporate-trademark-registration-uae/171"
+        },
+        {
+          "name": "Influencer Agreement",
+          "slug": "influencer-agreement-uae",
+          "id": 190,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/influencer-agreement-uae/190"
+        },
+        {
+          "name": "Lease Agreement",
+          "slug": "lease-agreement-uae",
+          "id": 191,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/lease-agreement-uae/191"
+        },
+        {
+          "name": "Employment Contract",
+          "slug": "employment-contract-uae",
+          "id": 187,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/employment-contract-uae/187"
+        },
+        {
+          "name": "Individual Trademark Registration",
+          "slug": "individual-trademark-registration-uae",
+          "id": 170,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/individual-trademark-registration-uae/170"
+        },
+        {
+          "name": "Consultancy Agreement",
+          "slug": "consultancy-agreement-uae",
+          "id": 185,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/consultancy-agreement-uae/185"
+        },
+        {
+          "name": "Document/Contract Review",
+          "slug": "documentcontract-review-uae",
+          "id": 186,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/documentcontract-review-uae/186"
+        },
+        {
+          "name": "Employee Termination Letter",
+          "slug": "employee-termination-letter-uae",
+          "id": 176,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/employee-termination-letter-uae/176"
+        },
+        {
+          "name": "Non-Solicitation Agreement",
+          "slug": "non-solicitation-agreement-uae",
+          "id": 179,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/non-solicitation-agreement-uae/179"
+        },
+        {
+          "name": "Power of Attorney (POA) [Special]",
+          "slug": "power-of-attorney-(poa)-special-uae",
+          "id": 182,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/power-of-attorney-(poa)-special-uae/182"
+        },
+        {
+          "name": "Exit Interview Form",
+          "slug": "exit-interview-form-uae",
+          "id": 178,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/exit-interview-form-uae/178"
+        },
+        {
+          "name": "Breach of Contract Notice",
+          "slug": "breach-of-contract-notice-uae",
+          "id": 174,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/breach-of-contract-notice-uae/174"
+        },
+        {
+          "name": "Engagement Letter",
+          "slug": "engagement-letter-uae",
+          "id": 177,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/engagement-letter-uae/177"
+        },
+        {
+          "name": "Power of Attorney (POA) [General]",
+          "slug": "power-of-attorney-(poa)-general-uae",
+          "id": 181,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/power-of-attorney-(poa)-general-uae/181"
+        },
+        {
+          "name": "Letter of Intent (LOI)",
+          "slug": "letter-of-intent-(loi)-uae",
+          "id": 192,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/letter-of-intent-(loi)-uae/192"
+        },
+        {
+          "name": "Independent Contractor Agreement",
+          "slug": "independent-contractor-agreement-uae",
+          "id": 189,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/independent-contractor-agreement-uae/189"
+        },
+        {
+          "name": "Board / Shareholder Resolution Drafting",
+          "slug": "board-shareholder-resolution-drafting-uae",
+          "id": 194,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/board-shareholder-resolution-drafting-uae/194"
+        },
+        {
+          "name": "Promissory Notes",
+          "slug": "promissory-notes-uae",
+          "id": 183,
+          "detail_url": "https://arnifi.com/product-details/services/legal-service/promissory-notes-uae/183"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/legal-services"
+    },
+    "Product Registration & Certification": {
+      "count": 8,
+      "packages": [
+        {
+          "name": "Pet Food Registration",
+          "slug": "pet-food-registration-uae",
+          "id": 169,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/pet-food-registration-uae/169"
+        },
+        {
+          "name": "Cosmetic Product Registration",
+          "slug": "cosmetic-product-registration-uae",
+          "id": 168,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/cosmetic-product-registration-uae/168"
+        },
+        {
+          "name": "Supplement Registration",
+          "slug": "supplement-registration-uae",
+          "id": 167,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/supplement-registration-uae/167"
+        },
+        {
+          "name": "Food Product Registration",
+          "slug": "food-product-registration-uae",
+          "id": 166,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/food-product-registration-uae/166"
+        },
+        {
+          "name": "Fleet Vehicles Management - Road Transport Authority (RTA)",
+          "slug": "fleet-vehicles-management-road-transport-authority-(rta)-uae",
+          "id": 198,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/fleet-vehicles-management-road-transport-authority-(rta)-uae/198"
+        },
+        {
+          "name": "Detergent & Biocide Product Registration",
+          "slug": "detergent-and-biocide-product-registration-uae",
+          "id": 165,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/detergent-and-biocide-product-registration-uae/165"
+        },
+        {
+          "name": "IATA Registration for Cargo Services",
+          "slug": "iata-registration-for-cargo-services",
+          "id": 348,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/iata-registration-for-cargo-services/348"
+        },
+        {
+          "name": "E-Trader Licence",
+          "slug": "e-trader-licence-uae",
+          "id": 195,
+          "detail_url": "https://arnifi.com/product-details/services/product-registration/e-trader-licence-uae/195"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/product-registration"
+    },
+    "Liquidation": {
+      "count": 44,
+      "packages": [
+        {
+          "name": "ADGM Company Liquidation Made Simple",
+          "slug": "adgm-company-liquidation-made-simple",
+          "id": 352,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/adgm-company-liquidation-made-simple/352"
+        },
+        {
+          "name": "KEZAD License Liquidation (Early Stage Operational Entity)",
+          "slug": "kezad-license-liquidation-(early-stage-operational-entity)",
+          "id": 340,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/kezad-license-liquidation-(early-stage-operational-entity)/340"
+        },
+        {
+          "name": "DED Mainland Licence Liquidation (Early-Stage Operational Entity)",
+          "slug": "ded-mainland-licence-liquidation-(early-stage-operational-entity)",
+          "id": 326,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ded-mainland-licence-liquidation-(early-stage-operational-entity)/326"
+        },
+        {
+          "name": "DED Mainland License Liquidation (Revenue Generating Operational Entity)",
+          "slug": "ded-mainland-license-liquidation-(revenue-generating-operational-entity)",
+          "id": 325,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ded-mainland-license-liquidation-(revenue-generating-operational-entity)/325"
+        },
+        {
+          "name": "Ajman New Ventures Centre Company Liquidation (Revenue-Generating Operating Entity)",
+          "slug": "ajman-new-ventures-centre-company-liquidation-(revenue-generating-operating-entity)",
+          "id": 306,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ajman-new-ventures-centre-company-liquidation-(revenue-generating-operating-entity)/306"
+        },
+        {
+          "name": "Abu Dhabi License (Legacy Structure) Liquidation",
+          "slug": "abu-dhabi-license-(legacy-structure)-liquidation",
+          "id": 300,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/abu-dhabi-license-(legacy-structure)-liquidation/300"
+        },
+        {
+          "name": "DAFZA Freezone Liquidation (Early-Stage Operational Entity)",
+          "slug": "dafza-freezone-liquidation-(early-stage-operational-entity)",
+          "id": 307,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dafza-freezone-liquidation-(early-stage-operational-entity)/307"
+        },
+        {
+          "name": "JAFZA Freezone Liquidation (Revenue Generating Operating Entity)",
+          "slug": "jafza-freezone-liquidation-(revenue-generating-operating-entity)",
+          "id": 343,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/jafza-freezone-liquidation-(revenue-generating-operating-entity)/343"
+        },
+        {
+          "name": "RAKEZ Liquidation Proposal (Early-Stage Operational Entity)",
+          "slug": "rakez-liquidation-proposal-(early-stage-operational-entity)",
+          "id": 311,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/rakez-liquidation-proposal-(early-stage-operational-entity)/311"
+        },
+        {
+          "name": "IFZA License Liquidation (Revenue-Generating Operating Entity)",
+          "slug": "ifza-license-liquidation-(revenue-generating-operating-entity)",
+          "id": 267,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ifza-license-liquidation-(revenue-generating-operating-entity)/267"
+        },
+        {
+          "name": "DWTC Freezone Liquidation (Revenue-Generating Operating Entity)",
+          "slug": "dwtc-freezone-liquidation-(revenue-generating-operating-entity)",
+          "id": 330,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dwtc-freezone-liquidation-(revenue-generating-operating-entity)/330"
+        },
+        {
+          "name": "DIFC Liquidation & Company Closure Service",
+          "slug": "difc-liquidation-and-company-closure-service",
+          "id": 351,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/difc-liquidation-and-company-closure-service/351"
+        },
+        {
+          "name": "SHAMS License Liquidation (Legacy Structure)",
+          "slug": "shams-license-liquidation-(legacy-structure)",
+          "id": 339,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/shams-license-liquidation-(legacy-structure)/339"
+        },
+        {
+          "name": "JAFZA Freezone Liquidation | (Legacy Structure)",
+          "slug": "jafza-freezone-liquidation-or-(legacy-structure)",
+          "id": 346,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/jafza-freezone-liquidation-or-(legacy-structure)/346"
+        },
+        {
+          "name": "RAKEZ Liquidation Proposal (Legacy Structure)",
+          "slug": "rakez-liquidation-proposal-(legacy-structure)",
+          "id": 332,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/rakez-liquidation-proposal-(legacy-structure)/332"
+        },
+        {
+          "name": "RAKEZ Liquidation Proposal (Revenue Generating Operating Entity)",
+          "slug": "rakez-liquidation-proposal-(revenue-generating-operating-entity)",
+          "id": 333,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/rakez-liquidation-proposal-(revenue-generating-operating-entity)/333"
+        },
+        {
+          "name": "DMCC License Liquidation (Early Stage Operational Entity)",
+          "slug": "dmcc-license-liquidation-(early-stage-operational-entity)",
+          "id": 322,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dmcc-license-liquidation-(early-stage-operational-entity)/322"
+        },
+        {
+          "name": "SHAMS License Liquidation (Revenue-Generating Operating Entity)",
+          "slug": "shams-license-liquidation-(revenue-generating-operating-entity)",
+          "id": 334,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/shams-license-liquidation-(revenue-generating-operating-entity)/334"
+        },
+        {
+          "name": "DMCC License Liquidation (Legacy Structure)",
+          "slug": "dmcc-license-liquidation-(legacy-structure)",
+          "id": 324,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dmcc-license-liquidation-(legacy-structure)/324"
+        },
+        {
+          "name": "DWTC Freezone Liquidation (Legacy Structure)",
+          "slug": "dwtc-freezone-liquidation-(legacy-structure)",
+          "id": 328,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dwtc-freezone-liquidation-(legacy-structure)/328"
+        },
+        {
+          "name": "DWTC Freezone Liquidation (Early Stage Operational Entity)",
+          "slug": "dwtc-freezone-liquidation-(early-stage-operational-entity)",
+          "id": 329,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dwtc-freezone-liquidation-(early-stage-operational-entity)/329"
+        },
+        {
+          "name": "Hamriyah License Liquidation (Revenue Generating Operating Entity)",
+          "slug": "hamriyah-license-liquidation-(revenue-generating-operating-entity)",
+          "id": 336,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/hamriyah-license-liquidation-(revenue-generating-operating-entity)/336"
+        },
+        {
+          "name": "SHAMS License Liquidation (Early Stage Operational Entity)",
+          "slug": "shams-license-liquidation-(early-stage-operational-entity)",
+          "id": 338,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/shams-license-liquidation-(early-stage-operational-entity)/338"
+        },
+        {
+          "name": "Meydan Freezone License Liquidation (Early Stage Operational Entity)",
+          "slug": "meydan-freezone-license-liquidation-(early-stage-operational-entity)",
+          "id": 331,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/meydan-freezone-license-liquidation-(early-stage-operational-entity)/331"
+        },
+        {
+          "name": "DMCC License Liquidation (Revenue Generating Operational Entity)",
+          "slug": "dmcc-license-liquidation-(revenue-generating-operational-entity)",
+          "id": 323,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dmcc-license-liquidation-(revenue-generating-operational-entity)/323"
+        },
+        {
+          "name": "IFZA License Liquidation (Early Stage Operational Entity)",
+          "slug": "ifza-license-liquidation-(early-stage-operational-entity)",
+          "id": 296,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ifza-license-liquidation-(early-stage-operational-entity)/296"
+        },
+        {
+          "name": "DAFZA Freezone Liquidation ΓÇô (Legacy Structure)",
+          "slug": "dafza-freezone-liquidation-(legacy-structure)",
+          "id": 272,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dafza-freezone-liquidation-(legacy-structure)/272"
+        },
+        {
+          "name": "Ajman New Ventures Centre Company Liquidation (Early Stage Operational Entity)",
+          "slug": "ajman-new-ventures-centre-company-liquidation-(early-stage-operational-entity)",
+          "id": 271,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ajman-new-ventures-centre-company-liquidation-(early-stage-operational-entity)/271"
+        },
+        {
+          "name": "KEZAD License Liquidation (Legacy Structure)",
+          "slug": "kezad-license-liquidation-(legacy-structure)",
+          "id": 341,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/kezad-license-liquidation-(legacy-structure)/341"
+        },
+        {
+          "name": "Ajman Freezone Liquidation (Legacy Structure)",
+          "slug": "ajman-freezone-liquidation-(legacy-structure)",
+          "id": 301,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ajman-freezone-liquidation-(legacy-structure)/301"
+        },
+        {
+          "name": "Abu Dhabi Mainland License (Early-Stage Operational Entity) Liquidation",
+          "slug": "abu-dhabi-mainland-license-(early-stage-operational-entity)-liquidation",
+          "id": 299,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/abu-dhabi-mainland-license-(early-stage-operational-entity)-liquidation/299"
+        },
+        {
+          "name": "KEZAD License Liquidation (Revenue Generating Operating Entity)",
+          "slug": "kezad-license-liquidation-(revenue-generating-operating-entity)",
+          "id": 342,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/kezad-license-liquidation-(revenue-generating-operating-entity)/342"
+        },
+        {
+          "name": "IFZA License Liquidation (Legacy Structure)",
+          "slug": "ifza-license-liquidation-(legacy-structure)",
+          "id": 295,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ifza-license-liquidation-(legacy-structure)/295"
+        },
+        {
+          "name": "Ajman Freezone Liquidation (Early-Stage Operational Entity)",
+          "slug": "ajman-freezone-liquidation-(early-stage-operational-entity)",
+          "id": 270,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ajman-freezone-liquidation-(early-stage-operational-entity)/270"
+        },
+        {
+          "name": "Hamriyah License Liquidation (Early Stage Operational Entity)",
+          "slug": "hamriyah-license-liquidation-(early-stage-operational-entity)",
+          "id": 344,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/hamriyah-license-liquidation-(early-stage-operational-entity)/344"
+        },
+        {
+          "name": "Hamriyah License Liquidation (Legacy Structure)",
+          "slug": "hamriyah-license-liquidation-(legacy-structure)",
+          "id": 345,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/hamriyah-license-liquidation-(legacy-structure)/345"
+        },
+        {
+          "name": "Abu Dhabi Mainland License Liquidation (Revenue Generating Operational Entity)",
+          "slug": "abu-dhabi-mainland-license-liquidation-(revenue-generating-operational-entity)",
+          "id": 269,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/abu-dhabi-mainland-license-liquidation-(revenue-generating-operational-entity)/269"
+        },
+        {
+          "name": "Ajman Freezone Liquidation (Revenue Generating Operational Entity)",
+          "slug": "ajman-freezone-liquidation-(revenue-generating-operational-entity)",
+          "id": 302,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ajman-freezone-liquidation-(revenue-generating-operational-entity)/302"
+        },
+        {
+          "name": "JAFZA Freezone Liquidation (Early Stage Operational Entity)",
+          "slug": "jafza-freezone-liquidation-(early-stage-operational-entity)",
+          "id": 347,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/jafza-freezone-liquidation-(early-stage-operational-entity)/347"
+        },
+        {
+          "name": "Ajman New Ventures Centre Company Liquidation (Legacy Structure)",
+          "slug": "ajman-new-ventures-centre-company-liquidation-(legacy-structure)",
+          "id": 304,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ajman-new-ventures-centre-company-liquidation-(legacy-structure)/304"
+        },
+        {
+          "name": "DAFZA Freezone Liquidation (Revenue Generating Operational Entity)",
+          "slug": "dafza-freezone-liquidation-(revenue-generating-operational-entity)",
+          "id": 308,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/dafza-freezone-liquidation-(revenue-generating-operational-entity)/308"
+        },
+        {
+          "name": "Meydan Freezone License Liquidation (Revenue Generating Operating Entity)",
+          "slug": "meydan-freezone-license-liquidation-(revenue-generating-operating-entity)",
+          "id": 309,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/meydan-freezone-license-liquidation-(revenue-generating-operating-entity)/309"
+        },
+        {
+          "name": "Meydan Freezone License Liquidation (Legacy Structure)",
+          "slug": "meydan-freezone-license-liquidation-(legacy-structure)",
+          "id": 310,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/meydan-freezone-license-liquidation-(legacy-structure)/310"
+        },
+        {
+          "name": "DED Mainland Licence Liquidation (Legacy Structure)",
+          "slug": "ded-mainland-licence-liquidation-(legacy-structure)",
+          "id": 327,
+          "detail_url": "https://arnifi.com/product-details/services/liquidation/ded-mainland-licence-liquidation-(legacy-structure)/327"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/liquidation"
+    },
+    "Banking Services": {
+      "count": 7,
+      "packages": [
+        {
+          "name": "WIO Bank",
+          "slug": "wio-bank",
+          "id": 396,
+          "detail_url": "https://arnifi.com/product-details/services/banking-services/wio-bank/396"
+        },
+        {
+          "name": "Airwallex Bank",
+          "slug": "airwallex-bank",
+          "id": 384,
+          "detail_url": "https://arnifi.com/product-details/services/banking-services/airwallex-bank/384"
+        },
+        {
+          "name": "Ruya Bank",
+          "slug": "ruya-bank",
+          "id": 385,
+          "detail_url": "https://arnifi.com/product-details/services/banking-services/ruya-bank/385"
+        },
+        {
+          "name": "Aspire Bank",
+          "slug": "aspire-bank",
+          "id": 383,
+          "detail_url": "https://arnifi.com/product-details/services/banking-services/aspire-bank/383"
+        },
+        {
+          "name": "Mashreq NeoBiz",
+          "slug": "mashreq-neobiz",
+          "id": 387,
+          "detail_url": "https://arnifi.com/product-details/services/banking-services/mashreq-neobiz/387"
+        },
+        {
+          "name": "FAB Bank",
+          "slug": "fab-bank",
+          "id": 395,
+          "detail_url": "https://arnifi.com/product-details/services/banking-services/fab-bank/395"
+        },
+        {
+          "name": "RBC Royal Bank",
+          "slug": "rbc-royal-bank",
+          "id": 386,
+          "detail_url": "https://arnifi.com/product-details/services/banking-services/rbc-royal-bank/386"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/banking-services"
+    },
+    "Will Drafting Services": {
+      "count": 4,
+      "packages": [
+        {
+          "name": "Single Will - Premium",
+          "slug": "single-will-premium",
+          "id": 390,
+          "detail_url": "https://arnifi.com/product-details/services/will-drafting/single-will-premium/390"
+        },
+        {
+          "name": "Single Will - Standard",
+          "slug": "single-will-standard",
+          "id": 389,
+          "detail_url": "https://arnifi.com/product-details/services/will-drafting/single-will-standard/389"
+        },
+        {
+          "name": "Mirror Will - Premium",
+          "slug": "mirror-will-premium",
+          "id": 392,
+          "detail_url": "https://arnifi.com/product-details/services/will-drafting/mirror-will-premium/392"
+        },
+        {
+          "name": "Mirror Will - Standard",
+          "slug": "mirror-will-standard",
+          "id": 391,
+          "detail_url": "https://arnifi.com/product-details/services/will-drafting/mirror-will-standard/391"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/will-drafting"
+    },
+    "Product Insights & Guides": {
+      "count": 5,
+      "packages": [
+        {
+          "name": "Business Guide - Corporate Tax (CT) in the UAE",
+          "slug": "business-guide-corporate-tax-(ct)-in-the-uae",
+          "id": 411,
+          "detail_url": "https://arnifi.com/product-details/services/product-insights/business-guide-corporate-tax-(ct)-in-the-uae/411"
+        },
+        {
+          "name": "Business Guide - E-Invoicing in the UAE",
+          "slug": "business-guide-e-invoicing-in-the-uae",
+          "id": 426,
+          "detail_url": "https://arnifi.com/product-details/services/product-insights/business-guide-e-invoicing-in-the-uae/426"
+        },
+        {
+          "name": "Business Guide - Value Added Tax (VAT) in the UAE",
+          "slug": "business-guide-value-added-tax-(vat)-in-the-uae",
+          "id": 26,
+          "detail_url": "https://arnifi.com/product-details/services/product-insights/business-guide-value-added-tax-(vat)-in-the-uae/26"
+        },
+        {
+          "name": "Business Guide | UAE Compliance Calendar August 2026ΓÇô2027",
+          "slug": "business-guide-or-uae-compliance-calendar-august-2026-2027",
+          "id": 452,
+          "detail_url": "https://arnifi.com/product-details/services/product-insights/business-guide-or-uae-compliance-calendar-august-2026-2027/452"
+        },
+        {
+          "name": "Business Guide - UAE HR Policies & Practices | Dubai Mainland (MOHRE)",
+          "slug": "business-guide-uae-hr-policies-and-practices-or-dubai-mainland-(mohre)",
+          "id": 412,
+          "detail_url": "https://arnifi.com/product-details/services/product-insights/business-guide-uae-hr-policies-and-practices-or-dubai-mainland-(mohre)/412"
+        }
+      ],
+      "service_url": "https://arnifi.com/business-guides"
+    },
+    "Funds": {
+      "count": 41,
+      "packages": [
+        {
+          "name": "ADGM Multi-Family Office Setup",
+          "slug": "adgm-multi-family-office-setup",
+          "id": 394,
+          "detail_url": "https://arnifi.com/product-details/services/funds/adgm-multi-family-office-setup/394"
+        },
+        {
+          "name": "Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes",
+          "slug": "guernsey-authorised-closed-ended-collective-investment-schemes",
+          "id": 451,
+          "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-authorised-closed-ended-collective-investment-schemes/451"
+        },
+        {
+          "name": "Cayman Island Company Formation | Limited Liability Company Setup (With Licensed Fund)",
+          "slug": "cayman-island-company-formation-or-limited-liability-company-setup-(with-licensed-fund)",
+          "id": 289,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-company-formation-or-limited-liability-company-setup-(with-licensed-fund)/289"
+        },
+        {
+          "name": "Cayman Island Exempted Company Incorporation (With Licensed Fund)",
+          "slug": "cayman-island-exempted-company-incorporation-(with-licensed-fund)",
+          "id": 280,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-incorporation-(with-licensed-fund)/280"
+        },
+        {
+          "name": "Cayman Island Exempted Company Setup | (With Registered Fund)",
+          "slug": "cayman-island-exempted-company-setup-or-(with-registered-fund)",
+          "id": 292,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-setup-or-(with-registered-fund)/292"
+        },
+        {
+          "name": "BVI Private Fund Setup (Open-Ended Fund)",
+          "slug": "bvi-private-fund-setup-(open-ended-fund)",
+          "id": 285,
+          "detail_url": "https://arnifi.com/product-details/services/funds/bvi-private-fund-setup-(open-ended-fund)/285"
+        },
+        {
+          "name": "BVI Private Investment Fund (Close-Ended Fund)",
+          "slug": "bvi-private-investment-fund-(close-ended-fund)",
+          "id": 286,
+          "detail_url": "https://arnifi.com/product-details/services/funds/bvi-private-investment-fund-(close-ended-fund)/286"
+        },
+        {
+          "name": "Cayman Island Limited Liability Company Setup (with Administered Fund)",
+          "slug": "cayman-island-limited-liability-company-setup-(with-administered-fund)",
+          "id": 288,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-limited-liability-company-setup-(with-administered-fund)/288"
+        },
+        {
+          "name": "Guernsey ΓÇô Open-ended Collective Investment Schemes",
+          "slug": "guernsey-open-ended-collective-investment-schemes",
+          "id": 448,
+          "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-open-ended-collective-investment-schemes/448"
+        },
+        {
+          "name": "Luxembourg RAIF (SCSP) Fund Setup",
+          "slug": "luxembourg-raif-(scsp)-fund-setup",
+          "id": 438,
+          "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-raif-(scsp)-fund-setup/438"
+        },
+        {
+          "name": "Mauritius Domestic Trust Setup",
+          "slug": "mauritius-domestic-trust-setup",
+          "id": 446,
+          "detail_url": "https://arnifi.com/product-details/services/funds/mauritius-domestic-trust-setup/446"
+        },
+        {
+          "name": "ADGM - SPV With RSC",
+          "slug": "adgm-spv-with-rsc",
+          "id": 276,
+          "detail_url": "https://arnifi.com/product-details/services/funds/adgm-spv-with-rsc/276"
+        },
+        {
+          "name": "BVI Approved Fund Setup (Open-Ended Fund)",
+          "slug": "bvi-approved-fund-setup-(open-ended-fund)",
+          "id": 268,
+          "detail_url": "https://arnifi.com/product-details/services/funds/bvi-approved-fund-setup-(open-ended-fund)/268"
+        },
+        {
+          "name": "Cayman Island Limited Liability Companies (with Limited Investor Fund)",
+          "slug": "cayman-island-limited-liability-companies-(with-limited-investor-fund)",
+          "id": 287,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-limited-liability-companies-(with-limited-investor-fund)/287"
+        },
+        {
+          "name": "Cayman Island Exempted Company Setup (with Administered Fund)",
+          "slug": "cayman-island-exempted-company-setup-(with-administered-fund)",
+          "id": 277,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-setup-(with-administered-fund)/277"
+        },
+        {
+          "name": "Jersey Expert Fund Setup",
+          "slug": "jersey-expert-fund-setup",
+          "id": 439,
+          "detail_url": "https://arnifi.com/product-details/services/funds/jersey-expert-fund-setup/439"
+        },
+        {
+          "name": "Luxembourg (SCSP) Setup",
+          "slug": "luxembourg-(scsp)-setup",
+          "id": 440,
+          "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-(scsp)-setup/440"
+        },
+        {
+          "name": "ADGM Category 2 License",
+          "slug": "adgm-category-2-license",
+          "id": 279,
+          "detail_url": "https://arnifi.com/product-details/services/funds/adgm-category-2-license/279"
+        },
+        {
+          "name": "Luxembourg Private Wealth Management (SPF) Company Setup",
+          "slug": "luxembourg-private-wealth-management-(spf)-company-setup",
+          "id": 441,
+          "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-private-wealth-management-(spf)-company-setup/441"
+        },
+        {
+          "name": "Cayman Island Star Trust Setup",
+          "slug": "cayman-island-star-trust-setup",
+          "id": 291,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-star-trust-setup/291"
+        },
+        {
+          "name": "Cayman Island Exempted Company (with Limited Investor Fund)",
+          "slug": "cayman-island-exempted-company-(with-limited-investor-fund)",
+          "id": 274,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-(with-limited-investor-fund)/274"
+        },
+        {
+          "name": "Cayman Island Limited Liability Companies (with Registered Fund)",
+          "slug": "cayman-island-limited-liability-companies-(with-registered-fund)",
+          "id": 281,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-limited-liability-companies-(with-registered-fund)/281"
+        },
+        {
+          "name": "GIFT City ΓÇô Company Setup (Fund Management Entity)",
+          "slug": "gift-city-company-setup-(fund-management-entity)",
+          "id": 443,
+          "detail_url": "https://arnifi.com/product-details/services/funds/gift-city-company-setup-(fund-management-entity)/443"
+        },
+        {
+          "name": "GIFT City - Global Corporate Treasury Centre (GRCTC)",
+          "slug": "gift-city-global-corporate-treasury-centre-(grctc)",
+          "id": 444,
+          "detail_url": "https://arnifi.com/product-details/services/funds/gift-city-global-corporate-treasury-centre-(grctc)/444"
+        },
+        {
+          "name": "Guernsey - GP/LP Structure",
+          "slug": "guernsey-gplp-structure",
+          "id": 445,
+          "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-gplp-structure/445"
+        },
+        {
+          "name": "UK ΓÇô GP/LP Fund Setup Structure",
+          "slug": "uk-gplp-fund-setup-structure",
+          "id": 447,
+          "detail_url": "https://arnifi.com/product-details/services/funds/uk-gplp-fund-setup-structure/447"
+        },
+        {
+          "name": "Cayman Island Exempted Limited Partnerships (with Registered Fund)",
+          "slug": "cayman-island-exempted-limited-partnerships-(with-registered-fund)",
+          "id": 290,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-limited-partnerships-(with-registered-fund)/290"
+        },
+        {
+          "name": "Cayman Island Exempted Limited Partnerships (with Limited Investor Fund)",
+          "slug": "cayman-island-exempted-limited-partnerships-(with-limited-investor-fund)",
+          "id": 293,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-limited-partnerships-(with-limited-investor-fund)/293"
+        },
+        {
+          "name": "DIFC Foundation Office",
+          "slug": "difc-foundation-office",
+          "id": 45,
+          "detail_url": "https://arnifi.com/product-details/services/funds/difc-foundation-office/45"
+        },
+        {
+          "name": "DIFC Category 3C License",
+          "slug": "difc-category-3c-license",
+          "id": 275,
+          "detail_url": "https://arnifi.com/product-details/services/funds/difc-category-3c-license/275"
+        },
+        {
+          "name": "Luxembourg Holding Company Setup (SOPARFI)",
+          "slug": "luxembourg-holding-company-setup-(soparfi)",
+          "id": 442,
+          "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-holding-company-setup-(soparfi)/442"
+        },
+        {
+          "name": "Cayman Island Exempted Limited Partnership (with Administered Fund)",
+          "slug": "cayman-island-exempted-limited-partnership-(with-administered-fund)",
+          "id": 294,
+          "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-limited-partnership-(with-administered-fund)/294"
+        },
+        {
+          "name": "Mauritius Fund Setup",
+          "slug": "mauritius-fund-setup",
+          "id": 349,
+          "detail_url": "https://arnifi.com/product-details/services/funds/mauritius-fund-setup/349"
+        },
+        {
+          "name": "BVI Professional Fund Setup (Open-Ended Fund)",
+          "slug": "bvi-professional-fund-setup-(open-ended-fund)",
+          "id": 266,
+          "detail_url": "https://arnifi.com/product-details/services/funds/bvi-professional-fund-setup-(open-ended-fund)/266"
+        },
+        {
+          "name": "ADGM Single Family Office Setup",
+          "slug": "adgm-single-family-office-setup",
+          "id": 397,
+          "detail_url": "https://arnifi.com/product-details/services/funds/adgm-single-family-office-setup/397"
+        },
+        {
+          "name": "ADGM Foundation Setup",
+          "slug": "adgm-foundation-setup",
+          "id": 398,
+          "detail_url": "https://arnifi.com/product-details/services/funds/adgm-foundation-setup/398"
+        },
+        {
+          "name": "Guernsey ΓÇô Registered Closed-ended Collective Investment Scheme",
+          "slug": "guernsey-registered-closed-ended-collective-investment-scheme",
+          "id": 450,
+          "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-registered-closed-ended-collective-investment-scheme/450"
+        },
+        {
+          "name": "BVI Incubator Fund Setup (Open-Ended Fund)",
+          "slug": "bvi-incubator-fund-setup-(open-ended-fund)",
+          "id": 265,
+          "detail_url": "https://arnifi.com/product-details/services/funds/bvi-incubator-fund-setup-(open-ended-fund)/265"
+        },
+        {
+          "name": "Jersey Private Fund Setup",
+          "slug": "jersey-private-fund-setup",
+          "id": 437,
+          "detail_url": "https://arnifi.com/product-details/services/funds/jersey-private-fund-setup/437"
+        },
+        {
+          "name": "ADGM Category 3C License",
+          "slug": "adgm-category-3c-license",
+          "id": 284,
+          "detail_url": "https://arnifi.com/product-details/services/funds/adgm-category-3c-license/284"
+        },
+        {
+          "name": "DIFC Family Office",
+          "slug": "difc-family-office",
+          "id": 46,
+          "detail_url": "https://arnifi.com/product-details/services/funds/difc-family-office/46"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/funds"
+    },
+    "Other Services": {
+      "count": 1,
+      "packages": [
+        {
+          "name": "E-Signature Card",
+          "slug": "e-signature-card",
+          "id": 10,
+          "detail_url": "https://arnifi.com/product-details/services/other-services/e-signature-card/10"
+        }
+      ],
+      "service_url": "https://arnifi.com/services/other-services"
+    }
+  }
+}

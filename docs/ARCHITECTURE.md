@@ -4,6 +4,7 @@
 
 ```text
 Offline ingest (CLI):
+  blogs / website catalog / Drive / WhatsApp
   scrape → extract → chunk → Bedrock Titan embed → Pinecone upsert
 
 Online query (FastAPI / Lambda):
@@ -18,7 +19,7 @@ Online query (FastAPI / Lambda):
 | `app/services/bedrock/` | Bedrock client, Titan embeddings, Nova Lite LLM |
 | `app/services/pinecone/` | Vector upsert / query |
 | `app/services/retrieval/` | QueryEngine + diversify |
-| `app/services/ingestion/` | Indexer, SQLite state, chunk/extract |
+| `app/services/ingestion/` | Blog, website catalog, Drive, WhatsApp indexers |
 | `app/services/scraper/` | Fetcher + listing crawler |
 | `app/services/prompting/` | System prompt loading |
 | `app/config/` | Env + YAML settings / DI |

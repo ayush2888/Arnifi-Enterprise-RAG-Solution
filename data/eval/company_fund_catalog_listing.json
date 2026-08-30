@@ -1,0 +1,1796 @@
+{
+  "discovery": "prodapi",
+  "note": "Listings come from prodapi (not DOM Load More). Licence: GET /product-pages?productType=licence. Funds: GET /micro-services/Funds. Live stated totals are scraped from marketing HTML for the completeness gate.",
+  "catalogs": [
+    {
+      "product_type": "licence",
+      "listing_url": "https://arnifi.com/product-listing?productType=licence",
+      "discovery": "prodapi",
+      "live_stated_total": 117,
+      "discovered": 117,
+      "complete": true
+    },
+    {
+      "product_type": "fund",
+      "listing_url": "https://arnifi.com/services/funds",
+      "discovery": "prodapi",
+      "live_stated_total": 41,
+      "discovered": 41,
+      "complete": true
+    }
+  ],
+  "items": [
+    {
+      "product_type": "licence",
+      "package_name": "Oman Salalah Free Zone Trade License",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "5552",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/oman-salalah-free-zone-trade-license/73/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Umm Alhoul Free Zone Incorporation Package",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "16000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/umm-alhoul-free-zone-incorporation-package/78/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Delaware Incorporation Package \u2013 Standard",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "369",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/delaware-incorporation-package-standard/82/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Texas Incorporation Package \u2013 Standard",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "569",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/texas-incorporation-package-standard/72/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "California Incorporation Package \u2013 Standard",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "344",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/california-incorporation-package-standard/71/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "ADGM - Tech Startup Incorporation Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 11230",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/adgm-tech-startup-incorporation-package/91/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DWTC - Executive Plus Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "71270",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dwtc-executive-plus-package/35/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Mauritius Company Setup - GBC (Global Business Company)",
+      "jurisdiction": "Mauritius",
+      "country": "Mauritius",
+      "estimated_time": null,
+      "starting_price": "11010",
+      "detail_url": "https://arnifi.com/product-details/business-setup/mauritius/mauritius-company-setup-gbc-(global-business-company)/172/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DIFC Category 4 License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 70000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/difc-category-4-license/152/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Oman Sohar Free Zone Trade License",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "0",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/oman-sohar-free-zone-trade-license/74/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ras Bufontas Free Zone Incorporation Package",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "16000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/ras-bufontas-free-zone-incorporation-package/81/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Delaware Incorporation Package \u2013 Expedited",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "469",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/delaware-incorporation-package-expedited/83/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "State System (MoCI) Incorporation Package",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "19100",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/state-system-(moci)-incorporation-package/80/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Qatar Financial Centre (Non Regulated Activities) Incorporation Package",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "23225",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/qatar-financial-centre-(non-regulated-activities)-incorporation-package/127/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "SHAMS - Media Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 5760",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/shams-media-package/107/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DWTC - Family Office Management (Multi Family)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "45545",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dwtc-family-office-management-(multi-family)/23/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Fujairah Creative City - Business Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "5250",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/fujairah-creative-city-business-package/47/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "ADGM Operating holding company - HoldCo",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 25000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/adgm-operating-holding-company-holdco/94/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "UAQ Free Trade Zone - Premium License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "34900",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/uaq-free-trade-zone-premium-license/54/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Oman Muscat Trade License",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": null,
+      "starting_price": "0",
+      "detail_url": "https://arnifi.com/product-details/business-setup/business-setup/oman-muscat-trade-license/68/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Masdar City - Business Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "7000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/masdar-city-business-package/99/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Masdar City - Space Zone Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "31250",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/masdar-city-space-zone-package/102/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ajman Media City - Packages",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "4999",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/ajman-media-city-packages/40/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DWTC - Family Office Management (Single Family)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "45545",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dwtc-family-office-management-(single-family)/22/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "UAQ Free Trade Zone - Freelancer Permit",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "9999",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/uaq-free-trade-zone-freelancer-permit/52/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Dubai South - Permanent Desk Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "16780",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dubai-south-permanent-desk-package/21/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Masdar City - Startup Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "7000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/masdar-city-startup-package/100/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "ADGM Operating Company - OpCo Incorporation Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 18090",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/adgm-operating-company-opco-incorporation-package/119/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Meydan Standard License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "12520",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/meydan-standard-license/37/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Jebel Ali - General Trading License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "68500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/jebel-ali-general-trading-license/108/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "SRTIP Innovators Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "6510",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/srtip-innovators-package/4/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Duqe License and Visa Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "12500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/duqe-license-and-visa-package/46/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Hamriyah Smart Business License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "17000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/hamriyah-smart-business-license/57/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Jebel Ali - Service License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "58500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/jebel-ali-service-license/60/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "UAQ Free Trade Zone - Startup Business License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "20900",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/uaq-free-trade-zone-startup-business-license/53/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "UAQ Free Trade Zone - General Trading License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "2823",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/uaq-free-trade-zone-general-trading-license/55/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DAFZA Business Setup Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "67020",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dafza-business-setup-package/43/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DWTC - Entrepreneur Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "19295",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dwtc-entrepreneur-package/115/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Jebel Ali - Logistics License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "70500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/jebel-ali-logistics-license/106/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Dubai Commercity License with Smart Desk",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "36141",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dubai-commercity-license-with-smart-desk/42/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Masdar City - Women Entrepreneurship Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "27250",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/masdar-city-women-entrepreneurship-package/101/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Abu Dhabi Mainland License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "19700",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/abu-dhabi-mainland-license/41/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Puerto Rico Company Setup",
+      "jurisdiction": "Puerto Rico",
+      "country": "Puerto Rico",
+      "estimated_time": null,
+      "starting_price": "11840",
+      "detail_url": "https://arnifi.com/product-details/business-setup/puerto-rico/puerto-rico-company-setup/189/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "UAQ Free Trade Zone - Micro Business LYTE",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "5500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/uaq-free-trade-zone-micro-business-lyte/122/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ajman Free Zone - Standard Freelance Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 12121",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/ajman-free-zone-standard-freelance-package/118/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "UAQ Free Trade Zone - Commercial License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "25400",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/uaq-free-trade-zone-commercial-license/56/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DIFC Innovation License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 4860",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/difc-innovation-license/84/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Innovation City License - Idea",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "6600",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/innovation-city-license-idea/164/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Hong Kong Company Setup & Renewal",
+      "jurisdiction": "Hong Kong",
+      "country": "Hong Kong",
+      "estimated_time": null,
+      "starting_price": "1245",
+      "detail_url": "https://arnifi.com/product-details/business-setup/hong-kong/hong-kong-company-setup-and-renewal/178/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "BVI License Renewal & Agent Appointment",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": null,
+      "starting_price": "4550",
+      "detail_url": "https://arnifi.com/product-details/business-setup/british-virgin-islands/bvi-license-renewal-and-agent-appointment/149/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ministry of Investment Service License - Platinum",
+      "jurisdiction": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "estimated_time": null,
+      "starting_price": "55650",
+      "detail_url": "https://arnifi.com/product-details/business-setup/saudi-arabia/ministry-of-investment-service-license-platinum/69/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Dubai - Mainland License (Standard Professional Activity)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 22005",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dubai-mainland-license-(standard-professional-activity)/112/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Singapore Foreigner  Incorporation",
+      "jurisdiction": "Singapore",
+      "country": "Singapore",
+      "estimated_time": null,
+      "starting_price": "2050",
+      "detail_url": "https://arnifi.com/product-details/business-setup/singapore/singapore-foreigner-incorporation/124/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "SPC - Ultimate License Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "6885",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/spc-ultimate-license-package/105/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Jebel Ali - Trading License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "73178",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/jebel-ali-trading-license/39/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "SPC - Publishing License Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "5760",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/spc-publishing-license-package/104/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "IFZA License and visa quota package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 12900",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/ifza-license-and-visa-quota-package/5/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Cayman Island Company Incorporation | Segregated Portfolio Setup",
+      "jurisdiction": "Cayman Island",
+      "country": "Cayman Island",
+      "estimated_time": null,
+      "starting_price": "7400",
+      "detail_url": "https://arnifi.com/product-details/business-setup/cayman-islands/cayman-island-company-incorporation-or-segregated-portfolio-setup/150/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "SRTIP General Trading License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "5500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/srtip-general-trading-license/61/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Expo City Dubai Company Setup - 1 Visa",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "20750",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/expo-city-dubai-company-setup-1-visa/199/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "British Virgin Island Company Formation | Basic Package",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": null,
+      "starting_price": "1299",
+      "detail_url": "https://arnifi.com/product-details/business-setup/british-virgin-islands/british-virgin-island-company-formation-or-basic-package/159/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "UAE Business Setup & Payment Solutions",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "7400",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/uae-business-setup-and-payment-solutions/201/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ministry of Investment Service License - RHQ Incorporation Package",
+      "jurisdiction": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "estimated_time": null,
+      "starting_price": "67242",
+      "detail_url": "https://arnifi.com/product-details/business-setup/saudi-arabia/ministry-of-investment-service-license-rhq-incorporation-package/95/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ministry of Investment Service License - Silver",
+      "jurisdiction": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "estimated_time": null,
+      "starting_price": "54000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/saudi-arabia/ministry-of-investment-service-license-silver/17/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Expo City Dubai Company Setup - 2 Visa",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "23950",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/expo-city-dubai-company-setup-2-visa/198/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Hong Kong Company Setup",
+      "jurisdiction": "Hong Kong",
+      "country": "Hong Kong",
+      "estimated_time": null,
+      "starting_price": "1480",
+      "detail_url": "https://arnifi.com/product-details/business-setup/hong-kong/hong-kong-company-setup/177/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Dubai - Mainland License (Real Estate Brokerage License)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 29005",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dubai-mainland-license-(real-estate-brokerage-license)/77/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "ADGM Foundation Office Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 32850",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/adgm-foundation-office-setup/153/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Expo City Dubai Company Setup - 0 Visa",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "12500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/expo-city-dubai-company-setup-0-visa/197/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "MISA - Entrepreneur License",
+      "jurisdiction": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "estimated_time": null,
+      "starting_price": "88650",
+      "detail_url": "https://arnifi.com/product-details/business-setup/saudi-arabia/misa-entrepreneur-license/38/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Singapore Basic Incorporation",
+      "jurisdiction": "Singapore",
+      "country": "Singapore",
+      "estimated_time": null,
+      "starting_price": "650",
+      "detail_url": "https://arnifi.com/product-details/business-setup/singapore/singapore-basic-incorporation/123/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "MISA Service License - Gold Package",
+      "jurisdiction": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "estimated_time": null,
+      "starting_price": "45650",
+      "detail_url": "https://arnifi.com/product-details/business-setup/saudi-arabia/misa-service-license-gold-package/59/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Dubai Technology Entrepreneur Campus (DTEC) Company Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "14595",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dubai-technology-entrepreneur-campus-(dtec)-company-setup/183/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Bidaya Graduate Talent Hub (Dubai Silicon Oasis)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "14700",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/bidaya-graduate-talent-hub-(dubai-silicon-oasis)/202/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Labuan Company Setup",
+      "jurisdiction": "Malaysia",
+      "country": "Malaysia",
+      "estimated_time": null,
+      "starting_price": "5000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/malaysia/labuan-company-setup/204/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "RAKEZ Bizstarter Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 6010",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/rakez-bizstarter-package/45/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "KSA Company Formation",
+      "jurisdiction": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "estimated_time": null,
+      "starting_price": "18000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/saudi-arabia/ksa-company-formation/162/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "ADGM SPV Company Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 4500",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/adgm-spv-company-setup/173/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "ADGM Category 4 License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 90000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/adgm-category-4-license/154/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "RAKEZ - Biz Saver Plus One",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 14010",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/rakez-biz-saver-plus-one/111/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "RAKEZ - Designated Package (Co-working Spaces)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 9999",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/rakez-designated-package-(co-working-spaces)/50/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DIFC Prescribed SPV",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 5000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/difc-prescribed-spv/142/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DWTC Spark Package Company Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "27380",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dwtc-spark-package-company-setup/175/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DIFC Operating Company (OpCo) Incorporation Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 27050",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/difc-operating-company-(opco)-incorporation-package/174/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DMCC Company Set Up \u2013 Standard Package \u2013 1 Visa",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 61485",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dmcc-company-set-up-standard-package-1-visa/193/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Singapore Premium Incorporation",
+      "jurisdiction": "Singapore",
+      "country": "Singapore",
+      "estimated_time": null,
+      "starting_price": "600",
+      "detail_url": "https://arnifi.com/product-details/business-setup/singapore/singapore-premium-incorporation/125/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "IFZA Company Setup - 0 Visa (2-Year License)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 0",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/ifza-company-setup-0-visa-(2-year-license)/176/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "RAKEZ Lite Promo (Enhanced) \u2013 1 Visa",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 12000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/rakez-lite-promo-(enhanced)-1-visa/203/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DIFC Category 2 License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 170000",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/difc-category-2-license/151/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Saint Vincent & The Grenadines \u2013 LLC Incorporation",
+      "jurisdiction": "Saint Vincent and the Grenadines",
+      "country": "Saint Vincent and the Grenadines",
+      "estimated_time": null,
+      "starting_price": "38342",
+      "detail_url": "https://arnifi.com/product-details/business-setup/saint-vincent-and-the-grenadines/saint-vincent-and-the-grenadines-llc-incorporation/200/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Cayman Islands Company Formation",
+      "jurisdiction": "Cayman Island",
+      "country": "Cayman Island",
+      "estimated_time": null,
+      "starting_price": "2799",
+      "detail_url": "https://arnifi.com/product-details/business-setup/cayman-islands/cayman-islands-company-formation/158/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Dubai - Mainland License (General Trading)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 37005",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dubai-mainland-license-(general-trading)/113/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Dubai - Mainland License (Trading)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 29505",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dubai-mainland-license-(trading)/114/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Mauritius Company Setup - AC (Authorised Company)",
+      "jurisdiction": "Mauritius",
+      "country": "Mauritius",
+      "estimated_time": null,
+      "starting_price": "5590",
+      "detail_url": "https://arnifi.com/product-details/business-setup/mauritius/mauritius-company-setup-ac-(authorised-company)/171/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Abu Dhabi Global Market (ADGM) Freezone - Holding Company with RSC",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "USD 25305",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/abu-dhabi-global-market-(adgm)-freezone-holding-company-with-rsc/156/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ireland Company Incorporation | Complete Digital Setup",
+      "jurisdiction": "Ireland",
+      "country": "Ireland",
+      "estimated_time": null,
+      "starting_price": "6384",
+      "detail_url": "https://arnifi.com/product-details/business-setup/ireland/ireland-company-incorporation-or-complete-digital-setup/182/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Singapore Proposal Mainland | Foreign National - EP Application",
+      "jurisdiction": "Singapore",
+      "country": "Singapore",
+      "estimated_time": null,
+      "starting_price": "4800",
+      "detail_url": "https://arnifi.com/product-details/business-setup/singapore/singapore-proposal-mainland-or-foreign-national-ep-application/187/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Innovation City Growth License Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "22550",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/innovation-city-growth-license-package/165/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ireland Company Incorporation & Annual Maintenance Renewal",
+      "jurisdiction": "Ireland",
+      "country": "Ireland",
+      "estimated_time": null,
+      "starting_price": "9054",
+      "detail_url": "https://arnifi.com/product-details/business-setup/ireland/ireland-company-incorporation-and-annual-maintenance-renewal/181/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "British Virgin Island Company Formation | Elite Package",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": null,
+      "starting_price": "17775",
+      "detail_url": "https://arnifi.com/product-details/business-setup/british-virgin-islands/british-virgin-island-company-formation-or-elite-package/161/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "British Virgin Island Company Formation | Advanced Package",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": null,
+      "starting_price": "1599",
+      "detail_url": "https://arnifi.com/product-details/business-setup/british-virgin-islands/british-virgin-island-company-formation-or-advanced-package/160/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Innovation City Seed License Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "13200",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/innovation-city-seed-license-package/166/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Innovation City Startup License Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "19800",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/innovation-city-startup-license-package/167/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Malaysia Company Incorporation",
+      "jurisdiction": "Malaysia",
+      "country": "Malaysia",
+      "estimated_time": null,
+      "starting_price": "4920",
+      "detail_url": "https://arnifi.com/product-details/business-setup/malaysia/malaysia-company-incorporation/179/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DWTC Company Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "12545",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dwtc-company-setup/168/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Singapore Proposal Mainland | Singapore National",
+      "jurisdiction": "Singapore",
+      "country": "Singapore",
+      "estimated_time": null,
+      "starting_price": "600",
+      "detail_url": "https://arnifi.com/product-details/business-setup/singapore/singapore-proposal-mainland-or-singapore-national/188/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ajman NuVentures Centre Free Zone",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "4888",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/ajman-nuventures-centre-free-zone/163/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Cyprus Company Incorporation | Complete Digital Setup",
+      "jurisdiction": "Cyprus",
+      "country": "Cyprus",
+      "estimated_time": null,
+      "starting_price": "4345",
+      "detail_url": "https://arnifi.com/product-details/business-setup/cyprus/cyprus-company-incorporation-or-complete-digital-setup/180/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "SHAMS - Standard Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 6885",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/shams-standard-package/58/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DMCC - Basic Biz Package (1 visa)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 38342",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dmcc-basic-biz-package-(1-visa)/27/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "RAKEZ - All Inclusive Package (Office Spaces)",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 23650",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/rakez-all-inclusive-package-(office-spaces)/96/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DMCC - Prime Plus",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 38145",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dmcc-prime-plus/130/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DMCC - Jumpstart Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 48780",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dmcc-jumpstart-package/129/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DMCC - Basic E-Commerce package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 34011",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dmcc-basic-e-commerce-package/120/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "Ajman Free Zone - Virtual Office Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 5555",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/ajman-free-zone-virtual-office-package/131/",
+      "tags": [
+        "Best Seller"
+      ],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DMCC - Crypto Centre Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 39185",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dmcc-crypto-centre-package/30/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "licence",
+      "package_name": "DMCC - Gaming Centre Package",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": null,
+      "starting_price": "AED 33436",
+      "detail_url": "https://arnifi.com/product-details/business-setup/uae/dmcc-gaming-centre-package/31/",
+      "tags": [],
+      "discovered_via": "product-listing"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "ADGM Multi-Family Office Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "5 - 6 Months",
+      "starting_price": "USD 32850",
+      "detail_url": "https://arnifi.com/product-details/services/funds/adgm-multi-family-office-setup/394/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Guernsey \u2013 Authorised Closed-ended Collective Investment Schemes",
+      "jurisdiction": "Guernsey",
+      "country": "Guernsey",
+      "estimated_time": "8 \u2013 9 Weeks",
+      "starting_price": "USD 12000",
+      "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-authorised-closed-ended-collective-investment-schemes/451/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Company Formation | Limited Liability Company Setup (With Licensed Fund)",
+      "jurisdiction": null,
+      "country": null,
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 39620",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-company-formation-or-limited-liability-company-setup-(with-licensed-fund)/289/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Exempted Company Incorporation (With Licensed Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "3 - 5 Weeks",
+      "starting_price": "USD 38250",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-incorporation-(with-licensed-fund)/280/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Exempted Company Setup | (With Registered Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "3 - 5 Weeks",
+      "starting_price": "USD 36250",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-setup-or-(with-registered-fund)/292/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "BVI Private Fund Setup (Open-Ended Fund)",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": "3 \u2013 4 Weeks",
+      "starting_price": "USD 28300",
+      "detail_url": "https://arnifi.com/product-details/services/funds/bvi-private-fund-setup-(open-ended-fund)/285/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "BVI Private Investment Fund (Close-Ended Fund)",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": "3 - 4 Weeks",
+      "starting_price": "USD 28300",
+      "detail_url": "https://arnifi.com/product-details/services/funds/bvi-private-investment-fund-(close-ended-fund)/286/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Limited Liability Company Setup (with Administered Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 39500",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-limited-liability-company-setup-(with-administered-fund)/288/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Guernsey \u2013 Open-ended Collective Investment Schemes",
+      "jurisdiction": "Guernsey",
+      "country": "Guernsey",
+      "estimated_time": "8 - 9 Weeks",
+      "starting_price": "USD 13750",
+      "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-open-ended-collective-investment-schemes/448/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Luxembourg RAIF (SCSP) Fund Setup",
+      "jurisdiction": "Luxembourg",
+      "country": "Luxembourg",
+      "estimated_time": "5 - 7 Weeks",
+      "starting_price": "USD 91090",
+      "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-raif-(scsp)-fund-setup/438/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Mauritius Domestic Trust Setup",
+      "jurisdiction": "Mauritius",
+      "country": "Mauritius",
+      "estimated_time": "2 - 4 Months",
+      "starting_price": "USD 4516",
+      "detail_url": "https://arnifi.com/product-details/services/funds/mauritius-domestic-trust-setup/446/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "ADGM - SPV With RSC",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "15-20 days",
+      "starting_price": "USD 8000",
+      "detail_url": "https://arnifi.com/product-details/services/funds/adgm-spv-with-rsc/276/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "BVI Approved Fund Setup (Open-Ended Fund)",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": "3 - 4 Weeks",
+      "starting_price": "USD 21300",
+      "detail_url": "https://arnifi.com/product-details/services/funds/bvi-approved-fund-setup-(open-ended-fund)/268/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Limited Liability Companies (with Limited Investor Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 Weeks",
+      "starting_price": "USD 37500",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-limited-liability-companies-(with-limited-investor-fund)/287/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Exempted Company Setup (with Administered Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 Weeks",
+      "starting_price": "USD 38250",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-setup-(with-administered-fund)/277/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Jersey Expert Fund Setup",
+      "jurisdiction": "United Kingdom",
+      "country": "United Kingdom",
+      "estimated_time": "3 \u2013 5 Weeks",
+      "starting_price": "USD 23300",
+      "detail_url": "https://arnifi.com/product-details/services/funds/jersey-expert-fund-setup/439/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Luxembourg (SCSP) Setup",
+      "jurisdiction": "Luxembourg",
+      "country": "Luxembourg",
+      "estimated_time": "5 - 7 Weeks",
+      "starting_price": "USD 18050",
+      "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-(scsp)-setup/440/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "ADGM Category 2 License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "3 \u2013 4 Weeks",
+      "starting_price": "USD 90000",
+      "detail_url": "https://arnifi.com/product-details/services/funds/adgm-category-2-license/279/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Luxembourg Private Wealth Management (SPF) Company Setup",
+      "jurisdiction": "Luxembourg",
+      "country": "Luxembourg",
+      "estimated_time": "3 \u2013 5 Weeks",
+      "starting_price": "USD 18800",
+      "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-private-wealth-management-(spf)-company-setup/441/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Star Trust Setup",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "2 - 4 Weeks",
+      "starting_price": "USD 6500",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-star-trust-setup/291/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Exempted Company (with Limited Investor Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 37250",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-(with-limited-investor-fund)/274/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Limited Liability Companies (with Registered Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 40830",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-limited-liability-companies-(with-registered-fund)/281/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "GIFT City \u2013 Company Setup (Fund Management Entity)",
+      "jurisdiction": "India",
+      "country": "India",
+      "estimated_time": "6 - 8 Months",
+      "starting_price": "USD 17570",
+      "detail_url": "https://arnifi.com/product-details/services/funds/gift-city-company-setup-(fund-management-entity)/443/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "GIFT City - Global Corporate Treasury Centre (GRCTC)",
+      "jurisdiction": "India",
+      "country": "India",
+      "estimated_time": "7 \u2013 9 Months",
+      "starting_price": "USD 43145",
+      "detail_url": "https://arnifi.com/product-details/services/funds/gift-city-global-corporate-treasury-centre-(grctc)/444/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Guernsey - GP/LP Structure",
+      "jurisdiction": "Guernsey",
+      "country": "Guernsey",
+      "estimated_time": "4 - 5 Months",
+      "starting_price": "USD 52600",
+      "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-gplp-structure/445/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "UK \u2013 GP/LP Fund Setup Structure",
+      "jurisdiction": "United Kingdom",
+      "country": "United Kingdom",
+      "estimated_time": "4 - 5 Weeks",
+      "starting_price": "USD 142000",
+      "detail_url": "https://arnifi.com/product-details/services/funds/uk-gplp-fund-setup-structure/447/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Exempted Limited Partnerships (with Registered Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 37620",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-limited-partnerships-(with-registered-fund)/290/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Exempted Limited Partnerships (with Limited Investor Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 37620",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-limited-partnerships-(with-limited-investor-fund)/293/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "DIFC Foundation Office",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "4 - 5 Weeks",
+      "starting_price": "USD 8100",
+      "detail_url": "https://arnifi.com/product-details/services/funds/difc-foundation-office/45/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "DIFC Category 3C License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 90000",
+      "detail_url": "https://arnifi.com/product-details/services/funds/difc-category-3c-license/275/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Luxembourg Holding Company Setup (SOPARFI)",
+      "jurisdiction": "Luxembourg",
+      "country": "Luxembourg",
+      "estimated_time": "5 - 7 Weeks",
+      "starting_price": "USD 17760",
+      "detail_url": "https://arnifi.com/product-details/services/funds/luxembourg-holding-company-setup-(soparfi)/442/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Cayman Island Exempted Limited Partnership (with Administered Fund)",
+      "jurisdiction": "Cayman Islands",
+      "country": "Cayman Islands",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 39620",
+      "detail_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-limited-partnership-(with-administered-fund)/294/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Mauritius Fund Setup",
+      "jurisdiction": "Mauritius",
+      "country": "Mauritius",
+      "estimated_time": "6 - 8 Months",
+      "starting_price": "USD 25600",
+      "detail_url": "https://arnifi.com/product-details/services/funds/mauritius-fund-setup/349/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "BVI Professional Fund Setup (Open-Ended Fund)",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": "3 \u2013 4 Weeks",
+      "starting_price": "USD 28300",
+      "detail_url": "https://arnifi.com/product-details/services/funds/bvi-professional-fund-setup-(open-ended-fund)/266/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "ADGM Single Family Office Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "3 \u2013 5 Weeks",
+      "starting_price": "USD 32850",
+      "detail_url": "https://arnifi.com/product-details/services/funds/adgm-single-family-office-setup/397/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "ADGM Foundation Setup",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "2 - 4 Weeks",
+      "starting_price": "USD 8500",
+      "detail_url": "https://arnifi.com/product-details/services/funds/adgm-foundation-setup/398/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Guernsey \u2013 Registered Closed-ended Collective Investment Scheme",
+      "jurisdiction": "Guernsey",
+      "country": "Guernsey",
+      "estimated_time": "8 - 9 Weeks",
+      "starting_price": "USD 12900",
+      "detail_url": "https://arnifi.com/product-details/services/funds/guernsey-registered-closed-ended-collective-investment-scheme/450/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "BVI Incubator Fund Setup (Open-Ended Fund)",
+      "jurisdiction": "British Virgin Islands",
+      "country": "British Virgin Islands",
+      "estimated_time": "3 \u2013 4 Weeks",
+      "starting_price": "USD 21300",
+      "detail_url": "https://arnifi.com/product-details/services/funds/bvi-incubator-fund-setup-(open-ended-fund)/265/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "Jersey Private Fund Setup",
+      "jurisdiction": "United Kingdom",
+      "country": "United Kingdom",
+      "estimated_time": "3 - 5 Weeks",
+      "starting_price": "USD 40860",
+      "detail_url": "https://arnifi.com/product-details/services/funds/jersey-private-fund-setup/437/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "ADGM Category 3C License",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "15-20 Days",
+      "starting_price": "USD 80000",
+      "detail_url": "https://arnifi.com/product-details/services/funds/adgm-category-3c-license/284/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    },
+    {
+      "product_type": "fund",
+      "package_name": "DIFC Family Office",
+      "jurisdiction": "UAE",
+      "country": "UAE",
+      "estimated_time": "4 - 5 weeks",
+      "starting_price": "USD 27050",
+      "detail_url": "https://arnifi.com/product-details/services/funds/difc-family-office/46/",
+      "tags": [],
+      "discovered_via": "funds-catalog"
+    }
+  ]
+}

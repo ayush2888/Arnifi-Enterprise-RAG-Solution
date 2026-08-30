@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "id": 13,
+    "countryName": "Mauritius",
+    "currency": "USD",
+    "slug": "mauritius",
+    "shortcode": "MU",
+    "countryFlag": {
+      "id": 6084,
+      "name": "mauritius.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 64,
+      "height": 48,
+      "formats": null,
+      "hash": "mauritius_9fb97a03d5",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.26,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/mauritius_9fb97a03d5.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:28:11.892Z",
+      "updatedAt": "2026-04-01T09:28:11.892Z"
+    },
+    "bannerImage": {
+      "id": 6612,
+      "name": "freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 706,
+      "height": 396,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_14281da220.png",
+          "hash": "small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_14281da220",
+          "mime": "image/png",
+          "name": "small_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2.png",
+          "path": null,
+          "size": 129.44,
+          "width": 500,
+          "height": 280
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_14281da220.png",
+          "hash": "thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_14281da220",
+          "mime": "image/png",
+          "name": "thumbnail_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2.png",
+          "path": null,
+          "size": 36.78,
+          "width": 245,
+          "height": 137
+        }
+      },
+      "hash": "freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_14281da220",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 64.81,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_14281da220.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-15T10:29:24.338Z",
+      "updatedAt": "2026-04-15T10:29:24.338Z"
+    }
+  },
+  "overview": {
+    "id": 7,
+    "title": "Mauritius",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Start your Mauritius company with Arnifi, access African and global markets, benefit from a favourable tax regime, and ensure full compliance with a seamless setup experience",
+    "blogs": [
+      {
+        "slug": "mauritius-company-registry-guide-company-setup-process/"
+      },
+      {
+        "slug": "cost-of-setting-up-a-company-in-mauritius-guide/"
+      },
+      {
+        "slug": "offshore-company-formation-in-mauritius-guide/"
+      }
+    ],
+    "overviewDetail": "Mauritius has positioned itself as one of the most attractive offshore and international business destinations, particularly for companies looking to expand into Africa and beyond. With a robust financial services sector, a stable political environment, and a well-regulated legal system based on English common law and French civil law, Mauritius offers both flexibility and credibility for global businesses.\n\nThe country is widely recognised for its Global Business Company (GBC) structures, which are commonly used for cross-border investments, holding entities, and fund management. Its network of double taxation avoidance agreements (DTAAs) across Africa, Asia, and Europe enhances its appeal as a tax-efficient jurisdiction. Regulatory bodies such as the Financial Services Commission (FSC) ensure compliance while maintaining ease of doing business.\n\nMauritius continues to evolve beyond traditional financial services, with growth in fintech, fintech regulation, and digital innovation. Combined with cost efficiency, skilled talent, and strong connectivity, Mauritius remains a compelling choice for startups, SMEs, and multinational corporations seeking international expansion.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Gemini_Generated_Image_jo9it9jo9it9jo9i_10e48d57ba.png"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Mar_24_2026_06_58_18_PM_7664027c7b.png"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Mar_24_2026_06_50_58_PM_8a3d7e5d3b.png"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/xavier_coiffic_By_A_Hl_Ri_T_Qjo_unsplash_fc87c7ace2.jpg"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/MAURITIUS_MAP_e9726333ab.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 54,
+        "value": "Gateway to Africa & Asia\nMauritius serves as a strategic bridge between Africa and Asia, enabling businesses to expand efficiently into emerging and high-growth markets\n"
+      },
+      {
+        "id": 58,
+        "value": "Favourable Tax Regime\nLow corporate tax rates with partial exemptions and extensive double taxation treaties make Mauritius highly attractive for global structuring\n"
+      },
+      {
+        "id": 57,
+        "value": "Investor-Friendly Regulations\nTransparent legal framework, ease of doing business, and strong investor protection policies support international companies\n"
+      },
+      {
+        "id": 55,
+        "value": "Global Business Hub\nWidely used for holding companies, investment funds, and international trading due to its reputation and regulatory clarity\n"
+      },
+      {
+        "id": 56,
+        "value": "Skilled Bilingual Workforce\nA well-educated workforce fluent in English and French supports international operations and cross-border business\n"
+      },
+      {
+        "id": 59,
+        "value": "Stable Political & Economic Environment\nConsistent governance, strong institutions, and economic stability provide long-term confidence for investors\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 58,
+        "question": "What types of business setups are available in Mauritius?\n",
+        "answer": "Businesses can be set up as Global Business Companies (GBC), Authorized Companies, or Domestic Companies depending on operational scope\n"
+      },
+      {
+        "id": 59,
+        "question": "Is 100% foreign ownership allowed in Mauritius?\n",
+        "answer": "Yes, Mauritius allows full foreign ownership in most sectors without significant restrictions\n"
+      },
+      {
+        "id": 60,
+        "question": "What is the corporate tax rate in Mauritius?\n",
+        "answer": "The standard corporate tax rate is 15%, with partial exemptions potentially reducing the effective rate\n"
+      },
+      {
+        "id": 61,
+        "question": "How long does it take to set up a company?\n",
+        "answer": "Company incorporation typically takes 5 to 10 working days, depending on approvals and documentation\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 13,
+        "title": "Financial services expansion",
+        "text": "Mauritius continues strengthening its position as a financial hub, with increased cross-border investment flows and rising demand for global business companies' structures",
+        "tag": "Financial Services",
+        "date": "2026-02-01"
+      },
+      {
+        "id": 14,
+        "title": "Tax reforms boosting investment",
+        "text": "Recent policy updates aim to enhance tax transparency while maintaining competitiveness, attracting foreign investors and improving MauritiusΓÇÖ standing as a compliant jurisdiction\n",
+        "tag": "Taxation ",
+        "date": "2026-01-01"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 54,
+        "question": "Define Business Structure\n",
+        "answer": "Choose the appropriate entity type (e.g., Global Business Company or Domestic Company) based on your business activities and expansion goals\n"
+      },
+      {
+        "id": 55,
+        "question": "Company Registration\n",
+        "answer": "Reserve your company name and register with the Registrar of Companies and Financial Services Commission (if applicable)\n"
+      },
+      {
+        "id": 56,
+        "question": " Operational Setup\n",
+        "answer": "Open a corporate bank account, appoint directors, secure a registered office, and obtain necessary licenses\n"
+      },
+      {
+        "id": 57,
+        "question": "Ongoing Compliance\n",
+        "answer": "Maintain regulatory compliance through annual filings, tax submissions, and adherence to economic substance requirements\n"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 171,
+        "productName": "Mauritius Company Setup - AC (Authorised Company)",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/m_Q_Pf3_B1_MO_Aa_Gf_R_2be26339de.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Mauritius",
+        "startingArnifiPrice": 5590,
+        "slug": "mauritius-company-setup-ac-(authorised-company)"
+      },
+      {
+        "id": 172,
+        "productName": "Mauritius Company Setup - GBC (Global Business Company)",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Maurities4_93213c0559.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Mauritius",
+        "startingArnifiPrice": 11010,
+        "slug": "mauritius-company-setup-gbc-(global-business-company)"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 13,
+      "countryName": "Mauritius",
+      "countryFullName": null,
+      "slug": "mauritius",
+      "shortcode": "MU",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": 6,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/mauritius_9fb97a03d5.png"
+      },
+      "comparison": [
+        {
+          "id": 60,
+          "key": "Setup Timeline",
+          "value": "5ΓÇô10 days"
+        },
+        {
+          "id": 61,
+          "key": "Capital Requirement",
+          "value": "Low (no strict minimum)"
+        },
+        {
+          "id": 62,
+          "key": "Corporate Tax Rate",
+          "value": "15% (effective lower"
+        },
+        {
+          "id": 65,
+          "key": "VAT Rate",
+          "value": "15%"
+        },
+        {
+          "id": 64,
+          "key": "Virtual Company Setup",
+          "value": "Available"
+        },
+        {
+          "id": 63,
+          "key": "Foreign Ownership",
+          "value": "100% "
+        },
+        {
+          "id": 67,
+          "key": "Visa Application",
+          "value": "Available (Occupation Permit)"
+        },
+        {
+          "id": 66,
+          "key": "International Market Access",
+          "value": "Strong (Africa-focused)"
+        },
+        {
+          "id": 68,
+          "key": "Tax Incentives",
+          "value": "Extensive (global business, funds)"
+        },
+        {
+          "id": 69,
+          "key": "Banking",
+          "value": "Moderate"
+        },
+        {
+          "id": 71,
+          "key": "Annual Compliance",
+          "value": "Moderate"
+        },
+        {
+          "id": 70,
+          "key": "Preferred Business Activities",
+          "value": "Holding, fintech, investment"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 13,
+        "countryName": "Mauritius",
+        "countryFullName": null,
+        "slug": "mauritius",
+        "shortcode": "MU",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 6,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/mauritius_9fb97a03d5.png"
+        },
+        "comparison": [
+          {
+            "id": 60,
+            "key": "Setup Timeline",
+            "value": "5ΓÇô10 days"
+          },
+          {
+            "id": 61,
+            "key": "Capital Requirement",
+            "value": "Low (no strict minimum)"
+          },
+          {
+            "id": 62,
+            "key": "Corporate Tax Rate",
+            "value": "15% (effective lower"
+          },
+          {
+            "id": 65,
+            "key": "VAT Rate",
+            "value": "15%"
+          },
+          {
+            "id": 64,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 63,
+            "key": "Foreign Ownership",
+            "value": "100% "
+          },
+          {
+            "id": 67,
+            "key": "Visa Application",
+            "value": "Available (Occupation Permit)"
+          },
+          {
+            "id": 66,
+            "key": "International Market Access",
+            "value": "Strong (Africa-focused)"
+          },
+          {
+            "id": 68,
+            "key": "Tax Incentives",
+            "value": "Extensive (global business, funds)"
+          },
+          {
+            "id": 69,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 71,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 70,
+            "key": "Preferred Business Activities",
+            "value": "Holding, fintech, investment"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "countryName": "Singapore",
+        "countryFullName": null,
+        "slug": "singapore",
+        "shortcode": "sg",
+        "currency": "SGD",
+        "startingPrice": null,
+        "rank": 5,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png"
+        },
+        "comparison": [
+          {
+            "id": 20,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 15,
+            "key": "Capital Requirement",
+            "value": "Low (SGD 1 minimum)"
+          },
+          {
+            "id": 19,
+            "key": "Corporate Tax Rate",
+            "value": "17%"
+          },
+          {
+            "id": 21,
+            "key": "VAT Rate",
+            "value": "9% (GST)"
+          },
+          {
+            "id": 14,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 16,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 13,
+            "key": "Visa Application",
+            "value": "Required (passes)"
+          },
+          {
+            "id": 17,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 18,
+            "key": "Tax Incentives",
+            "value": "Extensive schemes"
+          },
+          {
+            "id": 22,
+            "key": "Banking",
+            "value": "Easy to moderate"
+          },
+          {
+            "id": 23,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 24,
+            "key": "Preferred Business Activities",
+            "value": "Tech, finance, trade"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "countryName": "Cayman Island",
+        "countryFullName": null,
+        "slug": "cayman-islands",
+        "shortcode": "cym",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 4,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png"
+        },
+        "comparison": [
+          {
+            "id": 37,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô5 days"
+          },
+          {
+            "id": 43,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 38,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 46,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 41,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 45,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 42,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 44,
+            "key": "International Market Access",
+            "value": "Very strong (global finance hub)"
+          },
+          {
+            "id": 39,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 40,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 47,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 48,
+            "key": "Preferred Business Activities",
+            "value": "Funds, holding, investment"
+          }
+        ]
+      }
+    ]
+  }
+}

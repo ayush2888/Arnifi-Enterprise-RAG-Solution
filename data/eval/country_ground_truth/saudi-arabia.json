@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "id": 2,
+    "countryName": "Saudi Arabia",
+    "currency": "SAR",
+    "slug": "saudi-arabia",
+    "shortcode": "sa",
+    "countryFlag": {
+      "id": 6080,
+      "name": "Saudi Arabia.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 64,
+      "height": 48,
+      "formats": null,
+      "hash": "Saudi_Arabia_68b3e421d7",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.67,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saudi_Arabia_68b3e421d7.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:23:45.907Z",
+      "updatedAt": "2026-04-01T09:23:45.907Z"
+    },
+    "bannerImage": {
+      "id": 6430,
+      "name": "freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (2).png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 706,
+      "height": 396,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_2_315fbf7976.png",
+          "hash": "small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_2_315fbf7976",
+          "mime": "image/png",
+          "name": "small_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (2).png",
+          "path": null,
+          "size": 101.23,
+          "width": 500,
+          "height": 280,
+          "sizeInBytes": 101225
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_2_315fbf7976.png",
+          "hash": "thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_2_315fbf7976",
+          "mime": "image/png",
+          "name": "thumbnail_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (2).png",
+          "path": null,
+          "size": 30.49,
+          "width": 245,
+          "height": 137,
+          "sizeInBytes": 30488
+        }
+      },
+      "hash": "freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_2_315fbf7976",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 47.39,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_2_315fbf7976.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-02T19:42:06.280Z",
+      "updatedAt": "2026-04-02T19:42:06.280Z"
+    }
+  },
+  "overview": {
+    "id": 3,
+    "title": "Kingdom of Saudi Arabia",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Establish your business in Saudi Arabia with Arnifi, navigate regulatory requirements with clarity, and operate confidently in a fast-growing, opportunity-driven market\n",
+    "blogs": [
+      {
+        "slug": "business-setup-in-saudi-arabia-business-essentials/"
+      },
+      {
+        "slug": "misa-license-in-saudi-arabia/"
+      },
+      {
+        "slug": "manufacturing-company-in-saudi-arabia/"
+      }
+    ],
+    "overviewDetail": "The Kingdom of Saudi Arabia is rapidly emerging as a leading business destination in the Middle East, driven by its Vision 2030 economic diversification strategy. The country offers a large domestic market, strong government-backed infrastructure, and increasing openness to foreign investment across multiple sectors.\nSaudi Arabia has significantly streamlined its business setup processes through digital platforms, allowing faster company incorporation and licensing. Foreign investors can now own 100% of businesses in many sectors, supported by regulatory reforms aimed at improving ease of doing business. The Ministry of Investment (MISA) plays a central role in facilitating foreign direct investment and simplifying approval procedures.\nWith competitive corporate tax rates, access to government incentives, and major investments in sectors such as technology, tourism, and manufacturing, Saudi Arabia provides strong growth potential. Its strategic location connecting Asia, Europe, and Africa further strengthens its appeal for regional and global expansion",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/KSA_a237c91bd1.png"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Mar_30_2026_09_42_37_PM_4ca4be8e1a.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 13,
+        "value": "Foreign investors can fully own businesses in many sectors, particularly under MISA licensing and investment-friendly reforms"
+      },
+      {
+        "id": 14,
+        "value": "Government-led initiatives are opening sectors such as tourism, entertainment, and technology for private and foreign investment"
+      },
+      {
+        "id": 15,
+        "value": "Saudi Arabia offers access to one of the largest consumer markets in the Middle East, with strong purchasing power"
+      },
+      {
+        "id": 16,
+        "value": "Located at the centre of global trade routes, enabling easy access to Asia, Europe, and Africa"
+      },
+      {
+        "id": 17,
+        "value": "Various incentives, including tax benefits, funding programmes, and industrial support for strategic sectors"
+      },
+      {
+        "id": 18,
+        "value": "Business registration, licensing, and compliance processes are increasingly digitised for efficiency and transparency"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 22,
+        "question": "What is MISA, and why is it important?\n",
+        "answer": "The Ministry of Investment of Saudi Arabia (MISA) regulates foreign investment and provides licenses that allow international businesses to operate legally in the Kingdom."
+      },
+      {
+        "id": 19,
+        "question": "Can foreigners own 100% of a business in Saudi Arabia?",
+        "answer": "Yes, foreign investors can own 100% of businesses in many sectors, subject to approvals and activity-specific regulations."
+      },
+      {
+        "id": 21,
+        "question": "What is Saudisation and how does it affect businesses?",
+        "answer": "Saudisation requires companies to hire a certain percentage of Saudi nationals, impacting workforce planning and compliance obligations."
+      },
+      {
+        "id": 20,
+        "question": "How long does it take to set up a company in Saudi Arabia?",
+        "answer": "Business setup timelines vary but typically range from a few weeks to a couple of months, depending on approvals and sector requirements."
+      },
+      {
+        "id": 23,
+        "question": "What are the key sectors for investment in Saudi Arabia?",
+        "answer": "Key sectors include tourism, technology, logistics, manufacturing, and renewable energy, driven by Vision 2030 initiatives."
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 5,
+        "title": "Non-Oil Sector Growth: Vision 2030",
+        "text": "Saudi Arabia reports continued expansion in non-oil business activity, supported by government spending and private sector participation",
+        "tag": "Economy ",
+        "date": "2026-03-03"
+      },
+      {
+        "id": 6,
+        "title": "KSA Declares 2026 as the Year of AI",
+        "text": "The Kingdom is accelerating AI adoption, with $9.1 billion in investments and a push to position itself as a global technology hub",
+        "tag": "Technology ",
+        "date": "2026-03-10"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 24,
+        "question": "Define Business Structure & Activity",
+        "answer": "Identify your company type, ownership structure, and approved business activities"
+      },
+      {
+        "id": 25,
+        "question": "Secure Investment License & Registration",
+        "answer": "Obtain approvals and complete company registration with the relevant authorities"
+      },
+      {
+        "id": 26,
+        "question": "Establish Operational Setup",
+        "answer": "Put essential systems and requirements in place to begin operations"
+      },
+      {
+        "id": 27,
+        "question": "Maintain Regulatory Compliance",
+        "answer": "Ensure ongoing adherence to legal, tax, and labour requirements"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 162,
+        "productName": "KSA Company Formation",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Ministry_of_Investment_in_Riyadh_1324a543b6.png"
+        },
+        "productType": "licence",
+        "authority_name": "Ministry of Investment - SAGIA",
+        "startingArnifiPrice": 18000,
+        "slug": "ksa-company-formation"
+      },
+      {
+        "id": 17,
+        "productName": "Ministry of Investment Service License - Silver",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Apr_4_2026_06_11_43_PM_8fecb17861.png"
+        },
+        "productType": "licence",
+        "authority_name": "Ministry of Investment - SAGIA",
+        "startingArnifiPrice": 54000,
+        "slug": "ministry-of-investment-service-license-silver"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 2,
+      "countryName": "Saudi Arabia",
+      "countryFullName": null,
+      "slug": "saudi-arabia",
+      "shortcode": "sa",
+      "currency": "SAR",
+      "startingPrice": null,
+      "rank": 2,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saudi_Arabia_68b3e421d7.png"
+      },
+      "comparison": [
+        {
+          "id": 25,
+          "key": "Setup Timeline",
+          "value": "2ΓÇô6 weeks"
+        },
+        {
+          "id": 26,
+          "key": "Capital Requirement",
+          "value": "Moderate (varies by sector)"
+        },
+        {
+          "id": 27,
+          "key": "Corporate Tax Rate",
+          "value": "20% (foreign entities)"
+        },
+        {
+          "id": 28,
+          "key": "VAT Rate",
+          "value": "15%"
+        },
+        {
+          "id": 29,
+          "key": "Virtual Company Setup",
+          "value": "Limited"
+        },
+        {
+          "id": 30,
+          "key": "Foreign Ownership",
+          "value": "100% (many sectors)"
+        },
+        {
+          "id": 31,
+          "key": "Visa Application",
+          "value": "Required for expats"
+        },
+        {
+          "id": 32,
+          "key": "International Market Access",
+          "value": "Strong (regional)"
+        },
+        {
+          "id": 33,
+          "key": "Tax Incentives",
+          "value": "Sector-based incentives"
+        },
+        {
+          "id": 34,
+          "key": "Banking",
+          "value": "Moderate"
+        },
+        {
+          "id": 35,
+          "key": "Annual Compliance",
+          "value": "High"
+        },
+        {
+          "id": 36,
+          "key": "Preferred Business Activities",
+          "value": "Industrial, energy, logistics"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 2,
+        "countryName": "Saudi Arabia",
+        "countryFullName": null,
+        "slug": "saudi-arabia",
+        "shortcode": "sa",
+        "currency": "SAR",
+        "startingPrice": null,
+        "rank": 2,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saudi_Arabia_68b3e421d7.png"
+        },
+        "comparison": [
+          {
+            "id": 25,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô6 weeks"
+          },
+          {
+            "id": 26,
+            "key": "Capital Requirement",
+            "value": "Moderate (varies by sector)"
+          },
+          {
+            "id": 27,
+            "key": "Corporate Tax Rate",
+            "value": "20% (foreign entities)"
+          },
+          {
+            "id": 28,
+            "key": "VAT Rate",
+            "value": "15%"
+          },
+          {
+            "id": 29,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 30,
+            "key": "Foreign Ownership",
+            "value": "100% (many sectors)"
+          },
+          {
+            "id": 31,
+            "key": "Visa Application",
+            "value": "Required for expats"
+          },
+          {
+            "id": 32,
+            "key": "International Market Access",
+            "value": "Strong (regional)"
+          },
+          {
+            "id": 33,
+            "key": "Tax Incentives",
+            "value": "Sector-based incentives"
+          },
+          {
+            "id": 34,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 35,
+            "key": "Annual Compliance",
+            "value": "High"
+          },
+          {
+            "id": 36,
+            "key": "Preferred Business Activities",
+            "value": "Industrial, energy, logistics"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "countryName": "UAE",
+        "countryFullName": "UAE",
+        "slug": "uae",
+        "shortcode": "ae",
+        "currency": "AED",
+        "startingPrice": null,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png"
+        },
+        "comparison": [
+          {
+            "id": 2,
+            "key": "Setup Timeline",
+            "value": "3ΓÇô10 days"
+          },
+          {
+            "id": 1,
+            "key": "Capital Requirement",
+            "value": "Low / varies by license"
+          },
+          {
+            "id": 3,
+            "key": "Corporate Tax Rate",
+            "value": "9% (above threshold)"
+          },
+          {
+            "id": 4,
+            "key": "VAT Rate",
+            "value": "5%"
+          },
+          {
+            "id": 5,
+            "key": "Virtual Company Setup",
+            "value": "Available (Free Zones)"
+          },
+          {
+            "id": 6,
+            "key": "Foreign Ownership",
+            "value": "100% (most sectors)"
+          },
+          {
+            "id": 7,
+            "key": "Visa Application",
+            "value": "Linked to the company"
+          },
+          {
+            "id": 8,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 9,
+            "key": "Tax Incentives",
+            "value": "Free zone benefits"
+          },
+          {
+            "id": 12,
+            "key": "Banking",
+            "value": "Moderate difficulty"
+          },
+          {
+            "id": 11,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 10,
+            "key": "Preferred Business Activities",
+            "value": "Trading, consulting, fintech"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "countryName": "Singapore",
+        "countryFullName": null,
+        "slug": "singapore",
+        "shortcode": "sg",
+        "currency": "SGD",
+        "startingPrice": null,
+        "rank": 5,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png"
+        },
+        "comparison": [
+          {
+            "id": 20,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 15,
+            "key": "Capital Requirement",
+            "value": "Low (SGD 1 minimum)"
+          },
+          {
+            "id": 19,
+            "key": "Corporate Tax Rate",
+            "value": "17%"
+          },
+          {
+            "id": 21,
+            "key": "VAT Rate",
+            "value": "9% (GST)"
+          },
+          {
+            "id": 14,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 16,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 13,
+            "key": "Visa Application",
+            "value": "Required (passes)"
+          },
+          {
+            "id": 17,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 18,
+            "key": "Tax Incentives",
+            "value": "Extensive schemes"
+          },
+          {
+            "id": 22,
+            "key": "Banking",
+            "value": "Easy to moderate"
+          },
+          {
+            "id": 23,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 24,
+            "key": "Preferred Business Activities",
+            "value": "Tech, finance, trade"
+          }
+        ]
+      }
+    ]
+  }
+}

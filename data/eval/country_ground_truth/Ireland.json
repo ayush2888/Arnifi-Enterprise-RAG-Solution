@@ -1,0 +1,488 @@
+{
+  "meta": {
+    "id": 16,
+    "countryName": "Ireland",
+    "currency": "USD",
+    "slug": "Ireland",
+    "shortcode": "ie",
+    "countryFlag": {
+      "id": 6085,
+      "name": "Ireland.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 64,
+      "height": 48,
+      "formats": null,
+      "hash": "Ireland_6e53334295",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.27,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Ireland_6e53334295.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:29:08.949Z",
+      "updatedAt": "2026-04-01T09:29:08.949Z"
+    },
+    "bannerImage": {
+      "id": 8014,
+      "name": "Ireland_Cc.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 353,
+      "height": 198,
+      "formats": {
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_Ireland_Cc_0d596511af.png",
+          "hash": "thumbnail_Ireland_Cc_0d596511af",
+          "mime": "image/png",
+          "name": "thumbnail_Ireland_Cc.png",
+          "path": null,
+          "size": 32.06,
+          "width": 245,
+          "height": 137
+        }
+      },
+      "hash": "Ireland_Cc_0d596511af",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 14.68,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Ireland_Cc_0d596511af.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-05-11T04:42:54.350Z",
+      "updatedAt": "2026-05-11T04:42:54.350Z"
+    }
+  },
+  "overview": {
+    "id": 9,
+    "title": "Ireland",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Launch your Ireland company with Arnifi to access EU markets, benefit from low corporate taxes, and operate seamlessly within a globally trusted regulatory environment\n",
+    "blogs": [],
+    "overviewDetail": "Ireland has established itself as one of the most attractive business destinations in Europe, offering direct access to the EU single market combined with a competitive tax regime. As a member of the European Union and the Eurozone, Ireland provides businesses with stability, regulatory transparency, and seamless trade across Europe.\nThe country is particularly known for its thriving technology, pharmaceutical, and financial services sectors. Global corporations such as Google, Apple, and Meta have established significant operations here, leveraging IrelandΓÇÖs favourable corporate tax policies and highly skilled workforce.\n\nIrelandΓÇÖs corporate tax rate of 12.5% continues to be a key driver for foreign investment, although recent global tax reforms have introduced a 15% minimum tax for large multinational enterprises. Despite this, Ireland remains highly competitive due to its strong infrastructure, access to talent, and business-friendly policies.\n\nWith robust legal protections, EU alignment, and a strong reputation for ease of doing business, Ireland is an ideal base for startups, SMEs, and multinational companies looking to scale across Europe and beyond.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_shylands_1650882_c4cd7cd0cf.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_artemkulinych_13158067_729e21cdbf.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_lucianphotography_3566187_1_abea72e7b2.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_donovan_kelly_110228397_36709061_17b458ea90.jpg"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/i_RELAND_MAP_6f00c3fa2b.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 49,
+        "value": "Access to the EU Single Market\n Ireland provides seamless entry to the European Union, enabling businesses to operate across 27 countries from a single base\n"
+      },
+      {
+        "id": 48,
+        "value": "Competitive Corporate Tax Rate\n A 12.5% corporate tax rate remains one of the most attractive in Europe for trading companies\n"
+      },
+      {
+        "id": 50,
+        "value": "Strong Legal & Regulatory Framework\n A transparent, business-friendly legal system aligned with EU standards enhances investor confidence\n"
+      },
+      {
+        "id": 51,
+        "value": "Global Tech & Finance Hub\n Home to major tech giants and financial institutions, Ireland supports fintech, SaaS, and global services\n"
+      },
+      {
+        "id": 53,
+        "value": "Highly Skilled Workforce\n A young, educated, English-speaking talent pool supports innovation across industries\n"
+      },
+      {
+        "id": 52,
+        "value": "Pro-Business Environment\n Government-backed incentives, grants, and strong FDI policies encourage international expansion\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 75,
+        "question": "What types of business entities are available in Ireland?\n",
+        "answer": " Businesses can register as private limited companies (LTD), designated activity companies (DAC), branches, or partnerships\n"
+      },
+      {
+        "id": 74,
+        "question": "What is the corporate tax rate in Ireland?\n",
+        "answer": "The standard rate is 12.5% for trading income, with a 15% rate applying to large multinational groups under global tax rules\n"
+      },
+      {
+        "id": 72,
+        "question": "How long does it take to set up a company?\n",
+        "answer": " Company formation typically takes 5 to 10 working days\n"
+      },
+      {
+        "id": 71,
+        "question": "Do I need a local director?\n",
+        "answer": "Yes, at least one EEA-resident director is generally required, or a bond must be secured\n"
+      },
+      {
+        "id": 73,
+        "question": "Is Ireland good for startups?\n",
+        "answer": " Yes, especially for tech, SaaS, fintech, and export-oriented businesses targeting Europe\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 18,
+        "title": "Tech & AI Investment Surge",
+        "text": "Ireland continues to attract major tech investments, with global firms expanding AI, cloud, and data centre operations, reinforcing its position as EuropeΓÇÖs tech capital\n",
+        "tag": "Business News",
+        "date": "2026-02-01"
+      },
+      {
+        "id": 17,
+        "title": "Corporate Tax Alignment Updates",
+        "text": "Ireland implements global minimum tax rules (OECD Pillar Two), impacting large multinationals while maintaining competitiveness for SMEs and foreign investors\n",
+        "tag": "Taxation ",
+        "date": "2026-01-01"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 78,
+        "question": " Choose Business Structure\n",
+        "answer": " Select between a Private Limited Company (LTD), branch, or partnership based on your operational needs\n"
+      },
+      {
+        "id": 76,
+        "question": " Register Your Company\n",
+        "answer": "Incorporate with the Companies Registration Office (CRO) and secure your company name\n"
+      },
+      {
+        "id": 77,
+        "question": "Register for Taxes\n",
+        "answer": " Obtain a tax identification number and register for VAT and corporate tax with Revenue\n"
+      },
+      {
+        "id": 79,
+        "question": "Open Bank Account & Set Up Office\n",
+        "answer": " Establish a corporate bank account and registered office in Ireland\n"
+      },
+      {
+        "id": 80,
+        "question": " Ensure Compliance\n",
+        "answer": "Maintain annual filings, financial statements, and tax compliance obligations\n"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 181,
+        "productName": "Ireland Company Incorporation & Annual Maintenance Renewal",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Ireland_1_efe1ddd116.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Ireland",
+        "startingArnifiPrice": 9054,
+        "slug": "ireland-company-incorporation-and-annual-maintenance-renewal"
+      },
+      {
+        "id": 182,
+        "productName": "Ireland Company Incorporation | Complete Digital Setup",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_artemkulinych_13158067_729e21cdbf.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Ireland",
+        "startingArnifiPrice": 6384,
+        "slug": "ireland-company-incorporation-or-complete-digital-setup"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 16,
+      "countryName": "Ireland",
+      "countryFullName": null,
+      "slug": "Ireland",
+      "shortcode": "ie",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": null,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Ireland_6e53334295.png"
+      },
+      "comparison": [
+        {
+          "id": 107,
+          "key": "Setup Timeline",
+          "value": "5ΓÇô10 days"
+        },
+        {
+          "id": 108,
+          "key": "Capital Requirement",
+          "value": "Low"
+        },
+        {
+          "id": 110,
+          "key": "Corporate Tax Rate",
+          "value": "12.5%"
+        },
+        {
+          "id": 109,
+          "key": "VAT Rate",
+          "value": "19%"
+        },
+        {
+          "id": 111,
+          "key": "Virtual Company Setup",
+          "value": "Limited"
+        },
+        {
+          "id": 112,
+          "key": "Foreign Ownership",
+          "value": "100% "
+        },
+        {
+          "id": 113,
+          "key": "Visa Application",
+          "value": "Required for non-EU founders"
+        },
+        {
+          "id": 114,
+          "key": "International Market Access",
+          "value": "Strong (EU market)"
+        },
+        {
+          "id": 115,
+          "key": "Tax Incentives",
+          "value": "R&D credits, grants"
+        },
+        {
+          "id": 116,
+          "key": "Banking",
+          "value": "Strong, regulated EU system"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 16,
+        "countryName": "Ireland",
+        "countryFullName": null,
+        "slug": "Ireland",
+        "shortcode": "ie",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": null,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Ireland_6e53334295.png"
+        },
+        "comparison": [
+          {
+            "id": 107,
+            "key": "Setup Timeline",
+            "value": "5ΓÇô10 days"
+          },
+          {
+            "id": 108,
+            "key": "Capital Requirement",
+            "value": "Low"
+          },
+          {
+            "id": 110,
+            "key": "Corporate Tax Rate",
+            "value": "12.5%"
+          },
+          {
+            "id": 109,
+            "key": "VAT Rate",
+            "value": "19%"
+          },
+          {
+            "id": 111,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 112,
+            "key": "Foreign Ownership",
+            "value": "100% "
+          },
+          {
+            "id": 113,
+            "key": "Visa Application",
+            "value": "Required for non-EU founders"
+          },
+          {
+            "id": 114,
+            "key": "International Market Access",
+            "value": "Strong (EU market)"
+          },
+          {
+            "id": 115,
+            "key": "Tax Incentives",
+            "value": "R&D credits, grants"
+          },
+          {
+            "id": 116,
+            "key": "Banking",
+            "value": "Strong, regulated EU system"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "countryName": "British Virgin Islands",
+        "countryFullName": null,
+        "slug": "british-virgin-islands",
+        "shortcode": "vg",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 3,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+        },
+        "comparison": [
+          {
+            "id": 49,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 50,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 52,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 51,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 53,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 56,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 55,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 54,
+            "key": "International Market Access",
+            "value": "Strong (global structuring)"
+          },
+          {
+            "id": 57,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 58,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 59,
+            "key": "Preferred Business Activities",
+            "value": "Holding, investment, IP"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "countryName": "Cayman Island",
+        "countryFullName": null,
+        "slug": "cayman-islands",
+        "shortcode": "cym",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 4,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png"
+        },
+        "comparison": [
+          {
+            "id": 37,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô5 days"
+          },
+          {
+            "id": 43,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 38,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 46,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 41,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 45,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 42,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 44,
+            "key": "International Market Access",
+            "value": "Very strong (global finance hub)"
+          },
+          {
+            "id": 39,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 40,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 47,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 48,
+            "key": "Preferred Business Activities",
+            "value": "Funds, holding, investment"
+          }
+        ]
+      }
+    ]
+  }
+}

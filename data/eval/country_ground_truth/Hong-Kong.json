@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "id": 21,
+    "countryName": "Hong Kong",
+    "currency": "USD",
+    "slug": "Hong-Kong",
+    "shortcode": "hk",
+    "countryFlag": {
+      "id": 6836,
+      "name": "hongkong_flag.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 275,
+      "height": 183,
+      "formats": {
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_hongkong_flag_c34593557a.png",
+          "hash": "thumbnail_hongkong_flag_c34593557a",
+          "mime": "image/png",
+          "name": "thumbnail_hongkong_flag.png",
+          "path": null,
+          "size": 8.59,
+          "width": 234,
+          "height": 156
+        }
+      },
+      "hash": "hongkong_flag_c34593557a",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 2.31,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong_flag_c34593557a.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-23T07:04:35.408Z",
+      "updatedAt": "2026-04-23T07:04:35.408Z"
+    },
+    "bannerImage": {
+      "id": 7963,
+      "name": "hongkong_country.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 342,
+      "height": 192,
+      "formats": {
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_hongkong_country_c64d2665f1.png",
+          "hash": "thumbnail_hongkong_country_c64d2665f1",
+          "mime": "image/png",
+          "name": "thumbnail_hongkong_country.png",
+          "path": null,
+          "size": 40.91,
+          "width": 245,
+          "height": 138
+        }
+      },
+      "hash": "hongkong_country_c64d2665f1",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 18.26,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong_country_c64d2665f1.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-05-08T09:33:12.120Z",
+      "updatedAt": "2026-05-08T09:33:12.120Z"
+    }
+  },
+  "overview": {
+    "id": 10,
+    "title": "Hong Kong",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Establish your Hong Kong company with Arnifi, tap into world-class infrastructure for financial services and ICT, and access the ultimate springboard for global trade and mainland China expansion.\n",
+    "blogs": [],
+    "overviewDetail": "Hong Kong does three things better than anywhere else. China access. Logistics. Financial services. InvestHK and the HKTDC SME Centre offer operational support with Real trade data, business matching, and export guidance that works.\n\nThe tax setup speaks for itself. 8.25 percent on the first HKD 2 million. 16.5 percent after that. Offshore profits untouched. Then CEPA kicks in. Preferential Mainland access no other jurisdiction can match.\n\nCommon law courts. Total foreign ownership. Data that moves in real time. If you operate in ICT, cross-border e-commerce, or global sourcing, this is where the infrastructure already exists. No need to build it from scratch\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hgkg_1_140a757591.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong3_7decada59f.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hgkg_2_8d1212e3bc.jpg"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong_map_678e6370ed.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 60,
+        "value": "CEPA: The China Door\nA free trade agreement that only Hong Kong gets. Zero tariffs on exports into Mainland China. Only a few jurisdictions have this card.\n"
+      },
+      {
+        "id": 61,
+        "value": "Government-Backed Sectors\nFinancial services. ICT. Transport and logistics. InvestHK pours real support into these. Infrastructure. Fast tracks. Actual government support behind your setup.\n"
+      },
+      {
+        "id": 63,
+        "value": "SME Support That Functions\nHKTDC SME Centre handles trade data, business matching, and export guidance. Not brochures. Operational help. Centralized and funded.\n"
+      },
+      {
+        "id": 64,
+        "value": "Tax System Built to Compete\n8.25 percent on the first HKD 2 million of profits. 16.5 percent after that. Offshore income stays untaxed. The territorial system stays clean.\n"
+      },
+      {
+        "id": 65,
+        "value": "Supply Chain Command Center\nPearl River Delta connectivity. Direct China Customs data integration. Major trade events on your doorstep. This is where sourcing gets done.\n"
+      },
+      {
+        "id": 62,
+        "value": "Full Ownership. Common Law.\nZero local shareholder requirements with total foreign control. Courts you can trust. English common law and the strong legal system.\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 81,
+        "question": "What is CEPA and who qualifies?\n",
+        "answer": "CEPA is a free trade deal between Mainland China and Hong Kong. Qualifying Hong Kong companies get preferential access, often zero tariffs, on goods and services entering the mainland. Few jurisdictions have anything close.\n"
+      },
+      {
+        "id": 82,
+        "question": "What government support exists for new businesses?",
+        "answer": "InvestHK offers tailored help for foreign companies in priority sectors like ICT and financial services. The HKTDC SME Centre handles business matching, market research, and export marketing. Both are operational, not decorative.\n"
+      },
+      {
+        "id": 83,
+        "question": "Do I need a local director?\n",
+        "answer": "No. Directors can live anywhere and hold any passport. The one local requirement is a Company Secretary based in Hong Kong.\n"
+      },
+      {
+        "id": 85,
+        "question": "What's the actual tax rate?",
+        "answer": "Two tiers. 8.25 percent on the first HKD 2 million of assessable profits. 16.5 percent on everything above that threshold. Offshore income sits outside the net entirely."
+      },
+      {
+        "id": 84,
+        "question": "Are annual audits mandatory?\n",
+        "answer": "Yes. Every Hong Kong private limited company gets audited by a local CPA. Active Hong Kong private limited companies are generally required to undergo annual audits. The filing deadline doesn't move.\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 19,
+        "title": "Deepening GBA Integration",
+        "text": "WMC 2.0 opens wider channels for cross-boundary wealth flows. New data frameworks sit alongside it. Together, they lock Hong Kong in as the Greater Bay Area's main financial hub.\n",
+        "tag": "Economy",
+        "date": "2024-02-26"
+      },
+      {
+        "id": 20,
+        "title": "Aggressive Enterprise Incentives",
+        "text": "The 2026-27 Budget slashed tax rates to 5 percent for priority industries. OASES got a wider mandate to pull in foreign firms and smooth their market entry.",
+        "tag": "Regulation",
+        "date": "2026-02-25"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 86,
+        "question": "Lock Down the Structure\n",
+        "answer": "A Private Limited Company tag covers most needs. Set your share capital. Name your directors and shareholders. Directors and shareholders do not need Hong Kong residency.\t\n"
+      },
+      {
+        "id": 87,
+        "question": "File the Paperwork\n",
+        "answer": "Incorporation forms hit the Companies Registry. The Business Registration Certificate application goes to the Inland Revenue Department. Both filed together with Identity documents attached.\n"
+      },
+      {
+        "id": 89,
+        "question": "Build the Framework\n",
+        "answer": "Appoint a Company Secretary (mandatory and must be Hong Kong-based). Secure a registered office address and start the bank account process. This step usually drags the longest, which is exactly why Arnifi leverages local banking relationships to push it through."
+      },
+      {
+        "id": 88,
+        "question": "Keep It Compliant\n",
+        "answer": "Annual return filing. BRC renewal. Significant Controllers Register stays updated. Audited financial statements submitted on time. Miss these and the penalties stack fast.\n"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 177,
+        "productName": "Hong Kong Company Setup",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong2_8d462c8c62.png"
+        },
+        "productType": "licence",
+        "authority_name": "Hong Kong",
+        "startingArnifiPrice": 1480,
+        "slug": "hong-kong-company-setup"
+      },
+      {
+        "id": 178,
+        "productName": "Hong Kong Company Setup & Renewal",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong3_4339d90f1e.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Hong Kong",
+        "startingArnifiPrice": 1245,
+        "slug": "hong-kong-company-setup-and-renewal"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 21,
+      "countryName": "Hong Kong",
+      "countryFullName": "Hong Kong",
+      "slug": "Hong-Kong",
+      "shortcode": "hk",
+      "currency": "USD",
+      "startingPrice": 0,
+      "rank": null,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong_flag_c34593557a.png"
+      },
+      "comparison": [
+        {
+          "id": 72,
+          "key": "Setup Timeline",
+          "value": "1ΓÇô3 days"
+        },
+        {
+          "id": 73,
+          "key": "Capital Requirement",
+          "value": "Low (HKD 1 minimum)"
+        },
+        {
+          "id": 74,
+          "key": "Corporate Tax Rate",
+          "value": "8.25% (on first HKD 2M), 16.5% thereafter"
+        },
+        {
+          "id": 75,
+          "key": "VAT Rate",
+          "value": "0%"
+        },
+        {
+          "id": 76,
+          "key": "Virtual Company Setup",
+          "value": "Available"
+        },
+        {
+          "id": 78,
+          "key": "Foreign Ownership",
+          "value": "100%"
+        },
+        {
+          "id": 77,
+          "key": "Visa Application",
+          "value": "Required (Employment passes, TTPS)"
+        },
+        {
+          "id": 79,
+          "key": "International Market Access",
+          "value": "Very strong (Gateway to Mainland China & APAC)"
+        },
+        {
+          "id": 80,
+          "key": "Tax Incentives",
+          "value": "Offshore tax exemption (territorial tax), CEPA"
+        },
+        {
+          "id": 81,
+          "key": "Banking",
+          "value": "Moderate to difficult (Strict AML regulations)"
+        },
+        {
+          "id": 82,
+          "key": "Annual Compliance",
+          "value": "Strict (Mandatory annual statutory audit required)"
+        },
+        {
+          "id": 83,
+          "key": "Preferred Business Activities",
+          "value": "Trade, logistics, finance, e-commerce, holding"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 21,
+        "countryName": "Hong Kong",
+        "countryFullName": "Hong Kong",
+        "slug": "Hong-Kong",
+        "shortcode": "hk",
+        "currency": "USD",
+        "startingPrice": 0,
+        "rank": null,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/hongkong_flag_c34593557a.png"
+        },
+        "comparison": [
+          {
+            "id": 72,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 73,
+            "key": "Capital Requirement",
+            "value": "Low (HKD 1 minimum)"
+          },
+          {
+            "id": 74,
+            "key": "Corporate Tax Rate",
+            "value": "8.25% (on first HKD 2M), 16.5% thereafter"
+          },
+          {
+            "id": 75,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 76,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 78,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 77,
+            "key": "Visa Application",
+            "value": "Required (Employment passes, TTPS)"
+          },
+          {
+            "id": 79,
+            "key": "International Market Access",
+            "value": "Very strong (Gateway to Mainland China & APAC)"
+          },
+          {
+            "id": 80,
+            "key": "Tax Incentives",
+            "value": "Offshore tax exemption (territorial tax), CEPA"
+          },
+          {
+            "id": 81,
+            "key": "Banking",
+            "value": "Moderate to difficult (Strict AML regulations)"
+          },
+          {
+            "id": 82,
+            "key": "Annual Compliance",
+            "value": "Strict (Mandatory annual statutory audit required)"
+          },
+          {
+            "id": 83,
+            "key": "Preferred Business Activities",
+            "value": "Trade, logistics, finance, e-commerce, holding"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "countryName": "Singapore",
+        "countryFullName": null,
+        "slug": "singapore",
+        "shortcode": "sg",
+        "currency": "SGD",
+        "startingPrice": null,
+        "rank": 5,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png"
+        },
+        "comparison": [
+          {
+            "id": 20,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 15,
+            "key": "Capital Requirement",
+            "value": "Low (SGD 1 minimum)"
+          },
+          {
+            "id": 19,
+            "key": "Corporate Tax Rate",
+            "value": "17%"
+          },
+          {
+            "id": 21,
+            "key": "VAT Rate",
+            "value": "9% (GST)"
+          },
+          {
+            "id": 14,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 16,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 13,
+            "key": "Visa Application",
+            "value": "Required (passes)"
+          },
+          {
+            "id": 17,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 18,
+            "key": "Tax Incentives",
+            "value": "Extensive schemes"
+          },
+          {
+            "id": 22,
+            "key": "Banking",
+            "value": "Easy to moderate"
+          },
+          {
+            "id": 23,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 24,
+            "key": "Preferred Business Activities",
+            "value": "Tech, finance, trade"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "countryName": "British Virgin Islands",
+        "countryFullName": null,
+        "slug": "british-virgin-islands",
+        "shortcode": "vg",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 3,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+        },
+        "comparison": [
+          {
+            "id": 49,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 50,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 52,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 51,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 53,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 56,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 55,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 54,
+            "key": "International Market Access",
+            "value": "Strong (global structuring)"
+          },
+          {
+            "id": 57,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 58,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 59,
+            "key": "Preferred Business Activities",
+            "value": "Holding, investment, IP"
+          }
+        ]
+      }
+    ]
+  }
+}

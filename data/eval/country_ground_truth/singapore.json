@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "id": 6,
+    "countryName": "Singapore",
+    "currency": "SGD",
+    "slug": "singapore",
+    "shortcode": "sg",
+    "countryFlag": {
+      "id": 6081,
+      "name": "Singapore flag.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 86,
+      "height": 64,
+      "formats": null,
+      "hash": "Singapore_flag_bfa6fed5d6",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.59,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:25:07.475Z",
+      "updatedAt": "2026-04-01T09:25:07.475Z"
+    },
+    "bannerImage": {
+      "id": 6431,
+      "name": "freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (3).png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 706,
+      "height": 396,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_3_985ae86890.png",
+          "hash": "small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_3_985ae86890",
+          "mime": "image/png",
+          "name": "small_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (3).png",
+          "path": null,
+          "size": 167.06,
+          "width": 500,
+          "height": 280,
+          "sizeInBytes": 167063
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_3_985ae86890.png",
+          "hash": "thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_3_985ae86890",
+          "mime": "image/png",
+          "name": "thumbnail_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (3).png",
+          "path": null,
+          "size": 45.55,
+          "width": 245,
+          "height": 137,
+          "sizeInBytes": 45545
+        }
+      },
+      "hash": "freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_3_985ae86890",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 90.67,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_3_985ae86890.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-02T19:42:29.567Z",
+      "updatedAt": "2026-04-02T19:42:29.567Z"
+    }
+  },
+  "overview": {
+    "id": 5,
+    "title": "Singapore",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Arnifi helps you establish your Singapore company with precision, manage regulatory requirements smoothly, and operate in one of the worldΓÇÖs most trusted business environments",
+    "blogs": [
+      {
+        "slug": "what-is-a-uen-number-in-singapore/"
+      },
+      {
+        "slug": "iras-digital-record-keeping-singapore-guide/"
+      },
+      {
+        "slug": "singapore-corporate-tax-reliefs-2026-guide/"
+      }
+    ],
+    "overviewDetail": "Singapore is one of the worldΓÇÖs most advanced and business-friendly economies, consistently ranked among the top jurisdictions for ease of doing business, transparency, and regulatory efficiency. Strategically located in Southeast Asia, it serves as a gateway to the ASEAN market and a hub for global trade, finance, and technology.\n\nThe country offers a robust legal framework based on English common law, strong intellectual property protection, and a highly efficient digital governance system. Businesses can be incorporated quickly through the Accounting and Corporate Regulatory Authority (ACRA), often within a day. Singapore allows 100% foreign ownership, with minimal capital requirements and a straightforward compliance structure.\n\nIts competitive tax regime includes a headline corporate tax rate of 17%, along with various exemptions and incentives for startups and SMEs. There is no capital gains tax, and the country has an extensive network of double taxation treaties, making it highly attractive for international structuring.\n\nWith world-class infrastructure, political stability, and a highly skilled workforce, Singapore continues to attract startups, multinational corporations, and investors seeking a reliable and scalable business environment.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_image_c07251a5cf.png"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_9ba9d7ae4c.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 25,
+        "value": "100% Foreign Ownership\n Foreign investors can fully own companies without requiring local partners"
+      },
+      {
+        "id": 30,
+        "value": "Fast and Efficient Incorporation\nCompany registration can be completed within 1ΓÇô2 days through ACRAΓÇÖs digital system"
+      },
+      {
+        "id": 26,
+        "value": "Competitive Tax Regime\n17% corporate tax with exemptions and incentives for startups and SMEs"
+      },
+      {
+        "id": 28,
+        "value": "Strong Legal and Regulatory Framework\nTransparent laws and robust enforcement ensure business security and trust"
+      },
+      {
+        "id": 29,
+        "value": "Global Trade and Financial Hub\nStrategic location with access to ASEAN markets and international trade routes"
+      },
+      {
+        "id": 27,
+        "value": "Highly Skilled Workforce\nAccess to a talented, multilingual workforce supporting business growth"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 40,
+        "question": "Can foreigners fully own a company in Singapore?",
+        "answer": "Yes, Singapore allows 100% foreign ownership, though at least one resident director is required."
+      },
+      {
+        "id": 39,
+        "question": "What is the corporate tax rate in Singapore?",
+        "answer": "The standard corporate tax rate is 17%, with various exemptions and incentives available."
+      },
+      {
+        "id": 41,
+        "question": "How long does it take to register a company?",
+        "answer": "Company incorporation is typically completed within 1ΓÇô2 business days."
+      },
+      {
+        "id": 37,
+        "question": "Do I need a local director?",
+        "answer": "Yes, at least one director must be a Singapore resident (citizen, PR, or employment pass holder)."
+      },
+      {
+        "id": 38,
+        "question": "Is Singapore good for startups?",
+        "answer": "Yes, Singapore offers strong government support, funding schemes, and a favourable ecosystem for startups."
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 9,
+        "title": "AsiaΓÇÖs Gold Trading Hub ",
+        "text": "Authorities are building a full ecosystem for gold trading, including clearing, storage, and capital market products, to attract global flows",
+        "tag": "Finance",
+        "date": "2026-03-27"
+      },
+      {
+        "id": 10,
+        "title": "Singapore Strengthens AI Push",
+        "text": "The government announced national AI initiatives and investments to boost productivity across sectors like finance, healthcare, and logistics",
+        "tag": "Technology",
+        "date": "2026-02-12"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 42,
+        "question": "Establish Your Business Framework",
+        "answer": "Outline your entity type, ownership structure, and intended operations"
+      },
+      {
+        "id": 45,
+        "question": "Complete Incorporation Formalities",
+        "answer": "File required documents and secure company registration"
+      },
+      {
+        "id": 43,
+        "question": "Activate Business Operations",
+        "answer": "Put key systems and structures in place to begin functioning"
+      },
+      {
+        "id": 44,
+        "question": "Fulfil Ongoing Obligations",
+        "answer": "Keep up with statutory filings and regulatory requirements"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 123,
+        "productName": "Singapore Basic Incorporation",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_Basic_Incorporation_69dce4415e.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Singapore ",
+        "startingArnifiPrice": 650,
+        "slug": "singapore-basic-incorporation"
+      },
+      {
+        "id": 125,
+        "productName": "Singapore Premium Incorporation",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/cegoh_singapore_243671_1920_bdf3a97d42.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Singapore ",
+        "startingArnifiPrice": 600,
+        "slug": "singapore-premium-incorporation"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 6,
+      "countryName": "Singapore",
+      "countryFullName": null,
+      "slug": "singapore",
+      "shortcode": "sg",
+      "currency": "SGD",
+      "startingPrice": null,
+      "rank": 5,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png"
+      },
+      "comparison": [
+        {
+          "id": 20,
+          "key": "Setup Timeline",
+          "value": "1ΓÇô3 days"
+        },
+        {
+          "id": 15,
+          "key": "Capital Requirement",
+          "value": "Low (SGD 1 minimum)"
+        },
+        {
+          "id": 19,
+          "key": "Corporate Tax Rate",
+          "value": "17%"
+        },
+        {
+          "id": 21,
+          "key": "VAT Rate",
+          "value": "9% (GST)"
+        },
+        {
+          "id": 14,
+          "key": "Virtual Company Setup",
+          "value": "Available"
+        },
+        {
+          "id": 16,
+          "key": "Foreign Ownership",
+          "value": "100%"
+        },
+        {
+          "id": 13,
+          "key": "Visa Application",
+          "value": "Required (passes)"
+        },
+        {
+          "id": 17,
+          "key": "International Market Access",
+          "value": "Very strong"
+        },
+        {
+          "id": 18,
+          "key": "Tax Incentives",
+          "value": "Extensive schemes"
+        },
+        {
+          "id": 22,
+          "key": "Banking",
+          "value": "Easy to moderate"
+        },
+        {
+          "id": 23,
+          "key": "Annual Compliance",
+          "value": "Moderate"
+        },
+        {
+          "id": 24,
+          "key": "Preferred Business Activities",
+          "value": "Tech, finance, trade"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 6,
+        "countryName": "Singapore",
+        "countryFullName": null,
+        "slug": "singapore",
+        "shortcode": "sg",
+        "currency": "SGD",
+        "startingPrice": null,
+        "rank": 5,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png"
+        },
+        "comparison": [
+          {
+            "id": 20,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 15,
+            "key": "Capital Requirement",
+            "value": "Low (SGD 1 minimum)"
+          },
+          {
+            "id": 19,
+            "key": "Corporate Tax Rate",
+            "value": "17%"
+          },
+          {
+            "id": 21,
+            "key": "VAT Rate",
+            "value": "9% (GST)"
+          },
+          {
+            "id": 14,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 16,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 13,
+            "key": "Visa Application",
+            "value": "Required (passes)"
+          },
+          {
+            "id": 17,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 18,
+            "key": "Tax Incentives",
+            "value": "Extensive schemes"
+          },
+          {
+            "id": 22,
+            "key": "Banking",
+            "value": "Easy to moderate"
+          },
+          {
+            "id": 23,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 24,
+            "key": "Preferred Business Activities",
+            "value": "Tech, finance, trade"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "countryName": "UAE",
+        "countryFullName": "UAE",
+        "slug": "uae",
+        "shortcode": "ae",
+        "currency": "AED",
+        "startingPrice": null,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png"
+        },
+        "comparison": [
+          {
+            "id": 2,
+            "key": "Setup Timeline",
+            "value": "3ΓÇô10 days"
+          },
+          {
+            "id": 1,
+            "key": "Capital Requirement",
+            "value": "Low / varies by license"
+          },
+          {
+            "id": 3,
+            "key": "Corporate Tax Rate",
+            "value": "9% (above threshold)"
+          },
+          {
+            "id": 4,
+            "key": "VAT Rate",
+            "value": "5%"
+          },
+          {
+            "id": 5,
+            "key": "Virtual Company Setup",
+            "value": "Available (Free Zones)"
+          },
+          {
+            "id": 6,
+            "key": "Foreign Ownership",
+            "value": "100% (most sectors)"
+          },
+          {
+            "id": 7,
+            "key": "Visa Application",
+            "value": "Linked to the company"
+          },
+          {
+            "id": 8,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 9,
+            "key": "Tax Incentives",
+            "value": "Free zone benefits"
+          },
+          {
+            "id": 12,
+            "key": "Banking",
+            "value": "Moderate difficulty"
+          },
+          {
+            "id": 11,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 10,
+            "key": "Preferred Business Activities",
+            "value": "Trading, consulting, fintech"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "countryName": "Saudi Arabia",
+        "countryFullName": null,
+        "slug": "saudi-arabia",
+        "shortcode": "sa",
+        "currency": "SAR",
+        "startingPrice": null,
+        "rank": 2,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saudi_Arabia_68b3e421d7.png"
+        },
+        "comparison": [
+          {
+            "id": 25,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô6 weeks"
+          },
+          {
+            "id": 26,
+            "key": "Capital Requirement",
+            "value": "Moderate (varies by sector)"
+          },
+          {
+            "id": 27,
+            "key": "Corporate Tax Rate",
+            "value": "20% (foreign entities)"
+          },
+          {
+            "id": 28,
+            "key": "VAT Rate",
+            "value": "15%"
+          },
+          {
+            "id": 29,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 30,
+            "key": "Foreign Ownership",
+            "value": "100% (many sectors)"
+          },
+          {
+            "id": 31,
+            "key": "Visa Application",
+            "value": "Required for expats"
+          },
+          {
+            "id": 32,
+            "key": "International Market Access",
+            "value": "Strong (regional)"
+          },
+          {
+            "id": 33,
+            "key": "Tax Incentives",
+            "value": "Sector-based incentives"
+          },
+          {
+            "id": 34,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 35,
+            "key": "Annual Compliance",
+            "value": "High"
+          },
+          {
+            "id": 36,
+            "key": "Preferred Business Activities",
+            "value": "Industrial, energy, logistics"
+          }
+        ]
+      }
+    ]
+  }
+}

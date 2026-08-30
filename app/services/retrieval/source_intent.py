@@ -18,7 +18,11 @@ _WHATSAPP = re.compile(
 )
 _WEBSITE = re.compile(
     r"\b(?:blogs?|blog\s*posts?|articles?|arnifi\.com)\b"
-    r"|\b(?:from|on|in|check(?:\s+the)?|using|via)\s+(?:the\s+)?(?:website|site)\b",
+    r"|\b(?:from|on|in|check(?:\s+the)?|using|via)\s+(?:the\s+)?(?:website|site)\b"
+    # Catalog / package pages are the same website family as blogs
+    r"|\b(?:product[\s-]?details?|service\s+pages?|package\s+pages?|"
+    r"country\s+pages?|business\s+setup|micro[\s-]?services?)\b"
+    r"|\b(?:from|on|in)\s+(?:the\s+)?(?:catalog|services?|packages?)\b",
     re.IGNORECASE,
 )
 # "documents required for KYC" must NOT count as Drive — only explicit Drive cues.

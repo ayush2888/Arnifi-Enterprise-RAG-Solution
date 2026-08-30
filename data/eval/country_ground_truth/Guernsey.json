@@ -1,0 +1,576 @@
+{
+  "meta": {
+    "id": 24,
+    "countryName": "Guernsey",
+    "currency": "USD",
+    "slug": "Guernsey",
+    "shortcode": "gg",
+    "countryFlag": {
+      "id": 11036,
+      "name": "guernsey flag.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 547,
+      "height": 365,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_guernsey_flag_4768a07966.png",
+          "hash": "small_guernsey_flag_4768a07966",
+          "mime": "image/png",
+          "name": "small_guernsey flag.png",
+          "path": null,
+          "size": 6.05,
+          "width": 500,
+          "height": 334
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_guernsey_flag_4768a07966.png",
+          "hash": "thumbnail_guernsey_flag_4768a07966",
+          "mime": "image/png",
+          "name": "thumbnail_guernsey flag.png",
+          "path": null,
+          "size": 2.3,
+          "width": 234,
+          "height": 156
+        }
+      },
+      "hash": "guernsey_flag_4768a07966",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 1.86,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/guernsey_flag_4768a07966.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-07-21T11:36:07.566Z",
+      "updatedAt": "2026-07-21T11:36:07.566Z"
+    },
+    "bannerImage": {
+      "id": 11297,
+      "name": "guresey.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 1765,
+      "height": 885,
+      "formats": {
+        "large": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/large_guresey_9e68f6adeb.png",
+          "hash": "large_guresey_9e68f6adeb",
+          "mime": "image/png",
+          "name": "large_guresey.png",
+          "path": null,
+          "size": 737.58,
+          "width": 1000,
+          "height": 501
+        },
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_guresey_9e68f6adeb.png",
+          "hash": "small_guresey_9e68f6adeb",
+          "mime": "image/png",
+          "name": "small_guresey.png",
+          "path": null,
+          "size": 196.83,
+          "width": 500,
+          "height": 251
+        },
+        "medium": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/medium_guresey_9e68f6adeb.png",
+          "hash": "medium_guresey_9e68f6adeb",
+          "mime": "image/png",
+          "name": "medium_guresey.png",
+          "path": null,
+          "size": 429.84,
+          "width": 750,
+          "height": 376
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_guresey_9e68f6adeb.png",
+          "hash": "thumbnail_guresey_9e68f6adeb",
+          "mime": "image/png",
+          "name": "thumbnail_guresey.png",
+          "path": null,
+          "size": 49.39,
+          "width": 245,
+          "height": 123
+        }
+      },
+      "hash": "guresey_9e68f6adeb",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 564.26,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/guresey_9e68f6adeb.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-07-27T07:15:32.823Z",
+      "updatedAt": "2026-07-27T07:15:32.823Z"
+    }
+  },
+  "overview": {
+    "id": 15,
+    "title": "Guernsey",
+    "ISO": null,
+    "region": "Guernsey",
+    "subRegion": null,
+    "subHeader": "Build your Guernsey company with Arnifi. Benefit from a globally trusted offshore financial centre, and structure international investments with confidence\n",
+    "blogs": [],
+    "overviewDetail": "Guernsey is a leading international finance centre known for its political stability, robust regulatory environment, and expertise in investment funds, fiduciary services, insurance, and wealth management. The jurisdiction has built a strong reputation among multinational businesses, family offices, and institutional investors seeking efficient offshore structures.\n\nBusinesses can choose from a variety of corporate entities designed for international operations, including companies, trusts, and protected cell companies. Guernsey offers a business-friendly environment with efficient incorporation procedures, modern corporate legislation, and a highly experienced financial services industry.\nThe Guernsey Financial Services Commission (GFSC) regulates the island's financial sector while ensuring compliance with international standards on anti-money laundering, transparency, and economic substance. Continuous regulatory developments reinforce Guernsey's credibility as a trusted global financial centre.\n\nCombining regulatory excellence, tax efficiency, sophisticated professional services, and global recognition, Guernsey remains a preferred destination for international structuring and cross-border investment.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/guernsey_img_a009be33fa.jpg"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Guernsey_4bd89ced93.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 89,
+        "value": "Zero Direct Taxation\nNo capital gains tax, inheritance tax, or VAT, with a competitive corporate tax regime for most businesses\n"
+      },
+      {
+        "id": 90,
+        "value": "Global Wealth & Fund Centre\nA preferred jurisdiction for private equity, investment funds, trusts, and wealth management structures\n"
+      },
+      {
+        "id": 91,
+        "value": "Flexible Business Structures\nSupports companies, protected cell companies (PCCs), incorporated cell companies (ICCs), foundations, and trusts\n"
+      },
+      {
+        "id": 92,
+        "value": "International Regulatory Standards\nMaintains strong compliance with OECD, FATF, and global transparency requirements\n"
+      },
+      {
+        "id": 93,
+        "value": "Stable Legal Framework\nOperates under English common law, providing legal certainty and investor confidence\n"
+      },
+      {
+        "id": 94,
+        "value": "Efficient Company Formation\nSimple incorporation process supported by experienced corporate service providers\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 132,
+        "question": "Why is Guernsey popular for international business?\n",
+        "answer": "Guernsey offers tax efficiency, regulatory credibility, and a highly developed financial services ecosystem for international investors.\n"
+      },
+      {
+        "id": 133,
+        "question": "What types of companies can be formed in Guernsey?\n",
+        "answer": "Businesses can establish companies, PCCs, ICCs, trusts, foundations, and other specialised investment structures.\n"
+      },
+      {
+        "id": 134,
+        "question": "Who regulates financial services in Guernsey?\n",
+        "answer": "The Guernsey Financial Services Commission (GFSC) supervises financial institutions and investment businesses.\n"
+      },
+      {
+        "id": 135,
+        "question": "Does Guernsey follow international compliance standards?\n",
+        "answer": "Yes, Guernsey aligns with OECD, FATF, and global transparency and anti-money laundering frameworks.\n"
+      },
+      {
+        "id": 136,
+        "question": "How long does company incorporation take?\n",
+        "answer": "Most companies can be incorporated within 1 to 5 business days, subject to documentation.\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 29,
+        "title": "Fund Regulation Updates",
+        "text": "Guernsey introduced updated fund regulatory developments, reinforcing governance, reporting standards, and investor protection across investment structures\n",
+        "tag": "Compliance ",
+        "date": "2026-06-01"
+      },
+      {
+        "id": 30,
+        "title": "Regulatory Priorities Published",
+        "text": "The GFSC released its latest annual report, highlighting policy reforms, digital innovation, and continued regulatory enhancements across financial services\n",
+        "tag": "Regulation ",
+        "date": "2026-06-05"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 128,
+        "question": "Select Your Business Structure\n",
+        "answer": "Choose the appropriate entity based on your investment or commercial objectives\n"
+      },
+      {
+        "id": 129,
+        "question": "Complete Company Registration\n",
+        "answer": "Submit incorporation documents and satisfy regulatory requirements\n"
+      },
+      {
+        "id": 130,
+        "question": " Establish Operational Framework\n",
+        "answer": "Set up corporate governance, banking arrangements, and ongoing administrative support\n"
+      },
+      {
+        "id": 131,
+        "question": " Maintain Regulatory Compliance\n",
+        "answer": "Meet annual filing, economic substance, and reporting obligations\n"
+      }
+    ],
+    "productPages": [],
+    "funds": [
+      {
+        "id": 451,
+        "title": "Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes",
+        "slug": "guernsey-authorised-closed-ended-collective-investment-schemes",
+        "startingPrice": 12000,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/guernsey_img_a009be33fa.jpg"
+        },
+        "authorityId": 46,
+        "authorityName": "Guernsey"
+      },
+      {
+        "id": 448,
+        "title": "Guernsey ΓÇô Open-ended Collective Investment Schemes",
+        "slug": "guernsey-open-ended-collective-investment-schemes",
+        "startingPrice": 13750,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/gurnsy_img_6c8057c8a2.jpg"
+        },
+        "authorityId": 46,
+        "authorityName": "Guernsey"
+      },
+      {
+        "id": 445,
+        "title": "Guernsey - GP/LP Structure",
+        "slug": "guernsey-gplp-structure",
+        "startingPrice": 52600,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/istockphoto_464454583_612x612_9ba9cff078.jpg"
+        },
+        "authorityId": 46,
+        "authorityName": "Guernsey"
+      },
+      {
+        "id": 450,
+        "title": "Guernsey ΓÇô Registered Closed-ended Collective Investment Scheme",
+        "slug": "guernsey-registered-closed-ended-collective-investment-scheme",
+        "startingPrice": 12900,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Guernsey_image1_59b5594011.jpg"
+        },
+        "authorityId": 46,
+        "authorityName": "Guernsey"
+      }
+    ],
+    "country": {
+      "id": 24,
+      "countryName": "Guernsey",
+      "countryFullName": "Guernsey",
+      "slug": "Guernsey",
+      "shortcode": "gg",
+      "currency": "USD",
+      "startingPrice": 0,
+      "rank": 0,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/guernsey_flag_4768a07966.png"
+      },
+      "comparison": [
+        {
+          "id": 182,
+          "key": "Setup Timeline",
+          "value": "1ΓÇô5 days"
+        },
+        {
+          "id": 178,
+          "key": "Capital Requirement",
+          "value": "Low / no minimum"
+        },
+        {
+          "id": 179,
+          "key": "Corporate Tax Rate",
+          "value": "0% (most companies)"
+        },
+        {
+          "id": 181,
+          "key": "VAT Rate",
+          "value": "0% VAT"
+        },
+        {
+          "id": 183,
+          "key": "Virtual Company Setup",
+          "value": "Available"
+        },
+        {
+          "id": 177,
+          "key": "Foreign Ownership",
+          "value": "100%"
+        },
+        {
+          "id": 180,
+          "key": "Visa Application",
+          "value": "Not applicable"
+        },
+        {
+          "id": 184,
+          "key": "International Market Access",
+          "value": "Strong global financial hub"
+        },
+        {
+          "id": 185,
+          "key": "Tax Incentives",
+          "value": "Tax-efficient offshore regime"
+        },
+        {
+          "id": 186,
+          "key": "Banking",
+          "value": "Moderate to strong"
+        },
+        {
+          "id": 187,
+          "key": "Annual Compliance",
+          "value": "Moderate "
+        },
+        {
+          "id": 188,
+          "key": "Preferred Business Activities",
+          "value": "Funds, trusts, insurance, wealth management"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 24,
+        "countryName": "Guernsey",
+        "countryFullName": "Guernsey",
+        "slug": "Guernsey",
+        "shortcode": "gg",
+        "currency": "USD",
+        "startingPrice": 0,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/guernsey_flag_4768a07966.png"
+        },
+        "comparison": [
+          {
+            "id": 182,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô5 days"
+          },
+          {
+            "id": 178,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 179,
+            "key": "Corporate Tax Rate",
+            "value": "0% (most companies)"
+          },
+          {
+            "id": 181,
+            "key": "VAT Rate",
+            "value": "0% VAT"
+          },
+          {
+            "id": 183,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 177,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 180,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 184,
+            "key": "International Market Access",
+            "value": "Strong global financial hub"
+          },
+          {
+            "id": 185,
+            "key": "Tax Incentives",
+            "value": "Tax-efficient offshore regime"
+          },
+          {
+            "id": 186,
+            "key": "Banking",
+            "value": "Moderate to strong"
+          },
+          {
+            "id": 187,
+            "key": "Annual Compliance",
+            "value": "Moderate "
+          },
+          {
+            "id": 188,
+            "key": "Preferred Business Activities",
+            "value": "Funds, trusts, insurance, wealth management"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "countryName": "Luxembourg",
+        "countryFullName": "Luxembourg",
+        "slug": "Luxembourg",
+        "shortcode": "lu",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": null,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxemberg_flag_e4d773b106.png"
+        },
+        "comparison": [
+          {
+            "id": 132,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 weeks"
+          },
+          {
+            "id": 129,
+            "key": "Capital Requirement",
+            "value": "Varies by company type"
+          },
+          {
+            "id": 131,
+            "key": "Corporate Tax Rate",
+            "value": "Standard corporate tax applies"
+          },
+          {
+            "id": 133,
+            "key": "VAT Rate",
+            "value": "17%"
+          },
+          {
+            "id": 134,
+            "key": "Virtual Company Setup",
+            "value": "Limited (depends on activity)"
+          },
+          {
+            "id": 135,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 137,
+            "key": "Visa Application",
+            "value": "Available through residency pathways"
+          },
+          {
+            "id": 138,
+            "key": "International Market Access",
+            "value": "Excellent (EU market access)"
+          },
+          {
+            "id": 130,
+            "key": "Tax Incentives",
+            "value": "Treaty network & investment structures"
+          },
+          {
+            "id": 136,
+            "key": "Banking",
+            "value": "Strong international banking ecosystem"
+          },
+          {
+            "id": 139,
+            "key": "Annual Compliance",
+            "value": "Moderate to high"
+          },
+          {
+            "id": 140,
+            "key": "Preferred Business Activities",
+            "value": "Holding companies, investment funds, and wealth management"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "countryName": "British Virgin Islands",
+        "countryFullName": null,
+        "slug": "british-virgin-islands",
+        "shortcode": "vg",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 3,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+        },
+        "comparison": [
+          {
+            "id": 49,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 50,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 52,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 51,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 53,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 56,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 55,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 54,
+            "key": "International Market Access",
+            "value": "Strong (global structuring)"
+          },
+          {
+            "id": 57,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 58,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 59,
+            "key": "Preferred Business Activities",
+            "value": "Holding, investment, IP"
+          }
+        ]
+      }
+    ]
+  }
+}

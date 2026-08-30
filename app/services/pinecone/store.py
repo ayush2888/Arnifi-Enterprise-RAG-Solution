@@ -136,7 +136,17 @@ class PineconeStore:
         if not filter:
             raise ValueError("delete_by_filter requires a non-empty filter")
         logger.info("Deleting Pinecone vectors with filter=%s", filter)
-        self.index.delete(filter=filter, namespace=self.namespace)
+        try:
+            self.index.delete(filter=filter, namespace=self.namespace)
+        except Exception as exc:
+            # Brand-new / empty indexes often have no default namespace yet.
+            msg = str(exc).lower()
+            if "namespace not found" in msg or "404" in msg:
+                logger.warning(
+                    "Pinecone delete skipped (empty index/namespace): %s", exc
+                )
+                return 0
+            raise
         return 1
 
     def delete_ids(self, ids: list[str], batch_size: int = 1000) -> int:

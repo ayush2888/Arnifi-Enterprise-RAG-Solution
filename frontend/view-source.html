@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Source preview ΓÇö Arnifi Knowledge</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #111827;
+        --muted: #6b7280;
+        --line: #e5e7eb;
+        --brand: #4f46e5;
+        --bg: #f8fafc;
+        --danger: #b91c1c;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, Segoe UI, system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 24px 16px 48px;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      }
+      .badge {
+        display: inline-block;
+        background: var(--brand);
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 8px;
+        border-radius: 6px;
+      }
+      .badge.warn {
+        background: #b45309;
+      }
+      h1 {
+        font-size: 20px;
+        line-height: 1.35;
+        margin: 12px 0 8px;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 13px;
+        word-break: break-all;
+        margin-bottom: 16px;
+      }
+      .snippet {
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: 1.55;
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      a.btn, button.btn {
+        appearance: none;
+        border: 0;
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .primary { background: var(--brand); color: #fff; }
+      .secondary { background: #eef2ff; color: var(--brand); }
+      .note {
+        margin-top: 14px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .error-box {
+        margin-top: 12px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: #fef2f2;
+        border: 1px solid #fecaca;
+        color: var(--danger);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card" id="card">
+        <span class="badge" id="badge">Website source</span>
+        <h1 id="title">LoadingΓÇª</h1>
+        <div class="meta" id="url"></div>
+        <div class="snippet" id="snippet"></div>
+        <div id="error" class="error-box" hidden></div>
+        <div class="actions" id="actions"></div>
+        <p class="note" id="footer-note">
+          This preview shows text already indexed in Arnifi Knowledge
+          (blogs + country / service / package pages). It does
+          <strong>not</strong> load arnifi.comΓÇÖs live Next.js app, which can
+          crash with <code>Application error ΓÇª Digest: 2529575321</code> on
+          some product pages.
+        </p>
+      </div>
+    </main>
+    <script>
+      (function () {
+        function showUnavailable(reason) {
+          document.getElementById("badge").textContent = "Source unavailable";
+          document.getElementById("badge").classList.add("warn");
+          document.getElementById("title").textContent = "Source unavailable";
+          document.getElementById("url").textContent = "";
+          document.getElementById("snippet").textContent = "";
+          var err = document.getElementById("error");
+          err.hidden = false;
+          err.textContent =
+            reason ||
+            "This citation has no indexed snippet and no safe public URL. Close this tab and try another source card.";
+        }
+
+        function decodeHash() {
+          const raw = (window.location.hash || "").replace(/^#/, "");
+          if (!raw) return null;
+          try {
+            return JSON.parse(decodeURIComponent(escape(atob(raw))));
+          } catch (_) {
+            try {
+              return JSON.parse(decodeURIComponent(raw));
+            } catch (_) {
+              return null;
+            }
+          }
+        }
+
+        function readStorage() {
+          for (const store of [localStorage, sessionStorage]) {
+            try {
+              const raw = store.getItem("arnifiSourcePreview");
+              if (!raw) continue;
+              return JSON.parse(raw);
+            } catch (_) {}
+          }
+          return null;
+        }
+
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const payload = decodeHash() || readStorage() || {};
+          const title =
+            payload.title || params.get("title") || "Source preview";
+          const url = payload.url || params.get("url") || "";
+          const snippet =
+            payload.snippet || params.get("snippet") || "";
+          const note = payload.note || "";
+
+          const hasUrl = !!(url && /^https?:\/\//i.test(url));
+          const hasSnippet = !!(snippet && String(snippet).trim());
+
+          if (!hasUrl && !hasSnippet) {
+            showUnavailable(
+              "Source unavailable ΓÇö no openable URL or indexed text was passed to this preview."
+            );
+          } else {
+            document.getElementById("title").textContent = title;
+            document.getElementById("url").textContent = hasUrl
+              ? url
+              : "No external URL on this source card";
+            document.getElementById("snippet").textContent = hasSnippet
+              ? snippet
+              : "No indexed snippet was available for this citation. You can still try the original page if a URL is listed above.";
+          }
+
+          const actions = document.getElementById("actions");
+          const closeBtn = document.createElement("button");
+          closeBtn.className = "btn secondary";
+          closeBtn.type = "button";
+          closeBtn.textContent = "Close";
+          closeBtn.onclick = function () {
+            window.close();
+          };
+          actions.appendChild(closeBtn);
+
+          if (hasUrl) {
+            const openBtn = document.createElement("a");
+            openBtn.className = "btn primary";
+            openBtn.href = url;
+            openBtn.target = "_blank";
+            openBtn.rel = "noopener noreferrer";
+            openBtn.textContent = "Try live website";
+            openBtn.title =
+              "Live arnifi.com product pages may show Application error Digest 2529575321 (Arnifi Next.js). Prefer the indexed text above when that happens.";
+            actions.appendChild(openBtn);
+          }
+
+          if (note) {
+            const n = document.createElement("p");
+            n.className = "note";
+            n.textContent = note;
+            document.getElementById("card").appendChild(n);
+          }
+        } catch (e) {
+          showUnavailable(
+            "Source unavailable ΓÇö preview failed to load (" +
+              ((e && e.message) || "unknown error") +
+              ")."
+          );
+        }
+      })();
+    </script>
+  </body>
+</html>

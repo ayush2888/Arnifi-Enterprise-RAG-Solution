@@ -1,0 +1,580 @@
+{
+  "meta": {
+    "id": 15,
+    "countryName": "Luxembourg",
+    "currency": "USD",
+    "slug": "Luxembourg",
+    "shortcode": "lu",
+    "countryFlag": {
+      "id": 10978,
+      "name": "Luxemberg_flag.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 576,
+      "height": 347,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_Luxemberg_flag_e4d773b106.png",
+          "hash": "small_Luxemberg_flag_e4d773b106",
+          "mime": "image/png",
+          "name": "small_Luxemberg_flag.png",
+          "path": null,
+          "size": 2.5,
+          "width": 500,
+          "height": 301
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_Luxemberg_flag_e4d773b106.png",
+          "hash": "thumbnail_Luxemberg_flag_e4d773b106",
+          "mime": "image/png",
+          "name": "thumbnail_Luxemberg_flag.png",
+          "path": null,
+          "size": 0.84,
+          "width": 245,
+          "height": 148
+        }
+      },
+      "hash": "Luxemberg_flag_e4d773b106",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.74,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxemberg_flag_e4d773b106.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-07-16T05:04:22.012Z",
+      "updatedAt": "2026-07-16T05:04:22.012Z"
+    },
+    "bannerImage": {
+      "id": 11045,
+      "name": "2.2 (1).jpg.jpeg",
+      "alternativeText": null,
+      "caption": null,
+      "width": 1412,
+      "height": 792,
+      "formats": {
+        "large": {
+          "ext": ".jpeg",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/large_2_2_1_jpg_7045e5d24c.jpeg",
+          "hash": "large_2_2_1_jpg_7045e5d24c",
+          "mime": "image/jpeg",
+          "name": "large_2.2 (1).jpg.jpeg",
+          "path": null,
+          "size": 59.75,
+          "width": 1000,
+          "height": 561
+        },
+        "small": {
+          "ext": ".jpeg",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_2_2_1_jpg_7045e5d24c.jpeg",
+          "hash": "small_2_2_1_jpg_7045e5d24c",
+          "mime": "image/jpeg",
+          "name": "small_2.2 (1).jpg.jpeg",
+          "path": null,
+          "size": 18.34,
+          "width": 500,
+          "height": 280
+        },
+        "medium": {
+          "ext": ".jpeg",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/medium_2_2_1_jpg_7045e5d24c.jpeg",
+          "hash": "medium_2_2_1_jpg_7045e5d24c",
+          "mime": "image/jpeg",
+          "name": "medium_2.2 (1).jpg.jpeg",
+          "path": null,
+          "size": 36.99,
+          "width": 750,
+          "height": 421
+        },
+        "thumbnail": {
+          "ext": ".jpeg",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_2_2_1_jpg_7045e5d24c.jpeg",
+          "hash": "thumbnail_2_2_1_jpg_7045e5d24c",
+          "mime": "image/jpeg",
+          "name": "thumbnail_2.2 (1).jpg.jpeg",
+          "path": null,
+          "size": 5.24,
+          "width": 245,
+          "height": 137
+        }
+      },
+      "hash": "2_2_1_jpg_7045e5d24c",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 102.05,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/2_2_1_jpg_7045e5d24c.jpeg",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-07-22T05:46:49.557Z",
+      "updatedAt": "2026-07-22T05:46:49.557Z"
+    }
+  },
+  "overview": {
+    "id": 12,
+    "title": "Luxembourg",
+    "ISO": null,
+    "region": "Luxembourg",
+    "subRegion": null,
+    "subHeader": "Set up your Luxembourg company with Arnifi, access one of EuropeΓÇÖs leading financial centres, benefit from a stable regulatory framework, and expand internationally through a business-friendly jurisdiction\n",
+    "blogs": [],
+    "overviewDetail": "Luxembourg is one of Europe's most respected financial centres, known for its political stability, sophisticated financial ecosystem, and international business environment. It serves as a preferred jurisdiction for multinational corporations, investment funds, holding companies, and family offices seeking efficient access to European and global markets.\nThe country offers a wide range of legal entities suitable for commercial activities, holding structures, and regulated investment vehicles. Businesses benefit from a predictable legal system, strong investor protections, and streamlined company incorporation procedures supported by digital administrative services.\nLuxembourg's financial sector is supervised by the Commission de Surveillance du Secteur Financier (CSSF), while corporate activities operate within a transparent regulatory framework aligned with European Union directives and international compliance standards. The jurisdiction also maintains an extensive network of double taxation treaties, supporting efficient cross-border operations.\nCombining regulatory credibility, a highly developed banking sector, access to European markets, and a business-friendly ecosystem, Luxembourg remains one of the world's premier destinations for international business structuring and investment.\n",
+    "jurisdiction": [
+      {
+        "id": 59,
+        "authorityName": "Luxembourg"
+      }
+    ],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxembourg_Private_Wealth_Management_SPF_Company_Setup_ab97cdb74e.jpeg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/luxe_images_2_be203a83fa.jpg"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Jul_18_2026_04_39_57_PM_ec07205cc1.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 72,
+        "value": "Strategic European Location\nDirect access to the European Union's single market with excellent connectivity for international businesses\n"
+      },
+      {
+        "id": 74,
+        "value": "Leading Investment Fund Hub\nHome to one of the world's largest investment fund industries, supporting institutional and cross-border investments\n"
+      },
+      {
+        "id": 73,
+        "value": "Flexible Corporate Structures\nOffers multiple legal entities suited for holding companies, investment vehicles, commercial operations, and family wealth management\n"
+      },
+      {
+        "id": 75,
+        "value": "Stable Regulatory Environment\nStrong legal framework with transparent regulations that support long-term business confidence\n"
+      },
+      {
+        "id": 76,
+        "value": "Extensive Tax Treaty Network\nAccess to one of the world's largest networks of double taxation agreements for international business operations\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 100,
+        "question": "Why do businesses choose Luxembourg?",
+        "answer": "Luxembourg offers political stability, access to the European Union, an advanced financial sector, and a favourable environment for international business.\n"
+      },
+      {
+        "id": 101,
+        "question": "What company types are commonly established in Luxembourg?\n",
+        "answer": "Businesses commonly establish SARL, SA, SOPARFI holding companies, investment funds, and specialised financial structures depending on their objectives.\n"
+      },
+      {
+        "id": 102,
+        "question": "Is Luxembourg part of the European Union?\n",
+        "answer": "Yes. Companies established in Luxembourg benefit from access to the EU single market and the European regulatory framework.\n"
+      },
+      {
+        "id": 103,
+        "question": "Who regulates the financial sector in Luxembourg?\n",
+        "answer": "The Commission de Surveillance du Secteur Financier (CSSF) regulates financial institutions, investment firms, and other financial market participants.\n"
+      },
+      {
+        "id": 104,
+        "question": "How long does it take to set up a company?\n",
+        "answer": "Company incorporation generally takes between one and three weeks, depending on the legal structure and documentation requirements.\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 24,
+        "title": "Investment Fund Supervision",
+        "text": "CSSF has strengthened supervisory priorities for investment funds, focusing on governance, operational resilience, and regulatory compliance across Luxembourg's financial sector",
+        "tag": "Regulation ",
+        "date": "2026-03-31"
+      },
+      {
+        "id": 23,
+        "title": "Sustainable Finance Framework",
+        "text": " Luxembourg continues expanding sustainable finance oversight through enhanced ESG governance and reporting requirements aligned with evolving European regulations\n",
+        "tag": "Compliance",
+        "date": "2026-03-03"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 105,
+        "question": "Choose Your Business Structure\n",
+        "answer": "Select the appropriate legal entity based on your business activities and expansion plans\n"
+      },
+      {
+        "id": 106,
+        "question": " Register the Company\n",
+        "answer": "Complete documentation, obtain approvals, and officially incorporate the business\n"
+      },
+      {
+        "id": 108,
+        "question": " Establish Business Operations\n",
+        "answer": "Open corporate banking arrangements, fulfil registration requirements, and set up operational infrastructure\n"
+      },
+      {
+        "id": 107,
+        "question": " Maintain Regulatory Compliance\n",
+        "answer": "Meet accounting, tax, reporting, and annual corporate filing obligations\n"
+      }
+    ],
+    "productPages": [],
+    "funds": [
+      {
+        "id": 442,
+        "title": "Luxembourg Holding Company Setup (SOPARFI)",
+        "slug": "luxembourg-holding-company-setup-(soparfi)",
+        "startingPrice": 17760,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxembourg_SCSP_Setup_a5edf9a39b.jpeg"
+        },
+        "authorityId": 44,
+        "authorityName": "Luxembourg"
+      },
+      {
+        "id": 441,
+        "title": "Luxembourg Private Wealth Management (SPF) Company Setup",
+        "slug": "luxembourg-private-wealth-management-(spf)-company-setup",
+        "startingPrice": 18800,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/luxe_images_2_be203a83fa.jpg"
+        },
+        "authorityId": 44,
+        "authorityName": "Luxembourg"
+      },
+      {
+        "id": 440,
+        "title": "Luxembourg (SCSP) Setup",
+        "slug": "luxembourg-(scsp)-setup",
+        "startingPrice": 18050,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxembourg_Private_Wealth_Management_SPF_Company_Setup_ab97cdb74e.jpeg"
+        },
+        "authorityId": 44,
+        "authorityName": "Luxembourg"
+      },
+      {
+        "id": 438,
+        "title": "Luxembourg RAIF (SCSP) Fund Setup",
+        "slug": "luxembourg-raif-(scsp)-fund-setup",
+        "startingPrice": 91090,
+        "currency": "USD",
+        "banner": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxembourg_img_757cec7114.jpg"
+        },
+        "authorityId": 44,
+        "authorityName": "Luxembourg"
+      }
+    ],
+    "country": {
+      "id": 15,
+      "countryName": "Luxembourg",
+      "countryFullName": "Luxembourg",
+      "slug": "Luxembourg",
+      "shortcode": "lu",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": null,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxemberg_flag_e4d773b106.png"
+      },
+      "comparison": [
+        {
+          "id": 132,
+          "key": "Setup Timeline",
+          "value": "1ΓÇô3 weeks"
+        },
+        {
+          "id": 129,
+          "key": "Capital Requirement",
+          "value": "Varies by company type"
+        },
+        {
+          "id": 131,
+          "key": "Corporate Tax Rate",
+          "value": "Standard corporate tax applies"
+        },
+        {
+          "id": 133,
+          "key": "VAT Rate",
+          "value": "17%"
+        },
+        {
+          "id": 134,
+          "key": "Virtual Company Setup",
+          "value": "Limited (depends on activity)"
+        },
+        {
+          "id": 135,
+          "key": "Foreign Ownership",
+          "value": "100%"
+        },
+        {
+          "id": 137,
+          "key": "Visa Application",
+          "value": "Available through residency pathways"
+        },
+        {
+          "id": 138,
+          "key": "International Market Access",
+          "value": "Excellent (EU market access)"
+        },
+        {
+          "id": 130,
+          "key": "Tax Incentives",
+          "value": "Treaty network & investment structures"
+        },
+        {
+          "id": 136,
+          "key": "Banking",
+          "value": "Strong international banking ecosystem"
+        },
+        {
+          "id": 139,
+          "key": "Annual Compliance",
+          "value": "Moderate to high"
+        },
+        {
+          "id": 140,
+          "key": "Preferred Business Activities",
+          "value": "Holding companies, investment funds, and wealth management"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 15,
+        "countryName": "Luxembourg",
+        "countryFullName": "Luxembourg",
+        "slug": "Luxembourg",
+        "shortcode": "lu",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": null,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Luxemberg_flag_e4d773b106.png"
+        },
+        "comparison": [
+          {
+            "id": 132,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 weeks"
+          },
+          {
+            "id": 129,
+            "key": "Capital Requirement",
+            "value": "Varies by company type"
+          },
+          {
+            "id": 131,
+            "key": "Corporate Tax Rate",
+            "value": "Standard corporate tax applies"
+          },
+          {
+            "id": 133,
+            "key": "VAT Rate",
+            "value": "17%"
+          },
+          {
+            "id": 134,
+            "key": "Virtual Company Setup",
+            "value": "Limited (depends on activity)"
+          },
+          {
+            "id": 135,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 137,
+            "key": "Visa Application",
+            "value": "Available through residency pathways"
+          },
+          {
+            "id": 138,
+            "key": "International Market Access",
+            "value": "Excellent (EU market access)"
+          },
+          {
+            "id": 130,
+            "key": "Tax Incentives",
+            "value": "Treaty network & investment structures"
+          },
+          {
+            "id": 136,
+            "key": "Banking",
+            "value": "Strong international banking ecosystem"
+          },
+          {
+            "id": 139,
+            "key": "Annual Compliance",
+            "value": "Moderate to high"
+          },
+          {
+            "id": 140,
+            "key": "Preferred Business Activities",
+            "value": "Holding companies, investment funds, and wealth management"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "countryName": "Cayman Island",
+        "countryFullName": null,
+        "slug": "cayman-islands",
+        "shortcode": "cym",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 4,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png"
+        },
+        "comparison": [
+          {
+            "id": 37,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô5 days"
+          },
+          {
+            "id": 43,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 38,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 46,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 41,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 45,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 42,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 44,
+            "key": "International Market Access",
+            "value": "Very strong (global finance hub)"
+          },
+          {
+            "id": 39,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 40,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 47,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 48,
+            "key": "Preferred Business Activities",
+            "value": "Funds, holding, investment"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "countryName": "British Virgin Islands",
+        "countryFullName": null,
+        "slug": "british-virgin-islands",
+        "shortcode": "vg",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 3,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+        },
+        "comparison": [
+          {
+            "id": 49,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 50,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 52,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 51,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 53,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 56,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 55,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 54,
+            "key": "International Market Access",
+            "value": "Strong (global structuring)"
+          },
+          {
+            "id": 57,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 58,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 59,
+            "key": "Preferred Business Activities",
+            "value": "Holding, investment, IP"
+          }
+        ]
+      }
+    ]
+  }
+}

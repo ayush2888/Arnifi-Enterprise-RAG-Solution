@@ -21,6 +21,12 @@ QUESTIONS = [
     ("Q2_dmcc_case", "Have we published a case study on logistics companies scaling in DMCC?", "website"),
     ("Q3_dubai_office", "What is Arnifi's Dubai office address?", "website"),
     ("Q4_shams_package", "What is the starting price of the SHAMS standard package 1 visa 1 year?", "all"),
+    ("Q5_uae_tax_faq", "from the website, what is the corporate tax rate in the UAE?", "website"),
+    ("Q6_uae_ownership", "from the UAE country page, is 100% foreign ownership allowed?", "website"),
+    ("Q7_visa_packages", "from the website, what visa packages does Arnifi offer?", "website"),
+    ("Q8_guernsey_funds", "what funds does Arnifi offer in Guernsey?", "website"),
+    ("Q9_guernsey_closed_ended", "Guernsey Authorised Closed-ended Collective Investment Schemes starting price", "website"),
+    ("Q10_guernsey_process", "what is the application process for Guernsey?", "website"),
 ]
 
 
@@ -54,6 +60,9 @@ def main() -> None:
                                     "/pricing-master-list",
                                     "/case-studies/",
                                     "/country-overview/",
+                                    "/ae",
+                                    "/sa",
+                                    "/sg",
                                     "llms.txt",
                                     "/contact-us",
                                 )

@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "id": 19,
+    "countryName": "Cyprus",
+    "currency": "USD",
+    "slug": "Cyprus",
+    "shortcode": "cy",
+    "countryFlag": {
+      "id": 6087,
+      "name": "Cyprus.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 65,
+      "height": 48,
+      "formats": null,
+      "hash": "Cyprus_a456764f92",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.63,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cyprus_a456764f92.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:30:29.282Z",
+      "updatedAt": "2026-04-01T09:30:29.282Z"
+    },
+    "bannerImage": {
+      "id": 8000,
+      "name": "CYPRUS_CC.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 342,
+      "height": 192,
+      "formats": {
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_CYPRUS_CC_c67273c4b0.png",
+          "hash": "thumbnail_CYPRUS_CC_c67273c4b0",
+          "mime": "image/png",
+          "name": "thumbnail_CYPRUS_CC.png",
+          "path": null,
+          "size": 34.01,
+          "width": 245,
+          "height": 138
+        }
+      },
+      "hash": "CYPRUS_CC_c67273c4b0",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 14.43,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/CYPRUS_CC_c67273c4b0.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-05-09T06:42:14.938Z",
+      "updatedAt": "2026-05-09T06:42:14.938Z"
+    }
+  },
+  "overview": {
+    "id": 11,
+    "title": "Cyprus",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Expand through Cyprus with Arnifi, unlock EU market access, benefit from low corporate taxes, and operate seamlessly within a fully compliant European business environment\n",
+    "blogs": [],
+    "overviewDetail": "Position your business in Cyprus to access the entire European Union while benefiting from one of the most competitive tax regimes in Europe start your expansion with confidence and compliance.\nCyprus has established itself as a strategic European hub for international businesses seeking access to EU markets with tax efficiency and regulatory clarity. As a member of the European Union, Cyprus offers companies the advantage of operating within EU legal and financial systems while maintaining one of the lowest corporate tax rates in the region.\nThe country is particularly attractive for holding companies, fintech firms, shipping businesses, and professional services due to its extensive double taxation treaty network and investor-friendly policies. Cyprus also provides a highly skilled, English-speaking workforce and a business-friendly regulatory environment aligned with EU standards.\nWith modern infrastructure, strong banking connectivity, and access to both European and Middle Eastern markets, Cyprus is an ideal jurisdiction for startups, SMEs, and multinational corporations aiming for regional and global expansion.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/cyprus_2_a1ea9911ae.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_May_9_2026_12_25_20_PM_c89ad674d6.png"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_May_9_2026_12_19_01_PM_3614f0792d.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 66,
+        "value": "Low Corporate Tax Environment\nCyprus offers a competitive 12.5% corporate tax rate with multiple exemptions, making it attractive for global business structuring\n"
+      },
+      {
+        "id": 67,
+        "value": "EU Market Access\nFull access to the European Union single market enables seamless trade, investment, and expansion opportunities across member states\n"
+      },
+      {
+        "id": 69,
+        "value": "Extensive Tax Treaty Network\nCyprus has agreements with over 60 countries, helping businesses reduce withholding taxes and avoid double taxation\n"
+      },
+      {
+        "id": 68,
+        "value": "Strong Legal Framework\nBased on English common law, ensuring transparency, reliability, and investor confidence in legal and corporate matters\n"
+      },
+      {
+        "id": 70,
+        "value": "Skilled Multilingual Workforce\nHighly educated professionals fluent in English and other languages support international business operations efficiently\n"
+      },
+      {
+        "id": 71,
+        "value": "Strategic Geographic Location\nPositioned between Europe, Asia, and Africa, ideal for companies targeting multiple regional markets\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 90,
+        "question": "Is Cyprus a tax-friendly country for businesses\n",
+        "answer": "Yes, it offers low corporate tax and various tax incentives\n"
+      },
+      {
+        "id": 94,
+        "question": "Can foreigners fully own a company in Cyprus\n",
+        "answer": "Yes, 100% foreign ownership is allowed\n"
+      },
+      {
+        "id": 93,
+        "question": "How long does it take to register a company in Cyprus\n",
+        "answer": "Typically 7 to 10 working days\n"
+      },
+      {
+        "id": 91,
+        "question": "Is Cyprus suitable for holding companies\n",
+        "answer": "Yes, it is widely used for holding structures due to tax benefits\n"
+      },
+      {
+        "id": 92,
+        "question": "Does Cyprus provide access to the EU market\n",
+        "answer": "Yes, as an EU member it offers full market access\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 21,
+        "title": "Growing interest in Cyprus tech ecosystem",
+        "text": "Cyprus is attracting startups and foreign tech firms due to government incentives, improved digital infrastructure, and growing venture capital activity.\n",
+        "tag": "Business News",
+        "date": "2026-02-18"
+      },
+      {
+        "id": 22,
+        "title": "Updates in corporate tax compliance standards",
+        "text": "Authorities are strengthening compliance and reporting frameworks aligning with EU transparency norms, impacting international businesses operating through Cyprus entities.\n",
+        "tag": "Taxation ",
+        "date": "2026-01-15"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 95,
+        "question": "Choose Your Business Structure\n",
+        "answer": " Select a private limited company, branch, or partnership based on your operational goals\n"
+      },
+      {
+        "id": 96,
+        "question": "Register Company Name\n",
+        "answer": " Reserve your business name with the Registrar of Companies\n"
+      },
+      {
+        "id": 97,
+        "question": " Incorporate the Company\n",
+        "answer": " Submit incorporation documents including shareholders, directors, and registered office details\n"
+      },
+      {
+        "id": 98,
+        "question": "Tax Registration\n",
+        "answer": " Obtain a Tax Identification Number and register for VAT if applicable\n"
+      },
+      {
+        "id": 99,
+        "question": "Open Bank Account & Start Operations\n",
+        "answer": " Set up a corporate bank account and commence business activities\n"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 180,
+        "productName": "Cyprus Company Incorporation | Complete Digital Setup",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_May_9_2026_12_25_20_PM_c42143be52.png"
+        },
+        "productType": "licence",
+        "authority_name": "Cyprus",
+        "startingArnifiPrice": 4345,
+        "slug": "cyprus-company-incorporation-or-complete-digital-setup"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 19,
+      "countryName": "Cyprus",
+      "countryFullName": null,
+      "slug": "Cyprus",
+      "shortcode": "cy",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": null,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cyprus_a456764f92.png"
+      },
+      "comparison": [
+        {
+          "id": 96,
+          "key": "Timeline",
+          "value": "5ΓÇô10 days"
+        },
+        {
+          "id": 97,
+          "key": "Capital Requirement",
+          "value": "Low"
+        },
+        {
+          "id": 98,
+          "key": "Corporate Tax Rate",
+          "value": "12.5%"
+        },
+        {
+          "id": 99,
+          "key": "VAT Rate",
+          "value": "19%"
+        },
+        {
+          "id": 100,
+          "key": "Virtual Company Setup",
+          "value": "Limited"
+        },
+        {
+          "id": 101,
+          "key": "Foreign Ownership",
+          "value": "100% "
+        },
+        {
+          "id": 102,
+          "key": "Visa Application",
+          "value": "EU residency options"
+        },
+        {
+          "id": 103,
+          "key": "International Market Access",
+          "value": "Strong (EU market)"
+        },
+        {
+          "id": 105,
+          "key": "Tax Incentives",
+          "value": "IP box, exemptions"
+        },
+        {
+          "id": 104,
+          "key": "Banking",
+          "value": "Strong (EU system)"
+        },
+        {
+          "id": 106,
+          "key": "Annual Compliance",
+          "value": "Moderate"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 19,
+        "countryName": "Cyprus",
+        "countryFullName": null,
+        "slug": "Cyprus",
+        "shortcode": "cy",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": null,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cyprus_a456764f92.png"
+        },
+        "comparison": [
+          {
+            "id": 96,
+            "key": "Timeline",
+            "value": "5ΓÇô10 days"
+          },
+          {
+            "id": 97,
+            "key": "Capital Requirement",
+            "value": "Low"
+          },
+          {
+            "id": 98,
+            "key": "Corporate Tax Rate",
+            "value": "12.5%"
+          },
+          {
+            "id": 99,
+            "key": "VAT Rate",
+            "value": "19%"
+          },
+          {
+            "id": 100,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 101,
+            "key": "Foreign Ownership",
+            "value": "100% "
+          },
+          {
+            "id": 102,
+            "key": "Visa Application",
+            "value": "EU residency options"
+          },
+          {
+            "id": 103,
+            "key": "International Market Access",
+            "value": "Strong (EU market)"
+          },
+          {
+            "id": 105,
+            "key": "Tax Incentives",
+            "value": "IP box, exemptions"
+          },
+          {
+            "id": 104,
+            "key": "Banking",
+            "value": "Strong (EU system)"
+          },
+          {
+            "id": 106,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "countryName": "Mauritius",
+        "countryFullName": null,
+        "slug": "mauritius",
+        "shortcode": "MU",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 6,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/mauritius_9fb97a03d5.png"
+        },
+        "comparison": [
+          {
+            "id": 60,
+            "key": "Setup Timeline",
+            "value": "5ΓÇô10 days"
+          },
+          {
+            "id": 61,
+            "key": "Capital Requirement",
+            "value": "Low (no strict minimum)"
+          },
+          {
+            "id": 62,
+            "key": "Corporate Tax Rate",
+            "value": "15% (effective lower"
+          },
+          {
+            "id": 65,
+            "key": "VAT Rate",
+            "value": "15%"
+          },
+          {
+            "id": 64,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 63,
+            "key": "Foreign Ownership",
+            "value": "100% "
+          },
+          {
+            "id": 67,
+            "key": "Visa Application",
+            "value": "Available (Occupation Permit)"
+          },
+          {
+            "id": 66,
+            "key": "International Market Access",
+            "value": "Strong (Africa-focused)"
+          },
+          {
+            "id": 68,
+            "key": "Tax Incentives",
+            "value": "Extensive (global business, funds)"
+          },
+          {
+            "id": 69,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 71,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 70,
+            "key": "Preferred Business Activities",
+            "value": "Holding, fintech, investment"
+          }
+        ]
+      }
+    ]
+  }
+}

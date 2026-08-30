@@ -1,0 +1,1005 @@
+{
+  "source": "prodapi country-overview funds + product-pages licences",
+  "country_count": 15,
+  "countries": {
+    "Guernsey": {
+      "shortcode": "gg",
+      "api_slug": "Guernsey",
+      "country_id": 24,
+      "source_url": "https://arnifi.com/gg",
+      "funds": [
+        {
+          "name": "Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes",
+          "slug": "guernsey-authorised-closed-ended-collective-investment-schemes",
+          "id": 451,
+          "price": 12000,
+          "currency": "USD"
+        },
+        {
+          "name": "Guernsey ΓÇô Open-ended Collective Investment Schemes",
+          "slug": "guernsey-open-ended-collective-investment-schemes",
+          "id": 448,
+          "price": 13750,
+          "currency": "USD"
+        },
+        {
+          "name": "Guernsey - GP/LP Structure",
+          "slug": "guernsey-gplp-structure",
+          "id": 445,
+          "price": 52600,
+          "currency": "USD"
+        },
+        {
+          "name": "Guernsey ΓÇô Registered Closed-ended Collective Investment Scheme",
+          "slug": "guernsey-registered-closed-ended-collective-investment-scheme",
+          "id": 450,
+          "price": 12900,
+          "currency": "USD"
+        }
+      ],
+      "packages": [],
+      "fund_count": 4,
+      "package_count": 0,
+      "top_packages_on_country_page": 0
+    },
+    "Saint Vincent and the Grenadines": {
+      "shortcode": "vc",
+      "api_slug": "Saint Vincent and the Grenadines",
+      "country_id": 23,
+      "source_url": "https://arnifi.com/vc",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Saint Vincent & The Grenadines ΓÇô LLC Incorporation",
+          "slug": "saint-vincent-and-the-grenadines-llc-incorporation",
+          "id": 200,
+          "price": 38342,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 1,
+      "top_packages_on_country_page": 1
+    },
+    "UAE": {
+      "shortcode": "ae",
+      "api_slug": "uae",
+      "country_id": 1,
+      "source_url": "https://arnifi.com/ae",
+      "funds": [],
+      "packages": [
+        {
+          "name": "ADGM Operating holding company - HoldCo",
+          "slug": "adgm-operating-holding-company-holdco",
+          "id": 94,
+          "price": 25000,
+          "currency": "USD"
+        },
+        {
+          "name": "Hamriyah Smart Business License",
+          "slug": "hamriyah-smart-business-license",
+          "id": 57,
+          "price": 17000,
+          "currency": null
+        },
+        {
+          "name": "DWTC - Entrepreneur Package",
+          "slug": "dwtc-entrepreneur-package",
+          "id": 115,
+          "price": 19295,
+          "currency": null
+        },
+        {
+          "name": "RAKEZ - All Inclusive Package (Office Spaces)",
+          "slug": "rakez-all-inclusive-package-(office-spaces)",
+          "id": 96,
+          "price": 23650,
+          "currency": "AED"
+        },
+        {
+          "name": "Abu Dhabi Global Market (ADGM) Freezone - Holding Company with RSC",
+          "slug": "abu-dhabi-global-market-(adgm)-freezone-holding-company-with-rsc",
+          "id": 156,
+          "price": 25305,
+          "currency": "USD"
+        },
+        {
+          "name": "SRTIP Innovators Package",
+          "slug": "srtip-innovators-package",
+          "id": 4,
+          "price": 6510,
+          "currency": null
+        },
+        {
+          "name": "Dubai - Mainland License (Standard Professional Activity)",
+          "slug": "dubai-mainland-license-(standard-professional-activity)",
+          "id": 112,
+          "price": 22005,
+          "currency": "AED"
+        },
+        {
+          "name": "Dubai - Mainland License (Real Estate Brokerage License)",
+          "slug": "dubai-mainland-license-(real-estate-brokerage-license)",
+          "id": 77,
+          "price": 29005,
+          "currency": "AED"
+        },
+        {
+          "name": "DMCC - Basic E-Commerce package",
+          "slug": "dmcc-basic-e-commerce-package",
+          "id": 120,
+          "price": 34011,
+          "currency": "AED"
+        },
+        {
+          "name": "ADGM Operating Company - OpCo Incorporation Package",
+          "slug": "adgm-operating-company-opco-incorporation-package",
+          "id": 119,
+          "price": 18090,
+          "currency": "USD"
+        },
+        {
+          "name": "SHAMS - Media Package",
+          "slug": "shams-media-package",
+          "id": 107,
+          "price": 5760,
+          "currency": "AED"
+        },
+        {
+          "name": "Masdar City - Startup Package",
+          "slug": "masdar-city-startup-package",
+          "id": 100,
+          "price": 7000,
+          "currency": null
+        },
+        {
+          "name": "Innovation City Growth License Package",
+          "slug": "innovation-city-growth-license-package",
+          "id": 165,
+          "price": 22550,
+          "currency": null
+        },
+        {
+          "name": "DMCC - Crypto Centre Package",
+          "slug": "dmcc-crypto-centre-package",
+          "id": 30,
+          "price": 39185,
+          "currency": "AED"
+        },
+        {
+          "name": "RAKEZ - Designated Package (Co-working Spaces)",
+          "slug": "rakez-designated-package-(co-working-spaces)",
+          "id": 50,
+          "price": 9999,
+          "currency": "AED"
+        },
+        {
+          "name": "Dubai - Mainland License (General Trading)",
+          "slug": "dubai-mainland-license-(general-trading)",
+          "id": 113,
+          "price": 37005,
+          "currency": "AED"
+        },
+        {
+          "name": "DIFC Category 4 License",
+          "slug": "difc-category-4-license",
+          "id": 152,
+          "price": 70000,
+          "currency": "USD"
+        },
+        {
+          "name": "Fujairah Creative City - Business Package",
+          "slug": "fujairah-creative-city-business-package",
+          "id": 47,
+          "price": 5250,
+          "currency": null
+        },
+        {
+          "name": "SPC - Publishing License Package",
+          "slug": "spc-publishing-license-package",
+          "id": 104,
+          "price": 5760,
+          "currency": null
+        },
+        {
+          "name": "Bidaya Graduate Talent Hub (Dubai Silicon Oasis)",
+          "slug": "bidaya-graduate-talent-hub-(dubai-silicon-oasis)",
+          "id": 202,
+          "price": 14700,
+          "currency": null
+        },
+        {
+          "name": "RAKEZ Bizstarter Package",
+          "slug": "rakez-bizstarter-package",
+          "id": 45,
+          "price": 6010,
+          "currency": "AED"
+        },
+        {
+          "name": "Expo City Dubai Company Setup - 0 Visa",
+          "slug": "expo-city-dubai-company-setup-0-visa",
+          "id": 197,
+          "price": 12500,
+          "currency": null
+        },
+        {
+          "name": "Masdar City - Business Package",
+          "slug": "masdar-city-business-package",
+          "id": 99,
+          "price": 7000,
+          "currency": null
+        },
+        {
+          "name": "Jebel Ali - Service License",
+          "slug": "jebel-ali-service-license",
+          "id": 60,
+          "price": 58500,
+          "currency": null
+        },
+        {
+          "name": "Dubai Commercity License with Smart Desk",
+          "slug": "dubai-commercity-license-with-smart-desk",
+          "id": 42,
+          "price": 36141,
+          "currency": null
+        },
+        {
+          "name": "ADGM - Tech Startup Incorporation Package",
+          "slug": "adgm-tech-startup-incorporation-package",
+          "id": 91,
+          "price": 11230,
+          "currency": "USD"
+        },
+        {
+          "name": "DIFC Innovation License",
+          "slug": "difc-innovation-license",
+          "id": 84,
+          "price": 4860,
+          "currency": "USD"
+        },
+        {
+          "name": "UAQ Free Trade Zone - Commercial License",
+          "slug": "uaq-free-trade-zone-commercial-license",
+          "id": 56,
+          "price": 25400,
+          "currency": null
+        },
+        {
+          "name": "DIFC Prescribed SPV",
+          "slug": "difc-prescribed-spv",
+          "id": 142,
+          "price": 5000,
+          "currency": "USD"
+        },
+        {
+          "name": "DMCC - Jumpstart Package",
+          "slug": "dmcc-jumpstart-package",
+          "id": 129,
+          "price": 48780,
+          "currency": "AED"
+        },
+        {
+          "name": "SPC - Ultimate License Package",
+          "slug": "spc-ultimate-license-package",
+          "id": 105,
+          "price": 6885,
+          "currency": null
+        },
+        {
+          "name": "DIFC Category 2 License",
+          "slug": "difc-category-2-license",
+          "id": 151,
+          "price": 170000,
+          "currency": "USD"
+        },
+        {
+          "name": "Ajman Media City - Packages",
+          "slug": "ajman-media-city-packages",
+          "id": 40,
+          "price": 4999,
+          "currency": null
+        },
+        {
+          "name": "Duqe License and Visa Package",
+          "slug": "duqe-license-and-visa-package",
+          "id": 46,
+          "price": 12500,
+          "currency": null
+        },
+        {
+          "name": "UAQ Free Trade Zone - Freelancer Permit",
+          "slug": "uaq-free-trade-zone-freelancer-permit",
+          "id": 52,
+          "price": 9999,
+          "currency": null
+        },
+        {
+          "name": "IFZA License and visa quota package",
+          "slug": "ifza-license-and-visa-quota-package",
+          "id": 5,
+          "price": 12900,
+          "currency": "AED"
+        },
+        {
+          "name": "Jebel Ali - Trading License",
+          "slug": "jebel-ali-trading-license",
+          "id": 39,
+          "price": 73178,
+          "currency": null
+        },
+        {
+          "name": "DWTC Company Setup",
+          "slug": "dwtc-company-setup",
+          "id": 168,
+          "price": 12545,
+          "currency": null
+        },
+        {
+          "name": "Masdar City - Space Zone Package",
+          "slug": "masdar-city-space-zone-package",
+          "id": 102,
+          "price": 31250,
+          "currency": null
+        },
+        {
+          "name": "UAQ Free Trade Zone - Startup Business License",
+          "slug": "uaq-free-trade-zone-startup-business-license",
+          "id": 53,
+          "price": 20900,
+          "currency": null
+        },
+        {
+          "name": "ADGM Category 4 License",
+          "slug": "adgm-category-4-license",
+          "id": 154,
+          "price": 90000,
+          "currency": "USD"
+        },
+        {
+          "name": "DMCC - Prime Plus",
+          "slug": "dmcc-prime-plus",
+          "id": 130,
+          "price": 38145,
+          "currency": "AED"
+        },
+        {
+          "name": "DWTC Spark Package Company Setup",
+          "slug": "dwtc-spark-package-company-setup",
+          "id": 175,
+          "price": 27380,
+          "currency": null
+        },
+        {
+          "name": "Expo City Dubai Company Setup - 1 Visa",
+          "slug": "expo-city-dubai-company-setup-1-visa",
+          "id": 199,
+          "price": 20750,
+          "currency": null
+        },
+        {
+          "name": "DMCC - Gaming Centre Package",
+          "slug": "dmcc-gaming-centre-package",
+          "id": 31,
+          "price": 33436,
+          "currency": "AED"
+        },
+        {
+          "name": "Meydan Standard License",
+          "slug": "meydan-standard-license",
+          "id": 37,
+          "price": 12520,
+          "currency": null
+        },
+        {
+          "name": "Innovation City Startup License Package",
+          "slug": "innovation-city-startup-license-package",
+          "id": 167,
+          "price": 19800,
+          "currency": null
+        },
+        {
+          "name": "DWTC - Family Office Management (Single Family)",
+          "slug": "dwtc-family-office-management-(single-family)",
+          "id": 22,
+          "price": 45545,
+          "currency": null
+        },
+        {
+          "name": "Ajman Free Zone - Standard Freelance Package",
+          "slug": "ajman-free-zone-standard-freelance-package",
+          "id": 118,
+          "price": 12121,
+          "currency": "AED"
+        },
+        {
+          "name": "Dubai South - Permanent Desk Package",
+          "slug": "dubai-south-permanent-desk-package",
+          "id": 21,
+          "price": 16780,
+          "currency": null
+        },
+        {
+          "name": "RAKEZ - Biz Saver Plus One",
+          "slug": "rakez-biz-saver-plus-one",
+          "id": 111,
+          "price": 14010,
+          "currency": "AED"
+        },
+        {
+          "name": "Abu Dhabi Mainland License",
+          "slug": "abu-dhabi-mainland-license",
+          "id": 41,
+          "price": 19700,
+          "currency": null
+        },
+        {
+          "name": "DWTC - Family Office Management (Multi Family)",
+          "slug": "dwtc-family-office-management-(multi-family)",
+          "id": 23,
+          "price": 45545,
+          "currency": null
+        },
+        {
+          "name": "Ajman Free Zone - Virtual Office Package",
+          "slug": "ajman-free-zone-virtual-office-package",
+          "id": 131,
+          "price": 5555,
+          "currency": "AED"
+        },
+        {
+          "name": "Jebel Ali - Logistics License",
+          "slug": "jebel-ali-logistics-license",
+          "id": 106,
+          "price": 70500,
+          "currency": null
+        },
+        {
+          "name": "Masdar City - Women Entrepreneurship Package",
+          "slug": "masdar-city-women-entrepreneurship-package",
+          "id": 101,
+          "price": 27250,
+          "currency": null
+        },
+        {
+          "name": "SHAMS - Standard Package",
+          "slug": "shams-standard-package",
+          "id": 58,
+          "price": 6885,
+          "currency": "AED"
+        },
+        {
+          "name": "UAQ Free Trade Zone - General Trading License",
+          "slug": "uaq-free-trade-zone-general-trading-license",
+          "id": 55,
+          "price": 2823,
+          "currency": null
+        },
+        {
+          "name": "IFZA Company Setup - 0 Visa (2-Year License)",
+          "slug": "ifza-company-setup-0-visa-(2-year-license)",
+          "id": 176,
+          "price": null,
+          "currency": "AED"
+        },
+        {
+          "name": "DAFZA Business Setup Package",
+          "slug": "dafza-business-setup-package",
+          "id": 43,
+          "price": 67020,
+          "currency": null
+        },
+        {
+          "name": "DMCC Company Set Up ΓÇô Standard Package ΓÇô 1 Visa",
+          "slug": "dmcc-company-set-up-standard-package-1-visa",
+          "id": 193,
+          "price": 61485,
+          "currency": "AED"
+        },
+        {
+          "name": "SRTIP General Trading License",
+          "slug": "srtip-general-trading-license",
+          "id": 61,
+          "price": 5500,
+          "currency": null
+        },
+        {
+          "name": "DIFC Operating Company (OpCo) Incorporation Package",
+          "slug": "difc-operating-company-(opco)-incorporation-package",
+          "id": 174,
+          "price": 27050,
+          "currency": "USD"
+        },
+        {
+          "name": "Dubai Technology Entrepreneur Campus (DTEC) Company Setup",
+          "slug": "dubai-technology-entrepreneur-campus-(dtec)-company-setup",
+          "id": 183,
+          "price": 14595,
+          "currency": null
+        },
+        {
+          "name": "Jebel Ali - General Trading License",
+          "slug": "jebel-ali-general-trading-license",
+          "id": 108,
+          "price": 68500,
+          "currency": null
+        },
+        {
+          "name": "DMCC - Basic Biz Package (1 visa)",
+          "slug": "dmcc-basic-biz-package-(1-visa)",
+          "id": 27,
+          "price": 38342,
+          "currency": "AED"
+        },
+        {
+          "name": "Innovation City Seed License Package",
+          "slug": "innovation-city-seed-license-package",
+          "id": 166,
+          "price": 13200,
+          "currency": null
+        },
+        {
+          "name": "Innovation City License - Idea",
+          "slug": "innovation-city-license-idea",
+          "id": 164,
+          "price": 6600,
+          "currency": null
+        },
+        {
+          "name": "ADGM Foundation Office Setup",
+          "slug": "adgm-foundation-office-setup",
+          "id": 153,
+          "price": 32850,
+          "currency": "USD"
+        },
+        {
+          "name": "ADGM SPV Company Setup",
+          "slug": "adgm-spv-company-setup",
+          "id": 173,
+          "price": 4500,
+          "currency": "USD"
+        },
+        {
+          "name": "DWTC - Executive Plus Package",
+          "slug": "dwtc-executive-plus-package",
+          "id": 35,
+          "price": 71270,
+          "currency": null
+        },
+        {
+          "name": "UAQ Free Trade Zone - Premium License",
+          "slug": "uaq-free-trade-zone-premium-license",
+          "id": 54,
+          "price": 34900,
+          "currency": null
+        },
+        {
+          "name": "Ajman NuVentures Centre Free Zone",
+          "slug": "ajman-nuventures-centre-free-zone",
+          "id": 163,
+          "price": 4888,
+          "currency": null
+        },
+        {
+          "name": "UAE Business Setup & Payment Solutions",
+          "slug": "uae-business-setup-and-payment-solutions",
+          "id": 201,
+          "price": 7400,
+          "currency": null
+        },
+        {
+          "name": "Expo City Dubai Company Setup - 2 Visa",
+          "slug": "expo-city-dubai-company-setup-2-visa",
+          "id": 198,
+          "price": 23950,
+          "currency": null
+        },
+        {
+          "name": "UAQ Free Trade Zone - Micro Business LYTE",
+          "slug": "uaq-free-trade-zone-micro-business-lyte",
+          "id": 122,
+          "price": 5500,
+          "currency": null
+        },
+        {
+          "name": "Dubai - Mainland License (Trading)",
+          "slug": "dubai-mainland-license-(trading)",
+          "id": 114,
+          "price": 29505,
+          "currency": "AED"
+        },
+        {
+          "name": "RAKEZ Lite Promo (Enhanced) ΓÇô 1 Visa",
+          "slug": "rakez-lite-promo-(enhanced)-1-visa",
+          "id": 203,
+          "price": 12000,
+          "currency": "AED"
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 78,
+      "top_packages_on_country_page": 2
+    },
+    "Saudi Arabia": {
+      "shortcode": "sa",
+      "api_slug": "saudi-arabia",
+      "country_id": 2,
+      "source_url": "https://arnifi.com/sa",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Ministry of Investment Service License - Silver",
+          "slug": "ministry-of-investment-service-license-silver",
+          "id": 17,
+          "price": 54000,
+          "currency": null
+        },
+        {
+          "name": "MISA - Entrepreneur License",
+          "slug": "misa-entrepreneur-license",
+          "id": 38,
+          "price": 88650,
+          "currency": null
+        },
+        {
+          "name": "MISA Service License - Gold Package",
+          "slug": "misa-service-license-gold-package",
+          "id": 59,
+          "price": 45650,
+          "currency": null
+        },
+        {
+          "name": "Ministry of Investment Service License - Platinum",
+          "slug": "ministry-of-investment-service-license-platinum",
+          "id": 69,
+          "price": 55650,
+          "currency": null
+        },
+        {
+          "name": "Ministry of Investment Service License - RHQ Incorporation Package",
+          "slug": "ministry-of-investment-service-license-rhq-incorporation-package",
+          "id": 95,
+          "price": 67242,
+          "currency": null
+        },
+        {
+          "name": "KSA Company Formation",
+          "slug": "ksa-company-formation",
+          "id": 162,
+          "price": 18000,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 6,
+      "top_packages_on_country_page": 2
+    },
+    "British Virgin Islands": {
+      "shortcode": "vg",
+      "api_slug": "british-virgin-islands",
+      "country_id": 11,
+      "source_url": "https://arnifi.com/vg",
+      "funds": [],
+      "packages": [
+        {
+          "name": "BVI License Renewal & Agent Appointment",
+          "slug": "bvi-license-renewal-and-agent-appointment",
+          "id": 149,
+          "price": 4550,
+          "currency": null
+        },
+        {
+          "name": "British Virgin Island Company Formation | Basic Package",
+          "slug": "british-virgin-island-company-formation-or-basic-package",
+          "id": 159,
+          "price": 1299,
+          "currency": null
+        },
+        {
+          "name": "British Virgin Island Company Formation | Advanced Package",
+          "slug": "british-virgin-island-company-formation-or-advanced-package",
+          "id": 160,
+          "price": 1599,
+          "currency": null
+        },
+        {
+          "name": "British Virgin Island Company Formation | Elite Package",
+          "slug": "british-virgin-island-company-formation-or-elite-package",
+          "id": 161,
+          "price": 17775,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 4,
+      "top_packages_on_country_page": 2
+    },
+    "Cayman Island": {
+      "shortcode": "cym",
+      "api_slug": "cayman-islands",
+      "country_id": 12,
+      "source_url": "https://arnifi.com/cym",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Cayman Island Company Incorporation | Segregated Portfolio Setup",
+          "slug": "cayman-island-company-incorporation-or-segregated-portfolio-setup",
+          "id": 150,
+          "price": 7400,
+          "currency": null
+        },
+        {
+          "name": "Cayman Islands Company Formation",
+          "slug": "cayman-islands-company-formation",
+          "id": 158,
+          "price": 2799,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 2,
+      "top_packages_on_country_page": 2
+    },
+    "Singapore": {
+      "shortcode": "sg",
+      "api_slug": "singapore",
+      "country_id": 6,
+      "source_url": "https://arnifi.com/sg",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Singapore Basic Incorporation",
+          "slug": "singapore-basic-incorporation",
+          "id": 123,
+          "price": 650,
+          "currency": null
+        },
+        {
+          "name": "Singapore Foreigner  Incorporation",
+          "slug": "singapore-foreigner-incorporation",
+          "id": 124,
+          "price": 2050,
+          "currency": null
+        },
+        {
+          "name": "Singapore Premium Incorporation",
+          "slug": "singapore-premium-incorporation",
+          "id": 125,
+          "price": 600,
+          "currency": null
+        },
+        {
+          "name": "Singapore Proposal Mainland | Foreign National - EP Application",
+          "slug": "singapore-proposal-mainland-or-foreign-national-ep-application",
+          "id": 187,
+          "price": 4800,
+          "currency": null
+        },
+        {
+          "name": "Singapore Proposal Mainland | Singapore National",
+          "slug": "singapore-proposal-mainland-or-singapore-national",
+          "id": 188,
+          "price": 600,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 5,
+      "top_packages_on_country_page": 2
+    },
+    "Mauritius": {
+      "shortcode": "MU",
+      "api_slug": "mauritius",
+      "country_id": 13,
+      "source_url": "https://arnifi.com/mu",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Mauritius Company Setup - AC (Authorised Company)",
+          "slug": "mauritius-company-setup-ac-(authorised-company)",
+          "id": 171,
+          "price": 5590,
+          "currency": null
+        },
+        {
+          "name": "Mauritius Company Setup - GBC (Global Business Company)",
+          "slug": "mauritius-company-setup-gbc-(global-business-company)",
+          "id": 172,
+          "price": 11010,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 2,
+      "top_packages_on_country_page": 2
+    },
+    "Cyprus": {
+      "shortcode": "cy",
+      "api_slug": "Cyprus",
+      "country_id": 19,
+      "source_url": "https://arnifi.com/cy",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Cyprus Company Incorporation | Complete Digital Setup",
+          "slug": "cyprus-company-incorporation-or-complete-digital-setup",
+          "id": 180,
+          "price": 4345,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 1,
+      "top_packages_on_country_page": 1
+    },
+    "Hong Kong": {
+      "shortcode": "hk",
+      "api_slug": "Hong-Kong",
+      "country_id": 21,
+      "source_url": "https://arnifi.com/hk",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Hong Kong Company Setup",
+          "slug": "hong-kong-company-setup",
+          "id": 177,
+          "price": 1480,
+          "currency": null
+        },
+        {
+          "name": "Hong Kong Company Setup & Renewal",
+          "slug": "hong-kong-company-setup-and-renewal",
+          "id": 178,
+          "price": 1245,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 2,
+      "top_packages_on_country_page": 2
+    },
+    "Ireland": {
+      "shortcode": "ie",
+      "api_slug": "Ireland",
+      "country_id": 16,
+      "source_url": "https://arnifi.com/ie",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Ireland Company Incorporation & Annual Maintenance Renewal",
+          "slug": "ireland-company-incorporation-and-annual-maintenance-renewal",
+          "id": 181,
+          "price": 9054,
+          "currency": null
+        },
+        {
+          "name": "Ireland Company Incorporation | Complete Digital Setup",
+          "slug": "ireland-company-incorporation-or-complete-digital-setup",
+          "id": 182,
+          "price": 6384,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 2,
+      "top_packages_on_country_page": 2
+    },
+    "Luxembourg": {
+      "shortcode": "lu",
+      "api_slug": "Luxembourg",
+      "country_id": 15,
+      "source_url": "https://arnifi.com/lu",
+      "funds": [
+        {
+          "name": "Luxembourg Holding Company Setup (SOPARFI)",
+          "slug": "luxembourg-holding-company-setup-(soparfi)",
+          "id": 442,
+          "price": 17760,
+          "currency": "USD"
+        },
+        {
+          "name": "Luxembourg Private Wealth Management (SPF) Company Setup",
+          "slug": "luxembourg-private-wealth-management-(spf)-company-setup",
+          "id": 441,
+          "price": 18800,
+          "currency": "USD"
+        },
+        {
+          "name": "Luxembourg (SCSP) Setup",
+          "slug": "luxembourg-(scsp)-setup",
+          "id": 440,
+          "price": 18050,
+          "currency": "USD"
+        },
+        {
+          "name": "Luxembourg RAIF (SCSP) Fund Setup",
+          "slug": "luxembourg-raif-(scsp)-fund-setup",
+          "id": 438,
+          "price": 91090,
+          "currency": "USD"
+        }
+      ],
+      "packages": [],
+      "fund_count": 4,
+      "package_count": 0,
+      "top_packages_on_country_page": 0
+    },
+    "Malaysia": {
+      "shortcode": "my",
+      "api_slug": "Malaysia",
+      "country_id": 18,
+      "source_url": "https://arnifi.com/my",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Malaysia Company Incorporation",
+          "slug": "malaysia-company-incorporation",
+          "id": 179,
+          "price": 4920,
+          "currency": null
+        },
+        {
+          "name": "Labuan Company Setup",
+          "slug": "labuan-company-setup",
+          "id": 204,
+          "price": 5000,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 2,
+      "top_packages_on_country_page": 1
+    },
+    "Puerto Rico": {
+      "shortcode": "pr",
+      "api_slug": "Puerto Rico",
+      "country_id": 20,
+      "source_url": "https://arnifi.com/pr",
+      "funds": [],
+      "packages": [
+        {
+          "name": "Puerto Rico Company Setup",
+          "slug": "puerto-rico-company-setup",
+          "id": 189,
+          "price": 11840,
+          "currency": null
+        }
+      ],
+      "fund_count": 0,
+      "package_count": 1,
+      "top_packages_on_country_page": 0
+    },
+    "United Kingdom": {
+      "shortcode": "gb",
+      "api_slug": "United Kingdom",
+      "country_id": 17,
+      "source_url": "https://arnifi.com/gb",
+      "funds": [
+        {
+          "name": "Jersey Expert Fund Setup",
+          "slug": "jersey-expert-fund-setup",
+          "id": 439,
+          "price": 23300,
+          "currency": "USD"
+        },
+        {
+          "name": "Jersey Private Fund Setup",
+          "slug": "jersey-private-fund-setup",
+          "id": 437,
+          "price": 40860,
+          "currency": "USD"
+        },
+        {
+          "name": "UK ΓÇô GP/LP Fund Setup Structure",
+          "slug": "uk-gplp-fund-setup-structure",
+          "id": 447,
+          "price": 142000,
+          "currency": "USD"
+        }
+      ],
+      "packages": [],
+      "fund_count": 3,
+      "package_count": 0,
+      "top_packages_on_country_page": 0
+    }
+  }
+}

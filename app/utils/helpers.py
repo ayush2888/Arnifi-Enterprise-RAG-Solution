@@ -65,6 +65,48 @@ _DENIED_PREFIXES = (
     "/terms-conditions",
 )
 
+# Short country overview paths after /country-overview/{slug} redirects.
+COUNTRY_SHORT_PATHS = frozenset(
+    {
+        "/ae",
+        "/sa",
+        "/ksa",
+        "/sg",
+        "/uk",
+        "/gb",
+        "/hk",
+        "/my",
+        "/cy",
+        "/ie",
+        "/lu",
+        "/mu",
+        "/gg",
+        "/vg",
+        "/bvi",
+        "/ky",
+        "/pr",
+        "/vc",
+        "/svg",
+    }
+)
+
+# Listing grids and the homepage are discovered, not embedded as RAG docs.
+SKIP_INGEST_PAGE_KINDS = frozenset({"package_listing", "hub"})
+
+WEBSITE_PRICE_PAGE_KINDS = frozenset(
+    {
+        "pricing",
+        "service",
+        "product",
+        "jurisdiction",
+        "fund",
+        "service_landing",
+        "service_package",
+        "product_detail",
+        "country_overview",
+    }
+)
+
 
 def canonicalize_url(url: str, base: str | None = None) -> str:
     """Normalize URLs.
@@ -167,22 +209,69 @@ def is_denied_website_url(url: str, extra_prefixes: list[str] | None = None) -> 
     return False
 
 
+def is_homepage_url(url: str) -> bool:
+    return _website_path(url) in {"/", ""}
+
+
+def is_country_overview_url(url: str) -> bool:
+    path = _website_path(url)
+    if path in COUNTRY_SHORT_PATHS:
+        return True
+    return path.startswith("/country-overview/") and path.count("/") == 2
+
+
+def is_service_landing_url(url: str) -> bool:
+    path = _website_path(url)
+    parts = [p for p in path.split("/") if p]
+    if path.startswith("/services/overview/") and path.count("/") == 3:
+        return True
+    if path.startswith("/services/funds"):
+        return False
+    if path.startswith("/services/") and len(parts) == 2:
+        return True
+    return False
+
+
+def is_service_package_url(url: str) -> bool:
+    path = _website_path(url)
+    parts = [p for p in path.split("/") if p]
+    if len(parts) < 3 or parts[0] != "services":
+        return False
+    if parts[1] in {"overview", "funds"}:
+        return False
+    return True
+
+
+def should_skip_website_ingest(url: str, page_kind: str | None = None) -> bool:
+    """True for hubs/listings we discover but do not embed."""
+    kind = page_kind or infer_page_kind(url)
+    if kind in SKIP_INGEST_PAGE_KINDS:
+        return True
+    path = _website_path(url)
+    if path in {"/business-guides"}:
+        return True
+    return False
+
+
 def is_website_hub_url(url: str) -> bool:
     path = _website_path(url)
+    if is_homepage_url(url):
+        return True
     if path in ("/llms.txt", "/pricing-master-list", "/contact-us", "/case-studies"):
         return True
-    if path.startswith("/announcement/"):
+    if path in {"/announcement/press-releases", "/announcement/events"}:
         return True
-    if path.startswith("/country-overview/") and path.count("/") == 2:
+    if path.startswith("/case-studies/industries/") or path.startswith(
+        "/case-studies/jurisdiction/"
+    ):
+        return True
+    if is_country_overview_url(url):
         return True
     if path.startswith("/product-listing"):
         return True
     if path.startswith("/services/funds"):
         return True
-    if path.startswith("/services/") and not path.startswith("/services/overview/"):
-        parts = [p for p in path.split("/") if p]
-        return len(parts) == 2
-    if path.startswith("/services/overview/") and path.count("/") == 3:
+    if is_service_landing_url(url):
         return True
     return False
 
@@ -195,6 +284,18 @@ def is_case_study_url(url: str) -> bool:
     if parts[1] in {"industries", "jurisdiction"}:
         return False
     return True
+
+
+def is_press_release_url(url: str) -> bool:
+    path = _website_path(url)
+    parts = [p for p in path.split("/") if p]
+    return len(parts) >= 3 and parts[0] == "announcement" and parts[1] == "press-releases"
+
+
+def is_event_url(url: str) -> bool:
+    path = _website_path(url)
+    parts = [p for p in path.split("/") if p]
+    return len(parts) >= 3 and parts[0] == "announcement" and parts[1] == "events"
 
 
 def is_product_detail_url(url: str) -> bool:
@@ -215,20 +316,36 @@ def is_product_detail_url(url: str) -> bool:
 
 def infer_page_kind(url: str) -> str:
     path = _website_path(url)
+    if is_homepage_url(url):
+        return "hub"
     if path.endswith("llms.txt") or path in {"/contact-us"}:
         return "company"
-    if path.startswith("/announcement/"):
-        return "company"
+    if is_press_release_url(url):
+        return "press_release"
+    if is_event_url(url):
+        return "event"
+    if path in {"/announcement/press-releases", "/announcement/events"} or path.startswith(
+        "/announcement/"
+    ):
+        return "hub"
     if path.startswith("/pricing-master-list"):
         return "pricing"
-    if is_case_study_url(url) or path == "/case-studies":
+    if path in {"/business-guides"} or path.startswith("/business-guides/"):
+        return "business_guide"
+    if is_case_study_url(url):
         return "case_study"
-    if path.startswith("/country-overview/") or path.startswith("/product-listing"):
-        return "jurisdiction"
+    if path == "/case-studies" or path.startswith("/case-studies/industries/"):
+        return "hub"
+    if is_country_overview_url(url):
+        return "country_overview"
+    if path.startswith("/product-listing"):
+        return "package_listing"
     if path.startswith("/services/funds"):
         return "fund"
     if is_product_detail_url(url):
-        return "product"
-    if path.startswith("/services/"):
-        return "service"
-    return "service"
+        return "product_detail"
+    if is_service_package_url(url):
+        return "service_package"
+    if is_service_landing_url(url) or path.startswith("/services/"):
+        return "service_landing"
+    return "service_landing"

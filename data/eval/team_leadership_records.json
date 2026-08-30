@@ -1,0 +1,118 @@
+{
+  "note": "Deduplicated team/leadership records from mixed paste (interview, bios, milestones, quotes). Bio facts collapsed; interview Q&A kept separate.",
+  "bios": [
+    {
+      "content_type": "team_bio",
+      "person_name": "Manu Midha",
+      "role": "Founder & CEO",
+      "tenure": "Founder and CEO of Arnifi since April 2024",
+      "background": "Manu Midha is the Founder and CEO of Arnifi. He is an alumnus of IIM Ahmedabad with an MBA in finance and began his career in banking, including experience at J.P. Morgan. He spent roughly a decade in internet and e-commerce companies, including scaling OYO in the UAE, and has worked across e-commerce, fintech, health tech, and hospitality. Before Arnifi he co-founded Fincobox, a fintech that provided flexible funding for SMEs, and built and sold a fintech business in Saudi Arabia. At Arnifi he leads a fixed-price, technology-driven platform for cross-border entity setup, compliance, accounting, tax, renewals, visas, and immigration across multiple global markets.",
+      "company_products_led": ["Arni Ledge", "Arni OS"],
+      "source_fragments": [
+        "about_page_first_person_bio",
+        "third_person_iim_bio",
+        "short_expertise_bio",
+        "enterpriseam_interview_intro"
+      ],
+      "source_note": "Consolidated from About-style bios + EnterpriseAM interview context"
+    },
+    {
+      "content_type": "team_bio",
+      "person_name": "Shashi Kumar",
+      "role": "COO & Product Head",
+      "tenure": "COO & Product Head; welcomed to the founding team alongside Manu Midha (also referred to as Chief Business Officer at an earlier turning point)",
+      "background": "Shashi Kumar is COO & Product Head at Arnifi (also referenced as Chief Business Officer / Chief Operating Officer in company announcements). He is a postgraduate of IIM Kozhikode and has over 10 years across startups, unicorns, and multinationals, with strong product-management and consumer-behavior depth. He thrives in high-ambiguity 0-to-1 work. At Swiggy for about four years he worked in Swiggy Labs on high-conviction proof-of-concept ideas, then was one of four founding team members of a specialized grocery business. He hails from Dhanbad, Jharkhand; company announcements credit him with helping Arnifi grow from a few clients a month to several an hour by building scalable systems and a customer-first culture, and with driving global growth and simplifying international expansion. He led development of Arni OS for corporate service providers.",
+      "company_products_led": ["Arni OS"],
+      "source_fragments": [
+        "linkedin_style_bio",
+        "swiggy_first_person",
+        "founding_team_welcome_quote",
+        "arnios_press_quotes"
+      ],
+      "source_note": "Consolidated from LinkedIn-style bio, Swiggy passage, founding-team welcome, ArniOS press quotes"
+    },
+    {
+      "content_type": "team_bio",
+      "person_name": "Tulika Saxena",
+      "role": "AVP of Sales & Marketing",
+      "tenure": "AVP of Sales & Marketing; welcomed to the founding team alongside Manu Midha",
+      "background": "Tulika Saxena is AVP of Sales & Marketing at Arnifi. Company leadership credited her as a game-changer for sales: in about one year she helped take Arnifi from zero to approximately $5M in ARR, staying focused, adapting quickly, and driving consistent results that supported company momentum.",
+      "company_products_led": [],
+      "source_fragments": ["founding_team_welcome_quote"],
+      "source_note": "From founding-team welcome announcement"
+    }
+  ],
+  "interview": {
+    "content_type": "team_interview",
+    "person_name": "Manu Midha",
+    "interview_source": "My Morning Routine (EnterpriseAM)",
+    "source_note": "EnterpriseAM interview ΓÇö Manu Midha sold a Saudi fintech, then built a fixed-price alternative to law firms and accountants",
+    "canonical_url": "https://enterpriseam.com/uae/2026/08/14/manu-midha-sold-a-saudi-fintech-then-built-a-fixed-price-alternative-to-law-firms-and-accountants/",
+    "qa_pairs": [
+      {
+        "question": "What's the path that got you here?",
+        "answer": "I've been a working professional for close to 12 years now. By background, I started in banking, earned an MBA in finance, and spent most of the following decade at internet and e-commerce companies. Before Arnifi, I built a fintech business and sold it in Saudi Arabia."
+      },
+      {
+        "question": "What problem was Arnifi built to solve?",
+        "answer": "A lot of people want to set up holding companies, funds, subsidiaries, and other structures in different parts of the world. Traditionally, that space is fragmented between company secretaries, lawyers, and accounting firms. We've put a technology layer on top of the entire process ΓÇö company formation, filings, accounting, taxation, renewals, even visas and immigration, all through one platform and one point of contact. We operate across 12 markets, including the UAE, Saudi Arabia, Singapore, and the Cayman Islands."
+      },
+      {
+        "question": "Why make fixed pricing such a central part of the model?",
+        "answer": "Arnifi's fixed pricing philosophy is rooted in transparency. With lawyers, you may have a conversation, then get a proposal several days later, with the possibility of being billed by the hour if the scope changes. We have around 1.6k products in our catalogue, and they're all fixed-price. A startup and a billionaire pay the same price for the same service. The client gets certainty, and we take the risk of the work requiring more or less effort. This fixed-price model is a central part of how Arnifi competes with traditional law firms and accountants."
+      },
+      {
+        "question": "How much of what Arnifi does now runs through AI?",
+        "answer": "We built Arni Ledge for AI-led accounting and Arni OS for ERP-based workflow management. Take corporate structuring: you'd typically go to a lawyer or banker and lay out where you want a holding company, a subsidiary, or an operating company. But those structures aren't static. Tax treaties and rates shift constantly, so what was optimal yesterday may not be today. Our system continuously tracks those changes, so instead of waiting days for someone to come back with an answer, you get guidance much faster. But technology without customers doesn't prove anything. We need both ΓÇö products that work and clients who actually use them. Sometimes that means slowing down on product to focus on getting traction for what we've already built."
+      },
+      {
+        "question": "What does the UAE mean to Arnifi's strategy?",
+        "answer": "In two years, we've become the second-leading corporate services provider in the UAE by traffic and new transactions. There are players that have been here for decades, so we're proud of that progress, but we don't want to stop there. Currently, about half of our business comes from the Emirates. I'm a strong long-term believer in the UAE. While India gives us access to technology, compliance, and accounting talent, the UAE gives us a gateway to the world."
+      },
+      {
+        "question": "What do the first 90 minutes of your day look like?",
+        "answer": "Morning is my prime time. I want to start the day positively, with energy and a clear head, so I deliberately avoid anything that can spoil my mood. I clear my messages and emails. I tell my family that if they have feedback, a complaint, or anything that needs correcting, tell me in the afternoon. I'll listen to everything after 3pm. The first hour has one purpose ΓÇö making Arnifi better. I might send a note on an urgent client issue or a process fix. From 9am, the day fills up with reviews, sales calls, and clients, so I want that first hour dealt with before everyone else's priorities arrive. On low-energy days, I start with small admin tasks ΓÇö bill payments, approvals ΓÇö just to build momentum. By 8:15am, if I've cleared messages and knocked off a few tasks, the rest of the morning already feels easier."
+      },
+      {
+        "question": "How do you wind down at the other end?",
+        "answer": "Gradually, not all at once. Clients don't stop expecting replies just because it's 6pm. I take a 15-minute nap most afternoons, with zero meetings scheduled between 2 and 3. After 6, I go for a walk near the office and have an early dinner ΓÇö often with whoever I'm meeting that day, client or friend, instead of doing it at a desk. I close things out around 7:15pm, and I'm home by 7:30pm. I sleep by 10:30pm and get up by 6 or 7am. It's a long day, but well-paced ΓÇö that matters more than how long it runs."
+      }
+    ]
+  },
+  "press_records": [
+    {
+      "content_type": "press_quote",
+      "related_person": "Manu Midha",
+      "headline": "Arnifi hits 500+ clients across 7 global markets",
+      "body": "Under the leadership of CEO Manu Midha, Arnifi hit a key milestone of 500+ clients across 7 global markets. Clients range from brands such as PW (PhysicsWallah), Moglix, Shipsy, and eBay to fast-growing startups, relying on Arnifi for business setup, licensing, compliance, accounting, and visa solutions. Presence spans UAE, Saudi Arabia, Qatar, Oman, Bahrain, Singapore, and the USA, with transparent, tech-driven, fully compliant processes for cross-border expansion.",
+      "notable_quotes": [],
+      "source_note": "Company milestone announcement (manually provided paste)",
+      "skip_reason": null
+    },
+    {
+      "content_type": "press_quote",
+      "related_person": "Shashi Kumar",
+      "headline": "Dhanbad boy launches ArniOS, first operating system designed for global corporates",
+      "body": "Leadership-relevant excerpt only (full press body already ingested as press_release). Arnifi announced Arni OS for corporate service providers; Shashi Kumar (IIM Kozhikode, from Dhanbad, Jharkhand) is credited with driving the platform. Most CSPs still rely on disconnected software, spreadsheets, email, and WhatsApp to manage sales, compliance, operations, and finance.",
+      "notable_quotes": [
+        "Coming from a small town taught me to value hard work over shortcuts and consistency over noise. Growing up around a family business and spending years on the sports field showed me that ownership, resilience, and teamwork matter far more than where you start.",
+        "Those values have helped me navigate startups with confidence because when you're focused on execution and continuous learning, competition becomes something you learn from, not something you fear.",
+        "Corporate service providers have outgrown the tools they're using today. We built Arni OS to eliminate operational complexity and give CSPs the technology foundation needed to scale with confidence."
+      ],
+      "source_note": "Quotes from ArniOS / Times of India-style announcement; full listing already at https://arnifi.com/announcement/press-releases/dhanbad-boy-launches-arnios-first-operating-system-designed-for-global-corporates/",
+      "existing_press_url": "https://arnifi.com/announcement/press-releases/dhanbad-boy-launches-arnios-first-operating-system-designed-for-global-corporates/",
+      "dedupe": "quotes_only_no_full_body_reingest"
+    }
+  ],
+  "fragment_inventory": [
+    "enterpriseam_my_morning_routine_interview",
+    "milestone_500_clients_7_markets",
+    "manu_about_first_person",
+    "manu_third_person_iim",
+    "manu_short_expertise_bio",
+    "shashi_linkedin_style_bio",
+    "shashi_swiggy_first_person",
+    "founding_team_welcome_shashi_tulika",
+    "arnios_dhanbad_press_with_shashi_quotes"
+  ]
+}

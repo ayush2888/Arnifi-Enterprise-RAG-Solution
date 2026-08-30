@@ -11,6 +11,12 @@ from pathlib import Path
 from typing import TYPE_CHECKING, Any, Iterator
 
 from app.models.schemas import RAGResponse, RetrievedChunk
+from app.services.retrieval.catalog_focus import (
+    apply_catalog_section_boost,
+    catalog_list_limits,
+    filter_cross_country_catalog_noise,
+    protected_chunk_ids_for_catalog_sections,
+)
 from app.services.retrieval.diversify import diversify_chunks
 from app.services.retrieval.relevance_gate import apply_relevance_gate
 from app.services.retrieval.fee_focus import (
@@ -23,6 +29,19 @@ from app.services.retrieval.fee_focus import (
     protected_chunk_ids_for_titles,
 )
 from app.services.retrieval.filters import build_source_filter, empty_result_message
+from app.services.retrieval.package_detail_focus import (
+    apply_package_detail_focus,
+    diversify_package_detail_sections,
+    is_package_detail_query,
+    package_detail_limits,
+)
+from app.services.retrieval.service_catalog import build_catalog_count_answer
+from app.services.retrieval.location_catalog import (
+    build_location_catalog_count_answer,
+    load_location_catalog,
+    match_country_name,
+)
+from app.services.retrieval.country_compare import build_country_compare_answer
 from app.services.retrieval.service_code_lookup import (
     lookup_service_code_chunks,
     lookup_title_chunks,
@@ -30,6 +49,7 @@ from app.services.retrieval.service_code_lookup import (
     merge_lexical_title_hits,
 )
 from app.utils.whatsapp_open import enrich_whatsapp_sources
+from app.utils.source_open import enrich_openable_sources
 from app.services.retrieval.source_intent import resolve_source_intent
 from app.utils.helpers import get_logger
 
@@ -49,7 +69,18 @@ _ELLIPTICAL_FOLLOW_UP = re.compile(
     r"and\s+(?:the\s+)?(?:cost|fees?|price|documents?|requirements?|that|this|it)\??|"
     r"how\s+much(?:\s+(?:is\s+it|are\s+they|does\s+it\s+cost|for\s+(?:that|this|it)))?\??|"
     r"(?:the\s+)?(?:cost|fees?|price|documents?(?:\s+required)?|requirements?|timeline)\??|"
-    r"(?:and\s+)?(?:from\s+)?(?:whatsapp|blog|website|drive|the\s+website)\??"
+    # Bare document / process follow-ups after a package question
+    r"what\s+(?:are\s+the\s+)?(?:required\s+)?documents?(?:\s+are)?(?:\s+required|\s+needed)?\??|"
+    r"which\s+documents?(?:\s+are)?(?:\s+required|\s+needed)?\??|"
+    r"documents?\s+(?:required|needed)\??|"
+    r"what\s+(?:is\s+the\s+)?process(?:\s+flow|\s+steps?)?\??|"
+    r"(?:and\s+)?(?:from\s+)?(?:whatsapp|blog|website|drive|the\s+website)\??|"
+    # Short catalog follow-ups after a country/location question
+    r"(?:top\s+)?packages?\??|"
+    r"(?:key\s+)?selling\s+points?\??|"
+    r"faqs?\??|"
+    r"(?:application\s+)?process(?:\s+flow|\s+steps?)?\??|"
+    r"(?:top\s+|explore\s+)?funds?\??"
     r")\s*$"
 )
 
@@ -124,7 +155,11 @@ class QueryEngine:
         self.settings = settings
 
     def _enrich_sources(self, sources: list[dict[str, Any]]) -> list[dict[str, Any]]:
-        """Attach WhatsApp group invite links from the sync registry."""
+        """Sanitize open URLs + attach WhatsApp group invite links."""
+        try:
+            sources = enrich_openable_sources(sources)
+        except Exception as exc:
+            logger.warning("Source URL enrichment skipped: %s", exc)
         try:
             return enrich_whatsapp_sources(
                 sources,
@@ -150,6 +185,37 @@ class QueryEngine:
                 source,
                 resolved,
             )
+
+        # Deterministic catalog answers:
+        # - multi-country compare tables (Cayman vs BVI vs UAE, …)
+        # - country funds/packages counts when a country is named
+        # - service packages (Attestation = 37) otherwise
+        catalog_hit = build_country_compare_answer(question)
+        loc_catalog = load_location_catalog()
+        if catalog_hit is None and loc_catalog and match_country_name(
+            question, list(loc_catalog.keys())
+        ):
+            catalog_hit = build_location_catalog_count_answer(question)
+        if catalog_hit is None:
+            catalog_hit = build_catalog_count_answer(question)
+        if catalog_hit is not None:
+            answer, chunks = catalog_hit
+            sources = [
+                {
+                    "source_url": c.source_url,
+                    "doc_title": c.doc_title,
+                    "heading_path": c.heading_path,
+                    "score": c.score,
+                    "source_type": (c.metadata or {}).get("source_type"),
+                }
+                for c in chunks
+            ]
+            logger.info("Catalog/deterministic answer for %r", question[:80])
+            return RAGResponse(
+                answer=answer,
+                sources=self._enrich_sources(sources),
+            )
+
         selected = self._retrieve(question, source=resolved, history=turns)
         if not selected:
             return RAGResponse(
@@ -192,8 +258,46 @@ class QueryEngine:
         search_text = build_search_text(question, history)
         if search_text != question.strip():
             logger.info("Follow-up retrieval query enriched with history topic")
+        # Catalog list boosts/limits use enriched text so "top packages" after
+        # "Cyprus key selling points" still targets Cyprus top_packages chunks.
+        catalog_text = search_text
         query_vector = self.settings.embedder.embed_query(search_text)
-        top_k = self.settings.setting("retrieval", "top_k_initial", default=20)
+        default_top_k = int(
+            self.settings.setting("retrieval", "top_k_initial", default=20)
+        )
+        default_returned = int(
+            self.settings.setting("retrieval", "max_chunks_returned", default=5)
+        )
+        default_per_url = int(
+            self.settings.setting("retrieval", "max_chunks_per_source_url", default=2)
+        )
+        max_returned, max_per_url, top_k = catalog_list_limits(
+            catalog_text,
+            default_returned=default_returned,
+            default_per_url=default_per_url,
+            list_returned=int(
+                self.settings.setting(
+                    "retrieval", "catalog_list_max_chunks_returned", default=12
+                )
+            ),
+            list_per_url=int(
+                self.settings.setting(
+                    "retrieval", "catalog_list_max_chunks_per_source_url", default=10
+                )
+            ),
+            list_top_k=int(
+                self.settings.setting(
+                    "retrieval", "catalog_list_top_k_initial", default=40
+                )
+            ),
+            default_top_k=default_top_k,
+        )
+        max_returned, max_per_url, top_k = package_detail_limits(
+            catalog_text,
+            default_returned=max_returned,
+            default_per_url=max_per_url,
+            default_top_k=top_k,
+        )
         source_filter = build_source_filter(source)
         matches = self.settings.vectorstore.query(
             query_vector,
@@ -229,6 +333,8 @@ class QueryEngine:
                 candidate = self.settings.config_path.parent.parent / candidate
             bundled_index_path = candidate
 
+        package_detail = is_package_detail_query(catalog_text)
+
         if extract_service_codes(question):
             lexical = lookup_service_code_chunks(
                 question,
@@ -244,23 +350,36 @@ class QueryEngine:
                 )
             matches = merge_lexical_service_code_hits(question, matches, lexical)
 
-        title_hits = lookup_title_chunks(
-            question,
-            artifacts_dir=artifacts_dir,
-            embedding_model=embedding_model,
-            bundled_index_path=bundled_index_path,
-        )
-        if title_hits:
-            logger.info(
-                "Lexical title rescue: %d row(s)",
-                len(title_hits),
+        # Package-detail summaries must not inject Drive Pricing Master rows just
+        # because the prompt says "Include pricing if shown" or the SKU name
+        # matches a Pricing Title: cell.
+        if not package_detail:
+            title_hits = lookup_title_chunks(
+                question,
+                artifacts_dir=artifacts_dir,
+                embedding_model=embedding_model,
+                bundled_index_path=bundled_index_path,
             )
-            matches = merge_lexical_title_hits(question, matches, title_hits)
+            if title_hits:
+                logger.info(
+                    "Lexical title rescue: %d row(s)",
+                    len(title_hits),
+                )
+                matches = merge_lexical_title_hits(question, matches, title_hits)
 
-        focused = apply_fee_focus(question, matches)
+        if package_detail:
+            focused = apply_package_detail_focus(catalog_text, matches)
+        else:
+            focused = apply_fee_focus(question, matches)
         boosted = apply_service_code_boost(question, focused)
-        boosted = prefer_title_matches_for_fees(question, boosted)
-        boosted = apply_title_boost(question, boosted)
+        if not package_detail:
+            boosted = prefer_title_matches_for_fees(question, boosted)
+            boosted = apply_title_boost(question, boosted)
+            boosted = apply_catalog_section_boost(catalog_text, boosted)
+            boosted = filter_cross_country_catalog_noise(catalog_text, boosted)
+        else:
+            # Second pass after any residual noise
+            boosted = apply_package_detail_focus(catalog_text, boosted)
         min_score = float(
             self.settings.setting("retrieval", "min_score", default=0.45)
         )
@@ -269,6 +388,10 @@ class QueryEngine:
         )
         if not gated:
             return []
+        if package_detail:
+            gated = diversify_package_detail_sections(
+                catalog_text, gated, max_chunks=max(max_returned * 3, 24)
+            )
         bypass_cap = bool(
             self.settings.setting(
                 "retrieval",
@@ -277,17 +400,15 @@ class QueryEngine:
             )
         )
         protected: set[str] = set()
-        if bypass_cap:
+        if bypass_cap and not package_detail:
             protected |= protected_chunk_ids_for_codes(question, gated)
             protected |= protected_chunk_ids_for_titles(question, gated)
+        if not package_detail:
+            protected |= protected_chunk_ids_for_catalog_sections(catalog_text, gated)
         return diversify_chunks(
             gated,
-            max_chunks_returned=self.settings.setting(
-                "retrieval", "max_chunks_returned", default=5
-            ),
-            max_chunks_per_source_url=self.settings.setting(
-                "retrieval", "max_chunks_per_source_url", default=2
-            ),
+            max_chunks_returned=max_returned,
+            max_chunks_per_source_url=max_per_url,
             protected_chunk_ids=protected or None,
         )
 
@@ -308,6 +429,32 @@ class QueryEngine:
                 source,
                 resolved,
             )
+
+        catalog_hit = build_country_compare_answer(question)
+        loc_catalog = load_location_catalog()
+        if catalog_hit is None and loc_catalog and match_country_name(
+            question, list(loc_catalog.keys())
+        ):
+            catalog_hit = build_location_catalog_count_answer(question)
+        if catalog_hit is None:
+            catalog_hit = build_catalog_count_answer(question)
+        if catalog_hit is not None:
+            answer, chunks = catalog_hit
+            sources = [
+                {
+                    "source_url": c.source_url,
+                    "doc_title": c.doc_title,
+                    "heading_path": c.heading_path,
+                    "score": c.score,
+                    "source_type": (c.metadata or {}).get("source_type"),
+                }
+                for c in chunks
+            ]
+            yield {"type": "sources", "sources": self._enrich_sources(sources)}
+            yield {"type": "token", "content": answer}
+            yield {"type": "done"}
+            return
+
         selected = self._retrieve(question, source=resolved, history=turns)
         if not selected:
             yield {"type": "sources", "sources": []}

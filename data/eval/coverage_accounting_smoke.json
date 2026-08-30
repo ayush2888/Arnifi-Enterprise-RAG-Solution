@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "micro_services": {
+    "ok": true,
+    "services": [
+      {
+        "service_type": "Accounting & Bookkeeping",
+        "discovered": 29,
+        "scraped": 29,
+        "expected": 29,
+        "fetch_failures": [],
+        "section_gaps": [],
+        "ok": true
+      }
+    ],
+    "errors": []
+  },
+  "smoke_singapore_statutory_audit": {
+    "ok": true,
+    "cms_documentsRequired": 15,
+    "extracted_numbered_lines": 15,
+    "has_certificate": true,
+    "snippet": "1. Certificate of Incorporation\n2. Business Profile (latest, from BizFile+)\n3. Constitution\n4. Registers of Members, Directors, and Registrable Controllers\n5. Most recent Annual Return filed with ACRA\n6. Prior-year audited financial statements (last two years, with opening trial "
+  }
+}

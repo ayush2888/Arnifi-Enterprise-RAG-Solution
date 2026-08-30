@@ -1,0 +1,517 @@
+{
+  "meta": {
+    "id": 12,
+    "countryName": "Cayman Island",
+    "currency": "USD",
+    "slug": "cayman-islands",
+    "shortcode": "cym",
+    "countryFlag": {
+      "id": 6083,
+      "name": "Cayman flag.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 64,
+      "height": 48,
+      "formats": null,
+      "hash": "Cayman_flag_a45c68fb2c",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 1.39,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:27:15.410Z",
+      "updatedAt": "2026-04-01T09:27:15.410Z"
+    },
+    "bannerImage": {
+      "id": 6429,
+      "name": "freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (1).png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 706,
+      "height": 320,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_1_9802b0441d.png",
+          "hash": "small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_1_9802b0441d",
+          "mime": "image/png",
+          "name": "small_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (1).png",
+          "path": null,
+          "size": 145.59,
+          "width": 500,
+          "height": 227,
+          "sizeInBytes": 145587
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_1_9802b0441d.png",
+          "hash": "thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_1_9802b0441d",
+          "mime": "image/png",
+          "name": "thumbnail_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2 (1).png",
+          "path": null,
+          "size": 39.72,
+          "width": 245,
+          "height": 111,
+          "sizeInBytes": 39723
+        }
+      },
+      "hash": "freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_1_9802b0441d",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 77.9,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_1_9802b0441d.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-02T19:39:33.548Z",
+      "updatedAt": "2026-04-02T19:39:33.548Z"
+    }
+  },
+  "overview": {
+    "id": 4,
+    "title": "Cayman Islands",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Set up your Cayman Islands company with Arnifi, structure investments efficiently, and operate within a globally recognised, tax-neutral environment built for international business",
+    "blogs": [
+      {
+        "slug": "is-cayman-islands-a-tax-haven"
+      },
+      {
+        "slug": "how-to-register-a-company-in-cayman-islands"
+      },
+      {
+        "slug": "cayman-company-for-foreigners"
+      }
+    ],
+    "overviewDetail": "The Cayman Islands is one of the worldΓÇÖs most established offshore financial centres, recognised for its tax-neutral environment, flexible corporate structures, and strong regulatory credibility. It is widely used by multinational corporations, investment funds, and high-net-worth individuals for international structuring and asset management.\n\nThe jurisdiction offers a streamlined incorporation process, typically allowing companies to be set up within a few days. The most common entity type is the exempted company, which is designed for businesses operating outside the local economy and allows 100% foreign ownership. There are no direct taxes imposed, including corporate income tax, capital gains tax, or withholding tax, making it highly attractive for cross-border operations.\n\nThe Cayman Islands Monetary Authority (CIMA) regulates financial services, ensuring compliance with global standards set by organisations such as the OECD and FATF. In recent years, the jurisdiction has strengthened its economic substance, anti-money laundering, and transparency frameworks to align with evolving international expectations.\n\nProviding a legal system based on English common law, a sophisticated financial services ecosystem, and continued regulatory evolution, the Cayman Islands remains a leading choice for global business structuring and investment vehicles.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_image_6ea8e55077.png"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_34bf455781.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 19,
+        "value": "Zero Direct Taxation\nNo corporate tax, income tax, capital gains tax, or withholding tax for businesses operating offshore"
+      },
+      {
+        "id": 21,
+        "value": "Flexible Corporate Structures\nWide range of entity types, including exempted companies and limited liability companies, for global structuring"
+      },
+      {
+        "id": 20,
+        "value": "Strong Global Compliance Reputation\nAligned with OECD, FATF, and international regulatory standards to maintain transparency and credibility\n"
+      },
+      {
+        "id": 22,
+        "value": "Fast and Efficient Incorporation\nCompany setup is streamlined with minimal local operational requirements\n"
+      },
+      {
+        "id": 23,
+        "value": "Global Investment Hub\nPreferred jurisdiction for hedge funds, private equity, and institutional investment vehicles"
+      },
+      {
+        "id": 24,
+        "value": "Stable Legal System\nBased on English common law, ensuring predictability and strong investor protection"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 28,
+        "question": "Why is the Cayman Islands considered tax-neutral?",
+        "answer": "The jurisdiction does not impose corporate income tax, capital gains tax, or personal income tax, making it attractive for global structuring."
+      },
+      {
+        "id": 29,
+        "question": "What is an exempted company in the Cayman Islands?",
+        "answer": "An exempted company is designed for businesses operating outside the local economy, commonly used for international investment and holding structures."
+      },
+      {
+        "id": 30,
+        "question": "Is the Cayman Islands compliant with global regulations?\n",
+        "answer": "Yes, the jurisdiction aligns with OECD and FATF standards, including economic substance and transparency requirements."
+      },
+      {
+        "id": 31,
+        "question": "Who regulates financial services in the Cayman Islands?",
+        "answer": "The Cayman Islands Monetary Authority (CIMA) oversees financial institutions, funds, and compliance frameworks."
+      },
+      {
+        "id": 32,
+        "question": "How long does it take to set up a company?",
+        "answer": "Incorporation is typically completed within a few days, depending on documentation and service providers."
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 7,
+        "title": "Economic Substance Rules",
+        "text": "Revised economic substance framework strengthens reporting obligations and aligns Cayman entities with evolving global tax transparency standards",
+        "tag": "Compliance",
+        "date": "2026-03-02"
+      },
+      {
+        "id": 8,
+        "title": "Crypto-Asset Reporting",
+        "text": "New regulations implementing OECD-aligned crypto reporting standards came into effect, strengthening transparency and cross-border tax data exchange\n",
+        "tag": "DigiAssets",
+        "date": "2026-01-01"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 33,
+        "question": "Define Company Structure & Purpose",
+        "answer": "Select entity type, ownership structure, and intended use"
+      },
+      {
+        "id": 36,
+        "question": "Complete the Incorporation Process",
+        "answer": "Submit documentation and register the company"
+      },
+      {
+        "id": 34,
+        "question": "Establish Corporate Framework",
+        "answer": "Put essential operational elements in place"
+      },
+      {
+        "id": 35,
+        "question": "Maintain Ongoing Compliance",
+        "answer": "Ensure adherence to regulatory and reporting requirements"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 158,
+        "productName": "Cayman Islands Company Formation",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Apr_2_2026_01_02_32_PM_aad6b5aaf1.png"
+        },
+        "productType": "licence",
+        "authority_name": "Cayman Island",
+        "startingArnifiPrice": 2799,
+        "slug": "cayman-islands-company-formation"
+      },
+      {
+        "id": 150,
+        "productName": "Cayman Island Company Incorporation | Segregated Portfolio Setup",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_Island_Company_e24c856de3.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Cayman Island",
+        "startingArnifiPrice": 7400,
+        "slug": "cayman-island-company-incorporation-or-segregated-portfolio-setup"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 12,
+      "countryName": "Cayman Island",
+      "countryFullName": null,
+      "slug": "cayman-islands",
+      "shortcode": "cym",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": 4,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png"
+      },
+      "comparison": [
+        {
+          "id": 37,
+          "key": "Setup Timeline",
+          "value": "2ΓÇô5 days"
+        },
+        {
+          "id": 43,
+          "key": "Capital Requirement",
+          "value": "Low / no minimum"
+        },
+        {
+          "id": 38,
+          "key": "Corporate Tax Rate",
+          "value": "0%"
+        },
+        {
+          "id": 46,
+          "key": "VAT Rate",
+          "value": "0%"
+        },
+        {
+          "id": 41,
+          "key": "Virtual Company Setup",
+          "value": "Available"
+        },
+        {
+          "id": 45,
+          "key": "Foreign Ownership",
+          "value": "100%"
+        },
+        {
+          "id": 42,
+          "key": "Visa Application",
+          "value": "Not applicable"
+        },
+        {
+          "id": 44,
+          "key": "International Market Access",
+          "value": "Very strong (global finance hub)"
+        },
+        {
+          "id": 39,
+          "key": "Tax Incentives",
+          "value": "Tax-neutral regime"
+        },
+        {
+          "id": 40,
+          "key": "Banking",
+          "value": "Moderate to difficult"
+        },
+        {
+          "id": 47,
+          "key": "Annual Compliance",
+          "value": "Moderate"
+        },
+        {
+          "id": 48,
+          "key": "Preferred Business Activities",
+          "value": "Funds, holding, investment"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 12,
+        "countryName": "Cayman Island",
+        "countryFullName": null,
+        "slug": "cayman-islands",
+        "shortcode": "cym",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 4,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png"
+        },
+        "comparison": [
+          {
+            "id": 37,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô5 days"
+          },
+          {
+            "id": 43,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 38,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 46,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 41,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 45,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 42,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 44,
+            "key": "International Market Access",
+            "value": "Very strong (global finance hub)"
+          },
+          {
+            "id": 39,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 40,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 47,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 48,
+            "key": "Preferred Business Activities",
+            "value": "Funds, holding, investment"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "countryName": "British Virgin Islands",
+        "countryFullName": null,
+        "slug": "british-virgin-islands",
+        "shortcode": "vg",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 3,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+        },
+        "comparison": [
+          {
+            "id": 49,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 50,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 52,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 51,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 53,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 56,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 55,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 54,
+            "key": "International Market Access",
+            "value": "Strong (global structuring)"
+          },
+          {
+            "id": 57,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 58,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 59,
+            "key": "Preferred Business Activities",
+            "value": "Holding, investment, IP"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "countryName": "UAE",
+        "countryFullName": "UAE",
+        "slug": "uae",
+        "shortcode": "ae",
+        "currency": "AED",
+        "startingPrice": null,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png"
+        },
+        "comparison": [
+          {
+            "id": 2,
+            "key": "Setup Timeline",
+            "value": "3ΓÇô10 days"
+          },
+          {
+            "id": 1,
+            "key": "Capital Requirement",
+            "value": "Low / varies by license"
+          },
+          {
+            "id": 3,
+            "key": "Corporate Tax Rate",
+            "value": "9% (above threshold)"
+          },
+          {
+            "id": 4,
+            "key": "VAT Rate",
+            "value": "5%"
+          },
+          {
+            "id": 5,
+            "key": "Virtual Company Setup",
+            "value": "Available (Free Zones)"
+          },
+          {
+            "id": 6,
+            "key": "Foreign Ownership",
+            "value": "100% (most sectors)"
+          },
+          {
+            "id": 7,
+            "key": "Visa Application",
+            "value": "Linked to the company"
+          },
+          {
+            "id": 8,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 9,
+            "key": "Tax Incentives",
+            "value": "Free zone benefits"
+          },
+          {
+            "id": 12,
+            "key": "Banking",
+            "value": "Moderate difficulty"
+          },
+          {
+            "id": 11,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 10,
+            "key": "Preferred Business Activities",
+            "value": "Trading, consulting, fintech"
+          }
+        ]
+      }
+    ]
+  }
+}

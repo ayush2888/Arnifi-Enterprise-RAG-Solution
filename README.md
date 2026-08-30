@@ -166,6 +166,18 @@ python -m app.cli crawl
 python -m app.cli ingest --limit 10
 ```
 
+**Website catalog (locations + services):** see [docs/WEBSITE_INGEST_2026-08-29.md](docs/WEBSITE_INGEST_2026-08-29.md).
+
+```powershell
+python -m app.cli prodapi-locations-ingest --dry-run
+python -m app.cli prodapi-locations-ingest --force
+python -m app.cli prodapi-services-ingest --dry-run
+python -m app.cli prodapi-services-ingest
+python -m app.cli website-crawl
+python -m app.cli website-ingest --page-kind country_overview --dry-run
+python -m app.cli website-ingest --page-kind country_overview
+```
+
 **WhatsApp:**
 
 ```powershell
@@ -210,6 +222,31 @@ python -m app.cli query "What did the team say about visa timelines?" --source w
 | `extract` | Parse posts to JSON without embedding |
 | `inspect` | Show crawl state and Pinecone stats |
 | `query` | Ask a question against the index |
+
+### Website catalog commands
+
+| Command | Description |
+|---------|-------------|
+| `prodapi-locations-ingest` | Prefer for locations: prodapi country-overview (incl. `compare`) ΓåÆ Pinecone |
+| `prodapi-services-ingest` | Micro-service package details + country setup products ΓåÆ Pinecone |
+| `website-crawl` | Discover homepage/footer, country, service, and SKU URLs |
+| `website-ingest` | Extract sections, embed, upsert `source_type=website` |
+
+```powershell
+python -m app.cli prodapi-locations-ingest --dry-run
+python -m app.cli prodapi-locations-ingest --force
+python -m app.cli prodapi-services-ingest --dry-run
+python -m app.cli prodapi-services-ingest
+python -m app.cli website-ingest --page-kind service_landing --dry-run
+python -m app.cli website-ingest --page-kind service_package
+python -m app.cli website-ingest --force
+```
+
+`prodapi-locations-ingest` loads all navbar countries (or `--slug` / `--limit`). Includes the cross-country `compare` table. Unchanged overviews are skipped unless `--force`. Before upsert it deletes existing vectors for that country `source_url` so HTML and API ingest do not duplicate.
+
+`prodapi-services-ingest` loads every micro-service detail (`/micro-services/:type/:slug`) plus setup/licence products referenced on country pages (`/product-pages?filters[id][$eq]=ΓÇª`). Use `--service-type Funds` to slice, `--no-setup-products` to skip licences, `--force` to re-embed.
+
+`--page-kind` limits HTML ingest to `country_overview`, `service_landing`, `service_package`, or `product_detail`. Unchanged pages are skipped via content hash; 404 pages are purged from Pinecone unless `--no-prune-gone`. Recrawl weekly (or when Accounting/Visa pages change) with `website-crawl` then `website-ingest`.
 
 ### WhatsApp commands
 
@@ -310,6 +347,7 @@ Covers chunking, extraction, episode building, embedding helpers, retrieval, and
 ## Documentation
 
 - [Architecture overview](docs/ARCHITECTURE.md)
+- [Website catalog ingest (29 Aug 2026)](docs/WEBSITE_INGEST_2026-08-29.md)
 - [Lambda deployment](deploy/README.md)
 - [Periskope API docs](https://docs.periskope.app/)
 

@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "id": 18,
+    "countryName": "Malaysia",
+    "currency": "USD",
+    "slug": "Malaysia",
+    "shortcode": "my",
+    "countryFlag": {
+      "id": 6086,
+      "name": "malasiya.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 64,
+      "height": 48,
+      "formats": null,
+      "hash": "malasiya_75a122cc41",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.58,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/malasiya_75a122cc41.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:29:47.331Z",
+      "updatedAt": "2026-04-01T09:29:47.331Z"
+    },
+    "bannerImage": {
+      "id": 7997,
+      "name": "MALAYSIA_CC.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 342,
+      "height": 192,
+      "formats": {
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_MALAYSIA_CC_e35cdb6dfa.png",
+          "hash": "thumbnail_MALAYSIA_CC_e35cdb6dfa",
+          "mime": "image/png",
+          "name": "thumbnail_MALAYSIA_CC.png",
+          "path": null,
+          "size": 38.79,
+          "width": 245,
+          "height": 138
+        }
+      },
+      "hash": "MALAYSIA_CC_e35cdb6dfa",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 15.65,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/MALAYSIA_CC_e35cdb6dfa.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-05-09T05:45:51.318Z",
+      "updatedAt": "2026-05-09T05:45:51.318Z"
+    }
+  },
+  "overview": {
+    "id": 8,
+    "title": "Malaysia",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Start your Malaysia company with Arnifi, access ASEAN markets, benefit from tax incentives, and ensure full compliance with a seamless setup experience\n",
+    "blogs": [
+      {
+        "slug": "tin-number-in-malaysia-2026-format-and-examples/"
+      },
+      {
+        "slug": "free-trade-zones-in-malaysia-guide-for-foreign-investors/"
+      },
+      {
+        "slug": "malaysia-sme-tax-rate-qualifying-guide/"
+      }
+    ],
+    "overviewDetail": "Malaysia is one of Southeast AsiaΓÇÖs most dynamic and diversified economies, strategically positioned along key global trade routes. With a strong foundation in manufacturing, electronics, and oil & gas, the country has evolved into a modern business hub with growing strength in digital services and Islamic finance. Kuala Lumpur acts as the financial and commercial center, supported by world-class infrastructure and a business-friendly regulatory environment.\n\nThe country actively promotes foreign direct investment through incentives in high-growth sectors such as technology, green energy, and advanced manufacturing. Businesses can benefit from relatively straightforward incorporation processes governed by the Companies Commission of Malaysia (SSM), along with competitive tax structures and investment allowances. MalaysiaΓÇÖs participation in regional agreements like RCEP further enhances its position as a gateway to ASEAN markets.\n\nWith a focus on digital transformation and sustainability, Malaysia continues to attract startups, SMEs, and multinational corporations. Its combination of cost efficiency, skilled workforce, and strong connectivity makes it an ideal destination for businesses looking to expand across Asia.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/sidd122_petronas_5223919_1920_dd05cb07dd.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_pok_rie_33563_136287_7e1b26a4c5.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_faizal_ortho_2936165_4467571_ee76df8d18.jpg"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/MALAYSIA_MAP_b62e67b63b.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 42,
+        "value": "Strategic ASEAN Market Access\nMalaysia serves as a gateway to Southeast Asia, enabling businesses to expand efficiently across regional and global markets\n"
+      },
+      {
+        "id": 43,
+        "value": "Attractive Tax Incentives\nGovernment-backed incentives, tax exemptions, and grants support investments in manufacturing, technology, and green sectors\n"
+      },
+      {
+        "id": 44,
+        "value": "Cost-Effective Business Environment\nLower operational and setup costs compared to developed markets make Malaysia ideal for startups and expanding companies\n"
+      },
+      {
+        "id": 45,
+        "value": "Advanced Infrastructure\nWell-developed ports, airports, and digital systems support efficient logistics, trade, and business operations\n"
+      },
+      {
+        "id": 46,
+        "value": "Skilled Multilingual Workforce\nA diverse talent pool fluent in English, Malay, and Chinese supports regional and international business needs\n"
+      },
+      {
+        "id": 47,
+        "value": "Diverse and Growing Economy\nStrong presence in manufacturing, electronics, fintech, and digital services creates multiple growth opportunities\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 62,
+        "question": "What types of business setups are available in Malaysia?",
+        "answer": "Businesses can be incorporated as private limited companies (Sdn Bhd), branches, or representative offices depending on operational needs.\n"
+      },
+      {
+        "id": 69,
+        "question": "Is 100% foreign ownership allowed in Malaysia?\n",
+        "answer": "Yes, foreign ownership is permitted in many sectors, especially in manufacturing, technology, and export-oriented businesses."
+      },
+      {
+        "id": 67,
+        "question": "What is the corporate tax rate in Malaysia?\n",
+        "answer": "The standard corporate tax rate is 24%, with lower rates and incentives available for SMEs and specific industries.\n"
+      },
+      {
+        "id": 70,
+        "question": "How long does it take to set up a company in Malaysia?\n",
+        "answer": "Company registration typically takes between 5 to 10 working days, depending on approvals and documentation.\n"
+      },
+      {
+        "id": 68,
+        "question": "Do I need a physical office to start a business?",
+        "answer": "Yes, a registered local address is required, though flexible office solutions are available depending on business type.\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 15,
+        "title": "Growing Investments in the Semiconductor Sector",
+        "text": "Malaysia sees rising foreign investments in semiconductor manufacturing, strengthening its position in global supply chains amid increasing demand for advanced chips\n\n\n",
+        "tag": "Business ",
+        "date": "2026-03-01"
+      },
+      {
+        "id": 16,
+        "title": "Tax Incentives for Green Technology Expansion",
+        "text": "The government introduces new tax incentives to boost renewable energy projects and ESG-focused investments, attracting both local and international businesses\n",
+        "tag": "Taxation ",
+        "date": "2026-02-01"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 64,
+        "question": " Define Business Setup\n",
+        "answer": "Choose your company structure (e.g., Sdn Bhd), ownership model, and business activity\n"
+      },
+      {
+        "id": 66,
+        "question": "Complete Company Registration\n",
+        "answer": "Reserve your company name and register with the Companies Commission of Malaysia (SSM)\n"
+      },
+      {
+        "id": 65,
+        "question": "Set Up Operational Requirements",
+        "answer": "Open a corporate bank account, secure office space, and obtain required licenses\n\n"
+      },
+      {
+        "id": 63,
+        "question": "Maintain Ongoing Compliance",
+        "answer": "Ensure compliance with tax filings, annual returns, and regulatory requirements\n"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 179,
+        "productName": "Malaysia Company Incorporation",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Malaysia_1_4d94b39148.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Malaysia",
+        "startingArnifiPrice": 4920,
+        "slug": "malaysia-company-incorporation"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 18,
+      "countryName": "Malaysia",
+      "countryFullName": null,
+      "slug": "Malaysia",
+      "shortcode": "my",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": null,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/malasiya_75a122cc41.png"
+      },
+      "comparison": [
+        {
+          "id": 84,
+          "key": "Setup Timeline",
+          "value": "3-7 days"
+        },
+        {
+          "id": 85,
+          "key": "Capital Requirement",
+          "value": "Low (from MYR 1 for Sdn Bhd)"
+        },
+        {
+          "id": 87,
+          "key": "Corporate Tax Rate",
+          "value": "15ΓÇô24% (tiered for SMEs)"
+        },
+        {
+          "id": 86,
+          "key": "VAT Rate",
+          "value": "SST( 6-10%)"
+        },
+        {
+          "id": 88,
+          "key": "Virtual Company Setup",
+          "value": "Available (with conditions)"
+        },
+        {
+          "id": 89,
+          "key": "Foreign Ownership",
+          "value": "100% (most sectors)"
+        },
+        {
+          "id": 90,
+          "key": "Visa Application",
+          "value": "Available (Employment Pass)"
+        },
+        {
+          "id": 91,
+          "key": "International Market Access",
+          "value": "Strong (ASEAN access)"
+        },
+        {
+          "id": 92,
+          "key": "Tax Incentives",
+          "value": "Extensive (MSC, pioneer status, etc.)"
+        },
+        {
+          "id": 93,
+          "key": "Banking",
+          "value": "Moderate"
+        },
+        {
+          "id": 94,
+          "key": "Annual Compliance",
+          "value": "Moderate"
+        },
+        {
+          "id": 95,
+          "key": "Preferred Business Activities",
+          "value": "Manufacturing, tech, services"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 18,
+        "countryName": "Malaysia",
+        "countryFullName": null,
+        "slug": "Malaysia",
+        "shortcode": "my",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": null,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/malasiya_75a122cc41.png"
+        },
+        "comparison": [
+          {
+            "id": 84,
+            "key": "Setup Timeline",
+            "value": "3-7 days"
+          },
+          {
+            "id": 85,
+            "key": "Capital Requirement",
+            "value": "Low (from MYR 1 for Sdn Bhd)"
+          },
+          {
+            "id": 87,
+            "key": "Corporate Tax Rate",
+            "value": "15ΓÇô24% (tiered for SMEs)"
+          },
+          {
+            "id": 86,
+            "key": "VAT Rate",
+            "value": "SST( 6-10%)"
+          },
+          {
+            "id": 88,
+            "key": "Virtual Company Setup",
+            "value": "Available (with conditions)"
+          },
+          {
+            "id": 89,
+            "key": "Foreign Ownership",
+            "value": "100% (most sectors)"
+          },
+          {
+            "id": 90,
+            "key": "Visa Application",
+            "value": "Available (Employment Pass)"
+          },
+          {
+            "id": 91,
+            "key": "International Market Access",
+            "value": "Strong (ASEAN access)"
+          },
+          {
+            "id": 92,
+            "key": "Tax Incentives",
+            "value": "Extensive (MSC, pioneer status, etc.)"
+          },
+          {
+            "id": 93,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 94,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 95,
+            "key": "Preferred Business Activities",
+            "value": "Manufacturing, tech, services"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "countryName": "Saudi Arabia",
+        "countryFullName": null,
+        "slug": "saudi-arabia",
+        "shortcode": "sa",
+        "currency": "SAR",
+        "startingPrice": null,
+        "rank": 2,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saudi_Arabia_68b3e421d7.png"
+        },
+        "comparison": [
+          {
+            "id": 25,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô6 weeks"
+          },
+          {
+            "id": 26,
+            "key": "Capital Requirement",
+            "value": "Moderate (varies by sector)"
+          },
+          {
+            "id": 27,
+            "key": "Corporate Tax Rate",
+            "value": "20% (foreign entities)"
+          },
+          {
+            "id": 28,
+            "key": "VAT Rate",
+            "value": "15%"
+          },
+          {
+            "id": 29,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 30,
+            "key": "Foreign Ownership",
+            "value": "100% (many sectors)"
+          },
+          {
+            "id": 31,
+            "key": "Visa Application",
+            "value": "Required for expats"
+          },
+          {
+            "id": 32,
+            "key": "International Market Access",
+            "value": "Strong (regional)"
+          },
+          {
+            "id": 33,
+            "key": "Tax Incentives",
+            "value": "Sector-based incentives"
+          },
+          {
+            "id": 34,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 35,
+            "key": "Annual Compliance",
+            "value": "High"
+          },
+          {
+            "id": 36,
+            "key": "Preferred Business Activities",
+            "value": "Industrial, energy, logistics"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "countryName": "Singapore",
+        "countryFullName": null,
+        "slug": "singapore",
+        "shortcode": "sg",
+        "currency": "SGD",
+        "startingPrice": null,
+        "rank": 5,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png"
+        },
+        "comparison": [
+          {
+            "id": 20,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 15,
+            "key": "Capital Requirement",
+            "value": "Low (SGD 1 minimum)"
+          },
+          {
+            "id": 19,
+            "key": "Corporate Tax Rate",
+            "value": "17%"
+          },
+          {
+            "id": 21,
+            "key": "VAT Rate",
+            "value": "9% (GST)"
+          },
+          {
+            "id": 14,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 16,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 13,
+            "key": "Visa Application",
+            "value": "Required (passes)"
+          },
+          {
+            "id": 17,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 18,
+            "key": "Tax Incentives",
+            "value": "Extensive schemes"
+          },
+          {
+            "id": 22,
+            "key": "Banking",
+            "value": "Easy to moderate"
+          },
+          {
+            "id": 23,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 24,
+            "key": "Preferred Business Activities",
+            "value": "Tech, finance, trade"
+          }
+        ]
+      }
+    ]
+  }
+}

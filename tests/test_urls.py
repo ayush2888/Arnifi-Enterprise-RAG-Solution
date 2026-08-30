@@ -54,6 +54,29 @@ class UrlTests(unittest.TestCase):
         ))
         self.assertFalse(is_case_study_url("https://arnifi.com/case-studies/industries/logistics/"))
         self.assertEqual(infer_page_kind("https://arnifi.com/pricing-master-list/"), "pricing")
+        self.assertEqual(infer_page_kind("https://arnifi.com/ae/"), "country_overview")
+        self.assertEqual(
+            infer_page_kind("https://arnifi.com/country-overview/uae/"),
+            "country_overview",
+        )
+        self.assertEqual(
+            infer_page_kind("https://arnifi.com/services/visa-service/"),
+            "service_landing",
+        )
+        self.assertEqual(
+            infer_page_kind("https://arnifi.com/services/visa-service/ifza-employment-visa/"),
+            "service_package",
+        )
+        self.assertEqual(
+            infer_page_kind(
+                "https://arnifi.com/product-details/business-setup/uae/ifza-license/abc/"
+            ),
+            "product_detail",
+        )
+        self.assertEqual(
+            infer_page_kind("https://arnifi.com/product-listing?countries=1&productType=licence"),
+            "package_listing",
+        )
         self.assertTrue(is_denied_website_url("https://arnifi.com/cost-calculator/"))
         self.assertTrue(is_denied_website_url("https://arnifi.com/blog/some-post/"))
 

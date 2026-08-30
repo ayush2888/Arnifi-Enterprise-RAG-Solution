@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "id": 1,
+    "countryName": "UAE",
+    "currency": "AED",
+    "slug": "uae",
+    "shortcode": "ae",
+    "countryFlag": {
+      "id": 6077,
+      "name": "UAE flag.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 86,
+      "height": 64,
+      "formats": null,
+      "hash": "UAE_flag_048fa85a8a",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.38,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:17:59.692Z",
+      "updatedAt": "2026-04-01T09:17:59.692Z"
+    },
+    "bannerImage": {
+      "id": 6432,
+      "name": "freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 1 (14).png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 706,
+      "height": 396,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_1_14_5be4c99342.png",
+          "hash": "small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_1_14_5be4c99342",
+          "mime": "image/png",
+          "name": "small_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 1 (14).png",
+          "path": null,
+          "size": 72.45,
+          "width": 500,
+          "height": 280,
+          "sizeInBytes": 72454
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_1_14_5be4c99342.png",
+          "hash": "thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_1_14_5be4c99342",
+          "mime": "image/png",
+          "name": "thumbnail_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 1 (14).png",
+          "path": null,
+          "size": 22.73,
+          "width": 245,
+          "height": 137,
+          "sizeInBytes": 22727
+        }
+      },
+      "hash": "freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_1_14_5be4c99342",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 31.56,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_1_14_5be4c99342.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-02T19:42:55.772Z",
+      "updatedAt": "2026-04-02T19:42:55.772Z"
+    }
+  },
+  "overview": {
+    "id": 1,
+    "title": "United Arab Emirates",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Start your UAE company with Arnifi, secure your visa, and stay compliant with every requirement, all handled seamlessly in one place",
+    "blogs": [
+      {
+        "slug": "dubai-freezone-company-formation-business-setup-guide/"
+      },
+      {
+        "slug": "business-setup-in-dubai-mainland-cost/"
+      },
+      {
+        "slug": "business-setup-in-dubai-essential-accounting-documents-you-need-for-bank-account-opening-and-compliance/"
+      }
+    ],
+    "overviewDetail": "The United Arab Emirates is one of the most dynamic business hubs globally, offering a tax-efficient environment, strategic geographic positioning, and investor-friendly regulations. Located at the crossroads of Europe, Asia, and Africa, the UAE provides seamless access to international markets, making it an ideal base for global expansion.\nBusinesses in the UAE can be established across mainland, free zone, or offshore jurisdictions, each offering distinct advantages depending on operational needs. Free zones, in particular, allow 100% foreign ownership, simplified setup processes, and sector-specific benefits. The countryΓÇÖs regulatory ecosystem is supported by modern digital infrastructure, fast licensing procedures, and strong government support for entrepreneurship.\nWith no personal income tax, competitive corporate tax frameworks, and a robust banking and financial system, the UAE continues to attract startups, SMEs, and multinational corporations alike. Its stable political environment, high quality of life, and progressive economic policies further strengthen its position as a leading destination for business formation.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_1c97dafc12.png"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Mar_30_2026_09_42_39_PM_7f5f99ec43.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 3,
+        "value": "Foreign investors can fully own businesses across free zones and most mainland sectors without requiring local sponsorship"
+      },
+      {
+        "id": 2,
+        "value": "Company registration, licensing, and visa processing are streamlined through fully digital government platforms"
+      },
+      {
+        "id": 1,
+        "value": "0% personal income tax and a competitive 9% corporate tax rate for most businesses above the threshold\n"
+      },
+      {
+        "id": 6,
+        "value": "UAE connects Europe, Asia, and Africa, enabling efficient logistics, trade, and global market access\n"
+      },
+      {
+        "id": 5,
+        "value": "Specialised zones offer sector-specific benefits, simplified compliance, and operational flexibility for international businesses"
+      },
+      {
+        "id": 4,
+        "value": "Access to global banks, fintech infrastructure, and investor networks supports business scalability and growth"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 1,
+        "question": "What types of business setups are available in the UAE?",
+        "answer": "Businesses can be established in mainland, free zone, or offshore jurisdictions. Each option offers different benefits in terms of ownership, taxation, and operational flexibility depending on business needs."
+      },
+      {
+        "id": 4,
+        "question": "Is 100% foreign ownership allowed in the UAE?",
+        "answer": "Yes, 100% foreign ownership is allowed in most mainland sectors and all free zones, eliminating the need for a local sponsor in many cases."
+      },
+      {
+        "id": 3,
+        "question": "What is the corporate tax rate in the UAE?",
+        "answer": "The UAE applies a 9% corporate tax on taxable profits exceeding AED 375,000, while smaller businesses may benefit from relief schemes."
+      },
+      {
+        "id": 2,
+        "question": "How long does it take to set up a company in the UAE?\n",
+        "answer": "Business setup can typically be completed within a few days to a couple of weeks, depending on the jurisdiction and type of license."
+      },
+      {
+        "id": 5,
+        "question": "Do I need a physical office to start a business?",
+        "answer": "Some jurisdictions require a physical office, while many free zones offer flexible desk or virtual office solutions for startups and small businesses."
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 1,
+        "title": "R&D Tax Incentive Programme",
+        "text": "The UAE government introduced a major R&D tax credit scheme to boost innovation and attract high-growth startups and tech investments",
+        "tag": "Innovation ",
+        "date": "2026-03-18"
+      },
+      {
+        "id": 2,
+        "title": "E-Invoicing Framework",
+        "text": "The UAE issued detailed technical guidance for mandatory e-invoicing, signalling a shift towards real-time digital tax reporting systems",
+        "tag": "Compliance ",
+        "date": "2026-02-23"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 6,
+        "question": "Define Business Setup",
+        "answer": "Choose your company structure, jurisdiction, and core business activity"
+      },
+      {
+        "id": 9,
+        "question": "Complete Company Registration",
+        "answer": "Submit applications and secure approvals from relevant authorities"
+      },
+      {
+        "id": 8,
+        "question": "Set Up Operational Requirements",
+        "answer": " Arrange essential business components needed to begin operations"
+      },
+      {
+        "id": 7,
+        "question": "Maintain Ongoing Compliance",
+        "answer": "Ensure adherence to regulatory, tax, and reporting requirements"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 5,
+        "productName": "IFZA License and visa quota package ",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/IFZA_License_and_visa_quota_package_d00851e083.png"
+        },
+        "productType": "licence",
+        "authority_name": "IFZA",
+        "startingArnifiPrice": 12900,
+        "slug": "ifza-license-and-visa-quota-package"
+      },
+      {
+        "id": 111,
+        "productName": "RAKEZ - Biz Saver Plus One",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/RAKEZ_Biz_Saver_Plus_One_2595200baa.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "RAKEZ",
+        "startingArnifiPrice": 14010,
+        "slug": "rakez-biz-saver-plus-one"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 1,
+      "countryName": "UAE",
+      "countryFullName": "UAE",
+      "slug": "uae",
+      "shortcode": "ae",
+      "currency": "AED",
+      "startingPrice": null,
+      "rank": 0,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png"
+      },
+      "comparison": [
+        {
+          "id": 2,
+          "key": "Setup Timeline",
+          "value": "3ΓÇô10 days"
+        },
+        {
+          "id": 1,
+          "key": "Capital Requirement",
+          "value": "Low / varies by license"
+        },
+        {
+          "id": 3,
+          "key": "Corporate Tax Rate",
+          "value": "9% (above threshold)"
+        },
+        {
+          "id": 4,
+          "key": "VAT Rate",
+          "value": "5%"
+        },
+        {
+          "id": 5,
+          "key": "Virtual Company Setup",
+          "value": "Available (Free Zones)"
+        },
+        {
+          "id": 6,
+          "key": "Foreign Ownership",
+          "value": "100% (most sectors)"
+        },
+        {
+          "id": 7,
+          "key": "Visa Application",
+          "value": "Linked to the company"
+        },
+        {
+          "id": 8,
+          "key": "International Market Access",
+          "value": "Very strong"
+        },
+        {
+          "id": 9,
+          "key": "Tax Incentives",
+          "value": "Free zone benefits"
+        },
+        {
+          "id": 12,
+          "key": "Banking",
+          "value": "Moderate difficulty"
+        },
+        {
+          "id": 11,
+          "key": "Annual Compliance",
+          "value": "Moderate"
+        },
+        {
+          "id": 10,
+          "key": "Preferred Business Activities",
+          "value": "Trading, consulting, fintech"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 1,
+        "countryName": "UAE",
+        "countryFullName": "UAE",
+        "slug": "uae",
+        "shortcode": "ae",
+        "currency": "AED",
+        "startingPrice": null,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png"
+        },
+        "comparison": [
+          {
+            "id": 2,
+            "key": "Setup Timeline",
+            "value": "3ΓÇô10 days"
+          },
+          {
+            "id": 1,
+            "key": "Capital Requirement",
+            "value": "Low / varies by license"
+          },
+          {
+            "id": 3,
+            "key": "Corporate Tax Rate",
+            "value": "9% (above threshold)"
+          },
+          {
+            "id": 4,
+            "key": "VAT Rate",
+            "value": "5%"
+          },
+          {
+            "id": 5,
+            "key": "Virtual Company Setup",
+            "value": "Available (Free Zones)"
+          },
+          {
+            "id": 6,
+            "key": "Foreign Ownership",
+            "value": "100% (most sectors)"
+          },
+          {
+            "id": 7,
+            "key": "Visa Application",
+            "value": "Linked to the company"
+          },
+          {
+            "id": 8,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 9,
+            "key": "Tax Incentives",
+            "value": "Free zone benefits"
+          },
+          {
+            "id": 12,
+            "key": "Banking",
+            "value": "Moderate difficulty"
+          },
+          {
+            "id": 11,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 10,
+            "key": "Preferred Business Activities",
+            "value": "Trading, consulting, fintech"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "countryName": "Saudi Arabia",
+        "countryFullName": null,
+        "slug": "saudi-arabia",
+        "shortcode": "sa",
+        "currency": "SAR",
+        "startingPrice": null,
+        "rank": 2,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saudi_Arabia_68b3e421d7.png"
+        },
+        "comparison": [
+          {
+            "id": 25,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô6 weeks"
+          },
+          {
+            "id": 26,
+            "key": "Capital Requirement",
+            "value": "Moderate (varies by sector)"
+          },
+          {
+            "id": 27,
+            "key": "Corporate Tax Rate",
+            "value": "20% (foreign entities)"
+          },
+          {
+            "id": 28,
+            "key": "VAT Rate",
+            "value": "15%"
+          },
+          {
+            "id": 29,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 30,
+            "key": "Foreign Ownership",
+            "value": "100% (many sectors)"
+          },
+          {
+            "id": 31,
+            "key": "Visa Application",
+            "value": "Required for expats"
+          },
+          {
+            "id": 32,
+            "key": "International Market Access",
+            "value": "Strong (regional)"
+          },
+          {
+            "id": 33,
+            "key": "Tax Incentives",
+            "value": "Sector-based incentives"
+          },
+          {
+            "id": 34,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 35,
+            "key": "Annual Compliance",
+            "value": "High"
+          },
+          {
+            "id": 36,
+            "key": "Preferred Business Activities",
+            "value": "Industrial, energy, logistics"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "countryName": "Singapore",
+        "countryFullName": null,
+        "slug": "singapore",
+        "shortcode": "sg",
+        "currency": "SGD",
+        "startingPrice": null,
+        "rank": 5,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Singapore_flag_bfa6fed5d6.png"
+        },
+        "comparison": [
+          {
+            "id": 20,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 15,
+            "key": "Capital Requirement",
+            "value": "Low (SGD 1 minimum)"
+          },
+          {
+            "id": 19,
+            "key": "Corporate Tax Rate",
+            "value": "17%"
+          },
+          {
+            "id": 21,
+            "key": "VAT Rate",
+            "value": "9% (GST)"
+          },
+          {
+            "id": 14,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 16,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 13,
+            "key": "Visa Application",
+            "value": "Required (passes)"
+          },
+          {
+            "id": 17,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 18,
+            "key": "Tax Incentives",
+            "value": "Extensive schemes"
+          },
+          {
+            "id": 22,
+            "key": "Banking",
+            "value": "Easy to moderate"
+          },
+          {
+            "id": 23,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 24,
+            "key": "Preferred Business Activities",
+            "value": "Tech, finance, trade"
+          }
+        ]
+      }
+    ]
+  }
+}

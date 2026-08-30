@@ -1,0 +1,735 @@
+{
+  "generated_at": "2026-08-29T12:21:54.001660+00:00",
+  "case_count": 13,
+  "prompt_adaptation": "Country-catalog package_detail queries ask for a multi-section package summary (intro+highlights+process+FAQs+terms), not one fixed section. expected.section reflects that. Classification still uses top-3 metadata hierarchy when present.",
+  "cases": [
+    {
+      "country": "Guernsey",
+      "query": "From Arnifi's package detail page for 'Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "Funds",
+        "package_name": "Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes",
+        "section": "package_detail_summary(all)",
+        "country": "Guernsey"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes",
+            "section": "faq",
+            "chunk_id": "e28d217d43acefafb1ac0f53932f622cb8d879bb",
+            "source_url": "https://arnifi.com/product-details/services/funds/guernsey-authorised-closed-ended-collective-investment-schemes/451/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Q: How can Arnifi assist with fund establishment?\nA: Arnifi provides end-to-end support for company incorporation, KYC and AML coordination, GFSC auth"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes",
+            "section": "highlights",
+            "chunk_id": "aa6cd42723f0df24f6d81465ff5e7eba6a1f0460",
+            "source_url": "https://arnifi.com/product-details/services/funds/guernsey-authorised-closed-ended-collective-investment-schemes/451/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Complete setup support\nArnifi manages incorporation, regulatory coordination, fund documentation, and operational structuring from start to finish"
+        },
+        {
+          "rank": 3,
+          "score": 0.99,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes",
+            "section": "terms",
+            "chunk_id": "1f78feb4527ba13f67fd0804e06f54c2cca1b36a",
+            "source_url": "https://arnifi.com/product-details/services/funds/guernsey-authorised-closed-ended-collective-investment-schemes/451/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Timelines are indicative and may vary depending on document readiness, compliance reviews, regulatory assessments, and GFSC approvals"
+        }
+      ],
+      "answer_preview": "**Guernsey ΓÇô Authorised Closed-ended Collective Investment Schemes**\n\n**Introduction:**\nGuernsey is a leading jurisdiction for closed-ended investment funds, offering a well-established legal framework and internationally recognized regulatory standards. Closed-ended Collective Investment Schemes are ideal for private equity, venture capital, infrastructure, real estate, and private debt fund mana",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 48% (11/23 GT phrases). Missing: Guernsey is one of the world's leading jurisdictions for closed-ended ; Established international fund jurisdiction; Designed for long-term investments; Strong regulatory oversight",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: Guernsey is one of the world's leading jurisdictions for closed-ended ; Established international fund jurisdiction; Des)."
+    },
+    {
+      "country": "UAE",
+      "query": "From Arnifi's package detail page for 'IFZA License and visa quota package', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (UAE)",
+        "package_name": "IFZA License and visa quota package",
+        "section": "package_detail_summary(all)",
+        "country": "UAE"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "IFZA License and visa quota package",
+            "section": "faq",
+            "chunk_id": "1a410552163660f5bac7c2db4a5e65d4700861ff",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ifza-license-and-visa-quota-package/5/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Q: What are the steps involved in getting an IFZA license?\nA: The setup steps in IFZA include KYC verification, initial and security approval, trade n"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "IFZA License and visa quota package",
+            "section": "introduction",
+            "chunk_id": "3a2f122c29450fcb2f94a20ebd4597b8cb3f9f8b",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ifza-license-and-visa-quota-package/5/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Establishing a corporate presence in IFZA Dubai provides international entities with a highly strategic, cost-effective framework for Middle Eastern m"
+        },
+        {
+          "rank": 3,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "IFZA License and visa quota package",
+            "section": "pricing",
+            "chunk_id": "f82694d836f60964cf93137497a838eb0bacbcec",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ifza-license-and-visa-quota-package/5/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: IFZA License and visa quota package\nStarting from: AED 12900\nPricing plan: [{\"Visa\": 0, \"Activity\": 1, \"Arnifi price\": \"12,900\", \"Official pr"
+        }
+      ],
+      "answer_preview": "### IFZA License and Visa Quota Package\n\n#### Introduction\nEstablishing a corporate presence in IFZA Dubai provides international entities with a highly strategic, cost-effective framework for Middle Eastern market entry. As a premier UAE free zone, it explicitly permits 100% foreign equity control and seamless capital repatriation. Structuring a compliant entity requires precise alignment with th",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 58% (15/26 GT phrases). Missing: Establishing a corporate presence in IFZA Dubai provides international; What happens when initial or security approval gets rejected?; How much time does it take to get an IFZA license?; How many shareholders are allowed in an IFZA company?",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: Establishing a corporate presence in IFZA Dubai provides international; What happens when initial or security approval g)."
+    },
+    {
+      "country": "Saudi Arabia",
+      "query": "From Arnifi's package detail page for 'KSA Company Formation', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Saudi Arabia)",
+        "package_name": "KSA Company Formation",
+        "section": "package_detail_summary(all)",
+        "country": "Saudi Arabia"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "KSA Company Formation",
+            "section": "pricing",
+            "chunk_id": "e68330d57d189f73de70e95de86ebfcb0922fcad",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ksa-company-formation/162/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: KSA Company Formation\nStarting from: 18000\nPricing plan: [{\"Visa\": 0, \"Activity\": 1, \"Arnifi price\": \"18,000\", \"Official price\": \"18,000\"}]"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "KSA Company Formation",
+            "section": "introduction",
+            "chunk_id": "2a14f9f2a7e9026ba237b0f380de6013ffda05bb",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ksa-company-formation/162/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Company formation in Saudi Arabia has become increasingly attractive due to the KingdomΓÇÖs economic transformation under Vision 2030. With a strategic "
+        },
+        {
+          "rank": 3,
+          "score": 0.9215,
+          "metadata": {
+            "service": "licence",
+            "package_name": "KSA Company Formation",
+            "section": "faq",
+            "chunk_id": "b33177ee5f6838fcde4b5329ba63f78b0e7f07c4",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ksa-company-formation/162/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Q: How long does company formation take?\nA: Typically takes 2ΓÇô6 weeks depending on approvals and documentation."
+        }
+      ],
+      "answer_preview": "**KSA Company Formation**\n\n**Introduction**\nCompany formation in Saudi Arabia has become increasingly attractive due to the KingdomΓÇÖs economic transformation under Vision 2030. With a strategic location, strong government backing, and growing foreign investment opportunities, KSA offers a robust environment for businesses across sectors. Whether entering through a limited liability company, branch",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 43% (3/7 GT phrases). Missing: Can foreigners fully own a company in KSA?; Is a physical office required in Saudi Arabia?; What authority regulates foreign investment?; 18000",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: Can foreigners fully own a company in KSA?; Is a physical office required in Saudi Arabia?; What authority regulates for)."
+    },
+    {
+      "country": "British Virgin Islands",
+      "query": "From Arnifi's package detail page for 'British Virgin Island Company Formation | Advanced Package', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (British Virgin Islands)",
+        "package_name": "British Virgin Island Company Formation | Advanced Package",
+        "section": "package_detail_summary(all)",
+        "country": "British Virgin Islands"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "British Virgin Island Company Formation | Advanced Package",
+            "section": "pricing",
+            "chunk_id": "573312f790ce7c08792cc8152ecc75e8929205b2",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/british-virgin-island-company-formation-or-advanced-package/160/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: British Virgin Island Company Formation | Advanced Package\nStarting from: 1599\nPricing plan: [{\"Visa\": 0, \"Activity\": 1, \"Arnifi price\": \"1,5"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "British Virgin Island Company Formation | Advanced Package",
+            "section": "faq",
+            "chunk_id": "279e3db07c4c15809725475a5b0b9d35cf34a423",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/british-virgin-island-company-formation-or-advanced-package/160/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Q: Is BVI company information public?\nA: The registry records basic company details, but director and shareholder information is not publicly availabl"
+        },
+        {
+          "rank": 3,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "British Virgin Island Company Formation | Advanced Package",
+            "section": "introduction",
+            "chunk_id": "1d7e26b948e47f1149bb30981b90fc5997861543",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/british-virgin-island-company-formation-or-advanced-package/160/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Setting up a company in the British Virgin Islands has become one of the most common choices for global founders, investors, and holding structures. T"
+        }
+      ],
+      "answer_preview": "### British Virgin Island Company Formation | Advanced Package\n\n#### Introduction\nSetting up a company in the British Virgin Islands has become one of the most common choices for global founders, investors, and holding structures. The jurisdiction is known for its efficient incorporation process, strong legal framework, and flexible corporate regulations. If you're looking to complete a British Vi",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 43% (3/7 GT phrases). Missing: Do I need to visit the British Virgin Islands to register a company?; Can foreigners own a BVI company?; Is BVI company information public?; 1599",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: Do I need to visit the British Virgin Islands to register a company?; Can foreigners own a BVI company?; Is BVI company )."
+    },
+    {
+      "country": "Cayman Island",
+      "query": "From Arnifi's package detail page for 'Cayman Islands Company Formation', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Cayman Island)",
+        "package_name": "Cayman Islands Company Formation",
+        "section": "package_detail_summary(all)",
+        "country": "Cayman Island"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Cayman Island Company Formation | Limited Liability Company Setup (With Licensed Fund)",
+            "section": "terms",
+            "chunk_id": "cf8284d0f5f671b197fed478bab02ecd7ceeec5a",
+            "source_url": "https://arnifi.com/product-details/services/funds/cayman-island-company-formation-or-limited-liability-company-setup-(with-licensed-fund)/289/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "This service is offered by Arnifi in partnership with Asia leading and Arnifi shall only act as facilitator of this service."
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Cayman Island Exempted Company Incorporation (With Licensed Fund)",
+            "section": "terms",
+            "chunk_id": "d6a7d64fe891d24bf32785c26683fb6b5c829b94",
+            "source_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-incorporation-(with-licensed-fund)/280/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "This service is offered by Arnifi in partnership with Asia's leading and Arnifi shall only act as facilitator of this service."
+        },
+        {
+          "rank": 3,
+          "score": 0.99,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Cayman Island Exempted Company Setup | (With Registered Fund)",
+            "section": "terms",
+            "chunk_id": "8372f103d531b85fe7ecf0e7285674704871af7d",
+            "source_url": "https://arnifi.com/product-details/services/funds/cayman-island-exempted-company-setup-or-(with-registered-fund)/292/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "This service is offered by Arnifi in partnership with Asia leading and Arnifi shall only act as facilitator of this service."
+        }
+      ],
+      "answer_preview": "**Cayman Islands Company Formation**\n\n**Introduction**\nEstablishing a company in the Cayman Islands offers businesses a globally recognized offshore structure known for its regulatory stability, tax neutrality, and ease of incorporation. Widely used for investment vehicles, holding companies, and international operations, Cayman entities are designed to support cross-border business without the bu",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 43% (3/7 GT phrases). Missing: Establishing a company in the Cayman Islands offers businesses a globa; Is physical presence required?; What type of businesses use Cayman structures?; 2799",
+      "failure_bucket": "wrong_section_right_package",
+      "classification_notes": "Right package but top-3 stuck on section='terms'; multi-section coverage missing for a package_detail summary query."
+    },
+    {
+      "country": "Singapore",
+      "query": "From Arnifi's package detail page for 'Singapore Basic Incorporation', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Singapore)",
+        "package_name": "Singapore Basic Incorporation",
+        "section": "package_detail_summary(all)",
+        "country": "Singapore"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Singapore Basic Incorporation",
+            "section": "pricing",
+            "chunk_id": "8370a3328cdf637ab3b591d0c8edd7de8e529b80",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/singapore-basic-incorporation/123/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Singapore Basic Incorporation\nStarting from: 650\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"650\", \"Official price\": \"650\"}]"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Singapore Basic Incorporation",
+            "section": "introduction",
+            "chunk_id": "e8e2ccf4d2742793a2e91a2b357e3a3d34b2b873",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/singapore-basic-incorporation/123/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Singapore stands out as one of the worldΓÇÖs most attractive destinations for business setup, offering a seamless blend of efficiency, stability, and gl"
+        },
+        {
+          "rank": 3,
+          "score": 0.9485,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Singapore Premium Incorporation",
+            "section": "pricing",
+            "chunk_id": "cc66309021ef680f6097abe839c7fcd597af153c",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/singapore-premium-incorporation/125/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Singapore Premium Incorporation\nStarting from: 600\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"600\", \"Official price\": \"600\"}]"
+        }
+      ],
+      "answer_preview": "### Singapore Basic Incorporation Package Summary\n\n#### Introduction\nSingapore stands out as one of the worldΓÇÖs most attractive destinations for business setup, offering a seamless blend of efficiency, stability, and global connectivity. Known for its straightforward incorporation process, Singapore enables entrepreneurs to establish and operate companies with minimal bureaucracy and maximum speed",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 50% (1/2 GT phrases). Missing: Singapore stands out as one of the worldΓÇÖs most attractive destination",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: Singapore stands out as one of the worldΓÇÖs most attractive destination)."
+    },
+    {
+      "country": "Mauritius",
+      "query": "From Arnifi's package detail page for 'Mauritius Company Setup - AC (Authorised Company)', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Mauritius)",
+        "package_name": "Mauritius Company Setup - AC (Authorised Company)",
+        "section": "package_detail_summary(all)",
+        "country": "Mauritius"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Mauritius Company Setup - AC (Authorised Company)",
+            "section": "faq",
+            "chunk_id": "4dcbffcd3f2804bfc4a45347b0b65ebc808b3dfb",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/mauritius-company-setup-ac-(authorised-company)/171/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Q: What is a Mauritius Authorised Company?\nA: A Mauritius Authorised Company is an offshore business structure used for international activities condu"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Mauritius Company Setup - AC (Authorised Company)",
+            "section": "introduction",
+            "chunk_id": "102eb261d268f730f473440a63d0406e556beb15",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/mauritius-company-setup-ac-(authorised-company)/171/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "A Mauritius Authorised Company is a practical structure for businesses looking to manage international operations through a recognised offshore jurisd"
+        },
+        {
+          "rank": 3,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Mauritius Company Setup - AC (Authorised Company)",
+            "section": "pricing",
+            "chunk_id": "23d4049c5c874d5f70e2d68ec91b7d9cc0e21563",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/mauritius-company-setup-ac-(authorised-company)/171/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Mauritius Company Setup - AC (Authorised Company)\nStarting from: 5590\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"5,590\", \"Off"
+        }
+      ],
+      "answer_preview": "### Mauritius Company Setup - AC (Authorised Company)\n\n#### Introduction\nA Mauritius Authorised Company is a practical structure for businesses looking to manage international operations through a recognised offshore jurisdiction. It is commonly used for holding investments, cross-border trading, wealth structuring, and other activities conducted mainly outside Mauritius. With a flexible legal fra",
+      "original_verdict": "FAIL",
+      "original_notes": "Coverage 38% (3/8 GT phrases). Missing: A Mauritius Authorised Company is a practical structure for businesses; Who can own a Mauritius AC?; Can an AC trade inside Mauritius?; Why choose an AC structure?",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: A Mauritius Authorised Company is a practical structure for businesses; Who can own a Mauritius AC?; Can an AC trade ins)."
+    },
+    {
+      "country": "Cyprus",
+      "query": "From Arnifi's package detail page for 'Cyprus Company Incorporation | Complete Digital Setup', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Cyprus)",
+        "package_name": "Cyprus Company Incorporation | Complete Digital Setup",
+        "section": "package_detail_summary(all)",
+        "country": "Cyprus"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Cyprus Company Incorporation | Complete Digital Setup",
+            "section": "introduction",
+            "chunk_id": "a31f08d593f9ea11f880ace8b8c1fb7a1d21e6b2",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/cyprus-company-incorporation-or-complete-digital-setup/180/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Cyprus functions as a critical legal and financial hub for businesses requiring direct commercial access to the European Union. The jurisdiction opera"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Cyprus Company Incorporation | Complete Digital Setup",
+            "section": "pricing",
+            "chunk_id": "d5fc4d1f8f456171842faa01ef996dd37da5e991",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/cyprus-company-incorporation-or-complete-digital-setup/180/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Cyprus Company Incorporation | Complete Digital Setup\nStarting from: 4345\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"4,345\", "
+        },
+        {
+          "rank": 3,
+          "score": 0.9722,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Ireland Company Incorporation | Complete Digital Setup",
+            "section": "pricing",
+            "chunk_id": "a38149ac6ca7abdffb4b8fa933f599ccbbaadbfb",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ireland-company-incorporation-or-complete-digital-setup/182/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Ireland Company Incorporation | Complete Digital Setup\nStarting from: 6384\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"6,384\","
+        }
+      ],
+      "answer_preview": "**Cyprus Company Incorporation | Complete Digital Setup**\n\n**Introduction:**\nCyprus functions as a critical legal and financial hub for businesses requiring direct commercial access to the European Union. The jurisdiction operates under English common law and explicitly allows 100% foreign equity ownership without local shareholder mandates. Companies structuring in Cyprus immediately access a hig",
+      "original_verdict": "FAIL",
+      "original_notes": "Coverage 33% (1/3 GT phrases). Missing: Cyprus functions as a critical legal and financial hub for businesses ; 4345",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: Cyprus functions as a critical legal and financial hub for businesses ; 4345)."
+    },
+    {
+      "country": "Hong Kong",
+      "query": "From Arnifi's package detail page for 'Hong Kong Company Setup', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Hong Kong)",
+        "package_name": "Hong Kong Company Setup",
+        "section": "package_detail_summary(all)",
+        "country": "Hong Kong"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Hong Kong Company Setup",
+            "section": "introduction",
+            "chunk_id": "51114066c778af788ce4c55b6affb7029f27d384",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/hong-kong-company-setup/177/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "The Hong Kong Company Setup package delivers a highly streamlined, fully digital incorporation pathway engineered for global entities seeking a strate"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Hong Kong Company Setup",
+            "section": "pricing",
+            "chunk_id": "05ba6039a800296c2bc39d3c7f1193a31bc0071f",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/hong-kong-company-setup/177/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Hong Kong Company Setup\nStarting from: 1480\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"1,480\", \"Official price\": \"1,480\"}]"
+        },
+        {
+          "rank": 3,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Hong Kong Company Setup & Renewal",
+            "section": "introduction",
+            "chunk_id": "7f2052a13fa07daac434fe506734f29d40f00955",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/hong-kong-company-setup-and-renewal/178/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Establishing a corporate entity in Hong Kong provides global businesses with a strategic, tax-efficient gateway to the Asia-Pacific market and Mainlan"
+        }
+      ],
+      "answer_preview": "### Hong Kong Company Setup\n\n#### Introduction\nThe Hong Kong Company Setup package offers a streamlined, fully digital incorporation pathway for global entities aiming to establish a strategic commercial presence in the Asian market. Hong Kong permits 100% foreign ownership and remote company incorporation, making it ideal for international holding structures, trading enterprises, and digital-firs",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 67% (2/3 GT phrases). Missing: 1480",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: 1480)."
+    },
+    {
+      "country": "Ireland",
+      "query": "From Arnifi's package detail page for 'Ireland Company Incorporation & Annual Maintenance Renewal', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Ireland)",
+        "package_name": "Ireland Company Incorporation & Annual Maintenance Renewal",
+        "section": "package_detail_summary(all)",
+        "country": "Ireland"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Ireland Company Incorporation & Annual Maintenance Renewal",
+            "section": "introduction",
+            "chunk_id": "f85a197be39b2e6ef041ddc1052a3b3d46068bcf",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ireland-company-incorporation-and-annual-maintenance-renewal/181/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "An Ireland company incorporation secures a tax-efficient, English-speaking foothold within the European Union. Yet, initial registration is only the f"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Ireland Company Incorporation & Annual Maintenance Renewal",
+            "section": "pricing",
+            "chunk_id": "2da073ab2daa1eb145f2897c8303771905bf8b4c",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ireland-company-incorporation-and-annual-maintenance-renewal/181/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Ireland Company Incorporation & Annual Maintenance Renewal\nStarting from: 9054\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"9,0"
+        },
+        {
+          "rank": 3,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Ireland Company Incorporation | Complete Digital Setup",
+            "section": "introduction",
+            "chunk_id": "58b63d14df340acd7020cfb8fa22ca515f1542be",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/ireland-company-incorporation-or-complete-digital-setup/182/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "An official Ireland Company Incorporation establishes a strategic, English-speaking operational base within the European Union. The jurisdiction opera"
+        }
+      ],
+      "answer_preview": "### Ireland Company Incorporation & Annual Maintenance Renewal\n\n#### Introduction\nAn Ireland company incorporation secures a tax-efficient, English-speaking foothold within the European Union. Yet, initial registration is only the first step. Operating an entity requires strict, ongoing adherence to Companies Registration Office (CRO) mandates. Missing an Ireland company renewal deadline triggers ",
+      "original_verdict": "FAIL",
+      "original_notes": "Coverage 33% (1/3 GT phrases). Missing: An Ireland company incorporation secures a tax-efficient, English-spea; 9054",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: An Ireland company incorporation secures a tax-efficient, English-spea; 9054)."
+    },
+    {
+      "country": "Luxembourg",
+      "query": "From Arnifi's package detail page for 'Luxembourg Holding Company Setup (SOPARFI)', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Luxembourg)",
+        "package_name": "Luxembourg Holding Company Setup (SOPARFI)",
+        "section": "package_detail_summary(all)",
+        "country": "Luxembourg"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Luxembourg RAIF (SCSP) Fund Setup",
+            "section": "faq",
+            "chunk_id": "a12c0e2a34dab39deaccf0e41da70a4a9ed07d2a",
+            "source_url": "https://arnifi.com/product-details/services/funds/luxembourg-raif-(scsp)-fund-setup/438/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Q: How can Arnifi support fund establishment?\nA: Arnifi assists with documentation, incorporation, regulatory coordination, governance setup, and oper"
+        },
+        {
+          "rank": 2,
+          "score": 0.9896,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Luxembourg RAIF (SCSP) Fund Setup",
+            "section": "highlights",
+            "chunk_id": "ea784555daa24b49bf10cbf1243946df39d366f6",
+            "source_url": "https://arnifi.com/product-details/services/funds/luxembourg-raif-(scsp)-fund-setup/438/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "End-to-end setup support\nArnifi manages documentation, coordination, and fund establishment throughout the process"
+        },
+        {
+          "rank": 3,
+          "score": 0.963,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Luxembourg RAIF (SCSP) Fund Setup",
+            "section": "terms",
+            "chunk_id": "c77b0354dc759f139f9f2752e7d4e7c381f8b17c",
+            "source_url": "https://arnifi.com/product-details/services/funds/luxembourg-raif-(scsp)-fund-setup/438/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Additional government fees or third-party charges, if introduced later, weΓÇÖll inform you separately before processing"
+        }
+      ],
+      "answer_preview": "Based on the provided context, here is a summary of the Luxembourg Holding Company Setup (SOPARFI) package:\n\n**Introduction:**\nLuxembourg remains one of Europe's most established fund domiciles, attracting fund managers, institutional investors, and private equity firms from around the world. Among its investment structures, the Reserved Alternative Investment Fund (RAIF) organised as a Special Li",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 46% (11/24 GT phrases). Missing: Luxembourg has long been one of Europe's preferred jurisdictions for e; Established European holding structure; Supports international investments; Extensive treaty network",
+      "failure_bucket": "cross_service_bleed",
+      "classification_notes": "Top-1 service/package unrelated to expected ('Funds' / 'Luxembourg RAIF (SCSP) Fund Setup')."
+    },
+    {
+      "country": "Malaysia",
+      "query": "From Arnifi's package detail page for 'Malaysia Company Incorporation', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "business-setup (Malaysia)",
+        "package_name": "Malaysia Company Incorporation",
+        "section": "package_detail_summary(all)",
+        "country": "Malaysia"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Malaysia Company Incorporation",
+            "section": "introduction",
+            "chunk_id": "e26d7bf3f858766b99c3c17d0e3392b5719829dd",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/malaysia-company-incorporation/179/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Executing a Malaysia Company Incorporation provides global businesses with a strategic and cost-effective operational base within the ASEAN market. Th"
+        },
+        {
+          "rank": 2,
+          "score": 0.99,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Malaysia Company Incorporation",
+            "section": "pricing",
+            "chunk_id": "d8d417464b121552d29211269c45dad781d35799",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/malaysia-company-incorporation/179/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Malaysia Company Incorporation\nStarting from: 4920\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"4,920\", \"Official price\": \"4,92"
+        },
+        {
+          "rank": 3,
+          "score": 0.9238,
+          "metadata": {
+            "service": "licence",
+            "package_name": "Singapore Basic Incorporation",
+            "section": "pricing",
+            "chunk_id": "8370a3328cdf637ab3b591d0c8edd7de8e529b80",
+            "source_url": "https://arnifi.com/product-details/business-setup/business-setup/singapore-basic-incorporation/123/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Package: Singapore Basic Incorporation\nStarting from: 650\nPricing plan: [{\"Visa\": 0, \"Activity\": 0, \"Arnifi price\": \"650\", \"Official price\": \"650\"}]"
+        }
+      ],
+      "answer_preview": "### Malaysia Company Incorporation\n\n#### Introduction\nExecuting a Malaysia Company Incorporation provides global businesses with a strategic and cost-effective operational base within the ASEAN market. The jurisdiction operates under a robust English common law framework and explicitly permits 100% foreign equity ownership across most major commercial sectors. This legal structure allows internati",
+      "original_verdict": "FAIL",
+      "original_notes": "Coverage 33% (1/3 GT phrases). Missing: Executing a Malaysia Company Incorporation provides global businesses ; 4920",
+      "failure_bucket": "correct_retrieval_wrong_answer",
+      "classification_notes": "Top-3 includes correct package across multiple sections, but synthesized answer still missed GT phrases (missing sample: Executing a Malaysia Company Incorporation provides global businesses ; 4920)."
+    },
+    {
+      "country": "United Kingdom",
+      "query": "From Arnifi's package detail page for 'Jersey Expert Fund Setup', summarize the introduction, highlights/benefits, process flow, FAQs, and terms if available. Include pricing if shown.",
+      "expected": {
+        "service": "Funds",
+        "package_name": "Jersey Expert Fund Setup",
+        "section": "package_detail_summary(all)",
+        "country": "United Kingdom"
+      },
+      "top_3_retrieved": [
+        {
+          "rank": 1,
+          "score": 0.9643,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Luxembourg RAIF (SCSP) Fund Setup",
+            "section": "faq",
+            "chunk_id": "a12c0e2a34dab39deaccf0e41da70a4a9ed07d2a",
+            "source_url": "https://arnifi.com/product-details/services/funds/luxembourg-raif-(scsp)-fund-setup/438/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "Q: How can Arnifi support fund establishment?\nA: Arnifi assists with documentation, incorporation, regulatory coordination, governance setup, and oper"
+        },
+        {
+          "rank": 2,
+          "score": 0.9539,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "Luxembourg RAIF (SCSP) Fund Setup",
+            "section": "highlights",
+            "chunk_id": "ea784555daa24b49bf10cbf1243946df39d366f6",
+            "source_url": "https://arnifi.com/product-details/services/funds/luxembourg-raif-(scsp)-fund-setup/438/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "End-to-end setup support\nArnifi manages documentation, coordination, and fund establishment throughout the process"
+        },
+        {
+          "rank": 3,
+          "score": 0.9234,
+          "metadata": {
+            "service": "Funds",
+            "package_name": "BVI Private Fund Setup (Open-Ended Fund)",
+            "section": "terms",
+            "chunk_id": "696364fd4420121a781066848fd89b6c4f51c0f2",
+            "source_url": "https://arnifi.com/product-details/services/funds/bvi-private-fund-setup-(open-ended-fund)/285/",
+            "page_kind": "product_detail"
+          },
+          "text_preview": "This service is offered by Arnifi in partnership with Asia leading and Arnifi shall only act as facilitator of this service."
+        }
+      ],
+      "answer_preview": "Based on the provided context, here is a summary of the 'Jersey Expert Fund Setup' package:\n\n**Introduction:**\nThe context does not provide an introduction for the 'Jersey Expert Fund Setup' package. \n\n**Highlights/Benefits:**\nThe context does not provide specific highlights or benefits for the 'Jersey Expert Fund Setup' package.\n\n**Process Flow:**\nThe context does not provide a detailed process f",
+      "original_verdict": "PARTIAL",
+      "original_notes": "Coverage 50% (12/24 GT phrases). Missing: Jersey has established itself as one of the world's most respected jur; Well-established fund jurisdiction; Designed for expert investors; International credibility",
+      "failure_bucket": "cross_package_bleed",
+      "classification_notes": "Expected package not in top-3; top-1='Luxembourg RAIF (SCSP) Fund Setup'."
+    }
+  ]
+}

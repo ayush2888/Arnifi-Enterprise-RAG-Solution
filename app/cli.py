@@ -4,6 +4,11 @@ CLI entry point for the Arnifi blog RAG system.
 Commands map to pipelines:
   crawl, ingest, index-posts, extract  →  Indexer (blogs)
   website-crawl, website-ingest        →  WebsiteCrawler / WebsiteIndexer
+  prodapi-locations-ingest             →  ProdapiLocationsIndexer (country-overview API)
+  prodapi-services-ingest              →  ProdapiServicesIndexer (micro-services + setup products)
+  prodapi-company-fund-ingest          →  Company/Licence + Fund + Guides catalog entry points
+  announcement-content-ingest          →  Press / Events / Case Studies content ingest
+  team-leadership-ingest               →  Curated founder/team bios + interview Q&A
   query, inspect                       →  QueryEngine
   eval-rag                             →  Eval runner (hit@k / recall / answer checks)
   drive-list                           →  DriveClient (nested file listing)
@@ -33,8 +38,12 @@ from app.config.env import load_env
 from app.config.settings import Settings
 from app.services.drive.client import DriveClient
 from app.services.drive.discover import build_discover_report, format_discover_text
+from app.services.ingestion.announcement_indexer import AnnouncementContentIndexer
 from app.services.ingestion.drive import DriveIndexer, DriveSync
 from app.services.ingestion.pipeline import Indexer
+from app.services.ingestion.prodapi_locations import ProdapiLocationsIndexer
+from app.services.ingestion.prodapi_services import ProdapiServicesIndexer
+from app.services.ingestion.team_leadership import TeamLeadershipIndexer
 from app.services.ingestion.website import WebsiteCrawler, WebsiteIndexer
 from app.services.ingestion.whatsapp import WhatsAppIndexer, WhatsAppSync
 from app.services.periskope.client import PeriskopeClient
@@ -110,9 +119,204 @@ def build_parser() -> ArgumentParser:
     website_ingest.add_argument("--limit", type=int, default=None, help="Max catalog pages")
     website_ingest.add_argument("--dry-run", action="store_true", help="Chunk only; skip Pinecone")
     website_ingest.add_argument(
+        "--page-kind",
+        default=None,
+        help="Only ingest this page_kind (country_overview, service_landing, service_package, product_detail)",
+    )
+    website_ingest.add_argument(
+        "--no-prune-gone",
+        action="store_true",
+        help="Do not delete Pinecone vectors for HTTP 404/410 pages",
+    )
+    website_ingest.add_argument(
         "--force",
         action="store_true",
         help="Re-embed even if page content is unchanged",
+    )
+
+    prodapi_locations = sub.add_parser(
+        "prodapi-locations-ingest",
+        help=(
+            "Ingest all navbar locations from prodapi country-overview into "
+            "Pinecone (source_type=website, page_kind=country_overview)"
+        ),
+    )
+    prodapi_locations.add_argument(
+        "--config", default=str(ROOT / "config" / "settings.yaml")
+    )
+    prodapi_locations.add_argument(
+        "--limit", type=int, default=None, help="Max countries to ingest"
+    )
+    prodapi_locations.add_argument(
+        "--slug",
+        default=None,
+        help="Only one country (matches slug, name, or shortcode, e.g. Guernsey / gg)",
+    )
+    prodapi_locations.add_argument(
+        "--dry-run", action="store_true", help="Chunk only; skip Pinecone"
+    )
+    prodapi_locations.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-embed even if country overview JSON is unchanged",
+    )
+
+    prodapi_services = sub.add_parser(
+        "prodapi-services-ingest",
+        help=(
+            "Ingest micro-services package details (+ country setup products) "
+            "from prodapi into Pinecone"
+        ),
+    )
+    prodapi_services.add_argument(
+        "--config", default=str(ROOT / "config" / "settings.yaml")
+    )
+    prodapi_services.add_argument(
+        "--limit", type=int, default=None, help="Max packages/products to ingest"
+    )
+    prodapi_services.add_argument(
+        "--service-type",
+        default=None,
+        help="Only one micro-service type (e.g. Funds, 'Visa Services')",
+    )
+    prodapi_services.add_argument(
+        "--no-setup-products",
+        action="store_true",
+        help="Skip country-page setup/licence products from /product-pages",
+    )
+    prodapi_services.add_argument(
+        "--ten-services",
+        action="store_true",
+        help=(
+            "Only the 10 public service landings from the catalog prompt "
+            "(skips Funds/Other and setup products)"
+        ),
+    )
+    prodapi_services.add_argument(
+        "--full-catalog",
+        action="store_true",
+        help=(
+            "Ingest ALL micro-service types (incl. Funds) AND every country "
+            "licence/setup package from /product-pages (UAE 78, KSA 6, ΓÇª)"
+        ),
+    )
+    prodapi_services.add_argument(
+        "--dry-run", action="store_true", help="Chunk only; skip Pinecone"
+    )
+    prodapi_services.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-embed even if package JSON is unchanged",
+    )
+    prodapi_services.add_argument(
+        "--require-coverage",
+        action="store_true",
+        help=(
+            "Run scripts/check_prodapi_coverage.py first and abort ingest on mismatch "
+            "(listing count vs detail fetch + section completeness)"
+        ),
+    )
+
+    prodapi_cf = sub.add_parser(
+        "prodapi-company-fund-ingest",
+        help=(
+            "Ingest Company/Licence (product-listing) + Fund + Business Guide catalogs "
+            "from prodapi with product_type/discovered_via lineage and live completeness gates"
+        ),
+    )
+    prodapi_cf.add_argument(
+        "--config", default=str(ROOT / "config" / "settings.yaml")
+    )
+    prodapi_cf.add_argument(
+        "--limit", type=int, default=None, help="Max packages to ingest"
+    )
+    prodapi_cf.add_argument(
+        "--licence-only",
+        action="store_true",
+        help="Only product-listing?productType=licence",
+    )
+    prodapi_cf.add_argument(
+        "--funds-only",
+        action="store_true",
+        help="Only /services/funds micro-services Funds catalog",
+    )
+    prodapi_cf.add_argument(
+        "--guides-only",
+        action="store_true",
+        help="Only /business-guides Product Insights catalog",
+    )
+    prodapi_cf.add_argument(
+        "--country-id",
+        default=None,
+        help="Optional country id filter for licence listing (e.g. 1=UAE)",
+    )
+    prodapi_cf.add_argument(
+        "--dry-run", action="store_true", help="Chunk only; skip Pinecone"
+    )
+    prodapi_cf.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-embed even if package JSON is unchanged",
+    )
+    prodapi_cf.add_argument(
+        "--allow-partial",
+        action="store_true",
+        help="Do not halt on live-total mismatch or detail failures",
+    )
+
+    announcement = sub.add_parser(
+        "announcement-content-ingest",
+        help=(
+            "Ingest Press Releases, archived Events, and Case Studies with "
+            "content_type metadata and confirmed inventory gates"
+        ),
+    )
+    announcement.add_argument(
+        "--config", default=str(ROOT / "config" / "settings.yaml")
+    )
+    announcement.add_argument(
+        "--limit", type=int, default=None, help="Max detail URLs to ingest"
+    )
+    announcement.add_argument(
+        "--press-only", action="store_true", help="Only press releases"
+    )
+    announcement.add_argument(
+        "--events-only", action="store_true", help="Only archived events"
+    )
+    announcement.add_argument(
+        "--case-studies-only", action="store_true", help="Only case studies"
+    )
+    announcement.add_argument(
+        "--dry-run", action="store_true", help="Chunk only; skip Pinecone"
+    )
+    announcement.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-embed even if content SHA1 is unchanged",
+    )
+    announcement.add_argument(
+        "--allow-partial",
+        action="store_true",
+        help="Do not halt on incomplete inventory or detail failures",
+    )
+
+    team_lead = sub.add_parser(
+        "team-leadership-ingest",
+        help=(
+            "Ingest curated Founder/team bios + Manu Midha interview Q&A "
+            "(manually_provided source_type; deduped records JSON)"
+        ),
+    )
+    team_lead.add_argument(
+        "--config", default=str(ROOT / "config" / "settings.yaml")
+    )
+    team_lead.add_argument(
+        "--records",
+        default=str(ROOT / "data" / "eval" / "team_leadership_records.json"),
+        help="Path to consolidated team_leadership_records.json",
+    )
+    team_lead.add_argument(
+        "--dry-run", action="store_true", help="Chunk only; skip Pinecone"
     )
 
     drive_list = sub.add_parser(
@@ -646,8 +850,124 @@ def main() -> None:
                 limit=args.limit,
                 skip_unchanged=not args.force,
                 dry_run=args.dry_run,
+                page_kind=args.page_kind,
+                prune_gone=not args.no_prune_gone,
             )
             _print_json(result)
+        finally:
+            settings.close()
+        return
+
+    if args.command == "prodapi-locations-ingest":
+        settings = Settings(args.config)
+        try:
+            result = ProdapiLocationsIndexer(settings).ingest(
+                limit=args.limit,
+                slug=args.slug,
+                dry_run=args.dry_run,
+                skip_unchanged=not args.force,
+            )
+            _print_json(result)
+        finally:
+            settings.close()
+        return
+
+    if args.command == "prodapi-services-ingest":
+        if getattr(args, "require_coverage", False):
+            from scripts.check_prodapi_coverage import (
+                check_licences,
+                check_micro_services,
+            )
+            from app.services.prodapi.client import ProdapiClient
+
+            client = ProdapiClient()
+            types = [args.service_type] if args.service_type else None
+            micro = check_micro_services(client, service_types=types)
+            if not micro["ok"]:
+                _print_json({"coverage": micro, "aborted": True})
+                raise SystemExit(
+                    "Coverage check failed (micro-services). Fix gaps before ingest."
+                )
+            if not args.no_setup_products or args.full_catalog:
+                licences = check_licences(client)
+                if not licences["ok"]:
+                    _print_json({"coverage": licences, "aborted": True})
+                    raise SystemExit(
+                        "Coverage check failed (licences). Fix gaps before ingest."
+                    )
+            print("Coverage check passed; starting ingestΓÇª")
+
+        settings = Settings(args.config)
+        try:
+            result = ProdapiServicesIndexer(settings).ingest(
+                limit=args.limit,
+                service_type=args.service_type,
+                include_setup_products=not args.no_setup_products,
+                ten_services_only=args.ten_services,
+                full_catalog=args.full_catalog,
+                dry_run=args.dry_run,
+                skip_unchanged=not args.force,
+            )
+            _print_json(result)
+        finally:
+            settings.close()
+        return
+
+    if args.command == "prodapi-company-fund-ingest":
+        settings = Settings(args.config)
+        try:
+            result = ProdapiServicesIndexer(settings).ingest_company_fund_catalogs(
+                limit=args.limit,
+                licence_only=args.licence_only,
+                funds_only=args.funds_only,
+                guides_only=args.guides_only,
+                country_id=args.country_id,
+                dry_run=args.dry_run,
+                skip_unchanged=not args.force,
+                allow_partial=args.allow_partial,
+            )
+            _print_json(result)
+            if result.get("aborted"):
+                raise SystemExit(
+                    f"Company/Fund/Guide catalog ingest aborted ({result.get('reason')})."
+                )
+        finally:
+            settings.close()
+        return
+
+    if args.command == "announcement-content-ingest":
+        settings = Settings(args.config)
+        try:
+            result = AnnouncementContentIndexer(settings).ingest(
+                limit=args.limit,
+                press_only=args.press_only,
+                events_only=args.events_only,
+                case_studies_only=args.case_studies_only,
+                dry_run=args.dry_run,
+                skip_unchanged=not args.force,
+                allow_partial=args.allow_partial,
+            )
+            _print_json(result)
+            if result.get("aborted"):
+                raise SystemExit(
+                    f"Announcement content ingest aborted ({result.get('reason')})."
+                )
+        finally:
+            settings.close()
+        return
+
+    if args.command == "team-leadership-ingest":
+        settings = Settings(args.config)
+        try:
+            result = TeamLeadershipIndexer(settings).ingest(
+                records_path=Path(args.records),
+                dry_run=args.dry_run,
+            )
+            _print_json(result)
+            if result.get("aborted"):
+                raise SystemExit(
+                    f"Team leadership ingest aborted ({result.get('reason')})."
+                )
         finally:
             settings.close()
         return

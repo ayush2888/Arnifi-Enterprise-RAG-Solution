@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "id": 20,
+    "countryName": "Puerto Rico",
+    "currency": "USD",
+    "slug": "Puerto Rico",
+    "shortcode": "pr",
+    "countryFlag": {
+      "id": 6088,
+      "name": "Puerto rico.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 66,
+      "height": 51,
+      "formats": null,
+      "hash": "Puerto_rico_9b65e50c4b",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 0.84,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Puerto_rico_9b65e50c4b.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:31:08.620Z",
+      "updatedAt": "2026-04-01T09:31:08.620Z"
+    },
+    "bannerImage": {
+      "id": 9825,
+      "name": "2.2 (1).png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 342,
+      "height": 192,
+      "formats": {
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_2_2_1_d9e8d0b84e.png",
+          "hash": "thumbnail_2_2_1_d9e8d0b84e",
+          "mime": "image/png",
+          "name": "thumbnail_2.2 (1).png",
+          "path": null,
+          "size": 37.39,
+          "width": 245,
+          "height": 138
+        }
+      },
+      "hash": "2_2_1_d9e8d0b84e",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 15.47,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/2_2_1_d9e8d0b84e.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-05-28T05:38:38.952Z",
+      "updatedAt": "2026-05-28T05:38:38.952Z"
+    }
+  },
+  "overview": {
+    "id": 6,
+    "title": "Puerto Rico",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Start your Puerto Rico company with Arnifi, access US markets, benefit from attractive tax incentives, and ensure full compliance with a seamless setup experience\n",
+    "blogs": [],
+    "overviewDetail": "Puerto Rico has emerged as a compelling destination for businesses seeking access to the United States market while benefiting from a favorable tax environment. As a US territory, it operates under federal legal frameworks but maintains its own tax system, making it uniquely positioned for companies looking to optimize operations and costs. The island has a long-standing industrial base, particularly in pharmaceuticals, manufacturing, and medical devices, and is now expanding into technology and service exports.\n\nThe government actively promotes foreign investment through Act 60, which consolidates multiple incentive programs offering reduced corporate tax rates, exemptions on dividends, and attractive personal tax benefits. Puerto RicoΓÇÖs infrastructure includes modern ports, international airports, and a robust telecommunications network, supporting both physical and digital businesses.\n\nWith increasing interest from US mainland companies, digital entrepreneurs, and global investors, Puerto Rico is evolving into a hybrid hub combining US market credibility with offshore efficiency. Its regulatory alignment with US standards, combined with competitive incentives, makes it an appealing jurisdiction for startups, SMEs, and multinational corporations looking to expand strategically.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/dianejfudge_san_juan_4020652_1920_b34f89f1c1.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/wei_zeng_48i_Z_Ab_Ng_U8_U_unsplash_eddb381645.jpg"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Mar_24_2026_06_39_13_PM_7c27c4acdf.png"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Mar_24_2026_06_39_13_PM_115b7167e5.png"
+      },
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Chat_GPT_Image_Mar_24_2026_06_37_35_PM_1fc1f7f23b.png"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/p_UERTO_RICO_MAP_72f2dc788a.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 31,
+        "value": "Direct Access to the US Market\nPuerto Rico offers businesses seamless entry into the US economy while operating within a unique tax-efficient jurisdiction\n"
+      },
+      {
+        "id": 32,
+        "value": "Attractive Tax Incentives\nPrograms like Act 60 provide significant tax reductions on corporate income, exports, and individual investors relocating to the island\n"
+      },
+      {
+        "id": 33,
+        "value": "US Legal & Financial System\nBusinesses benefit from US federal protections, strong IP laws, and access to American banking infrastructure\n"
+      },
+      {
+        "id": 34,
+        "value": "Bilingual Skilled Workforce\nA highly educated, English-speaking workforce supports industries such as finance, tech, pharmaceuticals, and shared services\n"
+      },
+      {
+        "id": 35,
+        "value": "Strategic Caribbean Location\nPositioned between North and South America, Puerto Rico serves as a logistics and trade hub for the Americas\n"
+      },
+      {
+        "id": 36,
+        "value": "Growing Innovation Ecosystem\nIncreasing focus on fintech, biotech, and export services is attracting startups and multinational companies\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 46,
+        "question": "What types of business entities are available in Puerto Rico?\n",
+        "answer": "Businesses can register as LLCs, corporations, partnerships, or branches depending on operational and tax requirements\n"
+      },
+      {
+        "id": 47,
+        "question": "Is Puerto Rico considered part of the US for business?\n",
+        "answer": " Yes, it is a US territory, meaning federal laws apply, but it has a separate local tax system\n"
+      },
+      {
+        "id": 48,
+        "question": "What is the corporate tax rate in Puerto Rico?",
+        "answer": null
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 11,
+        "title": "Business Expansion in Manufacturing",
+        "text": "Puerto Rico sees renewed pharmaceutical manufacturing investments, driven by U.S. supply chain diversification strategies and incentives aimed at reducing reliance on overseas production\n",
+        "tag": "Business News",
+        "date": "2026-02-01"
+      },
+      {
+        "id": 12,
+        "title": "Tax Incentive Reforms Update",
+        "text": "Government refines Act 60 compliance requirements, increasing transparency and reporting obligations for foreign investors and export service companies operating locally\n",
+        "tag": "Taxation ",
+        "date": "2026-01-01"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 53,
+        "question": " Define Business Structure\n",
+        "answer": " Choose between an LLC or corporation based on ownership, taxation, and operational needs\n"
+      },
+      {
+        "id": 51,
+        "question": "Register Your Company",
+        "answer": " File incorporation documents with the Puerto Rico Department of State and secure your company name\n"
+      },
+      {
+        "id": 52,
+        "question": "Obtain Tax Incentives & Licenses\n",
+        "answer": " Apply for Act 60 benefits and obtain necessary municipal and industry-specific permits\n"
+      },
+      {
+        "id": 49,
+        "question": "Set Up Operations\n",
+        "answer": " Open a corporate bank account, secure a registered address, and hire employees if required"
+      },
+      {
+        "id": 50,
+        "question": " Maintain Compliance\n",
+        "answer": " Ensure adherence to local tax filings, annual reports, and regulatory obligations\n"
+      }
+    ],
+    "productPages": [],
+    "funds": [],
+    "country": {
+      "id": 20,
+      "countryName": "Puerto Rico",
+      "countryFullName": null,
+      "slug": "Puerto Rico",
+      "shortcode": "pr",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": null,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Puerto_rico_9b65e50c4b.png"
+      },
+      "comparison": [
+        {
+          "id": 118,
+          "key": "Setup Timeline",
+          "value": "1-2 weeks"
+        },
+        {
+          "id": 117,
+          "key": "Capital Requirement",
+          "value": "Low to moderate"
+        },
+        {
+          "id": 119,
+          "key": "Corporate Tax Rate",
+          "value": "4% (with incentives)"
+        },
+        {
+          "id": 120,
+          "key": "VAT Rate",
+          "value": "None (sales tax applies)"
+        },
+        {
+          "id": 121,
+          "key": "Virtual Company Setup",
+          "value": "Limited"
+        },
+        {
+          "id": 122,
+          "key": "Foreign Ownership",
+          "value": "100% "
+        },
+        {
+          "id": 123,
+          "key": "Visa Application",
+          "value": "US visa applicable"
+        },
+        {
+          "id": 124,
+          "key": "International Market Access",
+          "value": "Strong (US market)"
+        },
+        {
+          "id": 125,
+          "key": "Tax Incentives",
+          "value": "Extensive (Act 60)"
+        },
+        {
+          "id": 126,
+          "key": "Banking",
+          "value": "Strong (US system)"
+        },
+        {
+          "id": 127,
+          "key": "Annual Compliance",
+          "value": "Moderate"
+        },
+        {
+          "id": 128,
+          "key": "Preferred Business Activities",
+          "value": "Export services, tech, pharma"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 20,
+        "countryName": "Puerto Rico",
+        "countryFullName": null,
+        "slug": "Puerto Rico",
+        "shortcode": "pr",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": null,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Puerto_rico_9b65e50c4b.png"
+        },
+        "comparison": [
+          {
+            "id": 118,
+            "key": "Setup Timeline",
+            "value": "1-2 weeks"
+          },
+          {
+            "id": 117,
+            "key": "Capital Requirement",
+            "value": "Low to moderate"
+          },
+          {
+            "id": 119,
+            "key": "Corporate Tax Rate",
+            "value": "4% (with incentives)"
+          },
+          {
+            "id": 120,
+            "key": "VAT Rate",
+            "value": "None (sales tax applies)"
+          },
+          {
+            "id": 121,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 122,
+            "key": "Foreign Ownership",
+            "value": "100% "
+          },
+          {
+            "id": 123,
+            "key": "Visa Application",
+            "value": "US visa applicable"
+          },
+          {
+            "id": 124,
+            "key": "International Market Access",
+            "value": "Strong (US market)"
+          },
+          {
+            "id": 125,
+            "key": "Tax Incentives",
+            "value": "Extensive (Act 60)"
+          },
+          {
+            "id": 126,
+            "key": "Banking",
+            "value": "Strong (US system)"
+          },
+          {
+            "id": 127,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 128,
+            "key": "Preferred Business Activities",
+            "value": "Export services, tech, pharma"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "countryName": "UAE",
+        "countryFullName": "UAE",
+        "slug": "uae",
+        "shortcode": "ae",
+        "currency": "AED",
+        "startingPrice": null,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png"
+        },
+        "comparison": [
+          {
+            "id": 2,
+            "key": "Setup Timeline",
+            "value": "3ΓÇô10 days"
+          },
+          {
+            "id": 1,
+            "key": "Capital Requirement",
+            "value": "Low / varies by license"
+          },
+          {
+            "id": 3,
+            "key": "Corporate Tax Rate",
+            "value": "9% (above threshold)"
+          },
+          {
+            "id": 4,
+            "key": "VAT Rate",
+            "value": "5%"
+          },
+          {
+            "id": 5,
+            "key": "Virtual Company Setup",
+            "value": "Available (Free Zones)"
+          },
+          {
+            "id": 6,
+            "key": "Foreign Ownership",
+            "value": "100% (most sectors)"
+          },
+          {
+            "id": 7,
+            "key": "Visa Application",
+            "value": "Linked to the company"
+          },
+          {
+            "id": 8,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 9,
+            "key": "Tax Incentives",
+            "value": "Free zone benefits"
+          },
+          {
+            "id": 12,
+            "key": "Banking",
+            "value": "Moderate difficulty"
+          },
+          {
+            "id": 11,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 10,
+            "key": "Preferred Business Activities",
+            "value": "Trading, consulting, fintech"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "countryName": "Saudi Arabia",
+        "countryFullName": null,
+        "slug": "saudi-arabia",
+        "shortcode": "sa",
+        "currency": "SAR",
+        "startingPrice": null,
+        "rank": 2,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saudi_Arabia_68b3e421d7.png"
+        },
+        "comparison": [
+          {
+            "id": 25,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô6 weeks"
+          },
+          {
+            "id": 26,
+            "key": "Capital Requirement",
+            "value": "Moderate (varies by sector)"
+          },
+          {
+            "id": 27,
+            "key": "Corporate Tax Rate",
+            "value": "20% (foreign entities)"
+          },
+          {
+            "id": 28,
+            "key": "VAT Rate",
+            "value": "15%"
+          },
+          {
+            "id": 29,
+            "key": "Virtual Company Setup",
+            "value": "Limited"
+          },
+          {
+            "id": 30,
+            "key": "Foreign Ownership",
+            "value": "100% (many sectors)"
+          },
+          {
+            "id": 31,
+            "key": "Visa Application",
+            "value": "Required for expats"
+          },
+          {
+            "id": 32,
+            "key": "International Market Access",
+            "value": "Strong (regional)"
+          },
+          {
+            "id": 33,
+            "key": "Tax Incentives",
+            "value": "Sector-based incentives"
+          },
+          {
+            "id": 34,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 35,
+            "key": "Annual Compliance",
+            "value": "High"
+          },
+          {
+            "id": 36,
+            "key": "Preferred Business Activities",
+            "value": "Industrial, energy, logistics"
+          }
+        ]
+      }
+    ]
+  }
+}

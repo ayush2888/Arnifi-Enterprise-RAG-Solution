@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "id": 23,
+    "countryName": "Saint Vincent and the Grenadines",
+    "currency": "USD",
+    "slug": "Saint Vincent and the Grenadines",
+    "shortcode": "vc",
+    "countryFlag": {
+      "id": 11250,
+      "name": "Flag_of_Saint_Vincent_and_the_Grenadines.svg",
+      "alternativeText": null,
+      "caption": null,
+      "width": 900,
+      "height": 600,
+      "formats": null,
+      "hash": "Flag_of_Saint_Vincent_and_the_Grenadines_93c01c705a",
+      "ext": ".svg",
+      "mime": "image/svg+xml",
+      "size": 0.4,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Flag_of_Saint_Vincent_and_the_Grenadines_93c01c705a.svg",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-07-24T10:55:33.126Z",
+      "updatedAt": "2026-07-24T10:55:33.126Z"
+    },
+    "bannerImage": {
+      "id": 11270,
+      "name": "Saint Vincent.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 1774,
+      "height": 887,
+      "formats": {
+        "large": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/large_Saint_Vincent_02815c3fc8.png",
+          "hash": "large_Saint_Vincent_02815c3fc8",
+          "mime": "image/png",
+          "name": "large_Saint Vincent.png",
+          "path": null,
+          "size": 753.26,
+          "width": 1000,
+          "height": 500
+        },
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_Saint_Vincent_02815c3fc8.png",
+          "hash": "small_Saint_Vincent_02815c3fc8",
+          "mime": "image/png",
+          "name": "small_Saint Vincent.png",
+          "path": null,
+          "size": 189.42,
+          "width": 500,
+          "height": 250
+        },
+        "medium": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/medium_Saint_Vincent_02815c3fc8.png",
+          "hash": "medium_Saint_Vincent_02815c3fc8",
+          "mime": "image/png",
+          "name": "medium_Saint Vincent.png",
+          "path": null,
+          "size": 424.6,
+          "width": 750,
+          "height": 375
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_Saint_Vincent_02815c3fc8.png",
+          "hash": "thumbnail_Saint_Vincent_02815c3fc8",
+          "mime": "image/png",
+          "name": "thumbnail_Saint Vincent.png",
+          "path": null,
+          "size": 46.78,
+          "width": 245,
+          "height": 123
+        }
+      },
+      "hash": "Saint_Vincent_02815c3fc8",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 676.36,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saint_Vincent_02815c3fc8.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-07-25T05:15:33.623Z",
+      "updatedAt": "2026-07-25T05:15:33.623Z"
+    }
+  },
+  "overview": {
+    "id": 13,
+    "title": "Saint Vincent and the Grenadines ",
+    "ISO": null,
+    "region": "Saint Vincent and the Grenadines ",
+    "subRegion": null,
+    "subHeader": "Launch your SVG company with Arnifi. Benefit from a flexible offshore jurisdiction built for international business and global expansion.\n",
+    "blogs": [],
+    "overviewDetail": "SVG is a well-established offshore jurisdiction offering a flexible, tax-efficient environment for international businesses, holding companies, trading entities, and asset protection structures. Its straightforward incorporation process and business-friendly legislation have made it a preferred destination for entrepreneurs and international investors seeking efficient cross-border operations.\nThe jurisdiction allows 100% foreign ownership and offers several corporate structures designed for international activities. Businesses benefit from minimal local operational requirements, efficient registration procedures, and a legal framework based on English common law principles.\n\nThe Financial Services Authority (FSA) regulates the non-bank financial services sector while ensuring compliance with international standards relating to anti-money laundering, transparency, and beneficial ownership. Recent regulatory developments continue strengthening SVG's international reputation while maintaining a competitive offshore business environment.\n\nCombining operational flexibility, tax efficiency, straightforward incorporation, and evolving regulatory standards, Saint Vincent and the Grenadines remains a practical choice for international business structuring.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/vincent_img_304dece125.jpg"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Saint_vincentt_58facf7a88.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 78,
+        "value": "Tax-Neutral Offshore Jurisdiction\nNo corporate income tax, capital gains tax, or withholding tax for qualifying offshore entities.\n"
+      },
+      {
+        "id": 77,
+        "value": "Fast Company Formation\nInternational Business Companies (IBCs) can typically be incorporated within a few business days.\n"
+      },
+      {
+        "id": 79,
+        "value": "100% Foreign Ownership\nForeign investors can own companies without local shareholder requirements.\n"
+      },
+      {
+        "id": 80,
+        "value": "Flexible Corporate Structures\nSupports International Business Companies (IBCs), LLCs, trusts, and foundations for international operations."
+      },
+      {
+        "id": 81,
+        "value": "Privacy & Asset Protection\nOffers strong corporate confidentiality alongside internationally compliant regulatory standards."
+      },
+      {
+        "id": 82,
+        "value": "Cost-Effective Incorporation\nCompetitive incorporation and maintenance costs make SVG attractive for global entrepreneurs.\n"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 109,
+        "question": "Why do businesses choose Saint Vincent and the Grenadines?\n",
+        "answer": "SVG offers tax efficiency, flexible company structures, quick incorporation, and cost-effective offshore business solutions.\n"
+      },
+      {
+        "id": 110,
+        "question": "What company types can be established in SVG?\n",
+        "answer": "Businesses commonly establish International Business Companies (IBCs), LLCs, trusts, and foundations."
+      },
+      {
+        "id": 111,
+        "question": "Who regulates financial services in SVG?\n",
+        "answer": "The Financial Services Authority (FSA) supervises the country's non-bank financial services sector.\n"
+      },
+      {
+        "id": 112,
+        "question": "Can foreigners own a company in SVG?\n",
+        "answer": "Yes. Foreign investors can own 100% of an offshore company without local ownership requirements.\n"
+      },
+      {
+        "id": 113,
+        "question": "How long does it take to incorporate a company?\n",
+        "answer": "Company incorporation is typically completed within two to five business days but is subject to changes according to specifications."
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 25,
+        "title": "AML Compliance Updates",
+        "text": "SVG continues strengthening anti-money laundering and beneficial ownership compliance in line with evolving international regulatory standards\n",
+        "tag": "Compliance",
+        "date": "2026-06-10"
+      },
+      {
+        "id": 26,
+        "title": "Offshore Business Framework",
+        "text": "The Financial Services Authority continues enhancing oversight of international business companies while maintaining an efficient incorporation framework\n",
+        "tag": "Regulation ",
+        "date": "2026-05-28"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 114,
+        "question": "Choose Your Company Structure\n",
+        "answer": "Select the appropriate offshore entity based on your business objectives"
+      },
+      {
+        "id": 115,
+        "question": " Complete Company Registration\n",
+        "answer": "Submit incorporation documents and register your business with the relevant authorities\n"
+      },
+      {
+        "id": 116,
+        "question": "Establish Business Operations\n",
+        "answer": "Arrange corporate documentation, banking, and operational requirements\n"
+      },
+      {
+        "id": 117,
+        "question": "Maintain Regulatory Compliance\n",
+        "answer": "Complete annual filings and comply with ongoing reporting and regulatory obligations\n"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 200,
+        "productName": "Saint Vincent & The Grenadines ΓÇô LLC Incorporation",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/vincent_img_304dece125.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "Saint Vincent and the Grenadines",
+        "startingArnifiPrice": 38342,
+        "slug": "saint-vincent-and-the-grenadines-llc-incorporation"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 23,
+      "countryName": "Saint Vincent and the Grenadines",
+      "countryFullName": "Saint Vincent and the Grenadines",
+      "slug": "Saint Vincent and the Grenadines",
+      "shortcode": "vc",
+      "currency": "USD",
+      "startingPrice": 0,
+      "rank": 0,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Flag_of_Saint_Vincent_and_the_Grenadines_93c01c705a.svg"
+      },
+      "comparison": [
+        {
+          "id": 153,
+          "key": "Setup Timeline",
+          "value": "2ΓÇô5 days"
+        },
+        {
+          "id": 154,
+          "key": "Capital Requirement",
+          "value": "Low / no minimum"
+        },
+        {
+          "id": 155,
+          "key": "Corporate Tax Rate",
+          "value": "0% (qualifying offshore entities)"
+        },
+        {
+          "id": 156,
+          "key": "VAT Rate",
+          "value": "0%"
+        },
+        {
+          "id": 157,
+          "key": "Virtual Company Setup",
+          "value": "Available"
+        },
+        {
+          "id": 158,
+          "key": "Foreign Ownership",
+          "value": "100%"
+        },
+        {
+          "id": 159,
+          "key": "Visa Application",
+          "value": "Not applicable"
+        },
+        {
+          "id": 161,
+          "key": "International Market Access",
+          "value": "Strong offshore business access"
+        },
+        {
+          "id": 160,
+          "key": "Tax Incentives",
+          "value": "Tax-neutral offshore regime"
+        },
+        {
+          "id": 162,
+          "key": "Banking",
+          "value": "Moderate"
+        },
+        {
+          "id": 163,
+          "key": "Annual Compliance",
+          "value": "Low to moderate"
+        },
+        {
+          "id": 164,
+          "key": "Preferred Business Activities",
+          "value": "Holding companies, international trading, asset protection"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 23,
+        "countryName": "Saint Vincent and the Grenadines",
+        "countryFullName": "Saint Vincent and the Grenadines",
+        "slug": "Saint Vincent and the Grenadines",
+        "shortcode": "vc",
+        "currency": "USD",
+        "startingPrice": 0,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Flag_of_Saint_Vincent_and_the_Grenadines_93c01c705a.svg"
+        },
+        "comparison": [
+          {
+            "id": 153,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô5 days"
+          },
+          {
+            "id": 154,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 155,
+            "key": "Corporate Tax Rate",
+            "value": "0% (qualifying offshore entities)"
+          },
+          {
+            "id": 156,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 157,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 158,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 159,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 161,
+            "key": "International Market Access",
+            "value": "Strong offshore business access"
+          },
+          {
+            "id": 160,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral offshore regime"
+          },
+          {
+            "id": 162,
+            "key": "Banking",
+            "value": "Moderate"
+          },
+          {
+            "id": 163,
+            "key": "Annual Compliance",
+            "value": "Low to moderate"
+          },
+          {
+            "id": 164,
+            "key": "Preferred Business Activities",
+            "value": "Holding companies, international trading, asset protection"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "countryName": "Cayman Island",
+        "countryFullName": null,
+        "slug": "cayman-islands",
+        "shortcode": "cym",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 4,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png"
+        },
+        "comparison": [
+          {
+            "id": 37,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô5 days"
+          },
+          {
+            "id": 43,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 38,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 46,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 41,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 45,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 42,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 44,
+            "key": "International Market Access",
+            "value": "Very strong (global finance hub)"
+          },
+          {
+            "id": 39,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 40,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 47,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 48,
+            "key": "Preferred Business Activities",
+            "value": "Funds, holding, investment"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "countryName": "British Virgin Islands",
+        "countryFullName": null,
+        "slug": "british-virgin-islands",
+        "shortcode": "vg",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 3,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+        },
+        "comparison": [
+          {
+            "id": 49,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 50,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 52,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 51,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 53,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 56,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 55,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 54,
+            "key": "International Market Access",
+            "value": "Strong (global structuring)"
+          },
+          {
+            "id": 57,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 58,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 59,
+            "key": "Preferred Business Activities",
+            "value": "Holding, investment, IP"
+          }
+        ]
+      }
+    ]
+  }
+}

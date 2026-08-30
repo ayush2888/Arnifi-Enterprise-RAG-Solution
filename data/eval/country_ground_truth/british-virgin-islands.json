@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "id": 11,
+    "countryName": "British Virgin Islands",
+    "currency": "USD",
+    "slug": "british-virgin-islands",
+    "shortcode": "vg",
+    "countryFlag": {
+      "id": 6082,
+      "name": "BVI Flag.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 64,
+      "height": 48,
+      "formats": null,
+      "hash": "BVI_Flag_5f33832ccf",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 1.71,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-01T09:26:31.176Z",
+      "updatedAt": "2026-04-01T11:32:48.645Z"
+    },
+    "bannerImage": {
+      "id": 6428,
+      "name": "freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 706,
+      "height": 396,
+      "formats": {
+        "small": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_d67bd6000a.png",
+          "hash": "small_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_d67bd6000a",
+          "mime": "image/png",
+          "name": "small_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2.png",
+          "path": null,
+          "size": 117.48,
+          "width": 500,
+          "height": 280,
+          "sizeInBytes": 117477
+        },
+        "thumbnail": {
+          "ext": ".png",
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_d67bd6000a.png",
+          "hash": "thumbnail_freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_d67bd6000a",
+          "mime": "image/png",
+          "name": "thumbnail_freepik__a-digital-illustration-of-the-delaware-skyline-whi__99695 2.png",
+          "path": null,
+          "size": 32.32,
+          "width": 245,
+          "height": 137,
+          "sizeInBytes": 32322
+        }
+      },
+      "hash": "freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_d67bd6000a",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 65.27,
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/freepik_a_digital_illustration_of_the_delaware_skyline_whi_99695_2_d67bd6000a.png",
+      "previewUrl": null,
+      "provider": "aws-s3",
+      "provider_metadata": null,
+      "folderPath": "/",
+      "createdAt": "2026-04-02T19:38:46.323Z",
+      "updatedAt": "2026-04-02T19:38:46.323Z"
+    }
+  },
+  "overview": {
+    "id": 2,
+    "title": "British Virgin Islands",
+    "ISO": null,
+    "region": null,
+    "subRegion": null,
+    "subHeader": "Establish your BVI company with Arnifi, manage global structures efficiently, and operate within a tax-neutral environment designed for flexibility and international business\n",
+    "blogs": [
+      {
+        "slug": "bvi-company-formation-cost"
+      },
+      {
+        "slug": "bvi-company-checklist"
+      },
+      {
+        "slug": "bvi-company-for-foreigners-setup-and-ownership-guide"
+      }
+    ],
+    "overviewDetail": "The British Virgin Islands (BVI) is one of the worldΓÇÖs most prominent offshore financial centres, widely recognised for its tax-neutral regime, efficient incorporation processes, and flexible corporate structures. It is a preferred jurisdiction for holding companies, investment vehicles, and international business operations.\n\nThe most commonly used entity is the Business Company (BC), which allows 100% foreign ownership and can be incorporated quickly with minimal capital requirements. The jurisdiction imposes no corporate income tax, capital gains tax, or withholding tax on companies conducting business outside the territory. This makes it highly attractive for cross-border structuring and asset protection.\n\nThe BVI Financial Services Commission (FSC) regulates the sector, ensuring compliance with international standards such as those set by the OECD and FATF. In recent years, the jurisdiction has strengthened its regulatory framework, including economic substance requirements and beneficial ownership reporting, to enhance transparency and maintain its global credibility.\n\nWith a stable legal system based on English common law, a well-established financial services ecosystem, and ongoing regulatory evolution, the British Virgin Islands continues to be a leading choice for global investors and businesses seeking efficient offshore structures.\n",
+    "jurisdiction": [],
+    "banner": [
+      {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_fba4d874b2.png"
+      }
+    ],
+    "map": {
+      "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_flag_52fb6b690a.png"
+    },
+    "keySellingPoints": [
+      {
+        "id": 7,
+        "value": "**Zero Direct Taxation**\nNo corporate income tax, capital gains tax, or withholding tax for offshore companies"
+      },
+      {
+        "id": 8,
+        "value": "**Fast and Cost-Efficient Incorporation**\nCompanies can be incorporated quickly with minimal capital and reporting requirements"
+      },
+      {
+        "id": 12,
+        "value": "**Flexible Corporate Structures**\nBusiness Companies (BCs) offer operational flexibility for global structuring and investments\n"
+      },
+      {
+        "id": 11,
+        "value": "**Strong Global Recognition**\nOne of the most widely used jurisdictions for international holding and investment structures"
+      },
+      {
+        "id": 9,
+        "value": "**Regulatory Compliance Alignment**\nAdheres to OECD and FATF standards, ensuring credibility with global financial institutions"
+      },
+      {
+        "id": 10,
+        "value": "**Stable Legal Framework**\nBased on English common law, providing predictability and investor protection"
+      }
+    ],
+    "prosCons": [],
+    "FAQs": [
+      {
+        "id": 11,
+        "question": "What is a BVI Business Company (BC)?",
+        "answer": "A BC is the most common entity type in the BVI, used for international business, holding structures, and investment activities."
+      },
+      {
+        "id": 10,
+        "question": "Is the BVI a tax-free jurisdiction?",
+        "answer": "Yes, BVI companies are generally exempt from corporate income tax, capital gains tax, and withholding tax on offshore activities."
+      },
+      {
+        "id": 13,
+        "question": "Is the BVI compliant with international regulations?",
+        "answer": "Yes, the jurisdiction follows OECD and FATF standards, including economic substance and transparency requirements."
+      },
+      {
+        "id": 12,
+        "question": "Who regulates companies in the BVI?",
+        "answer": "The BVI Financial Services Commission (FSC) oversees company registration and financial services regulation."
+      },
+      {
+        "id": 14,
+        "question": "How long does it take to set up a company?",
+        "answer": "Incorporation is typically completed within 1ΓÇô3 business days, depending on documentation and service providers.\n"
+      }
+    ],
+    "marketInsights": [
+      {
+        "id": 4,
+        "title": "Financial Services Sector Growth",
+        "text": "The FSC reported continued resilience in company incorporations and financial services activity despite global regulatory pressure",
+        "tag": "Economy",
+        "date": "2026-04-05"
+      },
+      {
+        "id": 3,
+        "title": "Stakeholder Engagement Enhancement",
+        "text": "The Financial Services Commission launched global ΓÇ£Meet the RegulatorΓÇ¥ forums to strengthen collaboration and discuss upcoming regulatory reforms",
+        "tag": "Regulation",
+        "date": "2026-02-19"
+      }
+    ],
+    "processStep": [
+      {
+        "id": 15,
+        "question": "Define Company Structure & Purpose",
+        "answer": "Identify entity type, ownership structure, and intended use of the company"
+      },
+      {
+        "id": 16,
+        "question": "Complete Incorporation Process",
+        "answer": "Submit required documentation and register the company with authorities"
+      },
+      {
+        "id": 17,
+        "question": "Establish Corporate Framework",
+        "answer": "Set up essential elements required for the company to function effectively"
+      },
+      {
+        "id": 18,
+        "question": "Maintain Ongoing Compliance",
+        "answer": "Ensure adherence to regulatory, reporting, and governance requirements"
+      }
+    ],
+    "productPages": [
+      {
+        "id": 160,
+        "productName": "British Virgin Island Company Formation | Advanced Package",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/pexels_troopper84_34650333_d82713b0c2.jpg"
+        },
+        "productType": "licence",
+        "authority_name": "British Virgin Island",
+        "startingArnifiPrice": 1599,
+        "slug": "british-virgin-island-company-formation-or-advanced-package"
+      },
+      {
+        "id": 159,
+        "productName": "British Virgin Island Company Formation | Basic Package",
+        "sliderImage": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_License_Renewal_and_Agent_7ff046823e.webp"
+        },
+        "productType": "licence",
+        "authority_name": "British Virgin Island",
+        "startingArnifiPrice": 1299,
+        "slug": "british-virgin-island-company-formation-or-basic-package"
+      }
+    ],
+    "funds": [],
+    "country": {
+      "id": 11,
+      "countryName": "British Virgin Islands",
+      "countryFullName": null,
+      "slug": "british-virgin-islands",
+      "shortcode": "vg",
+      "currency": "USD",
+      "startingPrice": null,
+      "rank": 3,
+      "countryFlag": {
+        "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+      },
+      "comparison": [
+        {
+          "id": 49,
+          "key": "Setup Timeline",
+          "value": "1ΓÇô3 days"
+        },
+        {
+          "id": 50,
+          "key": "Capital Requirement",
+          "value": "Low / no minimum"
+        },
+        {
+          "id": 52,
+          "key": "Corporate Tax Rate",
+          "value": "0%"
+        },
+        {
+          "id": 51,
+          "key": "VAT Rate",
+          "value": "0%"
+        },
+        {
+          "id": 53,
+          "key": "Virtual Company Setup",
+          "value": "Available"
+        },
+        {
+          "id": 56,
+          "key": "Foreign Ownership",
+          "value": "100%"
+        },
+        {
+          "id": 55,
+          "key": "Visa Application",
+          "value": "Not applicable"
+        },
+        {
+          "id": 54,
+          "key": "International Market Access",
+          "value": "Strong (global structuring)"
+        },
+        {
+          "id": 57,
+          "key": "Tax Incentives",
+          "value": "Tax-neutral regime"
+        },
+        {
+          "id": 58,
+          "key": "Banking",
+          "value": "Moderate to difficult"
+        },
+        {
+          "id": 59,
+          "key": "Preferred Business Activities",
+          "value": "Holding, investment, IP"
+        }
+      ]
+    },
+    "compare": [
+      {
+        "id": 11,
+        "countryName": "British Virgin Islands",
+        "countryFullName": null,
+        "slug": "british-virgin-islands",
+        "shortcode": "vg",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 3,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/BVI_Flag_5f33832ccf.png"
+        },
+        "comparison": [
+          {
+            "id": 49,
+            "key": "Setup Timeline",
+            "value": "1ΓÇô3 days"
+          },
+          {
+            "id": 50,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 52,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 51,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 53,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 56,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 55,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 54,
+            "key": "International Market Access",
+            "value": "Strong (global structuring)"
+          },
+          {
+            "id": 57,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 58,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 59,
+            "key": "Preferred Business Activities",
+            "value": "Holding, investment, IP"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "countryName": "Cayman Island",
+        "countryFullName": null,
+        "slug": "cayman-islands",
+        "shortcode": "cym",
+        "currency": "USD",
+        "startingPrice": null,
+        "rank": 4,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/Cayman_flag_a45c68fb2c.png"
+        },
+        "comparison": [
+          {
+            "id": 37,
+            "key": "Setup Timeline",
+            "value": "2ΓÇô5 days"
+          },
+          {
+            "id": 43,
+            "key": "Capital Requirement",
+            "value": "Low / no minimum"
+          },
+          {
+            "id": 38,
+            "key": "Corporate Tax Rate",
+            "value": "0%"
+          },
+          {
+            "id": 46,
+            "key": "VAT Rate",
+            "value": "0%"
+          },
+          {
+            "id": 41,
+            "key": "Virtual Company Setup",
+            "value": "Available"
+          },
+          {
+            "id": 45,
+            "key": "Foreign Ownership",
+            "value": "100%"
+          },
+          {
+            "id": 42,
+            "key": "Visa Application",
+            "value": "Not applicable"
+          },
+          {
+            "id": 44,
+            "key": "International Market Access",
+            "value": "Very strong (global finance hub)"
+          },
+          {
+            "id": 39,
+            "key": "Tax Incentives",
+            "value": "Tax-neutral regime"
+          },
+          {
+            "id": 40,
+            "key": "Banking",
+            "value": "Moderate to difficult"
+          },
+          {
+            "id": 47,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 48,
+            "key": "Preferred Business Activities",
+            "value": "Funds, holding, investment"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "countryName": "UAE",
+        "countryFullName": "UAE",
+        "slug": "uae",
+        "shortcode": "ae",
+        "currency": "AED",
+        "startingPrice": null,
+        "rank": 0,
+        "countryFlag": {
+          "url": "https://arnifi-be-prod-assets.s3.ap-south-1.amazonaws.com/UAE_flag_048fa85a8a.png"
+        },
+        "comparison": [
+          {
+            "id": 2,
+            "key": "Setup Timeline",
+            "value": "3ΓÇô10 days"
+          },
+          {
+            "id": 1,
+            "key": "Capital Requirement",
+            "value": "Low / varies by license"
+          },
+          {
+            "id": 3,
+            "key": "Corporate Tax Rate",
+            "value": "9% (above threshold)"
+          },
+          {
+            "id": 4,
+            "key": "VAT Rate",
+            "value": "5%"
+          },
+          {
+            "id": 5,
+            "key": "Virtual Company Setup",
+            "value": "Available (Free Zones)"
+          },
+          {
+            "id": 6,
+            "key": "Foreign Ownership",
+            "value": "100% (most sectors)"
+          },
+          {
+            "id": 7,
+            "key": "Visa Application",
+            "value": "Linked to the company"
+          },
+          {
+            "id": 8,
+            "key": "International Market Access",
+            "value": "Very strong"
+          },
+          {
+            "id": 9,
+            "key": "Tax Incentives",
+            "value": "Free zone benefits"
+          },
+          {
+            "id": 12,
+            "key": "Banking",
+            "value": "Moderate difficulty"
+          },
+          {
+            "id": 11,
+            "key": "Annual Compliance",
+            "value": "Moderate"
+          },
+          {
+            "id": 10,
+            "key": "Preferred Business Activities",
+            "value": "Trading, consulting, fintech"
+          }
+        ]
+      }
+    ]
+  }
+}
